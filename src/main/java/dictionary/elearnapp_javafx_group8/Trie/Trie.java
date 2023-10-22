@@ -4,64 +4,50 @@ import java.util.*;
 
 public class Trie {
 
-    protected final Map<Character, Trie> children;
-    protected String content;
-    protected boolean terminal = false;
+    private final TrieNode root;
 
     public Trie() {
-        this(null);
+        root = new TrieNode();
     }
 
-    private Trie(String content) {
-        this.content = content;
-        children = new HashMap<Character, Trie>();
-    }
-
-    protected void add(char character) {
-        String s;
-        if (this.content == null) {
-            s = Character.toString(character);
-        } else {
-            s = this.content + character;
-        }
-        children.put(character, new Trie(s));
-    }
-
-    public void insert(String diagnosis) {
-        if (diagnosis == null) {
-            throw new IllegalArgumentException("Null diagnoses entries are not valid.");
-        }
-        Trie node = this;
-        for (char c : diagnosis.toCharArray()) {
-            if (!node.children.containsKey(c)) {
-                node.add(c);
+    public void insertWord(String word) {
+        TrieNode current = root;
+        for (int i = 0; i < word.length(); ++i) {
+            char c = word.charAt(i);
+            TrieNode node = current.children.get(c);
+            if (node == null) {
+                node = new TrieNode();
+                current.children.put(c, node);
             }
-            node = node.children.get(c);
+            current = node;
         }
-        node.terminal = true;
+        current.isEndOfWord = true;
     }
 
-    public List<String> autoComplete(String prefix) {
-        Trie Trienode = this;
-        for (char c : prefix.toCharArray()) {
-            if (!Trienode.children.containsKey(c)) {
-                return null;
+    public List<String> wordComplete(String word) {
+        TrieNode current = root;
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < word.length(); ++i) {
+            char c = word.charAt(i);
+            current = current.children.get(c);
+            if (current == null) {
+                return res;
             }
-            Trienode = Trienode.children.get(c);
         }
-        return Trienode.allPrefixes();
+        searchWord(current, res, word);
+        return res;
     }
 
-    protected List<String> allPrefixes() {
-        List<String> diagnosisresults = new ArrayList<>();
-        if (this.terminal) {
-            diagnosisresults.add(this.content);
+    public void searchWord(TrieNode current, List<String> res, String word) {
+        if (current == null) {
+            return;
         }
-        for (Map.Entry<Character, Trie> entry : children.entrySet()) {
-            Trie child = entry.getValue();
-            Collection<String> childPrefixes = child.allPrefixes();
-            diagnosisresults.addAll(childPrefixes);
+        if (current.isEndOfWord) {
+            res.add(word);
         }
-        return diagnosisresults;
+        Map<Character, TrieNode> map = current.children;
+        for (Character c : map.keySet()) {
+            searchWord(map.get(c), res, word + c);
+        }
     }
 }

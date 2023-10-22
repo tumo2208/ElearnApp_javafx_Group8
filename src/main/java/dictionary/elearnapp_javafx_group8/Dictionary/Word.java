@@ -37,8 +37,7 @@ public class Word {
         if (obj == null) return false;
         if (obj.getClass() != this.getClass()) return false;
         Word newWord = (Word) obj;
-        if (this.getWordExplain() == newWord.getWordExplain()
-                && this.getWordTarget() == newWord.getWordTarget()) return true;
-        return false;
+        return this.getWordExplain().equals(newWord.getWordExplain())
+                && this.getWordTarget().equals(newWord.getWordTarget());
     }
 }
