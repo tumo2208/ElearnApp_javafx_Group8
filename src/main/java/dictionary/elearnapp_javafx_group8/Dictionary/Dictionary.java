@@ -11,6 +11,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Dictionary {
+
     private Trie trie = new Trie();
     private final String path = "src/main/resources/Database/data.txt";
 

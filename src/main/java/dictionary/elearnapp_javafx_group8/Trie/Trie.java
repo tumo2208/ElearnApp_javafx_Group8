@@ -17,7 +17,6 @@ public class Trie {
         children = new HashMap<Character, Trie>();
     }
 
-    //method to append character
     protected void add(char character) {
         String s;
         if (this.content == null) {
@@ -28,8 +27,6 @@ public class Trie {
         children.put(character, new Trie(s));
     }
 
-
-    //method for inserting a new diagnosis
     public void insert(String diagnosis) {
         if (diagnosis == null) {
             throw new IllegalArgumentException("Null diagnoses entries are not valid.");
@@ -56,7 +53,7 @@ public class Trie {
     }
 
     protected List<String> allPrefixes() {
-        List<String> diagnosisresults = new ArrayList<String>();
+        List<String> diagnosisresults = new ArrayList<>();
         if (this.terminal) {
             diagnosisresults.add(this.content);
         }
@@ -67,5 +64,4 @@ public class Trie {
         }
         return diagnosisresults;
     }
-
 }
