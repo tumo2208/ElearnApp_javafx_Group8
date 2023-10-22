@@ -1,0 +1,126 @@
+.menu_container {
+    -fx-background-color: #EEEEEE;
+}
+
+.logo_container {
+    -fx-alignment: center;
+    -fx-background-color: #1e8eaf;
+}
+
+.logo_container Label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: Calibri;
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+}
+
+.search_box {
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, #000000, 15, 0, 0, 2) ;
+}
+
+.search_box FontAwesomeIconView {
+    -fx-fill: #DBDBDB;
+}
+
+.search_box TextField {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.2em;
+}
+
+.search_box Button {
+    -fx-background-color: transparent;
+}
+
+.search_box Button:hover {
+    -fx-cursor: hand;
+}
+
+.search_box Button FontAwesomeIconView {
+    -fx-fill: #DBDBDB;
+}
+
+.list-view {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.2em;
+    -fx-padding: 5;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #1A00F4;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #07D3E6;
+}
+
+.list-view .list-cell:filled:hover,
+.list-view .list-cell:filled:selected {
+    -fx-background-color: #ABABAB;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.list-view .list-cell .scroll-bar:horizontal .track,
+.list-view .list-cell .scroll-bar:vertical .track {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+.list-view .list-cell .scroll-bar:vertical .increment-button ,
+.list-view .list-cell .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+}
+.list-view .list-cell .scroll-bar:horizontal .increment-button ,
+.list-view .list-cell .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+}
+
+.list-view .list-cell .scroll-bar .increment-arrow,
+.list-view .list-cell .scroll-bar .decrement-arrow {
+    -fx-padding:0;
+}
+.list-view .list-cell .scroll-bar:vertical .thumb,
+.list-view .list-cell .scroll-bar:horizontal .thumb {
+    -fx-background-color: #BFB1CD;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+.button_container {
+    -fx-background-color: transparent;
+    -fx-spacing: 50;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.button_container Button {
+    -fx-background-color: #ECF39E;
+    -fx-text-fill: #000000;
+    -fx-font-size: 1.2em;
+    -fx-font-family: Calibri;
+    -fx-pref-width: 320;
+    -fx-pref-height: 30;
+}
+
+.button_container Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #D6D44C;
+}
+
+.button_container Button FontAwesomeIconView {
+    -fx-fill: #FF0000;
+}
