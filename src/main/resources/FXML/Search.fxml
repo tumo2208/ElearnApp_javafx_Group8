@@ -9,33 +9,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
    <children>
       <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane layoutX="10.0" layoutY="21.0" prefHeight="47.0" prefWidth="227.0">
+            <Pane layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="227.0" styleClass="search_box" stylesheets="@../Styles/Search.css">
                <children>
-                  <TextField layoutX="21.0" layoutY="3.0" prefHeight="40.0" prefWidth="177.0" />
-                  <FontAwesomeIconView glyphName="SEARCH" layoutX="8.0" layoutY="28.0" />
-                  <Button layoutX="201.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0">
+                  <TextField fx:id="searchField" layoutX="49.0" layoutY="3.0" prefHeight="39.0" prefWidth="129.0" stylesheets="@../Styles/Search.css" />
+                  <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="27.0" />
+                  <Button fx:id="deleteSearchButton" layoutX="187.0" layoutY="11.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0" styleClass="delete_search_button" stylesheets="@../Styles/Search.css">
                      <graphic>
-                        <FontAwesomeIconView glyphName="TIMES" />
+                        <FontAwesomeIconView glyphName="TIMES" text="" />
                      </graphic>
                   </Button>
                </children>
             </Pane>
-            <ListView layoutX="10.0" layoutY="63.0" prefHeight="290.0" prefWidth="227.0" />
+            <ListView fx:id="listView" layoutX="18.0" layoutY="68.0" prefHeight="290.0" prefWidth="212.0" stylesheets="@../Styles/Search.css" />
          </children>
       </Pane>
       <Pane layoutX="250.0" prefHeight="66.0" prefWidth="738.0">
          <children>
-            <Label layoutX="18.0" layoutY="9.0" prefHeight="47.0" prefWidth="212.0" />
-            <Button layoutX="470.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
-            <Button layoutX="558.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
-            <Button layoutX="637.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
+            <Label fx:id="wordLabel" layoutX="18.0" layoutY="9.0" prefHeight="47.0" prefWidth="212.0" />
+            <Button fx:id="listenButton" layoutX="470.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
+            <Button fx:id="editWordButton" layoutX="558.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
+            <Button fx:id="deleteWordButton" layoutX="637.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" text="Button" />
          </children>
       </Pane>
-      <TextArea layoutX="250.0" layoutY="66.0" prefHeight="485.0" prefWidth="704.0" />
+      <TextArea fx:id="definitonArea" layoutX="250.0" layoutY="66.0" prefHeight="485.0" prefWidth="704.0" />
    </children>
 </AnchorPane>
