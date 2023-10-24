@@ -69,32 +69,32 @@
     -fx-font-weight: bold;
 }
 
-.list-view .list-cell .scroll-bar:horizontal .track,
-.list-view .list-cell .scroll-bar:vertical .track {
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track {
     -fx-background-color:transparent;
     -fx-border-color:transparent;
     -fx-background-radius: 0em;
     -fx-border-radius:2em;
 }
-.list-view .list-cell .scroll-bar:vertical .increment-button ,
-.list-view .list-cell .scroll-bar:vertical .decrement-button {
+.list-view .scroll-bar:vertical .increment-button ,
+.list-view .scroll-bar:vertical .decrement-button {
     -fx-background-color:transparent;
     -fx-background-radius: 0em;
     -fx-padding:0 10 0 0;
 }
-.list-view .list-cell .scroll-bar:horizontal .increment-button ,
-.list-view .list-cell .scroll-bar:horizontal .decrement-button {
+.list-view .scroll-bar:horizontal .increment-button ,
+.list-view .scroll-bar:horizontal .decrement-button {
     -fx-background-color:transparent;
     -fx-background-radius: 0em;
     -fx-padding:0 0 10 0;
 }
 
-.list-view .list-cell .scroll-bar .increment-arrow,
-.list-view .list-cell .scroll-bar .decrement-arrow {
+.list-view .scroll-bar .increment-arrow,
+.list-view .scroll-bar .decrement-arrow {
     -fx-padding:0;
 }
-.list-view .list-cell .scroll-bar:vertical .thumb,
-.list-view .list-cell .scroll-bar:horizontal .thumb {
+.list-view .scroll-bar:vertical .thumb,
+.list-view .scroll-bar:horizontal .thumb {
     -fx-background-color: #BFB1CD;
     -fx-background-insets: 2, 0, 0;
     -fx-background-radius: 2em;

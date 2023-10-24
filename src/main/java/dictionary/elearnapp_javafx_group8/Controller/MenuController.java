@@ -22,10 +22,6 @@ public class MenuController implements Initializable {
     public Button delete_text_btn;
     public ListView<String> list_view;
 
-    private final List<Word> wordList = new ArrayList<>();
-    private final Dictionary dictionary = new Dictionary();
-    private ObservableList<String> observableList = FXCollections.observableArrayList();
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         dictionary.insertFromFile(wordList);
@@ -62,4 +58,8 @@ public class MenuController implements Initializable {
         }
         list_view.setItems(observableList);
     }
+
+    private final List<Word> wordList = new ArrayList<>();
+    private final Dictionary dictionary = new Dictionary();
+    private ObservableList<String> observableList = FXCollections.observableArrayList();
 }
