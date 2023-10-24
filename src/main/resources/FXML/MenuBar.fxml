@@ -22,7 +22,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="gameButton" layoutX="443.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_button" stylesheets="@../Styles/MenuBar.css">
+      <Button fx:id="gameButton" layoutX="443.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_button" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="443.4">
          <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
