@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
    <children>
-      <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="0.0">
+      <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="0.0">
          <children>
             <Pane layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="227.0" styleClass="search-box" stylesheets="@../Styles/Search.css">
                <children>
@@ -25,8 +25,8 @@
                   </Button>
                </children>
             </Pane>
-            <ListView fx:id="listView" layoutX="20.0" layoutY="65.0" prefHeight="290.0" prefWidth="210.0" stylesheets="@../Styles/Search.css" />
-            <ImageView fitHeight="187.0" fitWidth="227.0" layoutX="11.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+            <ListView fx:id="listView" layoutX="20.0" layoutY="63.0" prefHeight="292.0" prefWidth="210.0" stylesheets="@../Styles/Search.css" />
+            <ImageView fitHeight="187.0" fitWidth="227.0" layoutX="11.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/students.png" />
                </image>
@@ -44,7 +44,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="listenButton1" layoutX="556.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="word-editor-button" stylesheets="@../Styles/Search.css">
+            <Button fx:id="editWordButton" layoutX="569.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="word-editor-button" stylesheets="@../Styles/Search.css">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -55,7 +55,7 @@
             </Button>
          </children>
       </Pane>
-      <Button fx:id="listenButton11" layoutX="872.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="searched-word-box" stylesheets="@../Styles/Search.css">
+      <Button fx:id="deleteWordButton" layoutX="872.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="searched-word-box" stylesheets="@../Styles/Search.css">
          <graphic>
             <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                <image>

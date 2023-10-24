@@ -14,7 +14,7 @@
          </image>
       </ImageView>
       <Text layoutX="60.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 8 DICTIONARY" textAlignment="CENTER" />
-      <Button fx:id="addWordButton" layoutX="313.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_button" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="315.0">
+      <Button fx:id="addWordButton" layoutX="313.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="315.0">
          <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -22,7 +22,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="gameButton" layoutX="443.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_button" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="443.4">
+      <Button fx:id="gameButton" layoutX="443.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="443.4">
          <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -31,7 +31,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="googleTranslateButton" layoutX="590.0" layoutY="38.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_button" stylesheets="@../Styles/MenuBar.css" AnchorPane.rightAnchor="315.0">
+      <Button fx:id="googleTranslateButton" layoutX="590.0" layoutY="38.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.rightAnchor="315.0">
          <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>

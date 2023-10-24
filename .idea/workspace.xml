@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="UI update colors">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/edit.png" afterDir="false" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="UI menu bar and search update">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/students.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
@@ -28,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Phong" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,7 +79,8 @@
       <workItem from="1697953823209" duration="1205000" />
       <workItem from="1698075165015" duration="3697000" />
       <workItem from="1698110284601" duration="346000" />
-      <workItem from="1698127739959" duration="4320000" />
+      <workItem from="1698127739959" duration="4409000" />
+      <workItem from="1698141746920" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -105,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698079918223</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UI menu bar and search update">
+      <option name="closed" value="true" />
+      <created>1698133311017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698133311017</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +125,7 @@
     <MESSAGE value="create new javafx application" />
     <MESSAGE value="UI rework" />
     <MESSAGE value="UI update colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI update colors" />
+    <MESSAGE value="UI menu bar and search update" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI menu bar and search update" />
   </component>
 </project>

@@ -1,7 +1,8 @@
 .menu_bar {
-    -fx-background-color: #FFA629;
+    -fx-background-color: #FFBB5C;
+    -fx-border-radius: 0 0 50 50;
 }
 
-.menu_button {
+.menu_bar Button {
     -fx-background-color: transparent;
 }
