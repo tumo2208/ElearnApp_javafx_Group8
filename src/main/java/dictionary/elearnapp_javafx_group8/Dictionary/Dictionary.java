@@ -34,17 +34,12 @@ public class Dictionary {
         return newWordList;
     }
 
-    public void addWord(List<Word> wordList, Word word) {
-        try {
-            if (Searcher(wordList, word.getWordTarget()) == -1) {
-                FileWriter fileWriter = new FileWriter(path);
-                BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-                bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
-                bufferedWriter.newLine();
-                bufferedWriter.close();
-            } else {
-                throw new Exception("Tu da co");
-            }
+    public void addWord(Word word) {
+        try (FileWriter fileWriter = new FileWriter(path, true);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+            bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

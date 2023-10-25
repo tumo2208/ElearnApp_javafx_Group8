@@ -15,7 +15,7 @@ public class AppUIController implements Initializable {
         Model.getInstance().getViewFactory().selectedMenuProperty().addListener((observableValue, oldVal, newVal) -> {
             switch (newVal) {
                 case "AddWord" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getAddWordView());
-                default -> menu_parent.setCenter(Model.getInstance().getViewFactory().getSearchView());
+                case "Search" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getSearchView());
             }
         });
     }

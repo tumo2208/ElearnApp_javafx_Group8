@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="720.0" prefWidth="360.0" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuController">
+<AnchorPane prefHeight="720.0" prefWidth="360.0" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuController">
     <VBox prefHeight="60.0" prefWidth="360.0" styleClass="logo_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <Label prefHeight="47.0" prefWidth="181.0" text="Từ điển TFlat">
             <graphic>
@@ -32,24 +26,24 @@
     </Pane>
     <ListView fx:id="list_view" layoutX="14.0" layoutY="152.0" prefHeight="200.0" prefWidth="304.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="15.0" />
     <VBox layoutX="14.0" layoutY="368.0" prefHeight="220.0" prefWidth="330.0" styleClass="button_container" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
-        <Button mnemonicParsing="false" text="Thêm từ ">
+        <Button fx:id="add_word_btn" mnemonicParsing="false" text="Thêm từ ">
             <graphic>
                 <FontAwesomeIconView glyphName="PLUS" />
             </graphic>
         </Button>
-        <Button mnemonicParsing="false" text="Google Translate">
+        <Button fx:id="gg_translate_btn" mnemonicParsing="false" text="Google Translate">
             <graphic>
                 <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                     <Image url="@../Images/google_transalte.png" />
                 </ImageView>
             </graphic>
         </Button>
-        <Button mnemonicParsing="false" text="Ôn tập ">
+        <Button fx:id="learn_btn" mnemonicParsing="false" text="Ôn tập ">
             <graphic>
                 <FontAwesomeIconView glyphName="GRADUATION_CAP" />
             </graphic>
         </Button>
-        <Button mnemonicParsing="false" text="Game">
+        <Button fx:id="game_btn" mnemonicParsing="false" text="Game">
             <graphic>
                 <FontAwesomeIconView glyphName="GAMEPAD" />
             </graphic>
