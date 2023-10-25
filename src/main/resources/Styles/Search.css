@@ -1,4 +1,8 @@
-.search_box {
+.search {
+    -fx-background-color: #FFDBA8;
+}
+
+.search-box {
     -fx-background-color: #FFFFFF;
     -fx-alignment: center;
     -fx-background-radius: 30;
@@ -6,33 +10,33 @@
     -fx-effect: dropshadow(three-pass-box, #000000, 15, 0, 0, 2) ;
 }
 
-.search_box FontAwesomeIconView {
+.search-box FontAwesomeIconView {
     -fx-fill: #FFB753;
 }
 
-.search_box TextField {
+.search-box TextField {
     -fx-background-color: transparent;
     -fx-text-fill: #000000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 1.2em;
 }
 
-.search_box Button {
+.search-box Button {
     -fx-background-color: transparent;
 }
 
-.search_box Button:hover {
+.search-box Button:hover {
     -fx-cursor: hand;
 }
 
-.search_box Button FontAwesomeIconView {
+.search-box Button FontAwesomeIconView {
     -fx-fill: #FFB753;
 }
 
 .list-view {
     -fx-background-color: -fx-box-border, -fx-control-inner-background;
     -fx-background-radius: 5;
-    -fx-text-fill: #FFD08F;
+    -fx-text-fill: #000000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 1.2em;
     -fx-padding: 5;
@@ -51,4 +55,34 @@
     -fx-background-color: #FFF200;
     -fx-text-fill: #000000;
     -fx-font-weight: bold;
+}
+
+.searched-word-box {
+    -fx-background-color: #FFA629;
+    -fx-background-radius: 20;
+}
+
+.searched-word-box Button {
+    -fx-background-color: transparent;
+}
+
+.definition-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-border-radius: 50;
+}
+
+.definition-field TextArea {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.2em;
+}
+
+.definition-field TextArea .content {
+    -fx-background-color: #FFFFFF;
+}
+
+.definition-field TextArea:focused .content {
+    -fx-background-color: #FFFFFF;
 }

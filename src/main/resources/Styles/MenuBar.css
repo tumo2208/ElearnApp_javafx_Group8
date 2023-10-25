@@ -1,7 +1,7 @@
 .menu_bar {
-    -fx-background-color: #FFD08F;
+    -fx-background-color: #FFBB5C;
 }
 
-.menu_button {
+.menu_bar Button {
     -fx-background-color: transparent;
 }

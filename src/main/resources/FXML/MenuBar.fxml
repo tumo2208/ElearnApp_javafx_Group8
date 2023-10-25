@@ -6,8 +6,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="140.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
+<AnchorPane prefHeight="140.0" prefWidth="960.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css"
+            xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuBarController">
 
     <ImageView fitHeight="140.0" fitWidth="250.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true"
@@ -16,7 +16,33 @@
     </ImageView>
     <Text layoutX="60.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 8 DICTIONARY"
           textAlignment="CENTER"/>
-    <Button fx:id="addWordButton" layoutX="314.0" layoutY="58.0" mnemonicParsing="false" text="Button"/>
-    <Button fx:id="gameButton" layoutX="462.0" layoutY="57.0" mnemonicParsing="false" text="Button"/>
-    <Button fx:id="googleTranslateButton" layoutX="617.0" layoutY="57.0" mnemonicParsing="false" text="Button"/>
+    <Button fx:id="addWordButton" layoutX="313.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0"
+            prefWidth="73.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="315.0">
+        <graphic>
+            <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../Images/addWord.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="gameButton" layoutX="443.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="73.0"
+            styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="443.0"
+            AnchorPane.rightAnchor="443.4">
+        <graphic>
+            <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../Images/game.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button fx:id="googleTranslateButton" layoutX="590.0" layoutY="38.0" mnemonicParsing="false" prefHeight="65.0"
+            prefWidth="73.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.rightAnchor="315.0">
+        <graphic>
+            <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../Images/googleTranslateAPI.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <ImageView fitHeight="115.0" fitWidth="128.0" layoutX="792.0" layoutY="13.0" pickOnBounds="true"
+               preserveRatio="true" AnchorPane.rightAnchor="50.0">
+        <Image url="@../Images/book.png"/>
+    </ImageView>
 </AnchorPane>
