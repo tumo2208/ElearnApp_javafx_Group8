@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
     <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
           AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="0.0">
@@ -29,17 +29,17 @@
                 </graphic>
             </Button>
         </Pane>
-        <ListView fx:id="listView" layoutX="20.0" layoutY="63.0" prefHeight="292.0" prefWidth="210.0"
+        <ListView fx:id="listView" layoutX="20.0" layoutY="63.0" prefHeight="352.0" prefWidth="210.0"
                   stylesheets="@../Styles/Search.css"/>
-        <ImageView fitHeight="187.0" fitWidth="227.0" layoutX="11.0" layoutY="392.0" pickOnBounds="true"
+        <ImageView fitHeight="187.0" fitWidth="227.0" layoutX="11.0" layoutY="413.0" pickOnBounds="true"
                    preserveRatio="true">
             <Image url="@../Images/students.png"/>
         </ImageView>
     </Pane>
-    <Pane layoutX="250.0" prefHeight="66.0" prefWidth="692.0" styleClass="searched-word-box"
+    <Pane layoutX="250.0" layoutY="14.0" prefHeight="47.0" prefWidth="690.0" styleClass="searched-word-box"
           stylesheets="@../Styles/Search.css">
         <Label fx:id="wordLabel" layoutX="18.0" layoutY="9.0" prefHeight="47.0" prefWidth="212.0"/>
-        <Button fx:id="listenButton" layoutX="509.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0"
+        <Button fx:id="listenButton" layoutX="508.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0"
                 prefWidth="34.0" stylesheets="@../Styles/Search.css">
             <graphic>
                 <ImageView fitHeight="42.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
@@ -47,25 +47,26 @@
                 </ImageView>
             </graphic>
         </Button>
-        <Button fx:id="editWordButton" layoutX="569.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0"
-                prefWidth="34.0" styleClass="word-editor-button" stylesheets="@../Styles/Search.css">
+        <Button fx:id="editWordButton" layoutX="570.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="34.0" stylesheets="@../Styles/Search.css">
             <graphic>
                 <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                     <Image url="@../Images/edit.png"/>
                 </ImageView>
             </graphic>
         </Button>
+        <Button fx:id="deleteWordButton" layoutX="628.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="34.0" styleClass="searched-word-box" stylesheets="@../Styles/Search.css">
+            <graphic>
+                <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Images/deleteWord.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
     </Pane>
-    <Button fx:id="deleteWordButton" layoutX="872.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0"
-            prefWidth="34.0" styleClass="searched-word-box" stylesheets="@../Styles/Search.css">
-        <graphic>
-            <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../Images/deleteWord.png"/>
-            </ImageView>
-        </graphic>
-    </Button>
-    <Pane layoutX="250.0" layoutY="66.0" prefHeight="494.0" prefWidth="692.0" styleClass="definition-field"
+    <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area"
           stylesheets="@../Styles/Search.css">
-        <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0"/>
+        <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0"
+                  styleClass="definition-area" stylesheets="@../Styles/Search.css"/>
     </Pane>
 </AnchorPane>

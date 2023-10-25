@@ -58,7 +58,7 @@
 }
 
 .searched-word-box {
-    -fx-background-color: #FFA629;
+    -fx-background-color: #FFC675;
     -fx-background-radius: 20;
 }
 
@@ -66,23 +66,23 @@
     -fx-background-color: transparent;
 }
 
-.definition-field {
+.definition-area {
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 20;
     -fx-border-radius: 50;
 }
 
-.definition-field TextArea {
+.definition-area TextArea {
     -fx-background-color: transparent;
     -fx-text-fill: #000000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 1.2em;
 }
 
-.definition-field TextArea .content {
-    -fx-background-color: #FFFFFF;
+.definition-area TextArea .content {
+    -fx-background-color: #fff;
 }
 
-.definition-field TextArea:focused .content {
-    -fx-background-color: #FFFFFF;
+.definition-area TextArea:focused .content {
+    -fx-background-color: #fff;
 }
