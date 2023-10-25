@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="add_word_container" stylesheets="@../Styles/AddWord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AppUIController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="add_word_container" stylesheets="@../Styles/AddWord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AddWordController">
    <Pane layoutX="33.0" layoutY="79.0" prefHeight="200.0" prefWidth="300.0" styleClass="logo_add_word_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
       <Label layoutX="31.0" layoutY="177.0" text="Add New Word" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
