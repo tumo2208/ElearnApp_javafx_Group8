@@ -11,19 +11,18 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Dictionary {
+
     private Trie trie = new Trie();
     private final String path = "src/main/resources/Database/data.txt";
 
     public void setTrie(List<Word> wordList) {
-        for (int i = 0; i < wordList.size(); ++i) {
-            trie.insert(wordList.get(i).getWordTarget());
+        for (Word word : wordList) {
+            trie.insertWord(word.getWordTarget());
         }
     }
 
     public List<Word> sortWordList(List<Word> wordList) {
-        List<Word> newWordList = new ArrayList<>();
-        newWordList.addAll(wordList);
-        Word temp = new Word();
+        List<Word> newWordList = new ArrayList<>(wordList);
 
         Collections.sort(newWordList, new Comparator<Word>() {
             @Override
@@ -36,9 +35,8 @@ public class Dictionary {
     }
 
     public void addWord(Word word) {
-        try {
-            FileWriter fileWriter = new FileWriter(path);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        try (FileWriter fileWriter = new FileWriter(path, true);
+             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
             bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
             bufferedWriter.newLine();
             bufferedWriter.close();
@@ -71,16 +69,13 @@ public class Dictionary {
 
     public ObservableList<String> Lookup(String word) {
         ObservableList<String> res = FXCollections.observableArrayList();
-        List<String> wordList = trie.autoComplete(word);
-        for (int i = 0; i < wordList.size(); ++i) {
-            res.add(wordList.get(i));
-        }
+        List<String> wordList = trie.wordComplete(word);
+        res.addAll(wordList);
         return res;
     }
 
     public int Searcher(List<Word> wordList, String word) {
-        List<Word> newWordList = new ArrayList<>();
-        newWordList.addAll(wordList);
+        List<Word> newWordList = new ArrayList<>(wordList);
         newWordList = this.sortWordList(newWordList);
         int l = 0;
         int r = newWordList.size() - 1;
@@ -125,9 +120,9 @@ public class Dictionary {
         try {
             FileWriter fileWriter = new FileWriter(path);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            for (int i = 0; i < wordList.size(); ++i) {
-                bufferedWriter.write("|" + wordList.get(i).getWordTarget()
-                        + "\n" + wordList.get(i).getWordExplain());
+            for (Word word : wordList) {
+                bufferedWriter.write("|" + word.getWordTarget()
+                        + "\n" + word.getWordExplain());
                 bufferedWriter.newLine();
             }
             bufferedWriter.close();

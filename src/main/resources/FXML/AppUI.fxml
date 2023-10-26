@@ -9,8 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="menu_parent" xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="dictionary.elearnapp_javafx_group8.Controller.AppUIController">
+            xmlns:fx="http://javafx.com/fxml">
 
    <top>
       <fx:include source="MenuBar.fxml" />

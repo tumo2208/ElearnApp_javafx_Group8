@@ -1,0 +1,17 @@
+.add_word_container {
+    -fx-background-color: #EEEEEE;
+}
+
+.logo_add_word_container {
+    -fx-background-color: #B1F6F0;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.logo_add_word_container Label {
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Freestyle Script";
+    -fx-font-size: 5em;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+}

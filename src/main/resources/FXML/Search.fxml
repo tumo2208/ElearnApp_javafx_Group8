@@ -11,12 +11,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AppUIController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
    <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="0.0">
       <Pane layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="227.0" styleClass="search-box" stylesheets="@../Styles/Search.css">
          <TextField fx:id="searchField" layoutX="33.0" layoutY="3.0" prefHeight="39.0" prefWidth="159.0" stylesheets="@../Styles/Search.css" />
          <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="27.0" />
-         <Button fx:id="deleteSearchButton" alignment="CENTER" layoutX="192.0" layoutY="4.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="36.0" stylesheets="@../Styles/Search.css">
+         <Button fx:id="deleteSearchButton" alignment="CENTER" layoutX="192.0" layoutY="3.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="36.0" stylesheets="@../Styles/Search.css">
             <graphic>
                <FontAwesomeIconView glyphName="TIMES" size="15.0" text="" />
             </graphic>
@@ -32,15 +32,14 @@
       <Button fx:id="listenButton" layoutX="508.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" stylesheets="@../Styles/Search.css">
          <graphic>
             <ImageView fitHeight="42.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
-                  <Image url="@../Images/wordPronunciation.png" />
+               <Image url="@../Images/wordPronunciation.png" />
             </ImageView>
-         </graphic></Button>
-      <Button fx:id="editWordButton" layoutX="570.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="word-editor-button" stylesheets="@../Styles/Search.css">
+         </graphic>
+      </Button>
+      <Button fx:id="editWordButton" layoutX="570.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" stylesheets="@../Styles/Search.css">
          <graphic>
             <ImageView fitHeight="32.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/edit.png" />
-               </image>
+               <Image url="@../Images/edit.png" />
             </ImageView>
          </graphic>
       </Button>
@@ -53,6 +52,6 @@
       </Button>
    </Pane>
    <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area" stylesheets="@../Styles/Search.css">
-         <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />
+      <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />
    </Pane>
 </AnchorPane>
