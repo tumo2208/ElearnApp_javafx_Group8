@@ -80,7 +80,7 @@ public class Dictionary {
         int l = 0;
         int r = newWordList.size() - 1;
         while (l <= r) {
-            int m = r - (l + r) / 2;
+            int m = r + (l - r) / 2;
             if (newWordList.get(m).getWordTarget().equals(word)) {
                 return m;
             } else if (newWordList.get(m).getWordTarget().compareTo(word) < 0) {

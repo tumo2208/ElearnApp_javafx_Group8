@@ -1,10 +1,13 @@
 package dictionary.elearnapp_javafx_group8.Controller;
 
+import dictionary.elearnapp_javafx_group8.Dictionary.Dictionary;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -59,7 +62,25 @@ public class SearchController implements Initializable {
         listView.setItems(observableList);
     }
 
-    //private final List<Word> wordList = new ArrayList<>();
-    //private final Dictionary dictionary = new Dictionary();
+
+    @FXML
+    public void mouseClickWord(MouseEvent arg){
+        String selectedWord=listView.getSelectionModel().getSelectedItem();
+        if(selectedWord!=null){
+
+            wordIndex=dictionary.Searcher(Model.getInstance().getWordList(), selectedWord);
+            if(wordIndex==-1){
+                return;
+            }
+                wordLabel.setText(Model.getInstance().getWordList().get(wordIndex).getWordTarget());
+                definitionArea.setText(Model.getInstance().getWordList().get(wordIndex).getWordExplain());
+
+
+        }
+    }
+
+
+    private int wordIndex;
+    private final Dictionary dictionary = new Dictionary();
     private ObservableList<String> observableList = FXCollections.observableArrayList();
 }
