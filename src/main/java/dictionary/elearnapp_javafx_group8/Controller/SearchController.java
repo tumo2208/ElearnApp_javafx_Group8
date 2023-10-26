@@ -1,6 +1,7 @@
 package dictionary.elearnapp_javafx_group8.Controller;
 
 import dictionary.elearnapp_javafx_group8.Dictionary.Dictionary;
+import dictionary.elearnapp_javafx_group8.Dictionary.Word;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -74,9 +75,33 @@ public class SearchController implements Initializable {
             }
                 wordLabel.setText(Model.getInstance().getWordList().get(wordIndex).getWordTarget());
                 definitionArea.setText(Model.getInstance().getWordList().get(wordIndex).getWordExplain());
-
+                definitionArea.setEditable(false);
 
         }
+    }
+    @FXML
+    public void mouseClickEdit(MouseEvent arg){
+        definitionArea.setEditable(true);
+    }
+    @FXML
+    public void clickSaveButton(MouseEvent arg){
+        String wordTarget=wordLabel.getText();
+        String wordExplain=definitionArea.getText();
+        Model.getInstance().getDictionary().updateWord(Model.getInstance().getWordList(),
+                wordIndex,wordTarget,wordExplain );
+        definitionArea.setEditable(false);
+    }
+    public void clickDeleteButton(MouseEvent arg){
+        Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(),wordIndex);
+        for(int i=0;i<observableList.size();i++){
+            if(observableList.get(i).equals(wordLabel.getText())){
+                observableList.remove(i);
+                break;
+            }
+        }
+        listView.setItems(observableList);
+        wordLabel.setText("");
+        definitionArea.setText("");
     }
 
 
