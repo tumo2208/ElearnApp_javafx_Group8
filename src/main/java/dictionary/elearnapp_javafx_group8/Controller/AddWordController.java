@@ -20,21 +20,26 @@ public class AddWordController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //Model.getInstance().getDictionary().insertFromFile(Model.getInstance().getWordList());
         addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
         notiLabel.setVisible(false);
 
-        newWordField.setOnKeyTyped(keyEvent -> addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty()));
-        newDefinitionArea.setOnKeyTyped(keyEvent -> addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty()));
+        newWordField.setOnKeyTyped(keyEvent -> {
+            addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
+            notiLabel.setVisible(false);
+        });
+        newDefinitionArea.setOnKeyTyped(keyEvent -> {
+            addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
+            notiLabel.setVisible(false);
+        });
 
         addNewWordButton.setOnAction(event -> addWord());
     }
 
     private void addWord() {
         Word newWord = new Word(newWordField.getText().trim(),  newDefinitionArea.getText().trim());
-        if (!Model.getInstance().getWordList().contains(newWord)) {
-            Model.getInstance().getWordList().add(newWord);
+        if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
             Model.getInstance().getDictionary().addWord(newWord);
+            Model.getInstance().getWordList().add(newWord);
             notiLabel.setText("Add word Successfully");
         } else {
             notiLabel.setText("Error: word is already exists");
@@ -44,7 +49,4 @@ public class AddWordController implements Initializable {
         newWordField.clear();
         newDefinitionArea.clear();
     }
-
-    //private final List<Word> wordList = new ArrayList<>();
-    //private final Dictionary dictionary = new Dictionary();
 }
