@@ -66,6 +66,10 @@
     -fx-background-color: transparent;
 }
 
+.searched-word-box Button:hover {
+    -fx-cursor: hand;
+}
+
 .definition-area {
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 20;

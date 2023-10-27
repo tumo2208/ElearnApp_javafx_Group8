@@ -29,6 +29,9 @@ public class SearchController implements Initializable {
         listenButton.setVisible(false);
         editWordButton.setVisible(false);
         deleteWordButton.setVisible(false);
+        listenButton.setDisable(true);
+        editWordButton.setDisable(true);
+        deleteWordButton.setDisable(true);
         searchField.setOnKeyTyped(keyEvent -> {
             if (searchField.getText().isEmpty()){
                 deleteSearchButton.setVisible(false);
@@ -60,10 +63,16 @@ public class SearchController implements Initializable {
                 listenButton.setVisible(false);
                 editWordButton.setVisible(false);
                 deleteWordButton.setVisible(false);
+                listenButton.setDisable(true);
+                editWordButton.setDisable(true);
+                deleteWordButton.setDisable(true);
             } else {
                 listenButton.setVisible(true);
                 editWordButton.setVisible(true);
                 deleteWordButton.setVisible(true);
+                listenButton.setDisable(false);
+                editWordButton.setDisable(false);
+                deleteWordButton.setDisable(false);
             }
         });
 
@@ -75,6 +84,21 @@ public class SearchController implements Initializable {
             definitionArea.clear();
             wordLabel.setText("");
             indexOfWordSelected = -1;
+            if (definitionArea.getText().isEmpty()) {
+                listenButton.setVisible(false);
+                editWordButton.setVisible(false);
+                deleteWordButton.setVisible(false);
+                listenButton.setDisable(true);
+                editWordButton.setDisable(true);
+                deleteWordButton.setDisable(true);
+            } else {
+                listenButton.setVisible(true);
+                editWordButton.setVisible(true);
+                deleteWordButton.setVisible(true);
+                listenButton.setDisable(false);
+                editWordButton.setDisable(false);
+                deleteWordButton.setDisable(false);
+            }
         });
     }
 

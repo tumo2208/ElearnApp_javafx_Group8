@@ -4,8 +4,10 @@ import dictionary.elearnapp_javafx_group8.Trie.Trie;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -19,19 +21,6 @@ public class Dictionary {
         for (Word word : wordList) {
             trie.insertWord(word.getWordTarget());
         }
-    }
-
-    public List<Word> sortWordList(List<Word> wordList) {
-        List<Word> newWordList = new ArrayList<>(wordList);
-
-        Collections.sort(newWordList, new Comparator<Word>() {
-            @Override
-            public int compare(Word w1, Word w2) {
-                return w1.getWordTarget().compareTo(w2.getWordTarget());
-            }
-        });
-
-        return newWordList;
     }
 
     public void addWord(Word word) {
@@ -74,7 +63,12 @@ public class Dictionary {
     }
 
     public int Searcher(List<Word> wordList, String word) {
-        this.sortWordList(wordList);
+        Collections.sort(wordList, new Comparator<Word>() {
+            @Override
+            public int compare(Word w1, Word w2) {
+                return w1.getWordTarget().compareTo(w2.getWordTarget());
+            }
+        });
         int l = 0;
         int r = wordList.size() - 1;
         while (l <= r) {
