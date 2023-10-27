@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -8,8 +9,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="add_word_container" stylesheets="@../Styles/AddWord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AddWordController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="add_word_container" stylesheets="@../Styles/AddWord.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AddWordController">
     <Pane layoutX="33.0" layoutY="79.0" prefHeight="200.0" prefWidth="300.0" styleClass="logo_add_word_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <Label layoutX="31.0" layoutY="177.0" text="Add New Word" />
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
@@ -17,11 +19,34 @@
         </ImageView>
     </Pane>
     <Pane layoutX="300.0" prefHeight="514.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <Label layoutX="316.0" layoutY="71.0" text="New Word:" />
-        <TextField fx:id="newWordField" layoutX="271.0" layoutY="99.0" />
-        <Label layoutX="318.0" layoutY="172.0" text="Definition:" />
-        <TextArea fx:id="newDefinitionArea" layoutX="245.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" />
-        <Button fx:id="addNewWordButton" layoutX="319.0" layoutY="469.0" mnemonicParsing="false" text="Confirm" />
-        <Label fx:id="notiLabel" layoutX="275.0" layoutY="428.0" text="Error: Word is already exists" />
+        <Label fx:id="notiLabel" layoutX="41.0" layoutY="535.0" text="Error: Word is already exists">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Pane layoutX="15.0" layoutY="40.0" prefHeight="40.0" prefWidth="630.0" styleClass="new_word_field" stylesheets="@../Styles/AddWord.css">
+         <children>
+              <TextField fx:id="newWordField" layoutX="110.0" layoutY="5.0" prefHeight="30.0" prefWidth="500.0" />
+              <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" styleClass="label_pane" text="New word">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="95.0" prefHeight="420.0" prefWidth="630.0" styleClass="definition_field" stylesheets="@../Styles/AddWord.css">
+         <children>
+              <TextArea fx:id="newDefinitionArea" layoutX="10.0" layoutY="40.0" prefHeight="370.0" prefWidth="610.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextArea>
+            <Pane layoutY="-10.0" prefHeight="30.0" prefWidth="100.0" />
+              <Label prefHeight="40.0" prefWidth="630.0" styleClass="label_pane" text="  Definition">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+        <Button fx:id="addNewWordButton" layoutX="548.0" layoutY="529.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" styleClass="confirm_button" stylesheets="@../Styles/AddWord.css" text="Confirm" />
     </Pane>
 </AnchorPane>

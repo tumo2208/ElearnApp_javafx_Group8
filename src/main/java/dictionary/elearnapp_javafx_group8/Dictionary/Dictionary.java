@@ -39,7 +39,6 @@ public class Dictionary {
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
             bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
             bufferedWriter.newLine();
-            bufferedWriter.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -75,15 +74,14 @@ public class Dictionary {
     }
 
     public int Searcher(List<Word> wordList, String word) {
-        List<Word> newWordList = new ArrayList<>(wordList);
-        newWordList = this.sortWordList(newWordList);
+        this.sortWordList(wordList);
         int l = 0;
-        int r = newWordList.size() - 1;
+        int r = wordList.size() - 1;
         while (l <= r) {
-            int m = r - (l + r) / 2;
-            if (newWordList.get(m).getWordTarget().equals(word)) {
+            int m = l + (r - l) / 2;
+            if (wordList.get(m).getWordTarget().equals(word)) {
                 return m;
-            } else if (newWordList.get(m).getWordTarget().compareTo(word) < 0) {
+            } else if (wordList.get(m).getWordTarget().compareTo(word) < 0) {
                 l = m + 1;
             } else {
                 r = m - 1;
@@ -97,7 +95,7 @@ public class Dictionary {
             FileReader fileReader = new FileReader(path);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String wordTarget = bufferedReader.readLine().replace("|", "");
-            String wordExplain = wordTarget + "\n";
+            String wordExplain = "";
             String line = new String();
 
             while ((line = bufferedReader.readLine()) != null) {
@@ -106,11 +104,12 @@ public class Dictionary {
                     wordList.add(newWord);
                     wordExplain = "";
                     wordTarget = line.replace("|", "");
-                    wordExplain = wordTarget + "\n";
                 } else {
                     wordExplain += (line + "\n");
                 }
             }
+            Word newWord = new Word(wordTarget, wordExplain);
+            wordList.add(newWord);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -123,7 +122,6 @@ public class Dictionary {
             for (Word word : wordList) {
                 bufferedWriter.write("|" + word.getWordTarget()
                         + "\n" + word.getWordExplain());
-                bufferedWriter.newLine();
             }
             bufferedWriter.close();
         } catch (Exception e) {

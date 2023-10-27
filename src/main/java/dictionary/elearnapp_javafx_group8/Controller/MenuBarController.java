@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuBarController implements Initializable {
+
     public Button addWordButton;
     public Button gameButton;
     public Button googleTranslateButton;

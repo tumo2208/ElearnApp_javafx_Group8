@@ -23,10 +23,12 @@ public class SearchController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //Model.getInstance().getDictionary().insertFromFile(Model.getInstance().getWordList());
-        Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
         listViewDefault();
         deleteSearchButton.setVisible(false);
+        definitionArea.setEditable(false);
+        listenButton.setVisible(false);
+        editWordButton.setVisible(false);
+        deleteWordButton.setVisible(false);
         searchField.setOnKeyTyped(keyEvent -> {
             if (searchField.getText().isEmpty()){
                 deleteSearchButton.setVisible(false);
@@ -36,11 +38,7 @@ public class SearchController implements Initializable {
                 observableList.clear();
                 String searchWord = searchField.getText().trim();
                 observableList = Model.getInstance().getDictionary().Lookup(searchWord);
-                if (observableList.isEmpty()) {
-                    listViewDefault();
-                } else {
-                    listView.setItems(observableList);
-                }
+                listView.setItems(observableList);
             }
         });
 
@@ -48,6 +46,35 @@ public class SearchController implements Initializable {
             searchField.clear();
             deleteSearchButton.setVisible(false);
             listViewDefault();
+        });
+
+        listView.setOnMouseClicked(MouseEvent -> {
+            definitionArea.clear();
+            wordLabel.setText("");
+            String selectedWord = listView.getSelectionModel().getSelectedItem();
+            indexOfWordSelected = Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), selectedWord);
+            System.out.println(indexOfWordSelected);
+            wordLabel.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
+            definitionArea.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordExplain());
+            if (definitionArea.getText().isEmpty()) {
+                listenButton.setVisible(false);
+                editWordButton.setVisible(false);
+                deleteWordButton.setVisible(false);
+            } else {
+                listenButton.setVisible(true);
+                editWordButton.setVisible(true);
+                deleteWordButton.setVisible(true);
+            }
+        });
+
+        deleteWordButton.setOnAction(event -> {
+            Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(), indexOfWordSelected);
+            listViewDefault();
+            listView.setItems(observableList);
+            searchField.clear();
+            definitionArea.clear();
+            wordLabel.setText("");
+            indexOfWordSelected = -1;
         });
     }
 
@@ -59,7 +86,6 @@ public class SearchController implements Initializable {
         listView.setItems(observableList);
     }
 
-    //private final List<Word> wordList = new ArrayList<>();
-    //private final Dictionary dictionary = new Dictionary();
     private ObservableList<String> observableList = FXCollections.observableArrayList();
+    private int indexOfWordSelected = -1;
 }

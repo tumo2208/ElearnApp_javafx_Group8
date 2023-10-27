@@ -1,5 +1,5 @@
 .add_word_container {
-    -fx-background-color: #EEEEEE;
+    -fx-background-color: #D9F6B1;
 }
 
 .logo_add_word_container {
@@ -14,4 +14,65 @@
     -fx-font-size: 5em;
     -fx-font-weight: bold;
     -fx-wrap-text: true;
+}
+
+.new_word_field {
+    -fx-background-color: #e5e5e5;
+    box-shadow: inset 2px 2px 3px 0 #555;
+    -fx-background-radius: 20;
+
+}
+
+.new_word_field Label {
+    -fx-background-color: #CEB1F6;
+    -fx-background-radius: 20 0 0 20;
+}
+
+.new_word_field TextField {
+    -fx-background-color: transparent;
+}
+
+.definition_field {
+    -fx-background-color: #fff;
+    -fx-background-radius: 20;
+}
+
+.definition_field TextArea {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.2em;
+}
+
+.definition_field TextArea .content {
+    -fx-background-color: #fff;
+}
+
+.definition_field TextArea:focused .content {
+    -fx-background-color: #fff;
+}
+
+.definition_field TextArea:focused, input:focused{
+    outline: none;
+}
+
+.definition_field Label {
+    -fx-background-color: #e5e5e5;
+    -fx-background-radius: 20 20 0 0;
+}
+
+.error_notification {
+    -fx-text-fill: #ff0000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 15px;
+}
+
+.success_notification {
+    -fx-text-fill: #098000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 15px;
+}
+
+.confirm_button {
+    -fx-background-radius: 20;
 }
