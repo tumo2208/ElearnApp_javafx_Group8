@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="Change from Search to AddWord">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Trie/TrieNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/new_word_lbl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_20_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_20_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_21_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_21_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_39_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_39_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_27_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_27_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Trie/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AppUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AppUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Menu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AppUI.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
-    </list>
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="View change update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Phong",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/ADMIN/Desktop/ElearnApp_javafx_Group8_fxml/ElearnApp_javafx_Group8",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -118,6 +78,7 @@
       <workItem from="1698213502328" duration="10312000" />
       <workItem from="1698224122364" duration="194000" />
       <workItem from="1698237226444" duration="2862000" />
+      <workItem from="1698326711339" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -183,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698219060850</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="View change update">
+      <option name="closed" value="true" />
+      <created>1698326782528</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698326782528</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +164,7 @@
     <MESSAGE value="AddWord new" />
     <MESSAGE value="rework" />
     <MESSAGE value="Change from Search to AddWord" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change from Search to AddWord" />
+    <MESSAGE value="View change update" />
+    <option name="LAST_COMMIT_MESSAGE" value="View change update" />
   </component>
 </project>
