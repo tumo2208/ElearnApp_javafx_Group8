@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class AppUIController implements Initializable {
+
     public BorderPane menu_parent;
 
     @Override

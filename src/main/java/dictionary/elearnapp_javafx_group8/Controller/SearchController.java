@@ -23,7 +23,6 @@ public class SearchController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
         listViewDefault();
         deleteSearchButton.setVisible(false);
         definitionArea.setEditable(false);
@@ -39,11 +38,7 @@ public class SearchController implements Initializable {
                 observableList.clear();
                 String searchWord = searchField.getText().trim();
                 observableList = Model.getInstance().getDictionary().Lookup(searchWord);
-                if (observableList.isEmpty()) {
-                    listViewDefault();
-                } else {
-                    listView.setItems(observableList);
-                }
+                listView.setItems(observableList);
             }
         });
 
@@ -58,6 +53,7 @@ public class SearchController implements Initializable {
             wordLabel.setText("");
             String selectedWord = listView.getSelectionModel().getSelectedItem();
             indexOfWordSelected = Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), selectedWord);
+            System.out.println(indexOfWordSelected);
             wordLabel.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
             definitionArea.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordExplain());
             if (definitionArea.getText().isEmpty()) {

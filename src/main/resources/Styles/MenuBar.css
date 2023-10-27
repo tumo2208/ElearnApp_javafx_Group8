@@ -5,3 +5,7 @@
 .menu_bar Button {
     -fx-background-color: transparent;
 }
+
+.menu_bar Button:hover {
+    -fx-cursor: hand;
+}
