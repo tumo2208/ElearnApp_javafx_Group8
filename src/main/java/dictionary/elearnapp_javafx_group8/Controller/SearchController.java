@@ -1,5 +1,6 @@
 package dictionary.elearnapp_javafx_group8.Controller;
 
+import dictionary.elearnapp_javafx_group8.Dictionary.Dictionary;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -100,6 +101,11 @@ public class SearchController implements Initializable {
                 deleteWordButton.setDisable(false);
             }
         });
+        listenButton.setOnAction(event ->{
+            if (!(wordLabel.getText().isEmpty())){
+                voice.makeSound(wordLabel.getText());
+            }
+        });
     }
 
     private void listViewDefault(){
@@ -111,5 +117,6 @@ public class SearchController implements Initializable {
     }
 
     private ObservableList<String> observableList = FXCollections.observableArrayList();
+    private VoiceController voice=new VoiceController();
     private int indexOfWordSelected = -1;
 }
