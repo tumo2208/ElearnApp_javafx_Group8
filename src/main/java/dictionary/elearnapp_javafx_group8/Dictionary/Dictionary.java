@@ -45,9 +45,8 @@ public class Dictionary {
     }
 
     public void updateWord(List<Word> wordList, int index,
-                           String wordTarget, String wordExplain) {
+                           String wordExplain) {
         try {
-            wordList.get(index).setWordTarget(wordTarget);
             wordList.get(index).setWordExplain(wordExplain);
             this.exportToFile(wordList);
         } catch (Exception e) {

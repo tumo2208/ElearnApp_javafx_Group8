@@ -5,8 +5,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class SearchController implements Initializable {
@@ -19,12 +21,14 @@ public class SearchController implements Initializable {
     public Button editWordButton;
     public Button deleteWordButton;
     public TextArea definitionArea;
+    public Dialog<ButtonType> editDialog;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         listViewDefault();
         deleteSearchButton.setVisible(false);
+        deleteSearchButton.setDisable(true);
         definitionArea.setEditable(false);
         listenButton.setVisible(false);
         editWordButton.setVisible(false);
@@ -35,9 +39,11 @@ public class SearchController implements Initializable {
         searchField.setOnKeyTyped(keyEvent -> {
             if (searchField.getText().isEmpty()){
                 deleteSearchButton.setVisible(false);
+                deleteSearchButton.setDisable(true);
                 listViewDefault();
             } else {
                 deleteSearchButton.setVisible(true);
+                deleteSearchButton.setDisable(false);
                 observableList.clear();
                 String searchWord = searchField.getText().trim();
                 observableList = Model.getInstance().getDictionary().Lookup(searchWord);
@@ -91,6 +97,8 @@ public class SearchController implements Initializable {
                 listenButton.setDisable(true);
                 editWordButton.setDisable(true);
                 deleteWordButton.setDisable(true);
+                deleteSearchButton.setVisible(false);
+                deleteSearchButton.setDisable(true);
             } else {
                 listenButton.setVisible(true);
                 editWordButton.setVisible(true);
@@ -98,6 +106,30 @@ public class SearchController implements Initializable {
                 listenButton.setDisable(false);
                 editWordButton.setDisable(false);
                 deleteWordButton.setDisable(false);
+                deleteSearchButton.setVisible(true);
+                deleteSearchButton.setDisable(false);
+            }
+        });
+
+        editWordButton.setOnAction(event -> {
+            editDialog = new Dialog<>();
+            editDialog.setTitle("Edit Word");
+            TextArea editArea = new TextArea();
+            editArea.setText(definitionArea.getText());
+            editArea.setPrefWidth(500);
+            editArea.setPrefHeight(500);
+            editDialog.getDialogPane().setContent(new VBox(editArea));
+            editDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
+            editDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+            Optional<ButtonType> option = editDialog.showAndWait();
+            if (option.get() == ButtonType.OK) {
+                Model.getInstance().getDictionary().updateWord(Model.getInstance().getWordList(),
+                        indexOfWordSelected, editArea.getText().trim());
+                editDialog.close();
+            } else if (option.get() == ButtonType.CANCEL) {
+                editDialog.close();
+            } else if (option.get() == ButtonType.CLOSE) {
+                editDialog.close();
             }
         });
     }

@@ -76,3 +76,7 @@
 .confirm_button {
     -fx-background-radius: 20;
 }
+
+.confirm_button:hover {
+    -fx-cursor: hand;
+}
