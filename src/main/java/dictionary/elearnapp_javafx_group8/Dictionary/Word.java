@@ -33,10 +33,10 @@ public class Word {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
         if (obj == null) return false;
-        if (obj.getClass() != this.getClass()) return false;
+        if (!(obj.getClass().equals(this.getClass()))) return false;
         Word newWord = (Word) obj;
+        if (this == newWord) return true;
         return this.getWordExplain().equals(newWord.getWordExplain())
                 && this.getWordTarget().equals(newWord.getWordTarget());
     }
