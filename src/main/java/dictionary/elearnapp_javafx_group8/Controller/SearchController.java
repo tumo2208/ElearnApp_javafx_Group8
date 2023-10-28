@@ -34,7 +34,7 @@ public class SearchController implements Initializable {
         editWordButton.setDisable(true);
         deleteWordButton.setDisable(true);
         searchField.setOnKeyTyped(keyEvent -> {
-            if (searchField.getText().isEmpty()){
+            if (searchField.getText().isEmpty()) {
                 deleteSearchButton.setVisible(false);
                 listViewDefault();
             } else {
@@ -101,14 +101,14 @@ public class SearchController implements Initializable {
                 deleteWordButton.setDisable(false);
             }
         });
-        listenButton.setOnAction(event ->{
-            if (!(wordLabel.getText().isEmpty())){
+        listenButton.setOnAction(event -> {
+            if (!(wordLabel.getText().isEmpty())) {
                 voice.makeSound(wordLabel.getText());
             }
         });
     }
 
-    private void listViewDefault(){
+    private void listViewDefault() {
         observableList.clear();
         for (int i = 0; i < Math.min(20, Model.getInstance().getWordList().size()); i++) {
             observableList.add(Model.getInstance().getWordList().get(i).getWordTarget());
@@ -117,6 +117,6 @@ public class SearchController implements Initializable {
     }
 
     private ObservableList<String> observableList = FXCollections.observableArrayList();
-    private VoiceController voice=new VoiceController();
+    private VoiceController voice = new VoiceController();
     private int indexOfWordSelected = -1;
 }
