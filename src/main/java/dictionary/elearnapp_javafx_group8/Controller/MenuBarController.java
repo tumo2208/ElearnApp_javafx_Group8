@@ -18,6 +18,7 @@ public class MenuBarController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         addWordButton.setOnAction(event -> onAddWord());
         searchWordButton.setOnAction(event -> onSearch());
+        googleTranslateButton.setOnAction(event -> onAPI());
     }
 
     private void onSearch() {
@@ -26,5 +27,9 @@ public class MenuBarController implements Initializable {
 
     private void onAddWord() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("AddWord");
+    }
+
+    private void onAPI() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("GoogleTranslate");
     }
 }

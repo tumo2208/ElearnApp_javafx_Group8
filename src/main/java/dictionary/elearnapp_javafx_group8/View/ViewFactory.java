@@ -13,6 +13,7 @@ public class ViewFactory {
     private StringProperty selectedMenu = new SimpleStringProperty();
     private AnchorPane searchView;
     private AnchorPane addWordView;
+    private AnchorPane APIView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -42,6 +43,17 @@ public class ViewFactory {
             }
         }
         return addWordView;
+    }
+
+    public AnchorPane getAPIView() {
+        if (APIView == null) {
+            try {
+                APIView = new FXMLLoader(getClass().getResource("/FXML/API.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return APIView;
     }
 
     public void showAppWindow() {
