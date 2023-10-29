@@ -9,33 +9,23 @@
 <?import javafx.scene.layout.Pane?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
-   <children>
       <Pane layoutX="220.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0">
-         <children>
             <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="firstLanguage" layoutX="109.0" layoutY="17.0" prefHeight="17.0" prefWidth="60.0" text="Language1" />
-         </children>
       </Pane>
       <Pane layoutX="540.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0">
-         <children>
             <ImageView fx:id="flag2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="secondLanguage" layoutX="137.0" layoutY="17.0" text="Language2" />
-         </children>
       </Pane>
       <Pane layoutX="505.0" layoutY="200.0" prefHeight="300.0" prefWidth="270.0">
-         <children>
             <TextArea fx:id="secondLanguageArea" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="250.0" />
-         </children>
       </Pane>
       <Pane layoutX="186.0" layoutY="200.0" prefHeight="300.0" prefWidth="270.0">
-         <children>
             <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="250.0" />
-         </children>
       </Pane>
       <JFXButton fx:id="switchButton" layoutX="446.0" layoutY="62.0">
          <graphic>
             <FontAwesomeIconView glyphName="EXCHANGE" />
          </graphic>
       </JFXButton>
-   </children>
 </AnchorPane>

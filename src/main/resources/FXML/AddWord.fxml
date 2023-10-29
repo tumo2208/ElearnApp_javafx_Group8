@@ -24,17 +24,14 @@
             <Font size="15.0" />
          </font></Label>
       <Pane layoutX="15.0" layoutY="40.0" prefHeight="40.0" prefWidth="630.0" styleClass="new_word_field" stylesheets="@../Styles/AddWord.css">
-         <children>
               <TextField fx:id="newWordField" layoutX="110.0" layoutY="5.0" prefHeight="30.0" prefWidth="500.0" />
               <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" styleClass="label_pane" text="New word">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-         </children>
       </Pane>
       <Pane layoutX="15.0" layoutY="95.0" prefHeight="420.0" prefWidth="630.0" styleClass="definition_field" stylesheets="@../Styles/AddWord.css">
-         <children>
               <TextArea fx:id="newDefinitionArea" layoutX="10.0" layoutY="40.0" prefHeight="370.0" prefWidth="610.0">
                <cursor>
                   <Cursor fx:constant="TEXT" />
@@ -45,7 +42,6 @@
                   <Font size="16.0" />
                </font>
             </Label>
-         </children>
       </Pane>
         <Button fx:id="addNewWordButton" layoutX="548.0" layoutY="529.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" styleClass="confirm_button" stylesheets="@../Styles/AddWord.css" text="Confirm" />
     </Pane>
