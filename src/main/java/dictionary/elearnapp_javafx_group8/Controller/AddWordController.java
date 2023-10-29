@@ -9,7 +9,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.ResourceBundle;
 
@@ -43,18 +42,14 @@ public class AddWordController implements Initializable {
             Model.getInstance().getDictionary().addWord(newWord);
             Model.getInstance().getWordList().add(newWord);
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
-            Collections.sort(Model.getInstance().getWordList(), new Comparator<Word>() {
-                @Override
-                public int compare(Word w1, Word w2) {
-                    return w1.getWordTarget().compareTo(w2.getWordTarget());
-                }
-            });
+            Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
             notiLabel.setText("Add word Successfully");
+            //notiLabel.setStyleClass()
         } else {
             notiLabel.setText("Error: word is already exists");
+            //notiLabel.setStyleClass()
         }
         notiLabel.setVisible(true);
-        //notiLabel.setStyleClass()
         newWordField.clear();
         newDefinitionArea.clear();
     }

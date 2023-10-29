@@ -63,8 +63,4 @@ public class ViewFactory {
         stage.setTitle("English Learning Application");
         stage.show();
     }
-
-    public void closeStage(Stage stage) {
-        stage.close();
-    }
 }

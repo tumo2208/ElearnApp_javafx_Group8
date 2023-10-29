@@ -62,12 +62,7 @@ public class Dictionary {
     }
 
     public int Searcher(List<Word> wordList, String word) {
-        Collections.sort(wordList, new Comparator<Word>() {
-            @Override
-            public int compare(Word w1, Word w2) {
-                return w1.getWordTarget().compareTo(w2.getWordTarget());
-            }
-        });
+        wordList.sort(Comparator.comparing(Word::getWordTarget));
         int l = 0;
         int r = wordList.size() - 1;
         while (l <= r) {
@@ -89,7 +84,7 @@ public class Dictionary {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String wordTarget = bufferedReader.readLine().replace("|", "");
             String wordExplain = "";
-            String line = new String();
+            String line;
 
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.startsWith("|")) {
