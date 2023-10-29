@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="switch button fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/API.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="switch button fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +113,7 @@
       <workItem from="1698545940770" duration="753000" />
       <workItem from="1698546714408" duration="275000" />
       <workItem from="1698552016416" duration="504000" />
-      <workItem from="1698552581866" duration="678000" />
+      <workItem from="1698552581866" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -247,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698552658947</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="switch button fix">
+      <option name="closed" value="true" />
+      <created>1698553278884</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698553278884</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

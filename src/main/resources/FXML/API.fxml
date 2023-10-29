@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
+   <JFXButton fx:id="translateButton" layoutX="446.0" layoutY="519.0" text="Translate" />
       <Pane layoutX="220.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0">
             <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
             <Label fx:id="firstLanguage" layoutX="109.0" layoutY="17.0" prefHeight="17.0" prefWidth="60.0" text="Language1" />
