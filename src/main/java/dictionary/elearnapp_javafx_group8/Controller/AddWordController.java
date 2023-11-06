@@ -39,7 +39,7 @@ public class AddWordController implements Initializable {
     private void addWord() {
         Word newWord = new Word(newWordField.getText().trim(),  newDefinitionArea.getText().trim());
         if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
-            Model.getInstance().getDictionary().addWord(newWord);
+            Model.getInstance().getDictionary().addWord(newWord, dbPath);
             Model.getInstance().getWordList().add(newWord);
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
             Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
@@ -57,4 +57,6 @@ public class AddWordController implements Initializable {
         newWordField.clear();
         newDefinitionArea.clear();
     }
+
+    private final String dbPath = "src/main/resources/Database/data.txt";
 }

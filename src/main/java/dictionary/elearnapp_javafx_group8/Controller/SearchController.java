@@ -63,6 +63,10 @@ public class SearchController implements Initializable {
             String selectedWord = listView.getSelectionModel().getSelectedItem();
             indexOfWordSelected = Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), selectedWord);
             System.out.println(indexOfWordSelected);
+            if (Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(), Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget()) == -1) {
+                Model.getInstance().getHistory().addWord(Model.getInstance().getWordList().get(indexOfWordSelected), historyPath);
+                Model.getInstance().getHistoryList().add(Model.getInstance().getWordList().get(indexOfWordSelected));
+            }
             wordLabel.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
             definitionArea.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordExplain());
             if (definitionArea.getText().isEmpty()) {
@@ -83,7 +87,7 @@ public class SearchController implements Initializable {
         });
 
         deleteWordButton.setOnAction(event -> {
-            Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(), indexOfWordSelected);
+            Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(), indexOfWordSelected, dbPath);
             listViewDefault();
             listView.setItems(observableList);
             searchField.clear();
@@ -124,7 +128,7 @@ public class SearchController implements Initializable {
             Optional<ButtonType> option = editDialog.showAndWait();
             if (option.get() == ButtonType.OK) {
                 Model.getInstance().getDictionary().updateWord(Model.getInstance().getWordList(),
-                        indexOfWordSelected, editArea.getText().trim());
+                        indexOfWordSelected, editArea.getText().trim(), dbPath);
                 editDialog.close();
             } else if (option.get() == ButtonType.CANCEL) {
                 editDialog.close();
@@ -142,8 +146,8 @@ public class SearchController implements Initializable {
 
     private void listViewDefault() {
         observableList.clear();
-        for (int i = 0; i < Math.min(20, Model.getInstance().getWordList().size()); i++) {
-            observableList.add(Model.getInstance().getWordList().get(i).getWordTarget());
+        for (int i = Model.getInstance().getHistoryList().size() - 1; i >= 0; --i) {
+            observableList.add(Model.getInstance().getHistoryList().get(i).getWordTarget());
         }
         listView.setItems(observableList);
     }
@@ -151,4 +155,6 @@ public class SearchController implements Initializable {
     private ObservableList<String> observableList = FXCollections.observableArrayList();
     private final VoiceController voice = new VoiceController();
     private int indexOfWordSelected = -1;
+    private final String dbPath = "src/main/resources/Database/data.txt";
+    private final String historyPath = "src/main/resources/Database/history.txt";
 }

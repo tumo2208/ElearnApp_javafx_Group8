@@ -8,14 +8,12 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class Dictionary {
 
     private Trie trie = new Trie();
-    private final String path = "src/main/resources/Database/data.txt";
 
     public void setTrie(List<Word> wordList) {
         for (Word word : wordList) {
@@ -23,32 +21,32 @@ public class Dictionary {
         }
     }
 
-    public void addWord(Word word) {
+    public void addWord(Word word, String path) {
         try (FileWriter fileWriter = new FileWriter(path, true);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
             bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
-            bufferedWriter.newLine();
+            //bufferedWriter.newLine();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void deleteWord(List<Word> wordList, int index) {
+    public void deleteWord(List<Word> wordList, int index, String path) {
         try {
             wordList.remove(index);
             trie = new Trie();
             this.setTrie(wordList);
-            this.exportToFile(wordList);
+            this.exportToFile(wordList, path);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void updateWord(List<Word> wordList, int index,
-                           String wordExplain) {
+                           String wordExplain, String path) {
         try {
             wordList.get(index).setWordExplain(wordExplain);
-            this.exportToFile(wordList);
+            this.exportToFile(wordList, path);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -78,7 +76,7 @@ public class Dictionary {
         return -1;
     }
 
-    public void insertFromFile(List<Word> wordList) {
+    public void insertFromFile(List<Word> wordList, String path) {
         try {
             FileReader fileReader = new FileReader(path);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -103,7 +101,7 @@ public class Dictionary {
         }
     }
 
-    public void exportToFile(List<Word> wordList) {
+    public void exportToFile(List<Word> wordList, String path) {
         try {
             FileWriter fileWriter = new FileWriter(path);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);

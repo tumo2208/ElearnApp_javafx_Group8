@@ -28,11 +28,19 @@ public class APIController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        try {
+            vietnamFlag = new Image("src/main/resources/Images/vietnameseFlag.png");
+            englandFlag = new Image("src/main/resources/Images/englishFlag.png");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         translateButton.setDisable(true);
         secondLanguageArea.setEditable(false);
         firstLanguage.setText("English");
         secondLanguage.setText("Vietnamese");
         firstLanguageArea.setOnKeyTyped(keyEvent -> translateButton.setDisable(firstLanguageArea.getText().isEmpty()));
+        //flag1.setImage(englandFlag);
+        //flag2.setImage(vietnamFlag);
 
         switchButton.setOnAction(event -> {
             firstLanguageArea.clear();
@@ -104,6 +112,6 @@ public class APIController implements Initializable {
 
     private String sourceLanguage = "en";
     private String toLanguage = "vi";
-    //private Image vietnamFlag = new Image();
-    //private Image englandFlag = new Image();
+    private Image vietnamFlag;
+    private Image englandFlag;
 }
