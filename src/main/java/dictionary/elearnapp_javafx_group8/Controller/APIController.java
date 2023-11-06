@@ -29,8 +29,8 @@ public class APIController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            vietnamFlag = new Image("src/main/resources/Images/vietnameseFlag.png");
-            englandFlag = new Image("src/main/resources/Images/englishFlag.png");
+            vietnamFlag = new Image(getClass().getResource("/Images/vietnameseFlag.png").toString());
+            englandFlag = new Image(getClass().getResource("/Images/englishFlag.png").toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -39,8 +39,8 @@ public class APIController implements Initializable {
         firstLanguage.setText("English");
         secondLanguage.setText("Vietnamese");
         firstLanguageArea.setOnKeyTyped(keyEvent -> translateButton.setDisable(firstLanguageArea.getText().isEmpty()));
-        //flag1.setImage(englandFlag);
-        //flag2.setImage(vietnamFlag);
+        flag1.setImage(englandFlag);
+        flag2.setImage(vietnamFlag);
 
         switchButton.setOnAction(event -> {
             firstLanguageArea.clear();
@@ -51,15 +51,15 @@ public class APIController implements Initializable {
                 toLanguage = "en";
                 firstLanguage.setText("Vietnamese");
                 secondLanguage.setText("English");
-                //flag1.setImage(vietnamFlag);
-                //flag2.setImage(englandFlag);
+                flag1.setImage(vietnamFlag);
+                flag2.setImage(englandFlag);
             } else {
                 sourceLanguage = "en";
                 toLanguage = "vi";
                 firstLanguage.setText("English");
                 secondLanguage.setText("Vietnamese");
-                //flag1.setImage(englandFlag);
-                //flag2.setImage(vietnamFlag);
+                flag1.setImage(englandFlag);
+                flag2.setImage(vietnamFlag);
             }
         });
 

@@ -12,7 +12,12 @@ public class History extends Dictionary {
 
     @Override
     public void deleteWord(List<Word> wordList, int index, String path) {
-        super.deleteWord(wordList, index, path);
+        try {
+            wordList.remove(index);
+            this.exportToFile(wordList, path);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

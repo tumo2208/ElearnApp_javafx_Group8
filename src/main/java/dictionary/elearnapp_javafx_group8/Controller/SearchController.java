@@ -66,6 +66,9 @@ public class SearchController implements Initializable {
             if (Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(), Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget()) == -1) {
                 Model.getInstance().getHistory().addWord(Model.getInstance().getWordList().get(indexOfWordSelected), historyPath);
                 Model.getInstance().getHistoryList().add(Model.getInstance().getWordList().get(indexOfWordSelected));
+                if (Model.getInstance().getHistoryList().size() > 20) {
+                    Model.getInstance().getHistory().deleteWord(Model.getInstance().getHistoryList(), 0, historyPath);
+                }
             }
             wordLabel.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
             definitionArea.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordExplain());
