@@ -18,6 +18,7 @@ public class AppUIController implements Initializable {
                 case "AddWord" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getAddWordView());
                 case "Search" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getSearchView());
                 case "GoogleTranslate" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getAPIView());
+                case "Game" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getGameView());
             }
         });
     }

@@ -1,10 +1,3 @@
-|zymase
-/'zaimeis/
-* danh từ
-- (sinh vật học) zymaza
-|fucker
-- interj
-- đồ ngốc! đồ ngu!
 |architect
 /'ɑ:kitekt/
 * danh từ
@@ -791,3 +784,33 @@ mark
 - reference m. (máy tính) dấu hiệu kiểm tra; dấu hiệu cơ sở
 - quotation m.s dấu ngoặc kép (&amp;amp;quot; &amp;amp;quot;)
 - timing m. dấu hiệu thời gian
+|fuck
+*danh từ
+- sự giao cấu
+- bạn tình
+- interj
+- mẹ kiếp!
+*động từ
+- giao cấu
+|add
+/æd/
+* động từ
+- ((thường) + up,  together) cộng
+- thêm vào, làm tăng thêm
+= add some more hot water to your tea+ cho thêm ít nước nóng nữa vào tách trà của anh
+= music added to our joy+ âm nhạc làm tăng thêm niềm vui của chúng ta
+- nói thêm
+= he added that+ anh ta nói thêm rằng
+- (+ in) kế vào, tính vào, gộp vào
+!to add fuel to the fire
+- (xem) fire
+!to add insult to injury
+- miệng chửi tay đấm
+
+add
+- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
+
+add
+- cộng vào, thêm vào, bổ sung
+- a. together, a. up cộng lại lấy tổng|add carry
+- (Tech) số nhớ khi cộng

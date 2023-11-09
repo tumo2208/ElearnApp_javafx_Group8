@@ -14,6 +14,7 @@ public class ViewFactory {
     private AnchorPane searchView;
     private AnchorPane addWordView;
     private AnchorPane APIView;
+    private AnchorPane gameView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -54,6 +55,17 @@ public class ViewFactory {
             }
         }
         return APIView;
+    }
+
+    public AnchorPane getGameView() {
+        if (gameView == null) {
+            try {
+                gameView = new FXMLLoader(getClass().getResource("/FXML/Game.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return gameView;
     }
 
     public void showAppWindow() {

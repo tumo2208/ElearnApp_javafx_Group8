@@ -19,6 +19,7 @@ public class MenuBarController implements Initializable {
         addWordButton.setOnAction(event -> onAddWord());
         searchWordButton.setOnAction(event -> onSearch());
         googleTranslateButton.setOnAction(event -> onAPI());
+        gameButton.setOnAction(event -> onGame());
     }
 
     private void onSearch() {
@@ -31,5 +32,9 @@ public class MenuBarController implements Initializable {
 
     private void onAPI() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("GoogleTranslate");
+    }
+
+    private void onGame() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
     }
 }
