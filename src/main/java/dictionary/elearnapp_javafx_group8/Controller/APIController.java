@@ -34,13 +34,9 @@ public class APIController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        translateButton.setDisable(true);
+
         secondLanguageArea.setEditable(false);
-        firstLanguage.setText("English");
-        secondLanguage.setText("Vietnamese");
-        firstLanguageArea.setOnKeyTyped(keyEvent -> translateButton.setDisable(firstLanguageArea.getText().isEmpty()));
-        flag1.setImage(englandFlag);
-        flag2.setImage(vietnamFlag);
+        resetAllAPI();
 
         switchButton.setOnAction(event -> {
             firstLanguageArea.clear();
@@ -70,6 +66,7 @@ public class APIController implements Initializable {
                 e.printStackTrace();
             }
         });
+
     }
 
     private void googleTranslate() throws IOException {
@@ -108,6 +105,16 @@ public class APIController implements Initializable {
 
         translateText = translateText.substring(0, translateText.length() - 1);
         secondLanguageArea.setText(translateText);
+    }
+
+    private void resetAllAPI() {
+        translateButton.setDisable(true);
+        firstLanguage.setText("English");
+        secondLanguage.setText("Vietnamese");
+        flag1.setImage(englandFlag);
+        flag2.setImage(vietnamFlag);
+        firstLanguageArea.clear();
+        secondLanguageArea.clear();
     }
 
     private String sourceLanguage = "en";

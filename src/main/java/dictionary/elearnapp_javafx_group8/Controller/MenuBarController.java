@@ -13,6 +13,7 @@ public class MenuBarController implements Initializable {
     public Button gameButton;
     public Button googleTranslateButton;
     public Button searchWordButton;
+    public Button saveChangeButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -20,6 +21,7 @@ public class MenuBarController implements Initializable {
         searchWordButton.setOnAction(event -> onSearch());
         googleTranslateButton.setOnAction(event -> onAPI());
         gameButton.setOnAction(event -> onGame());
+        saveChangeButton.setOnAction(event -> onSave());
     }
 
     private void onSearch() {
@@ -36,5 +38,9 @@ public class MenuBarController implements Initializable {
 
     private void onGame() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
+    }
+
+    private void onSave() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("Save");
     }
 }

@@ -21,8 +21,7 @@ public class AddWordController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
-        notiLabel.setVisible(false);
+        resetAllAdd();
 
         newWordField.setOnKeyTyped(keyEvent -> {
             addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
@@ -34,6 +33,7 @@ public class AddWordController implements Initializable {
         });
 
         addNewWordButton.setOnAction(event -> addWord());
+
     }
 
     private void addWord() {
@@ -56,6 +56,14 @@ public class AddWordController implements Initializable {
         notiLabel.setVisible(true);
         newWordField.clear();
         newDefinitionArea.clear();
+    }
+
+    private void resetAllAdd() {
+        newWordField.clear();
+        newDefinitionArea.clear();
+        addNewWordButton.setDisable(true);
+        notiLabel.setText("");
+        notiLabel.setVisible(false);
     }
 
     private final String dbPath = "src/main/resources/Database/data.txt";

@@ -15,7 +15,7 @@ public class ViewFactory {
     private AnchorPane addWordView;
     private AnchorPane APIView;
     private AnchorPane gameView;
-    private AnchorPane gamePhuocView;
+    private AnchorPane saveView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -26,57 +26,58 @@ public class ViewFactory {
     }
 
     public AnchorPane getSearchView() {
-        if (searchView == null) {
+        //if (searchView == null) {
             try {
                 searchView = new FXMLLoader(getClass().getResource("/FXML/Search.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        //}
         return searchView;
     }
 
     public AnchorPane getAddWordView() {
-        if (addWordView == null) {
+        //if (addWordView == null) {
             try {
                 addWordView = new FXMLLoader(getClass().getResource("/FXML/AddWord.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        //}
         return addWordView;
     }
 
     public AnchorPane getAPIView() {
-        if (APIView == null) {
+        //if (APIView == null) {
             try {
                 APIView = new FXMLLoader(getClass().getResource("/FXML/API.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        //}
         return APIView;
     }
 
     public AnchorPane getGameView() {
-        if (gameView == null) {
+        //if (gameView == null) {
             try {
                 gameView = new FXMLLoader(getClass().getResource("/FXML/Game.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        //}
         return gameView;
     }
-    public AnchorPane getGamePhuocView(){
-        if (gamePhuocView==null){
+
+    public AnchorPane getSaveView() {
+        //if (saveView == null) {
             try {
-                gamePhuocView=new FXMLLoader(getClass().getResource("/FXML/GamePhuoc.fxml")).load();
+                saveView = new FXMLLoader(getClass().getResource("/FXML/Save.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
-        return gamePhuocView;
+        //}
+        return saveView;
     }
 
     public void showAppWindow() {
