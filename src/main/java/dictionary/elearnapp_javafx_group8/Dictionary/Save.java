@@ -1,10 +1,8 @@
 package dictionary.elearnapp_javafx_group8.Dictionary;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class History extends Dictionary {
+public class Save extends Dictionary {
     @Override
     public void addWord(Word word, String path) {
         super.addWord(word, path);
@@ -27,12 +25,7 @@ public class History extends Dictionary {
 
     @Override
     public int Searcher(List<Word> wordList, String word) {
-        for (int i = 0; i < wordList.size(); ++i) {
-            if (wordList.get(i).getWordTarget().equals(word)) {
-                return i;
-            }
-        }
-        return -1;
+        return super.Searcher(wordList, word);
     }
 
     @Override

@@ -1,0 +1,42 @@
+.save_background {
+    -fx-background-color: #EEEEEE;
+}
+
+.flash_card {
+    -fx-background-color: #00FF00;
+    -fx-alignment: center;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    /*-fx-border-color: linear-gradient(to top right, #DC143C, #FFFFFF, #0000FF);*/
+    -fx-effect: dropshadow(three-pass-box, #0000FF, 15, 0, 0, 5);
+}
+
+.flash_card Label {
+    -fx-background-color: transparent;
+    -fx-wrap-text: true;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-font-size: 3em;
+}
+
+.left_right_bar {
+    -fx-background-color: transparent;
+}
+
+.left_right_bar Button {
+    -fx-background-color: transparent;
+}
+
+.left_right_bar Button:hover {
+    -fx-cursor: hand;
+}
+
+.left_right_bar Label {
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-text-fill: #000000;
+    -fx-font-family: Papyrus;
+    -fx-font-size: 2em;
+}
