@@ -18,7 +18,6 @@ Duck.Vịt
 Chicken.Gà
 Rabbit.Thỏ
 Snake.Rắn
-Spider.Nhện
 Ant.Kiến
 Bee.Ong
 Whale.Cá voi
@@ -27,14 +26,10 @@ Octopus.Bạch tuộc
 Crocodile.Cá sấu
 Turtle.Rùa
 Lizard.Thằn lằn
-Snake.Rắn
 Frog.Ếch
 Toad.Cóc
 Snail.Ốc sên
 Slug.Ốc sên đất
 Beetle.Sâu bọ
 Spider.Nhện
-Ant.Kiến
-Bee.Ong
 Fly.Ruồi
-Mosquito.Muỗi
