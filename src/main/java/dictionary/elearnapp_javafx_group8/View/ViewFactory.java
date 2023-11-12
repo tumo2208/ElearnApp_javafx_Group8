@@ -16,6 +16,9 @@ public class ViewFactory {
     private AnchorPane APIView;
     private AnchorPane gameView;
     private AnchorPane saveView;
+    private AnchorPane memoriesView;
+    private AnchorPane catchTheWordView;
+    private AnchorPane playGameTuView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -78,6 +81,34 @@ public class ViewFactory {
             }
         //}
         return saveView;
+    }
+
+    public AnchorPane getMemoriesView() {
+        try {
+            memoriesView = new FXMLLoader(getClass().getResource("/FXML/GamePhuoc/Memories.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return memoriesView;
+    }
+
+    public AnchorPane getCatchTheWordView() {
+        try {
+            catchTheWordView = new FXMLLoader(getClass().getResource("/FXML/GameTu/CatchTheWord.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return catchTheWordView;
+    }
+
+    public AnchorPane getPlayGameTuView() {
+        try {
+            playGameTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/ChooseLevel.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return playGameTuView;
     }
 
     public void showAppWindow() {

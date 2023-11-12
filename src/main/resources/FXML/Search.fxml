@@ -14,7 +14,7 @@
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
     <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="0.0">
         <Pane layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="227.0" styleClass="search-box" stylesheets="@../Styles/Search.css">
-            <TextField fx:id="searchField" layoutX="33.0" layoutY="3.0" prefHeight="39.0" prefWidth="159.0" stylesheets="@../Styles/Search.css" />
+            <TextField fx:id="searchField" layoutX="33.0" layoutY="3.0" prefHeight="39.0" prefWidth="159.0" promptText="Enter your word here..." stylesheets="@../Styles/Search.css" />
             <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="27.0" />
             <Button fx:id="deleteSearchButton" alignment="CENTER" layoutX="192.0" layoutY="3.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="36.0" stylesheets="@../Styles/Search.css">
                 <graphic>

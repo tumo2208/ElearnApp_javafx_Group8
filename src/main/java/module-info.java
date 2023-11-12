@@ -10,5 +10,7 @@ module dictionary.elearnapp_javafx_group8 {
     opens dictionary.elearnapp_javafx_group8 to javafx.fxml;
     exports dictionary.elearnapp_javafx_group8;
     exports dictionary.elearnapp_javafx_group8.Controller;
+    exports dictionary.elearnapp_javafx_group8.Controller.GameTu;
+    exports dictionary.elearnapp_javafx_group8.Controller.GamePhuoc;
 
 }
