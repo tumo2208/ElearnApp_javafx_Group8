@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
-   <JFXButton fx:id="translateButton" layoutX="446.0" layoutY="519.0" text="Translate" />
-      <Pane layoutX="220.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0">
-            <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="firstLanguage" layoutX="109.0" layoutY="17.0" prefHeight="17.0" prefWidth="60.0" text="Language1" />
-      </Pane>
-      <Pane layoutX="540.0" layoutY="50.0" prefHeight="50.0" prefWidth="200.0">
-            <ImageView fx:id="flag2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="secondLanguage" layoutX="137.0" layoutY="17.0" text="Language2" />
-      </Pane>
-      <Pane layoutX="505.0" layoutY="200.0" prefHeight="300.0" prefWidth="270.0">
-            <TextArea fx:id="secondLanguageArea" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="250.0" />
-      </Pane>
-      <Pane layoutX="186.0" layoutY="200.0" prefHeight="300.0" prefWidth="270.0">
-            <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="250.0" />
-      </Pane>
-      <JFXButton fx:id="switchButton" layoutX="446.0" layoutY="62.0">
-         <graphic>
-            <FontAwesomeIconView glyphName="EXCHANGE" />
-         </graphic>
-      </JFXButton>
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="api-background" stylesheets="@../Styles/API.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
+    <Pane layoutX="290.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
+        <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+       <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="first-language" stylesheets="@../Styles/API.css">
+           <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+           <Label fx:id="firstLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="ENGLISH">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+       </Pane>
+    </Pane>
+    <Pane layoutX="630.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
+        <TextArea fx:id="secondLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+       <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="second-language" stylesheets="@../Styles/API.css">
+           <ImageView fx:id="flag2" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+           <Label fx:id="secondLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="VIETNAMESE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+       </Pane>
+    </Pane>
+    <Button fx:id="switchButton" layoutX="787.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0">
+        <graphic>
+            <FontAwesomeIconView glyphName="EXCHANGE" text="" />
+        </graphic>
+    </Button>
+    <Button fx:id="translateButton" layoutX="843.0" layoutY="525.0" mnemonicParsing="false" styleClass="translate-button" stylesheets="@../Styles/API.css" text="Translate" />
 </AnchorPane>

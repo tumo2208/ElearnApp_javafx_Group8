@@ -12,7 +12,7 @@ public class Trie {
 
     public void insertWord(String word) {
         TrieNode current = root;
-        for (int i = 0; i < word.length(); i++) {
+        for (int i = 0; i < word.length(); ++i) {
             char c = word.charAt(i);
             TrieNode node = current.children.get(c);
             if (node == null) {

@@ -9,7 +9,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.ResourceBundle;
 
@@ -40,22 +39,28 @@ public class AddWordController implements Initializable {
     private void addWord() {
         Word newWord = new Word(newWordField.getText().trim(),  newDefinitionArea.getText().trim());
         if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
-            Model.getInstance().getDictionary().addWord(newWord);
+            Model.getInstance().getDictionary().addWord(newWord, dbPath);
             Model.getInstance().getWordList().add(newWord);
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
-            Collections.sort(Model.getInstance().getWordList(), new Comparator<Word>() {
-                @Override
-                public int compare(Word w1, Word w2) {
-                    return w1.getWordTarget().compareTo(w2.getWordTarget());
-                }
-            });
+            Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
             notiLabel.setText("Add word Successfully");
+            notiLabel.setStyle("-fx-background-color: #D9F6B1;" +
+                    "-fx-text-fill: #098000;" +
+                    "-fx-font-family: \"Calibri Light\";" +
+                    "-fx-font-size: 15px;" +
+                    "-fx-font-weight: bold");
         } else {
             notiLabel.setText("Error: word is already exists");
+            notiLabel.setStyle("-fx-background-color: #D9F6B1;" +
+                    "-fx-text-fill: #ff0000;" +
+                    "-fx-font-family: \"Calibri Light\";" +
+                    "-fx-font-size: 15px;" +
+                    "-fx-font-weight: bold");
         }
         notiLabel.setVisible(true);
-        //notiLabel.setStyleClass()
         newWordField.clear();
         newDefinitionArea.clear();
     }
+
+    private final String dbPath = "src/main/resources/Database/data.txt";
 }

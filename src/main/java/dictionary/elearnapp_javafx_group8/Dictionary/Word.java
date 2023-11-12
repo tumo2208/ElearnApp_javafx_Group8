@@ -4,15 +4,12 @@ public class Word {
 
     private String wordTarget;
     private String wordExplain;
-
-    public Word() {
-        this.setWordTarget("");
-        this.setWordExplain("");
-    }
+    private boolean isSaved;
 
     public Word(String wordTarget, String wordExplain) {
         this.setWordTarget(wordTarget);
         this.setWordExplain(wordExplain);
+        isSaved = false;
     }
 
     public String getWordExplain() {
@@ -31,12 +28,20 @@ public class Word {
         this.wordTarget = wordTarget;
     }
 
+    public boolean isSaved() {
+        return isSaved;
+    }
+
+    public void setSaved(boolean saved) {
+        isSaved = saved;
+    }
+
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) return true;
         if (obj == null) return false;
-        if (!(obj.getClass().equals(this.getClass()))) return false;
+        if (obj.getClass() != this.getClass()) return false;
         Word newWord = (Word) obj;
-        if (this == newWord) return true;
         return this.getWordExplain().equals(newWord.getWordExplain())
                 && this.getWordTarget().equals(newWord.getWordTarget());
     }

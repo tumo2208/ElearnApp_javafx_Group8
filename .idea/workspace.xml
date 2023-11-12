@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="switch button fix" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="Add History">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/VoiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/addWordBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/backgroundForAll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/API.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM_[Changes]1/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_23_2023_9_32_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_21_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_21_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM_[Changes]1/wordPronunciation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_25_2023_1_27_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_19_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_27_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_27_PM_[Changes]/wordPronunciation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_27_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM_[Changes]1/wordPronunciation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_25_2023_1_30_PM__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/API.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/API.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +59,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -35,27 +82,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Phong",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/Download/jfoenix-9.0.10.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "io.unthrottled.amii.config.ui.PluginSettingsUI",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Phong&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/ElearnApp_javafx_Group8&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.App" />
@@ -105,15 +153,35 @@
       <workItem from="1698334628539" duration="74000" />
       <workItem from="1698334833710" duration="2665000" />
       <workItem from="1698337577649" duration="75000" />
-      <workItem from="1698397386019" duration="5145000" />
-      <workItem from="1698457619498" duration="2340000" />
-      <workItem from="1698481228484" duration="2972000" />
-      <workItem from="1698504486720" duration="1548000" />
-      <workItem from="1698545189103" duration="738000" />
-      <workItem from="1698545940770" duration="753000" />
-      <workItem from="1698546714408" duration="275000" />
-      <workItem from="1698552016416" duration="504000" />
-      <workItem from="1698552581866" duration="704000" />
+      <workItem from="1698397386019" duration="5234000" />
+      <workItem from="1698421873832" duration="2507000" />
+      <workItem from="1698485589568" duration="769000" />
+      <workItem from="1698486418893" duration="389000" />
+      <workItem from="1698488220186" duration="43000" />
+      <workItem from="1698488277880" duration="75000" />
+      <workItem from="1698502795894" duration="3731000" />
+      <workItem from="1698547847684" duration="1382000" />
+      <workItem from="1698549252787" duration="1345000" />
+      <workItem from="1698550832595" duration="6394000" />
+      <workItem from="1698734302837" duration="727000" />
+      <workItem from="1699148284604" duration="4000" />
+      <workItem from="1699194821889" duration="2782000" />
+      <workItem from="1699237608813" duration="3312000" />
+      <workItem from="1699253272084" duration="829000" />
+      <workItem from="1699258463827" duration="2215000" />
+      <workItem from="1699272311660" duration="2198000" />
+      <workItem from="1699495334595" duration="767000" />
+      <workItem from="1699496898454" duration="583000" />
+      <workItem from="1699540457747" duration="7074000" />
+      <workItem from="1699581875951" duration="2046000" />
+      <workItem from="1699585553689" duration="4505000" />
+      <workItem from="1699600502511" duration="4663000" />
+      <workItem from="1699606454870" duration="3803000" />
+      <workItem from="1699666474549" duration="3715000" />
+      <workItem from="1699709231049" duration="8243000" />
+      <workItem from="1699756257156" duration="7482000" />
+      <workItem from="1699786315359" duration="2601000" />
+      <workItem from="1699795070398" duration="846000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -203,55 +271,71 @@
       <option name="project" value="LOCAL" />
       <updated>1698337362505</updated>
     </task>
-    <task id="LOCAL-00012" summary="Add word update layout">
+    <task id="LOCAL-00012" summary="fix">
       <option name="closed" value="true" />
-      <created>1698422713644</created>
+      <created>1698402615979</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1698422713644</updated>
+      <updated>1698402615979</updated>
     </task>
-    <task id="LOCAL-00013" summary="Add word update layout">
+    <task id="LOCAL-00013" summary="fix AddWord layout">
       <option name="closed" value="true" />
-      <created>1698484617397</created>
+      <created>1698485705559</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1698484617397</updated>
+      <updated>1698485705561</updated>
     </task>
-    <task id="LOCAL-00014" summary="API scene">
+    <task id="LOCAL-00014" summary="fix AddWord layout">
       <option name="closed" value="true" />
-      <created>1698506357747</created>
+      <created>1698485771628</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1698506357747</updated>
+      <updated>1698485771628</updated>
     </task>
-    <task id="LOCAL-00015" summary="swap button fix">
+    <task id="LOCAL-00015" summary="test git">
       <option name="closed" value="true" />
-      <created>1698552509703</created>
+      <created>1698486513346</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1698552509703</updated>
+      <updated>1698486513346</updated>
     </task>
-    <task id="LOCAL-00016" summary="switch button fix">
+    <task id="LOCAL-00016" summary="Add Edit Word function">
       <option name="closed" value="true" />
-      <created>1698552658947</created>
+      <created>1698507805345</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1698552658947</updated>
+      <updated>1698507805345</updated>
     </task>
-    <task id="LOCAL-00017" summary="switch button fix">
+    <task id="LOCAL-00017" summary="Add Voice Function">
       <option name="closed" value="true" />
-      <created>1698553278884</created>
+      <created>1698549865045</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1698553278884</updated>
+      <updated>1698549865045</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add API">
+      <option name="closed" value="true" />
+      <created>1698557562253</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698557562253</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add History">
+      <option name="closed" value="true" />
+      <created>1699240598815</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699240598815</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,10 +348,17 @@
     <MESSAGE value="rework" />
     <MESSAGE value="Change from Search to AddWord" />
     <MESSAGE value="Add Search function" />
-    <MESSAGE value="Add word update layout" />
-    <MESSAGE value="API scene" />
-    <MESSAGE value="swap button fix" />
-    <MESSAGE value="switch button fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch button fix" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="fix AddWord layout" />
+    <MESSAGE value="test git" />
+    <MESSAGE value="Add Edit Word function" />
+    <MESSAGE value="Add Voice Function" />
+    <MESSAGE value="Add API" />
+    <MESSAGE value="Add History" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add History" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

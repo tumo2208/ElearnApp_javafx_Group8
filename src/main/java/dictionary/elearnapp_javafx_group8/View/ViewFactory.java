@@ -13,6 +13,8 @@ public class ViewFactory {
     private StringProperty selectedMenu = new SimpleStringProperty();
     private AnchorPane searchView;
     private AnchorPane addWordView;
+    private AnchorPane APIView;
+    private AnchorPane gameView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -44,6 +46,28 @@ public class ViewFactory {
         return addWordView;
     }
 
+    public AnchorPane getAPIView() {
+        if (APIView == null) {
+            try {
+                APIView = new FXMLLoader(getClass().getResource("/FXML/API.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return APIView;
+    }
+
+    public AnchorPane getGameView() {
+        if (gameView == null) {
+            try {
+                gameView = new FXMLLoader(getClass().getResource("/FXML/Game.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return gameView;
+    }
+
     public void showAppWindow() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/AppUI.fxml"));
         AppUIController appUIController = new AppUIController();
@@ -62,9 +86,5 @@ public class ViewFactory {
         stage.setScene(scene);
         stage.setTitle("English Learning Application");
         stage.show();
-    }
-
-    public void closeStage(Stage stage) {
-        stage.close();
     }
 }

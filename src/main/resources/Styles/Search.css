@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Valoon;
+    src: url(../Fonts/Valoon.ttf) format('truetype');
+}
+
 .search {
-    -fx-background-color: #FFDBA8;
+    -fx-background-color: #FFE2E2;
 }
 
 .search-box {
@@ -7,11 +12,11 @@
     -fx-alignment: center;
     -fx-background-radius: 30;
     -fx-border-radius: 30;
-    -fx-effect: dropshadow(three-pass-box, #000000, 15, 0, 0, 2) ;
+    -fx-effect: dropshadow(three-pass-box, #4c4c4c, 15, 0, 0, 2);
 }
 
 .search-box FontAwesomeIconView {
-    -fx-fill: #FFB753;
+    -fx-fill: #fac57f;
 }
 
 .search-box TextField {
@@ -30,7 +35,7 @@
 }
 
 .search-box Button FontAwesomeIconView {
-    -fx-fill: #FFB753;
+    -fx-fill: #fac57f;
 }
 
 .list-view {
@@ -40,30 +45,59 @@
     -fx-font-family: "Calibri Light";
     -fx-font-size: 1.2em;
     -fx-padding: 5;
+    overflow: scroll;
+    -fx-effect: dropshadow(three-pass-box, #4c4c4c, 15, 0, 0, 2);
+}
+
+.list-view .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+/*.list-view .scroll-bar:vertical .decrement-button, .list-view .scroll-bar:vertical .decrement-arrow,
+.list-view .scroll-bar:vertical .increment-button, .list-view .scroll-bar:vertical .increment-arrow {
+    -fx-opacity: 0;
+}*/
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #c8c8c8;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
 }
 
 .list-view .list-cell:even {
-    -fx-background-color: #FFD08F;
+    -fx-background-color: #ffffde;
 }
 
 .list-view .list-cell:odd {
-    -fx-background-color: #FFDBA8;
+    -fx-background-color: #ffecd5;
 }
 
 .list-view .list-cell:filled:hover,
 .list-view .list-cell:filled:selected {
-    -fx-background-color: #FFF200;
+    -fx-background-color: #ebecae;
     -fx-text-fill: #000000;
     -fx-font-weight: bold;
 }
 
 .searched-word-box {
-    -fx-background-color: #FFC675;
+    -fx-background-color: #FFC7C7;
     -fx-background-radius: 20;
 }
 
 .searched-word-box Button {
     -fx-background-color: transparent;
+}
+
+.searched-word-box Label {
+    -fx-font-size: 24px;
+    -fx-font-family: Valoon;
+    -fx-text-fill: #36346C;
 }
 
 .definition-area {

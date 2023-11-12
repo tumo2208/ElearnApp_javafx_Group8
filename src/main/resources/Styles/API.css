@@ -1,0 +1,60 @@
+.api-background {
+    -fx-background-color: #E2E2FF;
+}
+
+.language-area {
+    -fx-background-color: #fff;
+    -fx-background-radius: 15;
+    -fx-border-width: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #8785A2;
+}
+
+.language-area TextArea {
+
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.2em;
+}
+
+.language-area TextArea .content {
+    -fx-background-color: #fff;
+}
+
+.language-area TextArea:focused .content {
+    -fx-background-color: #fff;
+}
+
+.first-language {
+    -fx-background-color: #FFE2E2;
+    -fx-background-radius: 20;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: #8785A2;
+}
+
+.first-language Label, .second-language Label {
+    -fx-font-weight: bold;
+}
+
+.second-language {
+    -fx-background-color: #E2FFE2;
+    -fx-background-radius: 20;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: #8785A2;
+}
+
+.button {
+    -fx-background-color: #FFFFE2;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #f3f3b1;
+    -fx-border-color: #000;
+    -fx-border-radius: 10;
+    -fx-border-width: 0.7;
+}

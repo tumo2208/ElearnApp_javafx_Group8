@@ -4,16 +4,16 @@ import dictionary.elearnapp_javafx_group8.Trie.Trie;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Comparator;
 import java.util.List;
 
 public class Dictionary {
 
     private Trie trie = new Trie();
-    private final String path = "src/main/resources/Database/data.txt";
 
     public void setTrie(List<Word> wordList) {
         for (Word word : wordList) {
@@ -21,46 +21,32 @@ public class Dictionary {
         }
     }
 
-    public List<Word> sortWordList(List<Word> wordList) {
-        List<Word> newWordList = new ArrayList<>(wordList);
-
-        Collections.sort(newWordList, new Comparator<Word>() {
-            @Override
-            public int compare(Word w1, Word w2) {
-                return w1.getWordTarget().compareTo(w2.getWordTarget());
-            }
-        });
-
-        return newWordList;
-    }
-
-    public void addWord(Word word) {
+    public void addWord(Word word, String path) {
         try (FileWriter fileWriter = new FileWriter(path, true);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
             bufferedWriter.write("|" + word.getWordTarget() + "\n" + word.getWordExplain());
-            bufferedWriter.newLine();
+            //bufferedWriter.newLine();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void deleteWord(List<Word> wordList, int index) {
+    public void deleteWord(List<Word> wordList, int index, String path) {
         try {
             wordList.remove(index);
             trie = new Trie();
             this.setTrie(wordList);
-            this.exportToFile(wordList);
+            this.exportToFile(wordList, path);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     public void updateWord(List<Word> wordList, int index,
-                           String wordTarget, String wordExplain) {
+                           String wordExplain, String path) {
         try {
-            wordList.get(index).setWordTarget(wordTarget);
             wordList.get(index).setWordExplain(wordExplain);
-            this.exportToFile(wordList);
+            this.exportToFile(wordList, path);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -74,7 +60,7 @@ public class Dictionary {
     }
 
     public int Searcher(List<Word> wordList, String word) {
-        this.sortWordList(wordList);
+        wordList.sort(Comparator.comparing(Word::getWordTarget));
         int l = 0;
         int r = wordList.size() - 1;
         while (l <= r) {
@@ -90,13 +76,13 @@ public class Dictionary {
         return -1;
     }
 
-    public void insertFromFile(List<Word> wordList) {
+    public void insertFromFile(List<Word> wordList, String path) {
         try {
             FileReader fileReader = new FileReader(path);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String wordTarget = bufferedReader.readLine().replace("|", "");
             String wordExplain = "";
-            String line = new String();
+            String line;
 
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.startsWith("|")) {
@@ -115,7 +101,7 @@ public class Dictionary {
         }
     }
 
-    public void exportToFile(List<Word> wordList) {
+    public void exportToFile(List<Word> wordList, String path) {
         try {
             FileWriter fileWriter = new FileWriter(path);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
