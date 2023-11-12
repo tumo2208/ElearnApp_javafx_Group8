@@ -1,9 +1,9 @@
 .add_word_container {
-    -fx-background-color: #D9F6B1;
+    -fx-background-color: #FFE2E2;
 }
 
 .logo_add_word_container {
-    -fx-background-color: #B1F6F0;
+    -fx-background-color: transparent;
     -fx-padding: 10;
     -fx-alignment: center;
 }
@@ -17,15 +17,18 @@
 }
 
 .new_word_field {
-    -fx-background-color: #e5e5e5;
+    -fx-background-color: #f3f3f3;
     box-shadow: inset 2px 2px 3px 0 #555;
     -fx-background-radius: 20;
 
 }
 
 .new_word_field Label {
-    -fx-background-color: #CEB1F6;
+    -fx-background-color: #8785A2;
     -fx-background-radius: 20 0 0 20;
+    -fx-font-family: "Showcard Gothic";
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
 }
 
 .new_word_field TextField {
@@ -33,23 +36,24 @@
 }
 
 .definition_field {
-    -fx-background-color: #fff;
+    -fx-background-color: #f3f3f3;
     -fx-background-radius: 20;
 }
 
 .definition_field TextArea {
-    -fx-background-color: transparent;
+    -fx-background-color: #f3f3f3;
+    -fx-control-inner-background: #f3f3f3;
     -fx-text-fill: #000000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 1.2em;
 }
 
 .definition_field TextArea .content {
-    -fx-background-color: #fff;
+    -fx-background-color: #f3f3f3;
 }
 
 .definition_field TextArea:focused .content {
-    -fx-background-color: #fff;
+    -fx-background-color: #f3f3f3;
 }
 
 .definition_field TextArea:focused, input:focused{
@@ -57,8 +61,11 @@
 }
 
 .definition_field Label {
-    -fx-background-color: #e5e5e5;
+    -fx-background-color: #8785A2;
     -fx-background-radius: 20 20 0 0;
+    -fx-font-family: "Showcard Gothic";
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
 }
 
 .error_notification {
@@ -75,8 +82,5 @@
 
 .confirm_button {
     -fx-background-radius: 20;
-}
-
-.confirm_button:hover {
-    -fx-cursor: hand;
+    -fx-background-color: #B1D9F6;
 }

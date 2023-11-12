@@ -31,7 +31,7 @@ public class SaveController implements Initializable {
             if (--indexOfWordSave < 0)
                 indexOfWordSave += Model.getInstance().getSaveList().size();
             cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
-            numberLabel.setText(Integer.toString(indexOfWordSave+1) + "/" + Model.getInstance().getSaveList().size());
+            numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
             isFrontCard = true;
         });
 
@@ -39,14 +39,14 @@ public class SaveController implements Initializable {
             if (++indexOfWordSave >= Model.getInstance().getSaveList().size())
                 indexOfWordSave -= Model.getInstance().getSaveList().size();
             cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
-            numberLabel.setText(Integer.toString(indexOfWordSave+1) + "/" + Model.getInstance().getSaveList().size());
+            numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
             isFrontCard = true;
         });
     }
 
     private void rotate() {
         cardLabel.setVisible(false);
-        RotateTransition cardRotate = new RotateTransition(Duration.millis(1000), flashCard);
+        RotateTransition cardRotate = new RotateTransition(Duration.millis(700), flashCard);
         cardRotate.setAxis(Rotate.Y_AXIS);
         if (isFrontCard) {
             cardRotate.setFromAngle(0);
@@ -56,7 +56,7 @@ public class SaveController implements Initializable {
             cardRotate.setToAngle(360);
         }
         cardRotate.play();
-        RotateTransition labelRotate = new RotateTransition(Duration.millis(1000), cardLabel);
+        RotateTransition labelRotate = new RotateTransition(Duration.millis(700), cardLabel);
         labelRotate.setAxis(Rotate.Y_AXIS);
         if (isFrontCard) {
             labelRotate.setFromAngle(0);
@@ -81,7 +81,7 @@ public class SaveController implements Initializable {
     private void resetAllSave() {
         indexOfWordSave = 0;
         isFrontCard = true;
-        numberLabel.setText(Integer.toString(indexOfWordSave+1) + "/" + Model.getInstance().getSaveList().size());
+        numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
         cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
     }
 

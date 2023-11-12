@@ -8,28 +8,6 @@
 !to listen in
 - nghe đài
 - nghe trộm điện thoại
-|add
-/æd/
-* động từ
-- ((thường) + up,  together) cộng
-- thêm vào, làm tăng thêm
-= add some more hot water to your tea+ cho thêm ít nước nóng nữa vào tách trà của anh
-= music added to our joy+ âm nhạc làm tăng thêm niềm vui của chúng ta
-- nói thêm
-= he added that+ anh ta nói thêm rằng
-- (+ in) kế vào, tính vào, gộp vào
-!to add fuel to the fire
-- (xem) fire
-!to add insult to injury
-- miệng chửi tay đấm
-
-add
-- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
-
-add
-- cộng vào, thêm vào, bổ sung
-- a. together, a. up cộng lại lấy tổng|add carry
-- (Tech) số nhớ khi cộng
 |dick
 /dik/
 * danh từ,  (từ lóng)
@@ -37,6 +15,54 @@ add
 - up to dick xuất sắc, phi thường, cừ khôi
 * danh từ
 - (từ Mỹ,nghĩa Mỹ),  (từ lóng) mật thám, thám tử
+|delete
+/di'li:t/
+* ngoại động từ
+- gạch đi, xoá đi, bỏ đi
+
+delete
+- gạch, bỏ đi
+|cat
+/kæt/
+* danh từ
+- con mèo
+- (động vật học) thú thuộc giống mèo (sư tử, hổ, báo...)
+- mụ đàn bà nanh ác; đứa bé hay cào cấu
+- (hàng hải) đòn kéo neo ((cũng) cat head)
+- roi chín dài (để tra tấn) ((cũng) cat o-nine-tails)
+- con khăng (để chơi đanh khăng)
+!all cats are grey in the dark (in the night)
+- (tục ngữ) tắt đèn nhà ngói cũng như nhà tranh
+!cat in the pan (cat-in-the-pan)
+- kẻ trở mặt, kẻ phản bội
+!the cat is out the bag
+- điều bí mật đã bị tiết lộ rồi
+!fat cat
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tư bản kếch xù, tài phiệt
+!to fight like Kilkemy cats
+- giết hại lẫn nhau
+!to let the cat out of the bag
+- (xem) let
+!it rains cats and dogs
+- (xem) rain
+!to see which way the cat jumps; to wait for the cat to jump
+- đợi gió xoay chiều, đợi gió chiều nào thì theo chiều ấy
+!to room to swing a cat
+- (xem) room
+!to turn cat in the pan
+- trở mặt; thay đổi ý kiến (lúc lâm nguy); phản hồi
+* ngoại động từ
+- (hàng hải) kéo (neo) lên đòn kéo neo
+- đánh bằng roi chín dài
+* nội động từ
+- (thông tục) nôn mửa
+|fucker
+- interj
+- đồ ngốc! đồ ngu!
+|penis
+/'pi:nis/
+* danh từ,  số nhiều penes  /'pi:ni:z/
+- (giải phẫu) dương vật
 |edit
 /'edit/
 * ngoại động từ
@@ -50,49 +76,6 @@ edit
 
 edit
 - biên soạn, biên tập, xuất bản
-|mother
-/'mʌðə/
-* danh từ
-- mẹ, mẹ đẻ
-- nguồn gốc, nguyên nhân; mẹ ((nghĩa bóng))
-= necessity is the mother of invention+ có khó mới sinh khôn
-- (tôn giáo) mẹ
-!Mother Superior
-- mẹ trưởng viện, mẹ bề trên
-- máy ấp trứng ((cũng) mother artificial mother)
-!every mother's son
-- tất cả mọi người không trừ một ai
-* ngoại động từ
-- chăm sóc, nuôi nấng
-- sinh ra, đẻ ra ((nghĩa đen) &amp;amp; (nghĩa bóng))
-|mac
-- xem mackintosh+ông (dùng để xưng hô với một người đàn ông lạ)
-|naked
-/'neikid/
-* tính từ
-- trần, trần truồng, khoả thân, loã lồ
-= naked sword+ gươm trần (không có bao)
-= stark naked+ trần như nhộng
-- trụi, trơ trụi, rỗng không (bức tường, cây cối, cánh dồng)
-= naked trees+ cây trụi lá
-= a naked room+ căn buồng rỗng không
-- không che đậy, không giấu giếm, phô bày ra, hiển nhiên, rõ ràng
-= the naked truth+ sự thật hiển nhiên, rõ ràng
-- không thêm bớt
-= naked quotations+ lời trích dẫn không thêm bớt
-- không căn cứ
-= naked faith+ lòng tin không căn cứ
-|penis
-/'pi:nis/
-* danh từ,  số nhiều penes  /'pi:ni:z/
-- (giải phẫu) dương vật
-|bitch
-/bitʃ/
-* danh từ
-- con chó sói cái, con chồn cái ((thường) bitch wolf; bitch fox)
-- khuốm chyến yêu luộng con mụ lẳng lơ dâm đảng; con mụ phản trắc
-!son of a bitch
-- (từ Mỹ,nghĩa Mỹ), nuôi) chó đẻ
 |dog
 /dɔg/
 * danh từ
@@ -148,16 +131,52 @@ edit
 - theo nhùng nhằng, theo sát gót, bám sát (ai)
 = to dog someone's footsteps+ bám sát ai
 - (kỹ thuật) kẹp bằng kìm, cặp bằng móc ngoạm
-|delete
-/di'li:t/
-* ngoại động từ
-- gạch đi, xoá đi, bỏ đi
+|add
+/æd/
+* động từ
+- ((thường) + up,  together) cộng
+- thêm vào, làm tăng thêm
+= add some more hot water to your tea+ cho thêm ít nước nóng nữa vào tách trà của anh
+= music added to our joy+ âm nhạc làm tăng thêm niềm vui của chúng ta
+- nói thêm
+= he added that+ anh ta nói thêm rằng
+- (+ in) kế vào, tính vào, gộp vào
+!to add fuel to the fire
+- (xem) fire
+!to add insult to injury
+- miệng chửi tay đấm
 
-delete
-- gạch, bỏ đi
-|fucker
-- interj
-- đồ ngốc! đồ ngu!
+add
+- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
+
+add
+- cộng vào, thêm vào, bổ sung
+- a. together, a. up cộng lại lấy tổng|add carry
+- (Tech) số nhớ khi cộng
+|mac
+- xem mackintosh+ông (dùng để xưng hô với một người đàn ông lạ)
+|naked
+/'neikid/
+* tính từ
+- trần, trần truồng, khoả thân, loã lồ
+= naked sword+ gươm trần (không có bao)
+= stark naked+ trần như nhộng
+- trụi, trơ trụi, rỗng không (bức tường, cây cối, cánh dồng)
+= naked trees+ cây trụi lá
+= a naked room+ căn buồng rỗng không
+- không che đậy, không giấu giếm, phô bày ra, hiển nhiên, rõ ràng
+= the naked truth+ sự thật hiển nhiên, rõ ràng
+- không thêm bớt
+= naked quotations+ lời trích dẫn không thêm bớt
+- không căn cứ
+= naked faith+ lòng tin không căn cứ
+|bitch
+/bitʃ/
+* danh từ
+- con chó sói cái, con chồn cái ((thường) bitch wolf; bitch fox)
+- khuốm chyến yêu luộng con mụ lẳng lơ dâm đảng; con mụ phản trắc
+!son of a bitch
+- (từ Mỹ,nghĩa Mỹ), nuôi) chó đẻ
 |fuck
 *danh từ
 - sự giao cấu
@@ -166,37 +185,30 @@ delete
 - mẹ kiếp!
 *động từ
 - giao cấu
-|cat
-/kæt/
+|animation
+/,æni'meiʃn/
 * danh từ
-- con mèo
-- (động vật học) thú thuộc giống mèo (sư tử, hổ, báo...)
-- mụ đàn bà nanh ác; đứa bé hay cào cấu
-- (hàng hải) đòn kéo neo ((cũng) cat head)
-- roi chín dài (để tra tấn) ((cũng) cat o-nine-tails)
-- con khăng (để chơi đanh khăng)
-!all cats are grey in the dark (in the night)
-- (tục ngữ) tắt đèn nhà ngói cũng như nhà tranh
-!cat in the pan (cat-in-the-pan)
-- kẻ trở mặt, kẻ phản bội
-!the cat is out the bag
-- điều bí mật đã bị tiết lộ rồi
-!fat cat
-- (từ Mỹ,nghĩa Mỹ),  (từ lóng) tư bản kếch xù, tài phiệt
-!to fight like Kilkemy cats
-- giết hại lẫn nhau
-!to let the cat out of the bag
-- (xem) let
-!it rains cats and dogs
-- (xem) rain
-!to see which way the cat jumps; to wait for the cat to jump
-- đợi gió xoay chiều, đợi gió chiều nào thì theo chiều ấy
-!to room to swing a cat
-- (xem) room
-!to turn cat in the pan
-- trở mặt; thay đổi ý kiến (lúc lâm nguy); phản hồi
+- lòng hăng hái, nhiệt tình; sự cao hứng, sự hào hứng
+- tính hoạt bát, sinh khí
+- sự nhộn nhịp, sự náo nhiệt, sự sôi nổi
+- (văn học) tính sinh động, tính linh hoạt
+- sự cỗ vũ
+- sự sản xuất phim hoạt hoạ
+
+animation
+- (Tech) hoạt động tính
+|mother
+/'mʌðə/
+* danh từ
+- mẹ, mẹ đẻ
+- nguồn gốc, nguyên nhân; mẹ ((nghĩa bóng))
+= necessity is the mother of invention+ có khó mới sinh khôn
+- (tôn giáo) mẹ
+!Mother Superior
+- mẹ trưởng viện, mẹ bề trên
+- máy ấp trứng ((cũng) mother artificial mother)
+!every mother's son
+- tất cả mọi người không trừ một ai
 * ngoại động từ
-- (hàng hải) kéo (neo) lên đòn kéo neo
-- đánh bằng roi chín dài
-* nội động từ
-- (thông tục) nôn mửa
+- chăm sóc, nuôi nấng
+- sinh ra, đẻ ra ((nghĩa đen) &amp;amp; (nghĩa bóng))
