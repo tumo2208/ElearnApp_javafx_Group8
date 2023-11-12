@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="backup">
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="fix demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuocController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Animal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Animal.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,22 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.Controller.Test" />
-      <module name="ElearnApp_javafx_Group8" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dictionary.elearnapp_javafx_group8.Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Dictionary" />
         <item itemvalue="Application.Dictionary" />
         <item itemvalue="Application.Dictionary" />
@@ -155,7 +140,7 @@
       <workItem from="1699606786474" duration="4802000" />
       <workItem from="1699625928979" duration="5433000" />
       <workItem from="1699712069633" duration="11389000" />
-      <workItem from="1699755143173" duration="13863000" />
+      <workItem from="1699755143173" duration="16033000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -325,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699777047942</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix demo">
+      <option name="closed" value="true" />
+      <created>1699793963467</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699793963467</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +340,7 @@
     <MESSAGE value="Add History" />
     <MESSAGE value="fix history and fix flag in API" />
     <MESSAGE value="backup" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup" />
+    <MESSAGE value="fix demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix demo" />
   </component>
 </project>

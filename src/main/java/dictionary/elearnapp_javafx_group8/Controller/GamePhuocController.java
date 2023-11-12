@@ -399,7 +399,7 @@ public class GamePhuocController implements Initializable {
         return -1;
     }
     public void checkNumberShowing(){
-        if(showingCard.size()>2){
+        if(showingCard.size()>1){
             int tmp=showingCard.get(0);
             isFrontShowing[tmp]=flipIndex(tmp);
             showingCard.remove(0);
