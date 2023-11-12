@@ -1,0 +1,40 @@
+Dog.Chó
+Cat.Mèo
+Bird.Chim
+Fish.Cá
+Horse.Ngựa
+Cow.Bò
+Elephant.Voi
+Lion.Sư tử
+Tiger.Hổ
+Monkey.Khỉ
+Giraffe.Hươu cao cổ
+Zebra.Ngựa vằn
+Bear.Gấu
+Deer.Nai
+Sheep.Cừu
+Pig.Lợn
+Duck.Vịt
+Chicken.Gà
+Rabbit.Thỏ
+Snake.Rắn
+Spider.Nhện
+Ant.Kiến
+Bee.Ong
+Whale.Cá voi
+Shark.Cá mập
+Octopus.Bạch tuộc
+Crocodile.Cá sấu
+Turtle.Rùa
+Lizard.Thằn lằn
+Snake.Rắn
+Frog.Ếch
+Toad.Cóc
+Snail.Ốc sên
+Slug.Ốc sên đất
+Beetle.Sâu bọ
+Spider.Nhện
+Ant.Kiến
+Bee.Ong
+Fly.Ruồi
+Mosquito.Muỗi

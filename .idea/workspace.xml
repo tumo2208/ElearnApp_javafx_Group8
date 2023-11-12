@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="fix history and fix flag in API">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuocController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Animal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/backSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/frontSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,8 +59,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/ElearnApp_javafx_Group8&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;gamePhuoc&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/oasis/Baking System&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,8 +92,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.Controller.Test" />
+      <module name="ElearnApp_javafx_Group8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dictionary.elearnapp_javafx_group8.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Dictionary" />
+        <item itemvalue="Application.Dictionary" />
+        <item itemvalue="Application.Dictionary" />
         <item itemvalue="Application.Dictionary" />
       </list>
     </recent_temporary>
@@ -134,6 +160,10 @@
       <workItem from="1699450697355" duration="2716000" />
       <workItem from="1699529630567" duration="596000" />
       <workItem from="1699537551148" duration="600000" />
+      <workItem from="1699606786474" duration="4802000" />
+      <workItem from="1699625928979" duration="5433000" />
+      <workItem from="1699712069633" duration="11389000" />
+      <workItem from="1699755143173" duration="8265000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
