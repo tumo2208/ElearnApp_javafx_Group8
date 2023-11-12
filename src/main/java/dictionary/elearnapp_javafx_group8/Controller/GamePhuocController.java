@@ -84,7 +84,8 @@ public class GamePhuocController implements Initializable {
 
 
     private Image frontImage= new Image(getClass().getResourceAsStream("/Database/PhuocData/frontSide.jpg"));
-    private ObjectProperty<java.time.Duration> remainingDuration = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
+    private ObjectProperty<java.time.Duration> remainingDuration
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
     public static final String path="src/main/resources/Database/PhuocData/Animal.txt";
     public static final String trap="x2 Time Speed";
     private List<String> pairs=new ArrayList<>();
@@ -138,7 +139,9 @@ public class GamePhuocController implements Initializable {
 
         }
     }
-
+    public void gameOver(){
+        System.out.println("Game over");
+    }
 
 
 
@@ -154,6 +157,8 @@ public class GamePhuocController implements Initializable {
         makeList();
         addWord();
         getStart();
+        System.out.println(list);
+        System.out.println(check);
 
 
         time.textProperty().bind(Bindings.createStringBinding(() ->
@@ -163,8 +168,9 @@ public class GamePhuocController implements Initializable {
                 remainingDuration));
 
         countDownTimeLine.setCycleCount((int) remainingDuration.get().getSeconds());
-        countDownTimeLine.setOnFinished(event -> new Alert(Alert.AlertType.INFORMATION).show());
-        //countDownTimeLine.setRate(2);
+        countDownTimeLine.setOnFinished(event ->
+                gameOver()
+        );
         countDownTimeLine.play();
 
         pane0.setOnMouseClicked((t) -> {
@@ -175,172 +181,47 @@ public class GamePhuocController implements Initializable {
 
         });
         pane1.setOnMouseClicked((t) -> {
-            this.isFrontShowing[1]=flip(pane1,isFrontShowing[1]);
-            if(isFrontShowing[1]) {
-                this.showingCard.add(1);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(1));
-            }
+            this.isFrontShowing[1]=flipIndex(1);
+
         });
         pane2.setOnMouseClicked((t) -> {
-            this.isFrontShowing[2]=flip(pane2,isFrontShowing[2]);
-            if(isFrontShowing[2]) {
-                this.showingCard.add(2);
-                checkTrap();
-                checkNumberShowing();
-                checkShowingCards();
-            }
-            else {
-                this.showingCard.remove(findIndex(2));
-            }
+            this.isFrontShowing[2]=flipIndex(2);
         });
         pane3.setOnMouseClicked((t) -> {
-            this.isFrontShowing[3]=flip(pane3,isFrontShowing[3]);
-            if(isFrontShowing[3]) {
-                this.showingCard.add(3);
-                checkTrap();
-                checkNumberShowing();
-                checkShowingCards();
-            }
-            else {
-                this.showingCard.remove(findIndex(3));
-            }
+            this.isFrontShowing[3]=flipIndex(3);
         });
         pane4.setOnMouseClicked((t) -> {
-            this.isFrontShowing[4]=flip(pane4,isFrontShowing[4]);
-            if(isFrontShowing[4]) {
-                this.showingCard.add(4);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(4));
-            }
+            this.isFrontShowing[4]=flipIndex(4);
         });
         pane5.setOnMouseClicked((t) -> {
-            this.isFrontShowing[5]=flip(pane5,isFrontShowing[5]);
-            if(isFrontShowing[5]) {
-                this.showingCard.add(5);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(5));
-            }
+            this.isFrontShowing[5]=flipIndex(5);
         });
         pane6.setOnMouseClicked((t) -> {
-            this.isFrontShowing[6]=flip(pane6,isFrontShowing[6]);
-            if(isFrontShowing[6]) {
-                this.showingCard.add(6);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(6));
-            }
+            this.isFrontShowing[6]=flipIndex(6);
         });
         pane7.setOnMouseClicked((t) -> {
-            this.isFrontShowing[7]=flip(pane7,isFrontShowing[7]);
-            if(isFrontShowing[7]) {
-                this.showingCard.add(7);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(7));
-            }
+            this.isFrontShowing[7]=flipIndex(7);
         });
         pane8.setOnMouseClicked((t) -> {
-            this.isFrontShowing[8]=flip(pane8,isFrontShowing[8]);
-            if(isFrontShowing[8]) {
-                this.showingCard.add(8);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(8));
-            }
+            this.isFrontShowing[8]=flipIndex(8);
         });
         pane9.setOnMouseClicked((t) -> {
-            this.isFrontShowing[9]=flip(pane9,isFrontShowing[9]);
-            if(isFrontShowing[9]) {
-                this.showingCard.add(9);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(9));
-            }
+            this.isFrontShowing[9]=flipIndex(9);
         });
         pane10.setOnMouseClicked((t) -> {
-            this.isFrontShowing[10]=flip(pane10,isFrontShowing[10]);
-            if(isFrontShowing[10]) {
-                this.showingCard.add(10);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(10));
-            }
+            this.isFrontShowing[10]=flipIndex(10);
         });
         pane11.setOnMouseClicked((t) -> {
-            this.isFrontShowing[11]=flip(pane11,isFrontShowing[11]);
-            if(isFrontShowing[11]) {
-                this.showingCard.add(11);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(11));
-            }
+            this.isFrontShowing[11]=flipIndex(11);
         });
         pane12.setOnMouseClicked((t) -> {
-            this.isFrontShowing[12]=flip(pane12,isFrontShowing[12]);
-            if(isFrontShowing[12]) {
-                this.showingCard.add(12);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(12));
-            }
+            this.isFrontShowing[12]=flipIndex(12);
         });
         pane13.setOnMouseClicked((t) -> {
-            this.isFrontShowing[13]=flip(pane13,isFrontShowing[13]);
-            if(isFrontShowing[13]) {
-                this.showingCard.add(13);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(13));
-            }
+            this.isFrontShowing[13]=flipIndex(13);
         });
         pane14.setOnMouseClicked((t) -> {
-            this.isFrontShowing[14]=flip(pane14,isFrontShowing[14]);
-            if(isFrontShowing[14]) {
-                this.showingCard.add(14);
-                checkTrap();
-                checkShowingCards();
-                checkNumberShowing();
-            }
-            else {
-                this.showingCard.remove(findIndex(14));
-            }
+            this.isFrontShowing[14]=flipIndex(14);
         });
 
     }
@@ -405,6 +286,7 @@ public class GamePhuocController implements Initializable {
         }
         RotateTransition rotator = createRotator(tmp,isFrontShowing[i]);
         PauseTransition ptChangeCardFace = changeCardFace(tmp,isFrontShowing[i]);
+        isFrontShowing[i]=!isFrontShowing[i];
         ParallelTransition parallelTransition = new ParallelTransition(rotator, ptChangeCardFace);
         parallelTransition.play();
         parallelTransition.setOnFinished(
@@ -415,15 +297,18 @@ public class GamePhuocController implements Initializable {
                     checkNumberShowing();
                 }
                 else {
-                    this.showingCard.remove(findIndex(i));
+                    if(showingCard.contains(i)){
+                        showingCard.remove(findIndex(i,showingCard));
+                    }
+
                 }}
         );
-        return !isFrontShowing[i];
+        return isFrontShowing[i];
     }
     public void removeCard(int a)  {
 
         cardRemoved++;
-        showingCard.remove(findIndex(a));
+        showingCard.remove(findIndex(a,showingCard));
         if(isFrontShowing[a]) flipIndex(a);
 
         StackPane tmp=new StackPane();
@@ -505,13 +390,13 @@ public class GamePhuocController implements Initializable {
         }
         Collections.shuffle(this.check);
     }
-    public int findIndex(int x){
-        for(int i=0;i<2;i++){
-            if(this.showingCard.get(i)==x){
+    public int findIndex(int x,List<Integer> list){
+        for(int i=0;i<list.size();i++){
+            if(list.get(i)==x){
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
     public void checkNumberShowing(){
         if(showingCard.size()>2){
@@ -524,16 +409,17 @@ public class GamePhuocController implements Initializable {
 
         for(int i=0;i<showingCard.size();i++){
             int tmp=showingCard.get(i);
-            if(tmp%2==0){
-                if(showingCard.contains(tmp+1)){
-                    removeCard(tmp);
-                    removeCard(tmp+1);
+            int index=findIndex(tmp,check);
+            if(index%2==0){
+                if(showingCard.contains(check.get(index+1))){
+                    removeCard(check.get(index));
+                    removeCard(check.get(index+1));
                 }
             }
             else {
-                if(showingCard.contains(tmp-1)){
-                    removeCard(tmp);
-                    removeCard(tmp-1);
+                if(showingCard.contains(check.get(index-1))){
+                    removeCard(check.get(index));
+                    removeCard(check.get(index-1));
                 }
             }
         }
