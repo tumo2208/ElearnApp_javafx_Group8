@@ -37,6 +37,10 @@ public class APIController implements Initializable {
 
         secondLanguageArea.setEditable(false);
         resetAllAPI();
+        firstLanguageArea.setOnKeyTyped(keyEvent -> {
+            secondLanguageArea.clear();
+            translateButton.setDisable(firstLanguageArea.getText().isEmpty());
+        });
 
         switchButton.setOnAction(event -> {
             firstLanguageArea.clear();
@@ -65,6 +69,7 @@ public class APIController implements Initializable {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+            translateButton.setDisable(true);
         });
 
     }
