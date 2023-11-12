@@ -1,8 +1,3 @@
-@font-face {
-    font-family: HeyComic;
-    src: url(../Fonts/HeyComic.ttf) format('truetype');
-}
-
 .add_word_container {
     -fx-background-color: #FFE2E2;
 }
