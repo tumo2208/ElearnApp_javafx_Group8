@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GamePhuoc.MenuGamePhuocController">
+   <children>
+      <Label alignment="CENTER" layoutX="413.0" layoutY="29.0" prefHeight="54.0" prefWidth="134.0" text="NameGame">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="88.0" prefHeight="30.0" prefWidth="706.0" text="Flip 2 cards with the same meaning to remove them out of the screen, you have to remove all the cards before the time is up!" />
+      <Label alignment="CENTER" layoutX="269.0" layoutY="110.0" prefHeight="30.0" prefWidth="421.0" text="Attention: There's a trap card, if you click into it, the time speed will increase!" />
+      <Label alignment="CENTER" layoutX="355.0" layoutY="161.0" prefHeight="62.0" prefWidth="249.0" text="Please choose a topic to start the game">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="75.0" layoutY="215.0" prefHeight="347.0" prefWidth="822.0">
+         <children>
+            <VBox prefHeight="347.0" prefWidth="182.0">
+               <children>
+                  <Button fx:id="topic1" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Animal" />
+                  <Button fx:id="topic5" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic9" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+               </children>
+            </VBox>
+            <VBox prefHeight="347.0" prefWidth="182.0">
+               <children>
+                  <Button fx:id="topic2" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic6" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic10" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+               </children>
+            </VBox>
+            <VBox prefHeight="347.0" prefWidth="182.0">
+               <children>
+                  <Button fx:id="topic3" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic7" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic11" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+               </children>
+            </VBox>
+            <VBox prefHeight="347.0" prefWidth="182.0">
+               <children>
+                  <Button fx:id="topic4" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic8" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic12" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="back" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" text="back" />
+   </children>
+</AnchorPane>

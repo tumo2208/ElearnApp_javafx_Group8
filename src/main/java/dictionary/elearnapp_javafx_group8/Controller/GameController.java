@@ -22,6 +22,6 @@ public class GameController implements Initializable {
     }
 
     private void onMemories() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("Memories");
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
     }
 }
