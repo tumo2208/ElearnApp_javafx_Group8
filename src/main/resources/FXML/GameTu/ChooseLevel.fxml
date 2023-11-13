@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="chooseLevelBG" prefHeight="580.0" prefWidth="960.0" styleClass="choose_level" stylesheets="@../../Styles/CatchTheWord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.ChooseLevelController">
+    <ImageView fx:id="lv1" fitHeight="150.0" fitWidth="150.0" layoutX="205.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="155.0" AnchorPane.topAnchor="130.0">
+        <Image url="@../../Images/GameTu/lv1.png" />
+    </ImageView>
+    <ImageView fx:id="lv2" fitHeight="150.0" fitWidth="150.0" layoutX="396.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="405.0" AnchorPane.topAnchor="130.0">
+        <Image url="@../../Images/GameTu/locklv.png" />
+    </ImageView>
+    <ImageView fx:id="lv3" fitHeight="150.0" fitWidth="150.0" layoutX="705.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="655.0" AnchorPane.topAnchor="130.0">
+        <Image url="@../../Images/GameTu/locklv.png" />
+    </ImageView>
+    <ImageView fx:id="lv4" fitHeight="150.0" fitWidth="150.0" layoutX="196.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="280.0">
+        <Image url="@../../Images/GameTu/locklv.png" />
+    </ImageView>
+    <ImageView fx:id="lv5" fitHeight="150.0" fitWidth="150.0" layoutX="514.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="530.0">
+        <Image url="@../../Images/GameTu/locklv.png" />
+    </ImageView>
+    <ImageView fx:id="backButton" fitHeight="60.0" fitWidth="200.0" layoutX="14.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="14.0">
+        <Image url="@../../Images/GameTu/Back_Button.png" />
+    </ImageView>
+</AnchorPane>

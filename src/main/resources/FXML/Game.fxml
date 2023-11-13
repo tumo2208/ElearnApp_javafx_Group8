@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameController">
-    <Button fx:id="GamePhuoc" layoutX="90.0" layoutY="164.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" text="Button" />
-    <Button fx:id="GameTu" layoutX="380.0" layoutY="164.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" text="Button" />
-    <Button fx:id="GamePhong" layoutX="670.0" layoutY="164.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" text="Button" />
+    <ImageView fx:id="GamePhuoc" fitHeight="234.0" fitWidth="356.0" layoutX="98.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="173.0">
+        <Image url="@../Images/ThumbnailMemories.png" />
+    </ImageView>
+    <ImageView fx:id="GameTu" fitHeight="234.0" fitWidth="350.0" layoutX="534.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="173.0">
+        <Image url="@../Images/GameTu/ThumbnailCatchTheWord.png" />
+    </ImageView>
 </AnchorPane>

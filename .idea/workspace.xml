@@ -4,7 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="ui update" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="ui update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/CatchTheWordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/ChooseLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SaveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/Save.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QandA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QuestionCatchWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Animal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GameTu/level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/save.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/ChooseLevel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/Save.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/backSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/frontSide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button_Click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button_Click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Help_Button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Help_Button_Click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button_Click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/ThumbnailCatchTheWord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/allLV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/locklv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lv1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lv2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lv3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lv4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lv5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Learning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ThumbnailMemories.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/left-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/right-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/saveButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/saveLightButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/CatchTheWord.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/Save.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/MenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/MenuBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/zzz/Poster-Pendidikan-Poster-Belajar-26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/zzz/Solar_eclipse_istock.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +73,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,8 +104,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Phong&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/Desktop/ElearnApp_javafx_Group8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/IdeaProjects/ElearnApp_javafx_Group8/src/main/java/dictionary/elearnapp_javafx_group8/Controller&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,10 +113,15 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\ElearnApp_javafx_Group8\src\main\resources\FXML\GameTu" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.App" />
@@ -123,22 +187,27 @@
       <workItem from="1699237608813" duration="3312000" />
       <workItem from="1699253272084" duration="829000" />
       <workItem from="1699258463827" duration="2215000" />
-      <workItem from="1699272311660" duration="2198000" />
-      <workItem from="1699495334595" duration="767000" />
-      <workItem from="1699496898454" duration="583000" />
-      <workItem from="1699540457747" duration="7074000" />
-      <workItem from="1699581875951" duration="2046000" />
-      <workItem from="1699585553689" duration="4505000" />
-      <workItem from="1699600502511" duration="4663000" />
-      <workItem from="1699606454870" duration="3803000" />
-      <workItem from="1699666474549" duration="3715000" />
-      <workItem from="1699709231049" duration="8243000" />
-      <workItem from="1699756257156" duration="7482000" />
-      <workItem from="1699786315359" duration="2601000" />
-      <workItem from="1699795070398" duration="5744000" />
-      <workItem from="1699802843013" duration="1702000" />
-      <workItem from="1699855467500" duration="5719000" />
-      <workItem from="1699867709247" duration="1392000" />
+      <workItem from="1699272311660" duration="2264000" />
+      <workItem from="1699338518297" duration="138000" />
+      <workItem from="1699423866866" duration="191000" />
+      <workItem from="1699424743163" duration="270000" />
+      <workItem from="1699450697355" duration="2716000" />
+      <workItem from="1699529630567" duration="596000" />
+      <workItem from="1699537551148" duration="4809000" />
+      <workItem from="1699543672674" duration="104000" />
+      <workItem from="1699585723433" duration="3082000" />
+      <workItem from="1699589815687" duration="157000" />
+      <workItem from="1699595440694" duration="4129000" />
+      <workItem from="1699629825026" duration="1456000" />
+      <workItem from="1699631298614" duration="824000" />
+      <workItem from="1699692578440" duration="8953000" />
+      <workItem from="1699714729293" duration="610000" />
+      <workItem from="1699722499230" duration="148000" />
+      <workItem from="1699723210425" duration="191000" />
+      <workItem from="1699760066617" duration="6789000" />
+      <workItem from="1699779601094" duration="4428000" />
+      <workItem from="1699791058614" duration="6314000" />
+      <workItem from="1699895359156" duration="774000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -292,39 +361,47 @@
       <option name="project" value="LOCAL" />
       <updated>1699240598815</updated>
     </task>
-    <task id="LOCAL-00020" summary="api and add word ui update">
+    <task id="LOCAL-00020" summary="fix history and fix flag in API">
       <option name="closed" value="true" />
-      <created>1699796190804</created>
+      <created>1699275612212</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1699796190804</updated>
+      <updated>1699275612213</updated>
     </task>
-    <task id="LOCAL-00021" summary="api and add word ui update">
+    <task id="LOCAL-00021" summary="add game layout">
       <option name="closed" value="true" />
-      <created>1699797064317</created>
+      <created>1699539368703</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1699797064317</updated>
+      <updated>1699539368703</updated>
     </task>
-    <task id="LOCAL-00022" summary="ui update">
+    <task id="LOCAL-00022" summary="add flashcard">
       <option name="closed" value="true" />
-      <created>1699869617376</created>
+      <created>1699701505796</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1699869617376</updated>
+      <updated>1699701505796</updated>
     </task>
-    <task id="LOCAL-00023" summary="ui update">
+    <task id="LOCAL-00023" summary="add flashcard">
       <option name="closed" value="true" />
-      <created>1699869637946</created>
+      <created>1699701523867</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1699869637946</updated>
+      <updated>1699701523867</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update ui, add game">
+      <option name="closed" value="true" />
+      <created>1699798521698</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699798521698</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,12 +421,20 @@
     <MESSAGE value="Add Voice Function" />
     <MESSAGE value="Add API" />
     <MESSAGE value="Add History" />
-    <MESSAGE value="api and add word ui update" />
-    <MESSAGE value="ui update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui update" />
+    <MESSAGE value="fix history and fix flag in API" />
+    <MESSAGE value="add game layout" />
+    <MESSAGE value="add flashcard" />
+    <MESSAGE value="update ui, add game" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui, add game" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

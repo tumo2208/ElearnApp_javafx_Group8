@@ -1,15 +1,7 @@
-|waist-band
-/'weistbænd/
-* danh từ
-- dây thắt lưng
 |waist-deep
 /'weist'di:p/
 * tính từ &amp;amp; phó từ
 - đến thắt lưng
-|waisted
-*tính từ
-- thắt eo, thóp lại ở eo (cái áo)
-- (tạo nên các tính từ kép) có một kiểu eo được chỉ rõ
 |wagon
 /'wægən/
 * danh từ
@@ -26,44 +18,8 @@
 *danh từ
 - đường xe ngựa; đường xe súc vật
 - xem waggon-way
-|alo
-aloo
-|hello
-/hə'lou/
-* thán từ
-- chào anh!, chào chị!
-- này, này
-- ô này! (tỏ ý ngạc nhiên)
-* danh từ
-- tiếng chào
-- tiếng gọi &quot;này, này&quot; !
-- tiếng kêu ô này &quot;! (tỏ ý ngạc nhiên)
-* nội động từ
-- chào
-- gọi &quot;này, này&quot; 
-- kêu &quot;ô này&quot; (tỏ ý ngạc nhiên)
 |superscalar architecture
 - siêu thang bậc (cấu trúc)
-|superabundance
-/,sju:pərə'bʌndəns/
-* danh từ
-- sự rất mực thừa thãi, sự rất mực dư thừa, sự rất mực dồi dào
-|super
-/'sju:pə/
-* tính từ
-- (thông tục) thượng hảo hạng
-- vuông, (đo) diện tích (đơn vị đo) (không phải đo bề dài hay đo thể tích) ((cũng) superficial)
-- (từ lóng) cừ, chiến
-* danh từ
-- (thông tục) kép phụ
-- người thừa, người không quan trọng
-- người giám thị, người quản lý
-- phim chính
-- hàng hoá thượng hảo hạng
-- vải lót hồ cứng (đóng sách)
-
-super
-- siêu
 |superabundant
 /,sju:pərə'bʌndənt/
 * tính từ
@@ -71,9 +27,6 @@ super
 |superabundantly
 *phó từ
 - xem superabundant
-|superableness
-*danh từ
-- tình trạng có thể khắc phục được; chiến thắng; vượt qua được (khó khăn)
 |superabound
 /,sju:pərə'baund/
 * nội động từ
@@ -89,9 +42,6 @@ super
 - kêu ha ha
 !to hum and ha
 - (xem) hum
-|high commissioner
-*danh từ
-- người đứng đầu cơ quan đại diện ngoại giao của một nước thuộc Khối thịnh vượng chung tại một nước khác
 |high commission
 *danh từ
 - cơ quan đại diện ngoại giao của một nước thuộc Khối thịnh vượng chung tại một nước khác
@@ -102,3 +52,39 @@ super
 *danh từ
 - bộ chỉ huy tối cao
 - tổng tư lệnh và các sĩ quan cao cấp của quân đội
+|a priori
+/'eiprai'ɔ:rai/
+* danh từ &amp;amp; phó từ
+- theo cách suy diễn, theo cách diễn dịch
+- tiên nghiệm
+= probability a_priori+ (toán học) xác xuất tiên nghiệm
+
+a priori
+- tiên nghiệm
+|higher education
+*danh từ
+- nền giáo dục đại học
+|higher education
+*danh từ
+- nền giáo dục đại học
+|higher education
+*danh từ
+- nền giáo dục đại học
+|high commission
+*danh từ
+- cơ quan đại diện ngoại giao của một nước thuộc Khối thịnh vượng chung tại một nước khác
+|ha
+/hɑ:/
+* thán từ
+- A!, ha ha! (tỏ ý ngạc nhiên, nghi ngờ, vui sướng hay đắc thắng)
+* nội động từ
+- kêu ha ha
+!to hum and ha
+- (xem) hum
+|higher education
+*danh từ
+- nền giáo dục đại học
+|waggon-road
+*danh từ
+- đường xe ngựa; đường xe súc vật
+- xem waggon-way
