@@ -19,6 +19,7 @@ public class ViewFactory {
     private AnchorPane memoriesView;
     private AnchorPane catchTheWordView;
     private AnchorPane playGameTuView;
+    private AnchorPane questionTuView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -109,6 +110,15 @@ public class ViewFactory {
         }
 
         return playGameTuView;
+    }
+
+    public AnchorPane getQuestionTuView() {
+        try {
+            questionTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Question.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return questionTuView;
     }
 
     public void showAppWindow() {

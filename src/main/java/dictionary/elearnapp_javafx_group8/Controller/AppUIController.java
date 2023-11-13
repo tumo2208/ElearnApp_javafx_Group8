@@ -23,6 +23,7 @@ public class AppUIController implements Initializable {
                 case "Memories" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getMemoriesView());
                 case "CatchTheWord" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getCatchTheWordView());
                 case "PlayGameTu" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getPlayGameTuView());
+                case "QuestionTu" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getQuestionTuView());
             }
         });
     }

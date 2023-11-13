@@ -4,8 +4,12 @@ import dictionary.elearnapp_javafx_group8.Dictionary.Dictionary;
 import dictionary.elearnapp_javafx_group8.Dictionary.History;
 import dictionary.elearnapp_javafx_group8.Dictionary.Save;
 import dictionary.elearnapp_javafx_group8.Dictionary.Word;
+import dictionary.elearnapp_javafx_group8.Question.QandA;
+import dictionary.elearnapp_javafx_group8.Question.QuestionCatchWord;
 import dictionary.elearnapp_javafx_group8.View.ViewFactory;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -23,6 +27,7 @@ public class Model {
     private final History history = new History();
     private final List<Word> saveList = new ArrayList<>();
     private final Save save = new Save();
+    private final List<QuestionCatchWord> questionCatchWordList = new ArrayList<>();
 
     private Model() {
         viewFactory = new ViewFactory();
@@ -34,6 +39,40 @@ public class Model {
         saveList.sort(Comparator.comparing(Word::getWordTarget));
         for (int i = 0; i < saveList.size(); ++i) {
             wordList.get(dictionary.Searcher(wordList, saveList.get(i).getWordTarget())).setSaved(true);
+        }
+        try {
+            FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/question.txt");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line;
+            String answer = bufferedReader.readLine().replace("|", "");
+            List<QandA> qanda = new ArrayList<>();
+            boolean isQuestion = true;
+            String question = "";
+            String qAns = "";
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.startsWith("|")) {
+                    QuestionCatchWord questionCatchWord = new QuestionCatchWord(answer, qanda);
+                    questionCatchWordList.add(questionCatchWord);
+                    answer = line.replace("|", "");
+                    qanda = new ArrayList<>();
+                    question = "";
+                    qAns = "";
+                    isQuestion = true;
+                } else {
+                    if (isQuestion) {
+                        question = line;
+                    } else {
+                        qAns = line;
+                        QandA qandA = new QandA(question, qAns);
+                        qanda.add(qandA);
+                    }
+                    isQuestion = !isQuestion;
+                }
+            }
+            QuestionCatchWord questionCatchWord = new QuestionCatchWord(answer, qanda);
+            questionCatchWordList.add(questionCatchWord);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -70,6 +109,10 @@ public class Model {
 
     public Save getSave() {
         return save;
+    }
+
+    public List<QuestionCatchWord> getQuestionCatchWordList() {
+        return questionCatchWordList;
     }
 
 }
