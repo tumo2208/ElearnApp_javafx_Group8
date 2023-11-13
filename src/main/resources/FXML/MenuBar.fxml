@@ -40,7 +40,7 @@
          </ImageView>
       </graphic>
    </Button>
-   <ImageView fitHeight="105.0" fitWidth="148.0" layoutX="791.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="50.0">
+   <ImageView fitHeight="105.0" fitWidth="148.0" layoutX="791.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" styleClass="box" AnchorPane.rightAnchor="50.0">
       <Image url="@../Images/book.png" />
    </ImageView>
 </AnchorPane>

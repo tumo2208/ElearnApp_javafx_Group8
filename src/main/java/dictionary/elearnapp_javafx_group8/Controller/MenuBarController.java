@@ -1,8 +1,13 @@
 package dictionary.elearnapp_javafx_group8.Controller;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
+import javafx.animation.Animation;
+import javafx.animation.Transition.*;
+import javafx.animation.ScaleTransition;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
