@@ -8,4 +8,6 @@
 
 .menu_bar Button:hover {
     -fx-cursor: hand;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
 }

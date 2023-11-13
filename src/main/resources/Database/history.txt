@@ -170,6 +170,26 @@ animation
 - mẹ kiếp!
 *động từ
 - giao cấu
+|fucker
+- interj
+- đồ ngốc! đồ ngu!
+|edit
+/'edit/
+* ngoại động từ
+- thu nhập và diễn giải
+- chọn lọc, cắt xén, thêm bớt (tin của phóng viên báo gửi về)
+* nội động từ
+- làm chủ bút (ở một tờ báo...)
+
+edit
+- (Tech) lắp ráp (d); dựng hình (d); biên soạn, biên tập, soạn thảo (d)
+
+edit
+- biên soạn, biên tập, xuất bản
+|penis
+/'pi:nis/
+* danh từ,  số nhiều penes  /'pi:ni:z/
+- (giải phẫu) dương vật
 |add
 /æd/
 * động từ
@@ -192,23 +212,3 @@ add
 - cộng vào, thêm vào, bổ sung
 - a. together, a. up cộng lại lấy tổng|add carry
 - (Tech) số nhớ khi cộng
-|fucker
-- interj
-- đồ ngốc! đồ ngu!
-|penis
-/'pi:nis/
-* danh từ,  số nhiều penes  /'pi:ni:z/
-- (giải phẫu) dương vật
-|edit
-/'edit/
-* ngoại động từ
-- thu nhập và diễn giải
-- chọn lọc, cắt xén, thêm bớt (tin của phóng viên báo gửi về)
-* nội động từ
-- làm chủ bút (ở một tờ báo...)
-
-edit
-- (Tech) lắp ráp (d); dựng hình (d); biên soạn, biên tập, soạn thảo (d)
-
-edit
-- biên soạn, biên tập, xuất bản

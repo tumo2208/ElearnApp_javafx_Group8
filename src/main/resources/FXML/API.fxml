@@ -9,8 +9,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="api-background" stylesheets="@../Styles/API.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
-    <Pane layoutX="290.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
+    <Pane layoutX="310.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
         <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
             <font>
                 <Font size="16.0" />
@@ -44,4 +45,8 @@
         </graphic>
     </Button>
     <Button fx:id="translateButton" layoutX="843.0" layoutY="525.0" mnemonicParsing="false" stylesheets="@../Styles/API.css" text="Translate" />
+    <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../Images/APISide.png"/>
+    </ImageView>
 </AnchorPane>

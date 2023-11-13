@@ -88,6 +88,12 @@
     -fx-background-color: transparent;
 }
 
+.searched-word-box Button:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
 .searched-word-box Label {
     -fx-font-size: 24px;
     -fx-font-family: Valoon;
