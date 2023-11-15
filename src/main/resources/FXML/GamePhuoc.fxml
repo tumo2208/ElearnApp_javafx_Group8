@@ -24,7 +24,7 @@
                <children>
                   <ImageView fx:id="card0" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word0" text="Label" />
@@ -34,7 +34,7 @@
                <children>
                   <ImageView fx:id="card1" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word1" text="Label" />
@@ -44,7 +44,7 @@
                <children>
                   <ImageView fx:id="card2" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word2" text="Label" />
@@ -54,7 +54,7 @@
                <children>
                   <ImageView fx:id="card3" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word3" text="Label" />
@@ -64,7 +64,7 @@
                <children>
                   <ImageView fx:id="card4" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word4" text="Label" />
@@ -74,7 +74,7 @@
                <children>
                   <ImageView fx:id="card5" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word5" text="Label" />
@@ -84,7 +84,7 @@
                <children>
                   <ImageView fx:id="card6" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word6" text="Label" />
@@ -94,7 +94,7 @@
                <children>
                   <ImageView fx:id="card7" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word7" text="Label" />
@@ -104,7 +104,7 @@
                <children>
                   <ImageView fx:id="card8" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word8" text="Label" />
@@ -114,7 +114,7 @@
                <children>
                   <ImageView fx:id="card9" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word9" text="Label" />
@@ -124,7 +124,7 @@
                <children>
                   <ImageView fx:id="card10" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word10" text="Label" />
@@ -134,7 +134,7 @@
                <children>
                   <ImageView fx:id="card11" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word11" text="Label" />
@@ -144,7 +144,7 @@
                <children>
                   <ImageView fx:id="card12" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word12" text="Label" />
@@ -154,7 +154,7 @@
                <children>
                   <ImageView fx:id="card13" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word13" text="Label" />
@@ -164,7 +164,7 @@
                <children>
                   <ImageView fx:id="card14" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
                      <image>
-                        <Image url="@../Database/PhuocData/frontSide.jpg" />
+                        <Image url="@../Images/GamePhuoc/frontSide.jpg" />
                      </image>
                   </ImageView>
                   <Label fx:id="word14" text="Label" />

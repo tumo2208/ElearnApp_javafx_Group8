@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="full topic">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Career.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Clothing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Food.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Furniture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Human Body.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/IT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Plants.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Public Area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Sport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Transport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/frontSide.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_12_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_12_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_13_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_13_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
-    </list>
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="move files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,6 +157,7 @@
       <workItem from="1700030767987" duration="2066000" />
       <workItem from="1700052343693" duration="2162000" />
       <workItem from="1700056756368" duration="1247000" />
+      <workItem from="1700058120749" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -387,7 +367,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700053968305</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="move files">
+      <option name="closed" value="true" />
+      <created>1700058164050</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700058164050</updated>
+    </task>
+    <task id="LOCAL-00028" summary="move files">
+      <option name="closed" value="true" />
+      <created>1700058207677</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1700058207677</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,6 +419,7 @@
     <MESSAGE value="add flashcard" />
     <MESSAGE value="merge" />
     <MESSAGE value="update game" />
-    <option name="LAST_COMMIT_MESSAGE" value="update game" />
+    <MESSAGE value="move files" />
+    <option name="LAST_COMMIT_MESSAGE" value="move files" />
   </component>
 </project>

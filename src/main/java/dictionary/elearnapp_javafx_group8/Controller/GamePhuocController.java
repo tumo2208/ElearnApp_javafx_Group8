@@ -83,7 +83,7 @@ public class GamePhuocController implements Initializable {
     boolean [] isFrontShowing =new boolean[15];
 
 
-    private Image frontImage= new Image(getClass().getResourceAsStream("/Database/PhuocData/frontSide.jpg"));
+
     private ObjectProperty<java.time.Duration> remainingDuration
             = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
     public static final String path="src/main/resources/Database/PhuocData/Animal.txt";
