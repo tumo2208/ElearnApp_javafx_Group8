@@ -20,9 +20,11 @@ public class AppUIController implements Initializable {
                 case "GoogleTranslate" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getAPIView());
                 case "Game" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getGameView());
                 case "Save" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getSaveView());
-                case "MemoriesMenu" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getMemoriesMenuView());
+                case "MemoriesMenu" ->
+                        menu_parent.setCenter(Model.getInstance().getViewFactory().getMemoriesMenuView());
                 case "MemoriesPlay" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getMemoryPlayView());
-                case "CatchTheWord" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getCatchTheWordView());
+                case "CatchTheWord" ->
+                        menu_parent.setCenter(Model.getInstance().getViewFactory().getCatchTheWordView());
                 case "PlayGameTu" -> menu_parent.setCenter(Model.getInstance().getViewFactory().getPlayGameTuView());
             }
         });

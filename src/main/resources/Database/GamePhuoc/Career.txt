@@ -1,0 +1,15 @@
+Doctor.Bác sĩ
+Teacher.Giáo viên
+Engineer.Kỹ sư
+Lawyer.Luật sư
+Nurse.Y tá
+Police officer.Cảnh sát
+Firefighter.Lính cứu hỏa
+Soldier.Quân nhân
+Businessman.Doanh nhân
+Artist.Nghệ sĩ
+Writer.Nhà văn
+Actor/actress.Diễn viên
+Singer.Ca sĩ
+Athlete.Vận động viên
+Chef.Đầu bếp

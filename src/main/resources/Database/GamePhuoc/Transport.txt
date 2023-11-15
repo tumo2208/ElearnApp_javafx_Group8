@@ -1,0 +1,21 @@
+Airplane.Máy bay
+Helicopter.Trực thăng
+Air balloon.Khinh khí cầu
+Glider.Tàu lượn
+Submarine.Tàu ngầm
+Yacht.Du thuyền
+Ferry.Phà
+Speedboat.Thuyền cao tốc
+Sailboat.Thuyền buồm
+Rowboat.Thuyền chèo
+Kayak.Ca nô
+Canoe.Thuyền thúng
+Bicycle.Xe đạp
+Motorbike.Xe máy
+Scooter.Xe tay ga
+Car.Ô tô
+Truck.Xe tải
+Bus.Xe buýt
+Taxi.Xe taxi
+Train.Tàu hỏa
+Subway.Tàu điện ngầm
