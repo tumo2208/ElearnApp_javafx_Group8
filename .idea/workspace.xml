@@ -4,25 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="merge">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_29_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_29_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_41_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_41_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_12_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_12_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_13_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_8_13_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2023_8_42_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2023_8_42_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2023_7_35_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_11_2023_7_35_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_11_2023_9_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_11_2023_9_16_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2023_9_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2023_9_23_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2023_9_25_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2023_9_25_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_10_2023_4_12_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_10_2023_4_12_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="update game">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Career.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Clothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Food.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Furniture.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Human Body.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/IT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Plants.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Public Area.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Sport.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/Transport.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_41_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_11_2023_7_41_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/PhuocData/backSide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,12 @@
       <workItem from="1699791058614" duration="5588000" />
       <workItem from="1699841822186" duration="4771000" />
       <workItem from="1699855918398" duration="481000" />
-      <workItem from="1699884901778" duration="10202000" />
+      <workItem from="1699884901778" duration="10271000" />
+      <workItem from="1699945311688" duration="1371000" />
+      <workItem from="1699971823249" duration="272000" />
+      <workItem from="1699972217954" duration="28000" />
+      <workItem from="1700030767987" duration="2066000" />
+      <workItem from="1700052343693" duration="1287000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -363,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699799333848</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update game">
+      <option name="closed" value="true" />
+      <created>1699895392746</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1699895392746</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +411,7 @@
     <MESSAGE value="add game layout" />
     <MESSAGE value="add flashcard" />
     <MESSAGE value="merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge" />
+    <MESSAGE value="update game" />
+    <option name="LAST_COMMIT_MESSAGE" value="update game" />
   </component>
 </project>

@@ -1,0 +1,22 @@
+Flower.Hoa
+Grass.Cỏ
+Leaf.Lá
+Stem.Thân cây
+Root.Rễ cây
+Fruit.Quả
+Seed.Hạt
+Algae.Tảo
+Fern.Dương xỉ
+Mushroom.Nấm
+Lichen.Địa y
+Bamboo.Trúc
+Palm tree.Cây cọ
+Pine tree.Cây thông
+Oak tree.Cây sồi
+Maple tree.Cây phong
+Chestnut tree.Cây dẻ
+Apple tree.Cây táo
+Peach tree.Cây đào
+Cherry tree.Cây anh đào
+Orange tree.Cây cam
+Lemon tree.Cây chanh

@@ -1,0 +1,25 @@
+Bed.Giường
+Chair.Ghế
+Sofa.Sofa
+Table.Bàn
+Dresser.Tủ quần áo
+Mirror.Gương
+Clock.Đồng hồ
+Picture.Tranh
+Rug.Thảm
+Curtains.Rèm cửa
+Window.Cửa sổ
+Door.Cửa
+Light switch.Công tắc đèn
+Ceiling fan.Quạt trần
+Air conditioner.Điều hòa
+Stove.Bếp
+Oven.Lò nướng
+Refrigerator.Tủ lạnh
+Dishwasher.Máy rửa bát
+Microwave.Lò vi sóng
+Sink.Chậu rửa
+Toilet.Bồn cầu
+Bathtub.Bồn tắm
+Shower.Vòi hoa sen
+Towel.Khăn

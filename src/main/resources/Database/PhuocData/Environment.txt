@@ -1,0 +1,24 @@
+Sun.Mặt trời
+Moon.Mặt trăng
+Star.Ngôi sao
+Cloud.Mây
+Rain.Mưa
+Snow.Tuyết
+Ice.Băng
+Hail.Đá
+Thunder.Sấm
+Lightning.Chớp
+Wind.Gió
+Storm.Bão
+Hurricane.Cuồng phong
+Tornado.Lốc xoáy
+Earthquake.Động đất
+Volcano.Núi lửa
+Forest.Rừng
+Ocean.Đại dương
+Sea.Biển
+Lake.Hồ
+River.Sông
+Mountain.Núi
+Valley.Thung lũng
+Desert.Sa mạc

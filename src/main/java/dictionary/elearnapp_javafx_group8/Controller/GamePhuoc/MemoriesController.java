@@ -30,6 +30,7 @@ public class MemoriesController implements Initializable {
     public Button Tu;
 
     public Label time;
+    public static String setTopic;
 
 
     public Label topic;
@@ -85,11 +86,9 @@ public class MemoriesController implements Initializable {
 
     boolean [] isFrontShowing =new boolean[15];
 
-
-    private Image frontImage= new Image(getClass().getResourceAsStream("/Images/GamePhuoc/frontSide.jpg"));
     private ObjectProperty<java.time.Duration> remainingDuration
-            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
-    public static String pathToGamePhuocData;// ="src/main/resources/Database/GamePhuoc/Animal.txt";
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
+    public static String pathToGamePhuocData;
     public static final String trap="x2 Time Speed";
     private List<String> pairs=new ArrayList<>();
     private List<String> list=new ArrayList<>();
@@ -190,55 +189,6 @@ public class MemoriesController implements Initializable {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
     }
 
-    public void reset(){
-        countDownTimeLine=new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
-                remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
-        countDownTimeLine.setRate(1);
-        splitPairs();
-        makeList();
-        addWord();
-        for (int i=0;i<15;i++){
-            if(isFrontShowing[i]=false){
-                isFrontShowing[i]=flipIndex(i);
-            }
-        }
-        for (int i=0;i<15;i++){
-            isFrontShowing[i]=true;
-        }
-        pane0.setVisible(true);
-        pane1.setVisible(true);
-        pane2.setVisible(true);
-        pane3.setVisible(true);
-        pane4.setVisible(true);
-        pane5.setVisible(true);
-        pane6.setVisible(true);
-        pane7.setVisible(true);
-        pane8.setVisible(true);
-        pane9.setVisible(true);
-        pane10.setVisible(true);
-        pane11.setVisible(true);
-        pane12.setVisible(true);
-        pane13.setVisible(true);
-        pane14.setVisible(true);
-        getStart();
-        remainingDuration=new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
-        time.textProperty().bind(Bindings.createStringBinding(() ->
-                        String.format("%02d:%02d",
-                                remainingDuration.get().toMinutesPart(),
-                                remainingDuration.get().toSecondsPart()),
-                remainingDuration));
-
-        countDownTimeLine.setCycleCount((int) remainingDuration.get().getSeconds());
-        countDownTimeLine.setOnFinished(event ->
-                gameOver()
-        );
-
-        countDownTimeLine.play();
-    }
-
-
-
-
 
 
     @Override
@@ -330,7 +280,7 @@ public class MemoriesController implements Initializable {
         this.isFrontShowing[12]=flipIndex(12);
         this.isFrontShowing[13]=flipIndex(13);
         this.isFrontShowing[14]=flipIndex(14);
-
+        topic.setText(setTopic);
     }
     public boolean flip(StackPane pane, boolean isFrontShowing){
         RotateTransition rotator = createRotator(pane,isFrontShowing);
@@ -530,6 +480,7 @@ public class MemoriesController implements Initializable {
 
 
     public void readData(){
+        pairs.clear();
         try {
             File data=new File(pathToGamePhuocData);
             Scanner scanner=new Scanner(data);

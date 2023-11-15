@@ -26,29 +26,29 @@
             <VBox prefHeight="347.0" prefWidth="182.0">
                <children>
                   <Button fx:id="topic1" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Animal" />
-                  <Button fx:id="topic5" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic9" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic5" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Plants" />
+                  <Button fx:id="topic9" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Human Body" />
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="182.0">
                <children>
-                  <Button fx:id="topic2" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic6" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic10" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic2" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Sport" />
+                  <Button fx:id="topic6" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Clothing" />
+                  <Button fx:id="topic10" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Transport" />
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="182.0">
                <children>
-                  <Button fx:id="topic3" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic7" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic11" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic3" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Food" />
+                  <Button fx:id="topic7" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Environment" />
+                  <Button fx:id="topic11" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Public Area" />
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="182.0">
                <children>
-                  <Button fx:id="topic4" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic8" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
-                  <Button fx:id="topic12" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Button" />
+                  <Button fx:id="topic4" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Career" />
+                  <Button fx:id="topic8" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="Furniture" />
+                  <Button fx:id="topic12" mnemonicParsing="false" prefHeight="108.0" prefWidth="185.0" text="IT" />
                </children>
             </VBox>
          </children>

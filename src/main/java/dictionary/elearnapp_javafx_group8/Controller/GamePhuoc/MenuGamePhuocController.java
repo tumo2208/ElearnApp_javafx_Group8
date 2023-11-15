@@ -47,7 +47,7 @@ public class MenuGamePhuocController implements Initializable {
     public Button topic9;
     public Button back;
     public Button tmp;
-    private String path="src/main/resources/Database/GamePhuoc/";
+    private String path="src/main/resources/Database/PhuocData/";
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -68,10 +68,68 @@ public class MenuGamePhuocController implements Initializable {
     }
     private void getPath(int i){
         String tmp=".txt";
+        String name;
         switch (i){
-            case 1:this.path+="Animal";
+            case 1:
+                name="Animal";
+                this.path+=name;
+                MemoriesController.setTopic=name;
             break;
-            case 2:this.path+="";
+            case 2:
+                name="Sport";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 3:
+                name="Food";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 4:
+                name="Career";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 5:
+                name="Plants";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 6:
+                name="Clothing";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 7:
+                name="Environment";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 8:
+                name="Furniture";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 9:
+                name="Human Body";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 10:
+                name="Transport";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 11:
+                name="Public Area";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
+            case 12:
+                name="IT";
+                this.path+=name;
+                MemoriesController.setTopic=name;
+                break;
         }
         MemoriesController.pathToGamePhuocData=path+tmp;
         OnPlay();
