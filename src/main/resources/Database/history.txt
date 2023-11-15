@@ -20,13 +20,6 @@
 - xem waggon-way
 |superscalar architecture
 - siêu thang bậc (cấu trúc)
-|superabundant
-/,sju:pərə'bʌndənt/
-* tính từ
-- rất mực thừa thãi, rất mực dư dật, rất mực dồi dào
-|superabundantly
-*phó từ
-- xem superabundant
 |superabound
 /,sju:pərə'baund/
 * nội động từ
@@ -88,3 +81,9 @@ a priori
 *danh từ
 - đường xe ngựa; đường xe súc vật
 - xem waggon-way
+|high commission
+*danh từ
+- cơ quan đại diện ngoại giao của một nước thuộc Khối thịnh vượng chung tại một nước khác
+|high commission
+*danh từ
+- cơ quan đại diện ngoại giao của một nước thuộc Khối thịnh vượng chung tại một nước khác

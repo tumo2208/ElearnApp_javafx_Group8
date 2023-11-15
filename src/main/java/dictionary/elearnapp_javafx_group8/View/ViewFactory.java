@@ -16,7 +16,8 @@ public class ViewFactory {
     private AnchorPane APIView;
     private AnchorPane gameView;
     private AnchorPane saveView;
-    private AnchorPane memoriesView;
+    private AnchorPane memoriesMenuView;
+    private AnchorPane memoryPlayView;
     private AnchorPane catchTheWordView;
     private AnchorPane playGameTuView;
 
@@ -83,13 +84,21 @@ public class ViewFactory {
         return saveView;
     }
 
-    public AnchorPane getMemoriesView() {
+    public AnchorPane getMemoriesMenuView() {
         try {
-            memoriesView = new FXMLLoader(getClass().getResource("/FXML/GamePhuoc/Memories.fxml")).load();
+            memoriesMenuView = new FXMLLoader(getClass().getResource("/FXML/GamePhuoc/MenuGame.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return memoriesView;
+        return memoriesMenuView;
+    }
+    public AnchorPane getMemoryPlayView(){
+        try {
+            memoryPlayView = new FXMLLoader(getClass().getResource("/FXML/GamePhuoc/Memories.fxml")).load();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return memoryPlayView;
     }
 
     public AnchorPane getCatchTheWordView() {
