@@ -41,18 +41,22 @@ public class AnswerController implements Initializable {
         if (option.get() == ButtonType.CLOSE || option.get() == ButtonType.CANCEL) {
             confirmDialog.close();
         } else if (option.get() == ButtonType.OK) {
-            if (answerObstacleLabel.getText().trim().equals(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer())) {
+            String answer = answerObstacleLabel.getText().trim();
+            answer = answer.replace(" ", "");
+            answer = answer.toLowerCase();
+            if (answer.equals(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer())) {
                 try {
                     FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/level.txt");
                     BufferedReader bufferedReader = new BufferedReader(fileReader);
                     int numLevel = Integer.parseInt(bufferedReader.readLine());
-                    numLevel++;
-                    System.out.println(numLevel);
+                    if (numLevel == ChooseLevelController.currentLevel) {
+                        numLevel++;
+                        FileWriter fileWriter = new FileWriter("src/main/resources/Database/GameTu/level.txt");
+                        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+                        bufferedWriter.write(Integer.toString(numLevel));
+                        bufferedWriter.close();
+                    }
                     bufferedReader.close();
-                    FileWriter fileWriter = new FileWriter("src/main/resources/Database/GameTu/level.txt");
-                    BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-                    bufferedWriter.write(Integer.toString(numLevel));
-                    bufferedWriter.close();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

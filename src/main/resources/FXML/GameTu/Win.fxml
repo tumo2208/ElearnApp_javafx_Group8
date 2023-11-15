@@ -4,10 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.WinController">
-   <Label layoutX="469.0" layoutY="281.0" text="Win"/>
-   <Button fx:id="exitButton" layoutX="364.0" layoutY="418.0" mnemonicParsing="false" text="Exit"/>
-   <Button fx:id="homeButton" layoutX="465.0" layoutY="418.0" mnemonicParsing="false" text="Home"/>
-   <Button fx:id="nextButton" layoutX="572.0" layoutY="418.0" mnemonicParsing="false" text="Next"/>
+<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.WinController">
+   <Label layoutX="469.0" layoutY="281.0" text="Win" />
+   <Button fx:id="exitButton" layoutX="364.0" layoutY="418.0" mnemonicParsing="false" text="Exit" />
+   <Button fx:id="homeButton" layoutX="465.0" layoutY="418.0" mnemonicParsing="false" text="Home" />
+   <Button fx:id="nextButton" layoutX="572.0" layoutY="418.0" mnemonicParsing="false" text="Next" />
 </AnchorPane>

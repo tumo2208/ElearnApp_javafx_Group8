@@ -7,6 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.QuestionController">
     <ImageView fx:id="angle1" fitHeight="97.0" fitWidth="120.0" layoutX="44.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
@@ -33,4 +34,18 @@
         <Image url="@../../Images/GameTu/bell.png" />
     </ImageView>
    <Label fx:id="numLetterLabel" layoutX="79.0" layoutY="59.0" prefHeight="18.0" prefWidth="148.0" text="This obstacle has 10 letters" />
+    <VBox layoutX="46.0" layoutY="345.0" prefHeight="200.0" prefWidth="274.0">
+        <ImageView fx:id="row1" fitHeight="45.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/GameTu/packBangCuuChuong/row1.png" />
+        </ImageView>
+        <ImageView fx:id="row2" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/GameTu/packBangCuuChuong/row2.png" />
+        </ImageView>
+        <ImageView fx:id="row3" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/GameTu/packBangCuuChuong/row3.png" />
+        </ImageView>
+        <ImageView fx:id="row4" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/GameTu/packBangCuuChuong/row4.png" />
+        </ImageView>
+    </VBox>
 </AnchorPane>

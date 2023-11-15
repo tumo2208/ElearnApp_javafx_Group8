@@ -23,6 +23,10 @@ public class QuestionController implements Initializable {
     public Button submitButton;
     public ImageView bellButton;
     public Label numLetterLabel;
+    public ImageView row1;
+    public ImageView row2;
+    public ImageView row3;
+    public ImageView row4;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -43,11 +47,17 @@ public class QuestionController implements Initializable {
                     t = "packTayBac";
                 }
                 imgList[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/" + s + ".png").toString());
+                row[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + ".png").toString());
+                rowAnswer[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + "_answer.png").toString());
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+        row1.setImage(row[ChooseLevelController.currentLevel * 4]);
+        row2.setImage(row[ChooseLevelController.currentLevel * 4 + 1]);
+        row3.setImage(row[ChooseLevelController.currentLevel * 4 + 2]);
+        row4.setImage(row[ChooseLevelController.currentLevel * 4 + 3]);
         submitButton.setDisable(true);
         numLetterLabel.setText("This obstacle has "
                 + Integer.toString(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length())
@@ -105,12 +115,16 @@ public class QuestionController implements Initializable {
                 trueAnswer();
                 switch (currentQuestion) {
                     case 0: angle1.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
+                        row1.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
                         break;
                     case 1: angle2.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
+                        row2.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
                         break;
                     case 2: angle3.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
+                        row3.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
                         break;
                     case 3: angle4.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
+                        row4.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
                         break;
                 }
             } else {
@@ -182,5 +196,7 @@ public class QuestionController implements Initializable {
     private boolean isAnswer3 = false;
     private boolean isAnswer4 = false;
     private Image[] imgList = new Image[20];
+    private Image[] row = new Image[20];
+    private Image[] rowAnswer = new Image[20];
     private Alert noti = new Alert(Alert.AlertType.CONFIRMATION);
 }
