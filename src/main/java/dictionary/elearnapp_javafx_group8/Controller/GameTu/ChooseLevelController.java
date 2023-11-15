@@ -63,34 +63,34 @@ public class ChooseLevelController implements Initializable {
 
         lv1.setOnMouseClicked(mouseEvent -> {
             onQuestion();
-            currentLevel = 1;
+            currentLevel = 0;
         });
 
         lv2.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 2) {
                 onQuestion();
-                currentLevel = 2;
+                currentLevel = 1;
             }
         });
 
         lv3.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 3) {
                 onQuestion();
-                currentLevel = 3;
+                currentLevel = 2;
             }
         });
 
         lv4.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 4) {
                 onQuestion();
-                currentLevel = 4;
+                currentLevel = 3;
             }
         });
 
         lv5.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 5) {
                 onQuestion();
-                currentLevel = 5;
+                currentLevel = 4;
             }
         });
 
@@ -114,8 +114,8 @@ public class ChooseLevelController implements Initializable {
 
     private Image backIce;
     private Image backFire;
-    public static Image lockLv;
-    public static Image level2;
+    private Image lockLv;
+    private Image level2;
     private Image level3;
     private Image level4;
     private Image level5;

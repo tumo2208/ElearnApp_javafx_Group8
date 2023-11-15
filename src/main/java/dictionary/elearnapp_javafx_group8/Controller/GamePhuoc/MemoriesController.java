@@ -1,5 +1,6 @@
 package dictionary.elearnapp_javafx_group8.Controller.GamePhuoc;
 
+import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.animation.*;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.ObjectProperty;
@@ -8,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -19,7 +21,6 @@ import java.io.File;
 import java.net.URL;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public class MemoriesController implements Initializable {
     public Button Phong;
@@ -64,6 +65,7 @@ public class MemoriesController implements Initializable {
     public StackPane pane13;
     public StackPane pane14;
 
+
     public Label word0;
     public Label word1;
     public Label word2;
@@ -79,6 +81,7 @@ public class MemoriesController implements Initializable {
     public Label word12;
     public Label word13;
     public Label word14;
+    public Button Back;
 
     boolean [] isFrontShowing =new boolean[15];
 
@@ -86,15 +89,16 @@ public class MemoriesController implements Initializable {
     private Image frontImage= new Image(getClass().getResourceAsStream("/Images/GamePhuoc/frontSide.jpg"));
     private ObjectProperty<java.time.Duration> remainingDuration
             = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
-    public static final String path="src/main/resources/Database/GamePhuoc/Animal.txt";
+    public static String pathToGamePhuocData;// ="src/main/resources/Database/GamePhuoc/Animal.txt";
     public static final String trap="x2 Time Speed";
     private List<String> pairs=new ArrayList<>();
     private List<String> list=new ArrayList<>();
     private List<Integer> check=new ArrayList<>();
     private List<Integer> showingCard=new ArrayList<>();
-    Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
+    private Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
             remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
     private int cardRemoved=0;
+    private Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
     public void addWord(){
         for(int i=0;i<14;i++){
             int tmp=check.get(i);
@@ -102,7 +106,7 @@ public class MemoriesController implements Initializable {
         }
         add(check.get(14),trap);
     }
-    // đang làm đến radom thứ tự các ô bài, cần làm tiếp switch case.
+
     public void add(int x,String word){
         switch (x){
             case 0: word0.setText(word);
@@ -140,8 +144,98 @@ public class MemoriesController implements Initializable {
         }
     }
     public void gameOver(){
-        System.out.println("Game over");
+        alert.setTitle("GameOver");
+        alert.setHeaderText("Do you want to play again?");
+        alert.getButtonTypes().clear();
+        ButtonType again=new ButtonType("Play Again");
+        ButtonType quit=new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again,quit);
+        alert.show();
+        alert.setOnHidden(e-> choiceOver());
     }
+    public void choiceOver(){
+        if (alert.getResult()==alert.getButtonTypes().get(0)){
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+    public void GameWin(){
+        alert.setTitle("Win!");
+        alert.setHeaderText("Congratulation,you won! Do you want to play agian?");
+        alert.getButtonTypes().clear();
+        ButtonType again=new ButtonType("Play Again");
+        ButtonType quit=new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again,quit);
+        alert.show();
+        alert.setOnHidden(e->ChoiceWin());
+    }
+    public void ChoiceWin(){
+        if (alert.getResult()==alert.getButtonTypes().get(0)){
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+    private void onGameMenu(){
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        countDownTimeLine.stop();
+    }
+    public void resetNew(){
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
+        countDownTimeLine.stop();
+    }
+    private void onGamePlay(){
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
+    }
+
+    public void reset(){
+        countDownTimeLine=new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
+                remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
+        countDownTimeLine.setRate(1);
+        splitPairs();
+        makeList();
+        addWord();
+        for (int i=0;i<15;i++){
+            if(isFrontShowing[i]=false){
+                isFrontShowing[i]=flipIndex(i);
+            }
+        }
+        for (int i=0;i<15;i++){
+            isFrontShowing[i]=true;
+        }
+        pane0.setVisible(true);
+        pane1.setVisible(true);
+        pane2.setVisible(true);
+        pane3.setVisible(true);
+        pane4.setVisible(true);
+        pane5.setVisible(true);
+        pane6.setVisible(true);
+        pane7.setVisible(true);
+        pane8.setVisible(true);
+        pane9.setVisible(true);
+        pane10.setVisible(true);
+        pane11.setVisible(true);
+        pane12.setVisible(true);
+        pane13.setVisible(true);
+        pane14.setVisible(true);
+        getStart();
+        remainingDuration=new SimpleObjectProperty<>(java.time.Duration.ofSeconds(120));
+        time.textProperty().bind(Bindings.createStringBinding(() ->
+                        String.format("%02d:%02d",
+                                remainingDuration.get().toMinutesPart(),
+                                remainingDuration.get().toSecondsPart()),
+                remainingDuration));
+
+        countDownTimeLine.setCycleCount((int) remainingDuration.get().getSeconds());
+        countDownTimeLine.setOnFinished(event ->
+                gameOver()
+        );
+
+        countDownTimeLine.play();
+    }
+
 
 
 
@@ -157,8 +251,6 @@ public class MemoriesController implements Initializable {
         makeList();
         addWord();
         getStart();
-        System.out.println(list);
-        System.out.println(check);
 
 
         time.textProperty().bind(Bindings.createStringBinding(() ->
@@ -174,11 +266,7 @@ public class MemoriesController implements Initializable {
         countDownTimeLine.play();
 
         pane0.setOnMouseClicked((t) -> {
-            //this.isFrontShowing[0]=flip(pane0,isFrontShowing[0]);
-
             this.isFrontShowing[0]=flipIndex(0);
-
-
         });
         pane1.setOnMouseClicked((t) -> {
             this.isFrontShowing[1]=flipIndex(1);
@@ -223,24 +311,26 @@ public class MemoriesController implements Initializable {
         pane14.setOnMouseClicked((t) -> {
             this.isFrontShowing[14]=flipIndex(14);
         });
+        Back.setOnMouseClicked(e->onGameMenu());
 
     }
     public void getStart(){
-        this.isFrontShowing[0]=flip(this.pane0,this.isFrontShowing[0]);
-        this.isFrontShowing[1]=flip(this.pane1,this.isFrontShowing[1]);
-        this.isFrontShowing[2]=flip(this.pane2,this.isFrontShowing[2]);
-        this.isFrontShowing[3]=flip(this.pane3,this.isFrontShowing[3]);
-        this.isFrontShowing[4]=flip(this.pane4,this.isFrontShowing[4]);
-        this.isFrontShowing[5]=flip(this.pane5,this.isFrontShowing[5]);
-        this.isFrontShowing[6]=flip(this.pane6,this.isFrontShowing[6]);
-        this.isFrontShowing[7]=flip(this.pane7,this.isFrontShowing[7]);
-        this.isFrontShowing[8]=flip(this.pane8,this.isFrontShowing[8]);
-        this.isFrontShowing[9]=flip(this.pane9,this.isFrontShowing[9]);
-        this.isFrontShowing[10]=flip(this.pane10,this.isFrontShowing[10]);
-        this.isFrontShowing[11]=flip(this.pane11,this.isFrontShowing[11]);
-        this.isFrontShowing[12]=flip(this.pane12,this.isFrontShowing[12]);
-        this.isFrontShowing[13]=flip(this.pane13,this.isFrontShowing[13]);
-        this.isFrontShowing[14]=flip(this.pane14,this.isFrontShowing[14]);
+        this.isFrontShowing[0]=flipIndex(0);
+        this.isFrontShowing[1]=flipIndex(1);
+        this.isFrontShowing[2]=flipIndex(2);
+        this.isFrontShowing[3]=flipIndex(3);
+        this.isFrontShowing[4]=flipIndex(4);
+        this.isFrontShowing[5]=flipIndex(5);
+        this.isFrontShowing[6]=flipIndex(6);
+        this.isFrontShowing[7]=flipIndex(7);
+        this.isFrontShowing[8]=flipIndex(8);
+        this.isFrontShowing[9]=flipIndex(9);
+        this.isFrontShowing[10]=flipIndex(10);
+        this.isFrontShowing[11]=flipIndex(11);
+        this.isFrontShowing[12]=flipIndex(12);
+        this.isFrontShowing[13]=flipIndex(13);
+        this.isFrontShowing[14]=flipIndex(14);
+
     }
     public boolean flip(StackPane pane, boolean isFrontShowing){
         RotateTransition rotator = createRotator(pane,isFrontShowing);
@@ -346,7 +436,11 @@ public class MemoriesController implements Initializable {
                 break;
         }
         tmp.setVisible(false);
-
+        if (cardRemoved==15){
+            cardRemoved=0;
+            GameWin();
+            countDownTimeLine.playFromStart();
+        }
     }
     private RotateTransition createRotator(StackPane pane, boolean isFrontShowing) {
         RotateTransition rotator = new RotateTransition(Duration.millis(500), pane);
@@ -385,6 +479,7 @@ public class MemoriesController implements Initializable {
         return pause;
     }
     public void makeList(){
+        check.clear();
         for(int i=0;i<15;i++){
             this.check.add(i);
         }
@@ -436,7 +531,7 @@ public class MemoriesController implements Initializable {
 
     public void readData(){
         try {
-            File data=new File(path);
+            File data=new File(pathToGamePhuocData);
             Scanner scanner=new Scanner(data);
 
             while (scanner.hasNextLine()){
@@ -450,6 +545,7 @@ public class MemoriesController implements Initializable {
     }
     public void splitPairs(){
         Collections.shuffle(pairs);
+        list.clear();
         for(int i=0;i<7;i++){
             String[]tmp=pairs.get(i).split("\\.");
             list.add(tmp[0]);

@@ -9,131 +9,117 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="dictionary.elearnapp_javafx_group8.Controller.GamePhuoc.MemoriesController">
-    <Pane layoutX="14.0" layoutY="513.0" prefHeight="52.0" prefWidth="200.0">
-        <Button fx:id="Phuoc" mnemonicParsing="false" text="Button"/>
-        <Button fx:id="Phong" layoutX="52.0" mnemonicParsing="false" text="Button"/>
-        <Button fx:id="Tu" layoutX="106.0" mnemonicParsing="false" text="Button"/>
+<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GamePhuoc.MemoriesController">
+    <Pane layoutX="22.0" layoutY="14.0" prefHeight="52.0" prefWidth="200.0">
+        <Button fx:id="Back" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="72.0" text="Back" />
     </Pane>
     <Pane layoutX="214.0" layoutY="8.0" prefHeight="563.0" prefWidth="734.0">
         <StackPane fx:id="pane0" layoutX="20.0" layoutY="14.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card0" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card0" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word0" text="Label"/>
+            <Label fx:id="word0" alignment="CENTER" prefHeight="159.0" prefWidth="114.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane1" layoutX="166.0" layoutY="14.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card1" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card1" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word1" text="Label"/>
+            <Label fx:id="word1" alignment="CENTER" prefHeight="166.0" prefWidth="123.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane2" layoutX="309.0" layoutY="14.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card2" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card2" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word2" text="Label"/>
+            <Label fx:id="word2" alignment="CENTER" prefHeight="178.0" prefWidth="120.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane3" layoutX="452.0" layoutY="14.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card3" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card3" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word3" text="Label"/>
+            <Label fx:id="word3" alignment="CENTER" prefHeight="188.0" prefWidth="118.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane4" layoutX="598.0" layoutY="14.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card4" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card4" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word4" text="Label"/>
+            <Label fx:id="word4" alignment="CENTER" prefHeight="234.0" prefWidth="150.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane5" layoutX="14.0" layoutY="202.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card5" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card5" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word5" text="Label"/>
+            <Label fx:id="word5" alignment="CENTER" prefHeight="196.0" prefWidth="146.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane6" layoutX="166.0" layoutY="202.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card6" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card6" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word6" text="Label"/>
+            <Label fx:id="word6" alignment="CENTER" prefHeight="191.0" prefWidth="148.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane7" layoutX="309.0" layoutY="202.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card7" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card7" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word7" text="Label"/>
+            <Label fx:id="word7" alignment="CENTER" prefHeight="234.0" prefWidth="206.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane8" layoutX="452.0" layoutY="202.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card8" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card8" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word8" text="Label"/>
+            <Label fx:id="word8" alignment="CENTER" prefHeight="207.0" prefWidth="138.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane9" layoutX="598.0" layoutY="202.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card9" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card9" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word9" text="Label"/>
+            <Label fx:id="word9" alignment="CENTER" prefHeight="212.0" prefWidth="154.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane10" layoutX="14.0" layoutY="389.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card10" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card10" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word10" text="Label"/>
+            <Label fx:id="word10" alignment="CENTER" prefHeight="180.0" prefWidth="166.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane11" layoutX="166.0" layoutY="389.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card11" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card11" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word11" text="Label"/>
+            <Label fx:id="word11" alignment="CENTER" prefHeight="207.0" prefWidth="162.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane12" layoutX="309.0" layoutY="389.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card12" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card12" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word12" text="Label"/>
+            <Label fx:id="word12" alignment="CENTER" prefHeight="181.0" prefWidth="185.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane13" layoutX="452.0" layoutY="389.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card13" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card13" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word13" text="Label"/>
+            <Label fx:id="word13" alignment="CENTER" prefHeight="183.0" prefWidth="129.0" text="Label" />
         </StackPane>
         <StackPane fx:id="pane14" layoutX="598.0" layoutY="389.0" prefHeight="160.0" prefWidth="115.0">
-            <ImageView fx:id="card14" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true"
-                       preserveRatio="true" visible="false">
-                <Image url="@../../Images/GamePhuoc/frontSide.jpg"/>
+            <ImageView fx:id="card14" accessibleRole="TEXT" fitHeight="160.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                <Image url="@../../Images/GamePhuoc/frontSide.jpg" />
             </ImageView>
-            <Label fx:id="word14" text="Label"/>
+            <Label fx:id="word14" alignment="CENTER" prefHeight="196.0" prefWidth="128.0" text="Label" />
         </StackPane>
     </Pane>
-    <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="183.0">
+    <VBox layoutX="22.0" layoutY="65.0" prefHeight="200.0" prefWidth="183.0">
         <Pane prefHeight="52.0" prefWidth="200.0">
-            <Label alignment="CENTER" layoutY="8.0" prefHeight="36.0" prefWidth="183.0" text="Game Phuoc"
-                   textAlignment="CENTER"/>
+            <children>
+                <Label alignment="CENTER" layoutY="8.0" prefHeight="36.0" prefWidth="183.0" text="Game Phuoc" textAlignment="CENTER" />
+            </children>
         </Pane>
         <Pane prefHeight="50.0" prefWidth="200.0">
-            <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutY="7.0" prefHeight="36.0"
-                   prefWidth="183.0" text="time" textAlignment="CENTER"/>
+            <children>
+                <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutY="7.0" prefHeight="36.0" prefWidth="183.0" text="time" textAlignment="CENTER" />
+            </children>
         </Pane>
         <Pane prefHeight="50.0" prefWidth="200.0">
-            <Label fx:id="topic" alignment="CENTER" layoutY="7.0" prefHeight="36.0" prefWidth="183.0" text="Topic"/>
+            <children>
+                <Label fx:id="topic" alignment="CENTER" layoutY="7.0" prefHeight="36.0" prefWidth="183.0" text="Topic" />
+            </children>
         </Pane>
     </VBox>
 </AnchorPane>
