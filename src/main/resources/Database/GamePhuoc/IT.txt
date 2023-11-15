@@ -1,0 +1,39 @@
+Program.Chương trình
+Project.Dự án
+Compiler.Trình biên dịch
+Error.Lỗi
+Editor.Trình soạn thảo
+Source code.Mã nguồn
+Source file.File nguồn
+Library.Thư viện
+Pseudocode.Mã giả
+Character.Kí tự
+Digits.Chữ số
+Expression.Biểu thức
+Parameter.Tham số
+Operand.Toán hạng
+Operator.Toán tử
+Argument.Đối số
+Value.Giá trị
+Syntax.Cú pháp
+Code block.Khối lệnh
+Condition.Điều kiện
+Statement.Câu lệnh
+Declaration.Khai báo
+Initialization.Khởi tạo
+Definition.Định nghĩa
+Assign.Gán
+Allocate.Cấp phát
+Pointer.Con trỏ
+Reference.Tham chiếu
+Array.mảng
+Binary tree.Cây nhị phân
+Algorithm.Thuật toán
+Base.Hệ cơ số
+Variable.Biến
+Constant.Hằng
+Method.Phương thức
+Object.Đối tượng
+Inheritance.Thừa kế
+Class.Lớp
+Casting.Ép kiểu
