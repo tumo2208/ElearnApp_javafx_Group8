@@ -133,7 +133,7 @@ public class ViewFactory {
         return answerTuView;
     }
 
-    public AnchorPane getLoseTuView(){
+    public AnchorPane getLoseTuView() {
         try {
             loseTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Lose.fxml")).load();
         } catch (Exception e) {
@@ -142,7 +142,7 @@ public class ViewFactory {
         return loseTuView;
     }
 
-    public AnchorPane getWinTuView(){
+    public AnchorPane getWinTuView() {
         try {
             winTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Win.fxml")).load();
         } catch (Exception e) {

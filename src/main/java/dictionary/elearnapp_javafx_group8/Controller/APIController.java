@@ -77,8 +77,8 @@ public class APIController implements Initializable {
     private void googleTranslate() throws IOException {
         String rootAPI = "https://translate.googleapis.com/translate_a/single?client=gtx"
                 + "&sl=" + sourceLanguage
-                + "&tl="+ toLanguage
-                +"&dt=t&q=";
+                + "&tl=" + toLanguage
+                + "&dt=t&q=";
         String textToTranslate = firstLanguageArea.getText();
         String URLString = rootAPI + textToTranslate;
         URLString = URLString.replace(" ", "%20");
@@ -86,9 +86,9 @@ public class APIController implements Initializable {
         URL url = new URL(URLString);
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
         InputStream stream;
-        if(httpURLConnection.getResponseCode() == 200){
+        if (httpURLConnection.getResponseCode() == 200) {
             stream = httpURLConnection.getInputStream();
-        }else{
+        } else {
             stream = httpURLConnection.getErrorStream();
         }
         BufferedReader in = new BufferedReader(new InputStreamReader(stream));

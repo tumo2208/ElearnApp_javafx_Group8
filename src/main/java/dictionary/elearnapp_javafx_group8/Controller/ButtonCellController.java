@@ -11,7 +11,7 @@ import javafx.scene.layout.Priority;
 public class ButtonCellController extends ListCell<String> {
     private final String historyPath = "src/main/resources/Database/history.txt";
     HBox hbox = new HBox();
-    Label label = new Label("(empty)");
+    Label label = new Label("");
     Pane pane = new Pane();
     Button button = new Button("");
     String lastItem;
@@ -36,13 +36,13 @@ public class ButtonCellController extends ListCell<String> {
     @Override
     protected void updateItem(String item, boolean empty) {
         super.updateItem(item, empty);
-        setText(null);  // No text in label of super class
+        setText(null);
         if (empty) {
             lastItem = null;
             setGraphic(null);
         } else {
             lastItem = item;
-            label.setText(item!=null ? item : "<null>");
+            label.setText(item);
             setGraphic(hbox);
         }
     }

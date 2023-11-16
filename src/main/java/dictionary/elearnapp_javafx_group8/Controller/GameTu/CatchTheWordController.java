@@ -64,6 +64,7 @@ public class CatchTheWordController implements Initializable {
     private void onGame() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
     }
+
     private void onPlay() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("PlayGameTu");
     }

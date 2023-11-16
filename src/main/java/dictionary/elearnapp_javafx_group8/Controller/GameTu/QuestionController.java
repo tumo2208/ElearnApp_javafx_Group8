@@ -111,17 +111,21 @@ public class QuestionController implements Initializable {
             if (answer.equals(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getAnswer())) {
                 trueAnswer();
                 switch (currentQuestion) {
-                    case 0: angle1.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
-                        row1.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
+                    case 0:
+                        angle1.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                        row1.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
                         break;
-                    case 1: angle2.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
-                        row2.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
+                    case 1:
+                        angle2.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                        row2.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
                         break;
-                    case 2: angle3.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
-                        row3.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
+                    case 2:
+                        angle3.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                        row3.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
                         break;
-                    case 3: angle4.setImage(imgList[4*ChooseLevelController.currentLevel + currentQuestion]);
-                        row4.setImage(rowAnswer[4*ChooseLevelController.currentLevel + currentQuestion]);
+                    case 3:
+                        angle4.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                        row4.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
                         break;
                 }
             } else {

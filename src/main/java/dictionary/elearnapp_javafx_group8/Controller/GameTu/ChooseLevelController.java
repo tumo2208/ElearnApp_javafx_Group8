@@ -108,6 +108,7 @@ public class ChooseLevelController implements Initializable {
     private void onCatchTheWord() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("CatchTheWord");
     }
+
     private void onQuestion() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("QuestionTu");
     }
