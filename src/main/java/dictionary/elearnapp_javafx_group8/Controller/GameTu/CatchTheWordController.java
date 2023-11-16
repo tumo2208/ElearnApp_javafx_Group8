@@ -22,10 +22,6 @@ public class CatchTheWordController implements Initializable {
             exitIce = new Image(getClass().getResource("/Images/GameTu/Exit_Button.png").toString());
             playFire = new Image(getClass().getResource("/Images/GameTu/Play_Button_Click.png").toString());
             exitFire = new Image(getClass().getResource("/Images/GameTu/Exit_Button_Click.png").toString());
-            Image bg = new Image(getClass().getResource("/Images/GameTu/background.png").toString());
-            BackgroundImage bgImage = new BackgroundImage(bg, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, backgroundSize);
-            background = new Background(bgImage);
-            catchTheWordBG.setBackground(background);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -50,8 +46,6 @@ public class CatchTheWordController implements Initializable {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("PlayGameTu");
     }
 
-    public static Background background;
-    private final BackgroundSize backgroundSize = new BackgroundSize(960, 580, true, true, true, true);
     private Image playIce;
     private Image exitIce;
     private Image playFire;

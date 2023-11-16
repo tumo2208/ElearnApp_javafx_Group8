@@ -22,7 +22,7 @@ public class ChooseLevelController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        chooseLevelBG.setBackground(CatchTheWordController.background);
+
         try {
             lockLv = new Image(getClass().getResource("/Images/GameTu/locklv.png").toString());
             level2 = new Image(getClass().getResource("/Images/GameTu/lv2.png").toString());
