@@ -10,9 +10,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -242,19 +241,17 @@ public class SearchController implements Initializable {
 
         webview.setOnAction(event -> {
             Stage stage = new Stage();
-            BorderPane root = new BorderPane();
-            Scene scene = new Scene(root, 600, 400);
-            scene.setFill(Color.BLACK);
-            stage.setScene(scene);
-            stage.setTitle("CamBridge Dictionary " + wordLabel.getText());
-            stage.show();
+            AnchorPane root = new AnchorPane();
+            Scene scene = new Scene(root, 800, 600);
 
             WebView webView = new WebView();
-            BorderPane.setMargin(webView, new Insets(10));
-            root.setCenter(webView);
-
             WebEngine webEngine = webView.getEngine();
             webEngine.load("https://dictionary.cambridge.org/dictionary/english/" + wordLabel.getText());
+            root.getChildren().setAll(webView);
+
+            stage.setScene(scene);
+            stage.setTitle("CamBridge Dictionary");
+            stage.show();
         });
 
     }
