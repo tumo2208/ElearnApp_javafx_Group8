@@ -31,7 +31,7 @@ public class QuestionController implements Initializable {
         try {
             for (int i = 0; i < 20; ++i) {
                 String s = Integer.toString(i % 4 + 1);
-                String t = "";
+                String t;
                 if (i < 4) {
                     t = "packBangCuuChuong";
                 } else if (i < 8) {
@@ -57,16 +57,10 @@ public class QuestionController implements Initializable {
         row4.setImage(row[ChooseLevelController.currentLevel * 4 + 3]);
         submitButton.setDisable(true);
         numLetterLabel.setText("This obstacle has "
-                + Integer.toString(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length())
+                + Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length()
                 + " letters");
 
-        answerField.setOnKeyTyped(keyEvent -> {
-            if (answerField.getText().isEmpty()) {
-                submitButton.setDisable(true);
-            } else {
-                submitButton.setDisable(false);
-            }
-        });
+        answerField.setOnKeyTyped(keyEvent -> submitButton.setDisable(answerField.getText().isEmpty()));
 
         angle1.setOnMouseClicked(mouseEvent -> {
             if (!isAnswer1) {
@@ -155,7 +149,7 @@ public class QuestionController implements Initializable {
     private void trueAnswer() {
         noti.setAlertType(Alert.AlertType.CONFIRMATION);
         noti.setHeaderText("Congratulation, Your answer is true!\nThe angle "
-                + Integer.toString(currentQuestion + 1) + " will be flipped");
+                + (currentQuestion + 1) + " will be flipped");
         noti.getButtonTypes().clear();
         noti.getButtonTypes().add(ButtonType.OK);
         Optional<ButtonType> option = noti.showAndWait();
@@ -171,8 +165,8 @@ public class QuestionController implements Initializable {
     private boolean isAnswer2 = false;
     private boolean isAnswer3 = false;
     private boolean isAnswer4 = false;
-    private Image[] imgList = new Image[20];
-    private Image[] row = new Image[20];
-    private Image[] rowAnswer = new Image[20];
-    private Alert noti = new Alert(Alert.AlertType.CONFIRMATION);
+    private final Image[] imgList = new Image[20];
+    private final Image[] row = new Image[20];
+    private final Image[] rowAnswer = new Image[20];
+    private final Alert noti = new Alert(Alert.AlertType.CONFIRMATION);
 }

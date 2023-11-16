@@ -21,13 +21,7 @@ public class AnswerController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cfObstacleButton.setDisable(true);
 
-        answerObstacleLabel.setOnKeyTyped(keyEvent -> {
-            if (answerObstacleLabel.getText().isEmpty()) {
-                cfObstacleButton.setDisable(true);
-            } else {
-                cfObstacleButton.setDisable(false);
-            }
-        });
+        answerObstacleLabel.setOnKeyTyped(keyEvent -> cfObstacleButton.setDisable(answerObstacleLabel.getText().isEmpty()));
 
         cfObstacleButton.setOnAction(event -> setConfirmDialog());
     }
@@ -49,7 +43,7 @@ public class AnswerController implements Initializable {
                     FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/level.txt");
                     BufferedReader bufferedReader = new BufferedReader(fileReader);
                     int numLevel = Integer.parseInt(bufferedReader.readLine());
-                    if (numLevel == ChooseLevelController.currentLevel) {
+                    if (numLevel == ChooseLevelController.currentLevel + 1) {
                         numLevel++;
                         FileWriter fileWriter = new FileWriter("src/main/resources/Database/GameTu/level.txt");
                         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
@@ -76,5 +70,5 @@ public class AnswerController implements Initializable {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("LoseTu");
     }
 
-    private Dialog<ButtonType> confirmDialog = new Dialog<>();
+    private final Dialog<ButtonType> confirmDialog = new Dialog<>();
 }

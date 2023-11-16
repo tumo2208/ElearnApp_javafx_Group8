@@ -17,9 +17,9 @@ import java.util.List;
 public class Model {
 
     public static Model model;
-    private final String dbPath = "src/main/resources/Database/data.txt";
-    private final String historyPath = "src/main/resources/Database/history.txt";
-    private final String savePath = "src/main/resources/Database/save.txt";
+    final String dbPath = "src/main/resources/Database/data.txt";
+    final String historyPath = "src/main/resources/Database/history.txt";
+    final String savePath = "src/main/resources/Database/save.txt";
     private final ViewFactory viewFactory;
     private final List<Word> wordList = new ArrayList<>();
     private final Dictionary dictionary = new Dictionary();
@@ -37,8 +37,8 @@ public class Model {
         history.insertFromFile(historyList, historyPath);
         save.insertFromFile(saveList, savePath);
         saveList.sort(Comparator.comparing(Word::getWordTarget));
-        for (int i = 0; i < saveList.size(); ++i) {
-            wordList.get(dictionary.Searcher(wordList, saveList.get(i).getWordTarget())).setSaved(true);
+        for (Word word : saveList) {
+            wordList.get(dictionary.Searcher(wordList, word.getWordTarget())).setSaved(true);
         }
         try {
             FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/question.txt");
@@ -48,7 +48,7 @@ public class Model {
             List<QandA> qanda = new ArrayList<>();
             boolean isQuestion = true;
             String question = "";
-            String qAns = "";
+            String qAns;
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.startsWith("|")) {
                     QuestionCatchWord questionCatchWord = new QuestionCatchWord(answer, qanda);
@@ -56,7 +56,6 @@ public class Model {
                     answer = line.replace("|", "");
                     qanda = new ArrayList<>();
                     question = "";
-                    qAns = "";
                     isQuestion = true;
                 } else {
                     if (isQuestion) {

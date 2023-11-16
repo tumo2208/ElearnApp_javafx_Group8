@@ -25,37 +25,25 @@ public class CatchTheWordController implements Initializable {
             playFire = new Image(getClass().getResource("/Images/GameTu/Play_Button_Click.png").toString());
             helpFire = new Image(getClass().getResource("/Images/GameTu/Help_Button_Click.png").toString());
             exitFire = new Image(getClass().getResource("/Images/GameTu/Exit_Button_Click.png").toString());
-            bg = new Image(getClass().getResource("/Images/GameTu/background.png").toString());
-            bgImage = new BackgroundImage(bg, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, backgroundSize);
+            Image bg = new Image(getClass().getResource("/Images/GameTu/background.png").toString());
+            BackgroundImage bgImage = new BackgroundImage(bg, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, backgroundSize);
             background = new Background(bgImage);
             catchTheWordBG.setBackground(background);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        playButton.setOnMouseEntered(mouseEvent -> {
-            playButton.setImage(playFire);
-        });
+        playButton.setOnMouseEntered(mouseEvent -> playButton.setImage(playFire));
 
-        playButton.setOnMouseExited(mouseEvent -> {
-            playButton.setImage(playIce);
-        });
+        playButton.setOnMouseExited(mouseEvent -> playButton.setImage(playIce));
 
-        helpButton.setOnMouseEntered(mouseEvent -> {
-            helpButton.setImage(helpFire);
-        });
+        helpButton.setOnMouseEntered(mouseEvent -> helpButton.setImage(helpFire));
 
-        helpButton.setOnMouseExited(mouseEvent -> {
-            helpButton.setImage(helpIce);
-        });
+        helpButton.setOnMouseExited(mouseEvent -> helpButton.setImage(helpIce));
 
-        exitButton.setOnMouseEntered(mouseEvent -> {
-            exitButton.setImage(exitFire);
-        });
+        exitButton.setOnMouseEntered(mouseEvent -> exitButton.setImage(exitFire));
 
-        exitButton.setOnMouseExited(mouseEvent -> {
-            exitButton.setImage(exitIce);
-        });
+        exitButton.setOnMouseExited(mouseEvent -> exitButton.setImage(exitIce));
 
         exitButton.setOnMouseClicked(mouseEvent -> onGame());
         playButton.setOnMouseClicked(mouseEvent -> onPlay());
@@ -70,8 +58,6 @@ public class CatchTheWordController implements Initializable {
     }
 
     public static Background background;
-    private Image bg;
-    private BackgroundImage bgImage;
     private final BackgroundSize backgroundSize = new BackgroundSize(960, 580, true, true, true, true);
     private Image playIce;
     private Image helpIce;

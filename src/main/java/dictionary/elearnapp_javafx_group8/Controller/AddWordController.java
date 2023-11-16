@@ -66,5 +66,5 @@ public class AddWordController implements Initializable {
         notiLabel.setVisible(false);
     }
 
-    private final String dbPath = "src/main/resources/Database/data.txt";
+    final String dbPath = "src/main/resources/Database/data.txt";
 }

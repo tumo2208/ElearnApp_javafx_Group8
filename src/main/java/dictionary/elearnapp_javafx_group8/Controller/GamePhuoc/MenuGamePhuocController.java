@@ -5,49 +5,23 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class MenuGamePhuocController implements Initializable {
 
     public Button topic1;
-
-
     public Button topic10;
-
-
     public Button topic11;
-
-
     public Button topic12;
-
-
     public Button topic2;
-
-
     public Button topic3;
-
-
     public Button topic4;
-
-
     public Button topic5;
-
-
     public Button topic6;
-
-
     public Button topic7;
-
-
     public Button topic8;
-
-
     public Button topic9;
     public Button back;
-    public Button tmp;
-    private String path = "src/main/resources/Database/GamePhuoc/";
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -143,4 +117,6 @@ public class MenuGamePhuocController implements Initializable {
     private void onGame() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
     }
+
+    private String path = "src/main/resources/Database/GamePhuoc/";
 }

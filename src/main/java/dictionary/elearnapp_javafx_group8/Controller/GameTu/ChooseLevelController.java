@@ -94,13 +94,9 @@ public class ChooseLevelController implements Initializable {
             }
         });
 
-        backButton.setOnMouseEntered(mouseEvent -> {
-            backButton.setImage(backFire);
-        });
+        backButton.setOnMouseEntered(mouseEvent -> backButton.setImage(backFire));
 
-        backButton.setOnMouseExited(mouseEvent -> {
-            backButton.setImage(backIce);
-        });
+        backButton.setOnMouseExited(mouseEvent -> backButton.setImage(backIce));
 
         backButton.setOnMouseClicked(mouseEvent -> onCatchTheWord());
     }

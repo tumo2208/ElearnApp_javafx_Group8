@@ -1,7 +1,5 @@
 package dictionary.elearnapp_javafx_group8.Dictionary;
 
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class History extends Dictionary {
