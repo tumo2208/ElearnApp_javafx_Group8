@@ -1,13 +1,10 @@
 package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
-import javafx.animation.RotateTransition;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.transform.Rotate;
-import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.Optional;
@@ -132,30 +129,6 @@ public class QuestionController implements Initializable {
             }
         });
 
-        /*bellButton.setOnMouseEntered(mouseEvent -> {
-            for (int i = 0; i < 3; ++i) {
-                if (i == 0) {
-                    RotateTransition ringBell1 = new RotateTransition(Duration.millis(500), bellButton);
-                    ringBell1.setAxis(Rotate.Z_AXIS);
-                    ringBell1.setFromAngle(0);
-                    ringBell1.setToAngle(50);
-                    ringBell1.play();
-                } else if (i == 1) {
-                    RotateTransition ringBell2 = new RotateTransition(Duration.millis(500), bellButton);
-                    ringBell2.setAxis(Rotate.Z_AXIS);
-                    ringBell2.setFromAngle(50);
-                    ringBell2.setToAngle(-50);
-                    ringBell2.play();
-                } else {
-                    RotateTransition ringBell3 = new RotateTransition(Duration.millis(500), bellButton);
-                    ringBell3.setAxis(Rotate.Z_AXIS);
-                    ringBell3.setFromAngle(-50);
-                    ringBell3.setToAngle(0);
-                    ringBell3.play();
-                }
-            }
-        });*/
-
         bellButton.setOnMouseClicked(mouseEvent -> onAnswer());
     }
 
@@ -165,8 +138,7 @@ public class QuestionController implements Initializable {
 
     private void wrongAnswer() {
         noti.setAlertType(Alert.AlertType.ERROR);
-        noti.setHeaderText("Your answer is wrong!\nThe angle "
-                + Integer.toString(currentQuestion + 1) + " will not be flipped");
+        noti.setHeaderText("Oops, the answer was wrong");
         noti.getButtonTypes().clear();
         noti.getButtonTypes().add(ButtonType.OK);
         Optional<ButtonType> option = noti.showAndWait();
@@ -178,7 +150,7 @@ public class QuestionController implements Initializable {
 
     private void trueAnswer() {
         noti.setAlertType(Alert.AlertType.CONFIRMATION);
-        noti.setHeaderText("Your answer is true!\nThe angle "
+        noti.setHeaderText("Congratulation, Your answer is true!\nThe angle "
                 + Integer.toString(currentQuestion + 1) + " will be flipped");
         noti.getButtonTypes().clear();
         noti.getButtonTypes().add(ButtonType.OK);

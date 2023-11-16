@@ -79,6 +79,14 @@
     -fx-font-weight: bold;
 }
 
+.list-view Button {
+    -fx-background-color: transparent;
+}
+
+.list-view Button:hover {
+    -fx-cursor: hand;
+}
+
 .searched-word-box {
     -fx-background-color: #FFC7C7;
     -fx-background-radius: 20;

@@ -6,6 +6,7 @@ module dictionary.elearnapp_javafx_group8 {
     requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
     requires jdk.management;
+    requires javafx.web;
 
     opens dictionary.elearnapp_javafx_group8 to javafx.fxml;
     exports dictionary.elearnapp_javafx_group8;

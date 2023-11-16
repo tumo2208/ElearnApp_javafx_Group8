@@ -57,6 +57,13 @@
              </ImageView>
          </graphic>
       </Button>
+      <Button fx:id="webview" layoutX="395.0" layoutY="1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="54.0">
+         <graphic>
+             <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../Images/webview.png"/>
+             </ImageView>
+         </graphic>
+      </Button>
     </Pane>
     <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area" stylesheets="@../Styles/Search.css">
         <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />

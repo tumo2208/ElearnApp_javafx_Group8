@@ -5,10 +5,17 @@ import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.Comparator;
@@ -28,6 +35,7 @@ public class SearchController implements Initializable {
     public Dialog<ButtonType> editDialog;
     public Button saveButton;
     public ImageView saveIcon;
+    public Button webview;
 
 
     @Override
@@ -42,6 +50,8 @@ public class SearchController implements Initializable {
 
         definitionArea.setEditable(false);
         resetAllSearch();
+
+        listView.setCellFactory(param -> new ButtonCellController(searchField));
 
         searchField.setOnKeyTyped(keyEvent -> {
             if (searchField.getText().isEmpty()) {
@@ -105,19 +115,23 @@ public class SearchController implements Initializable {
                 editWordButton.setVisible(false);
                 deleteWordButton.setVisible(false);
                 saveButton.setVisible(false);
+                webview.setVisible(false);
                 listenButton.setDisable(true);
                 editWordButton.setDisable(true);
                 deleteWordButton.setDisable(true);
                 saveButton.setDisable(true);
+                webview.setDisable(true);
             } else {
                 listenButton.setVisible(true);
                 editWordButton.setVisible(true);
                 deleteWordButton.setVisible(true);
                 saveButton.setVisible(true);
+                webview.setVisible(true);
                 listenButton.setDisable(false);
                 editWordButton.setDisable(false);
                 deleteWordButton.setDisable(false);
                 saveButton.setDisable(false);
+                webview.setDisable(false);
             }
         });
 
@@ -162,10 +176,12 @@ public class SearchController implements Initializable {
                 editWordButton.setVisible(false);
                 deleteWordButton.setVisible(false);
                 saveButton.setVisible(false);
+                webview.setVisible(false);
                 listenButton.setDisable(true);
                 editWordButton.setDisable(true);
                 deleteWordButton.setDisable(true);
                 saveButton.setDisable(true);
+                webview.setDisable(true);
                 deleteSearchButton.setVisible(false);
                 deleteSearchButton.setDisable(true);
             } else {
@@ -173,10 +189,12 @@ public class SearchController implements Initializable {
                 editWordButton.setVisible(true);
                 deleteWordButton.setVisible(true);
                 saveButton.setVisible(true);
+                webview.setVisible(true);
                 listenButton.setDisable(false);
                 editWordButton.setDisable(false);
                 deleteWordButton.setDisable(false);
                 saveButton.setDisable(false);
+                webview.setDisable(false);
                 deleteSearchButton.setVisible(true);
                 deleteSearchButton.setDisable(false);
             }
@@ -222,6 +240,23 @@ public class SearchController implements Initializable {
             }
         });
 
+        webview.setOnAction(event -> {
+            Stage stage = new Stage();
+            BorderPane root = new BorderPane();
+            Scene scene = new Scene(root, 600, 400);
+            scene.setFill(Color.BLACK);
+            stage.setScene(scene);
+            stage.setTitle("CamBridge Dictionary " + wordLabel.getText());
+            stage.show();
+
+            WebView webView = new WebView();
+            BorderPane.setMargin(webView, new Insets(10));
+            root.setCenter(webView);
+
+            WebEngine webEngine = webView.getEngine();
+            webEngine.load("https://dictionary.cambridge.org/dictionary/english/" + wordLabel.getText());
+        });
+
     }
 
     private void resetAllSearch() {
@@ -233,10 +268,12 @@ public class SearchController implements Initializable {
         editWordButton.setVisible(false);
         deleteWordButton.setVisible(false);
         saveButton.setVisible(false);
+        webview.setVisible(false);
         listenButton.setDisable(true);
         editWordButton.setDisable(true);
         deleteWordButton.setDisable(true);
         saveButton.setDisable(true);
+        webview.setDisable(true);
         definitionArea.clear();
         wordLabel.setText("");
     }
