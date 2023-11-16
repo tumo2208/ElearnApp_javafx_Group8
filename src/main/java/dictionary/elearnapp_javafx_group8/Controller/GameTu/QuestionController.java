@@ -5,6 +5,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.*;
 
 import java.net.URL;
 import java.util.Optional;
@@ -47,6 +48,7 @@ public class QuestionController implements Initializable {
                 row[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + ".png").toString());
                 rowAnswer[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + "_answer.png").toString());
             }
+            ringTheBellSound = new Media(getClass().getResource("/Sound/GameTu/ringTheBell.wav").toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -128,6 +130,13 @@ public class QuestionController implements Initializable {
         });
 
         bellButton.setOnMouseClicked(mouseEvent -> onAnswer());
+
+        bellButton.setOnMouseEntered(mouseEvent -> {
+            ringBell = new MediaPlayer(ringTheBellSound);
+            ringBell.play();
+        });
+
+        bellButton.setOnMouseExited(mouseEvent -> ringBell.pause());
     }
 
     private void onAnswer() {
@@ -169,4 +178,6 @@ public class QuestionController implements Initializable {
     private final Image[] row = new Image[20];
     private final Image[] rowAnswer = new Image[20];
     private final Alert noti = new Alert(Alert.AlertType.CONFIRMATION);
+    private Media ringTheBellSound;
+    private MediaPlayer ringBell;
 }

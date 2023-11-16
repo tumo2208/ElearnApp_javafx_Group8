@@ -43,7 +43,7 @@ public class AnswerController implements Initializable {
                     FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/level.txt");
                     BufferedReader bufferedReader = new BufferedReader(fileReader);
                     int numLevel = Integer.parseInt(bufferedReader.readLine());
-                    if (numLevel == ChooseLevelController.currentLevel + 1) {
+                    if (numLevel == ChooseLevelController.currentLevel + 1 && numLevel < 5) {
                         numLevel++;
                         FileWriter fileWriter = new FileWriter("src/main/resources/Database/GameTu/level.txt");
                         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);

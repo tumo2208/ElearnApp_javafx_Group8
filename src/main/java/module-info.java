@@ -7,6 +7,7 @@ module dictionary.elearnapp_javafx_group8 {
     requires java.sql;
     requires jdk.management;
     requires javafx.web;
+    requires javafx.media;
 
     opens dictionary.elearnapp_javafx_group8 to javafx.fxml;
     exports dictionary.elearnapp_javafx_group8;

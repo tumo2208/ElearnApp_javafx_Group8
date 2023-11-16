@@ -3,6 +3,8 @@ package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,6 +16,16 @@ public class LoseController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        try {
+            Media oopsSound = new Media(getClass().getResource("/Sound/GameTu/oops.wav").toString());
+            defeat = new MediaPlayer(oopsSound);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        defeat.play();
+
         exitButton.setOnAction(event -> onGame());
         homeButton.setOnAction(event -> onPlay());
         againButton.setOnAction(event -> onAgain());
@@ -30,4 +42,6 @@ public class LoseController implements Initializable {
     private void onAgain() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("QuestionTu");
     }
+
+    private MediaPlayer defeat;
 }
