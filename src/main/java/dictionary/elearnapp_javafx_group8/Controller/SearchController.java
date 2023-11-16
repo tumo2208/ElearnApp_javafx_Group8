@@ -5,7 +5,6 @@ import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
@@ -109,29 +108,7 @@ public class SearchController implements Initializable {
             wordLabel.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
             definitionArea.setText(Model.getInstance().getWordList().get(indexOfWordSelected).getWordExplain());
 
-            if (definitionArea.getText().isEmpty()) {
-                listenButton.setVisible(false);
-                editWordButton.setVisible(false);
-                deleteWordButton.setVisible(false);
-                saveButton.setVisible(false);
-                webview.setVisible(false);
-                listenButton.setDisable(true);
-                editWordButton.setDisable(true);
-                deleteWordButton.setDisable(true);
-                saveButton.setDisable(true);
-                webview.setDisable(true);
-            } else {
-                listenButton.setVisible(true);
-                editWordButton.setVisible(true);
-                deleteWordButton.setVisible(true);
-                saveButton.setVisible(true);
-                webview.setVisible(true);
-                listenButton.setDisable(false);
-                editWordButton.setDisable(false);
-                deleteWordButton.setDisable(false);
-                saveButton.setDisable(false);
-                webview.setDisable(false);
-            }
+            setVisAndDis(!definitionArea.getText().isEmpty());
         });
 
         saveButton.setOnAction(event -> {
@@ -171,29 +148,11 @@ public class SearchController implements Initializable {
             wordLabel.setText("");
             indexOfWordSelected = -1;
             if (definitionArea.getText().isEmpty()) {
-                listenButton.setVisible(false);
-                editWordButton.setVisible(false);
-                deleteWordButton.setVisible(false);
-                saveButton.setVisible(false);
-                webview.setVisible(false);
-                listenButton.setDisable(true);
-                editWordButton.setDisable(true);
-                deleteWordButton.setDisable(true);
-                saveButton.setDisable(true);
-                webview.setDisable(true);
+                setVisAndDis(false);
                 deleteSearchButton.setVisible(false);
                 deleteSearchButton.setDisable(true);
             } else {
-                listenButton.setVisible(true);
-                editWordButton.setVisible(true);
-                deleteWordButton.setVisible(true);
-                saveButton.setVisible(true);
-                webview.setVisible(true);
-                listenButton.setDisable(false);
-                editWordButton.setDisable(false);
-                deleteWordButton.setDisable(false);
-                saveButton.setDisable(false);
-                webview.setDisable(false);
+                setVisAndDis(true);
                 deleteSearchButton.setVisible(true);
                 deleteSearchButton.setDisable(false);
             }
@@ -261,18 +220,22 @@ public class SearchController implements Initializable {
         listViewDefault();
         deleteSearchButton.setVisible(false);
         deleteSearchButton.setDisable(true);
-        listenButton.setVisible(false);
-        editWordButton.setVisible(false);
-        deleteWordButton.setVisible(false);
-        saveButton.setVisible(false);
-        webview.setVisible(false);
-        listenButton.setDisable(true);
-        editWordButton.setDisable(true);
-        deleteWordButton.setDisable(true);
-        saveButton.setDisable(true);
-        webview.setDisable(true);
+        setVisAndDis(false);
         definitionArea.clear();
         wordLabel.setText("");
+    }
+
+    private void setVisAndDis(boolean bool) {
+        listenButton.setVisible(bool);
+        editWordButton.setVisible(bool);
+        deleteWordButton.setVisible(bool);
+        saveButton.setVisible(bool);
+        webview.setVisible(bool);
+        listenButton.setDisable(!bool);
+        editWordButton.setDisable(!bool);
+        deleteWordButton.setDisable(!bool);
+        saveButton.setDisable(!bool);
+        webview.setDisable(!bool);
     }
 
     private void listViewDefault() {
