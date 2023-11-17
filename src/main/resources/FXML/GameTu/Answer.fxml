@@ -5,6 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.AnswerController">
-    <TextField fx:id="answerObstacleLabel" layoutX="379.0" layoutY="124.0" prefHeight="26.0" prefWidth="201.0" />
-    <Button fx:id="cfObstacleButton" layoutX="450.0" layoutY="215.0" mnemonicParsing="false" text="Confirm" />
+    <TextField fx:id="answerObstacleLabel" layoutX="379.0" layoutY="120.0" prefHeight="25.0" prefWidth="201.0" AnchorPane.topAnchor="120.0" />
+    <Button fx:id="cfObstacleButton" layoutX="450.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Confirm" AnchorPane.topAnchor="200.0" />
 </AnchorPane>

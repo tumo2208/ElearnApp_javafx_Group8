@@ -57,6 +57,7 @@ public class QuestionController implements Initializable {
         row2.setImage(row[ChooseLevelController.currentLevel * 4 + 1]);
         row3.setImage(row[ChooseLevelController.currentLevel * 4 + 2]);
         row4.setImage(row[ChooseLevelController.currentLevel * 4 + 3]);
+        answerField.setEditable(false);
         submitButton.setDisable(true);
         numLetterLabel.setText("This obstacle has "
                 + Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length()
@@ -67,7 +68,8 @@ public class QuestionController implements Initializable {
         angle1.setOnMouseClicked(mouseEvent -> {
             if (!isAnswer1) {
                 currentQuestion = 0;
-                answerField.clear();
+                answerField.setEditable(true);
+                submitButton.setDisable(false);
                 question.setText(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getQuestion());
                 isAnswer1 = true;
             }
@@ -76,7 +78,8 @@ public class QuestionController implements Initializable {
         angle2.setOnMouseClicked(mouseEvent -> {
             if (!isAnswer2) {
                 currentQuestion = 1;
-                answerField.clear();
+                answerField.setEditable(true);
+                submitButton.setDisable(false);
                 question.setText(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getQuestion());
                 isAnswer2 = true;
             }
@@ -85,7 +88,8 @@ public class QuestionController implements Initializable {
         angle3.setOnMouseClicked(mouseEvent -> {
             if (!isAnswer3) {
                 currentQuestion = 2;
-                answerField.clear();
+                answerField.setEditable(true);
+                submitButton.setDisable(false);
                 question.setText(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getQuestion());
                 isAnswer3 = true;
             }
@@ -94,7 +98,8 @@ public class QuestionController implements Initializable {
         angle4.setOnMouseClicked(mouseEvent -> {
             if (!isAnswer4) {
                 currentQuestion = 3;
-                answerField.clear();
+                answerField.setEditable(true);
+                submitButton.setDisable(false);
                 question.setText(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getQuestion());
                 isAnswer4 = true;
             }
@@ -127,6 +132,9 @@ public class QuestionController implements Initializable {
             } else {
                 wrongAnswer();
             }
+            answerField.clear();
+            answerField.setEditable(false);
+            submitButton.setDisable(true);
         });
 
         bellButton.setOnMouseClicked(mouseEvent -> onAnswer());

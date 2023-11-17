@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Valoon;
+    src: url(../Fonts/Valoon.ttf) format('truetype');
+}
+
 .search {
     -fx-background-color: #FFE2E2;
 }

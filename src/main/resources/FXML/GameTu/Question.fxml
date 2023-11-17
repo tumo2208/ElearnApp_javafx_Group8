@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.QuestionController">
-    <ImageView fx:id="angle1" fitHeight="97.0" fitWidth="120.0" layoutX="44.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="angle1" fitHeight="97.0" fitWidth="120.0" layoutX="44.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="44.0">
         <Image url="@../../Images/GameTu/packDefault/1.png" />
     </ImageView>
     <ImageView fx:id="angle4" fitHeight="103.0" fitWidth="120.0" layoutX="44.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
@@ -25,16 +25,16 @@
     <ImageView fitHeight="104.0" fitWidth="110.0" layoutX="103.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../../Images/GameTu/packDefault/center.png" />
     </ImageView>
-    <Pane layoutX="341.0" layoutY="52.0" prefHeight="160.0" prefWidth="581.0">
-        <Label fx:id="question" alignment="CENTER" layoutX="64.0" layoutY="38.0" prefHeight="17.0" prefWidth="453.0" />
-        <TextField fx:id="answerField" layoutX="178.0" layoutY="101.0" prefHeight="25.0" prefWidth="238.0" />
+    <Pane layoutX="325.0" layoutY="56.0" prefHeight="284.0" prefWidth="582.0">
+        <Label fx:id="question" alignment="CENTER" layoutX="65.0" layoutY="50.0" prefHeight="17.0" prefWidth="453.0" />
+        <TextField fx:id="answerField" layoutX="172.0" layoutY="117.0" prefHeight="25.0" prefWidth="238.0" />
+      <Button fx:id="submitButton" layoutX="264.0" layoutY="192.0" mnemonicParsing="false" text="Submit" />
     </Pane>
-   <Button fx:id="submitButton" layoutX="605.0" layoutY="243.0" mnemonicParsing="false" text="Submit" />
-    <ImageView fx:id="bellButton" fitHeight="104.0" fitWidth="122.0" layoutX="580.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="bellButton" fitHeight="104.0" fitWidth="122.0" layoutX="564.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../../Images/GameTu/bell.png" />
     </ImageView>
-   <Label fx:id="numLetterLabel" layoutX="79.0" layoutY="59.0" prefHeight="18.0" prefWidth="148.0" text="This obstacle has 10 letters" />
-    <VBox layoutX="46.0" layoutY="345.0" prefHeight="200.0" prefWidth="274.0">
+   <Label fx:id="numLetterLabel" layoutX="79.0" layoutY="68.0" prefHeight="18.0" prefWidth="148.0" text="This obstacle has 10 letters" AnchorPane.topAnchor="60.0" />
+    <VBox layoutX="46.0" layoutY="345.0" prefHeight="200.0" prefWidth="274.0" AnchorPane.leftAnchor="44.0">
         <ImageView fx:id="row1" fitHeight="45.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Images/GameTu/packBangCuuChuong/row1.png" />
         </ImageView>
