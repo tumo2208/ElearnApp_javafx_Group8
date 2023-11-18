@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="remove background game catch the word">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +197,10 @@
       <workItem from="1700149986571" duration="93000" />
       <workItem from="1700150144782" duration="247000" />
       <workItem from="1700193420184" duration="504000" />
+      <workItem from="1700194999153" duration="29000" />
+      <workItem from="1700195037792" duration="236000" />
+      <workItem from="1700222682076" duration="123000" />
+      <workItem from="1700307725570" duration="721000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
