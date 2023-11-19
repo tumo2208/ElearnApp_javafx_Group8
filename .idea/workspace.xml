@@ -4,131 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="remove background game catch the word">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/ButtonCellController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/AnswerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/LoseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/WinController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Career.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Clothing.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Food.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Furniture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Human Body.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/IT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Plants.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Public Area.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Sport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Transport.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GameTu/question.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/bell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row1_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row2_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row4_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row1_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row2_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row3_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row4_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row1_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row2_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row3_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row4_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row1_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row2_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row3_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row4_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row1_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row2_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row3_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row4_answer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/webview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/congratulations.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/oops.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/ringTheBell.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/CatchTheWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/CatchTheWordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/ChooseLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/ChooseLevelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/VoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/VoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QuestionCatchWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QuestionCatchWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Animal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Animal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Save.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Save.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/ThumbnailCatchTheWord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/all.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/allLV.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Learning.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Learning.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/saveButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/saveButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/saveLightButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/saveLightButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/CatchTheWord.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Save.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Save.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
-    </list>
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="ui update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,6 +199,7 @@
       <workItem from="1700315557240" duration="11059000" />
       <workItem from="1700364643595" duration="5976000" />
       <workItem from="1700383429924" duration="8196000" />
+      <workItem from="1700401211229" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -628,7 +505,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700146151756</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="ui update">
+      <option name="closed" value="true" />
+      <created>1700401520691</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1700401520691</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ui update">
+      <option name="closed" value="true" />
+      <created>1700401532941</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1700401532941</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="AddWord new" />
     <MESSAGE value="rework" />
     <MESSAGE value="Change from Search to AddWord" />
     <MESSAGE value="Add Search function" />
@@ -661,6 +553,7 @@
     <MESSAGE value="remove duplicate and setFill for icon int buttonCell" />
     <MESSAGE value="fix Game catch the word" />
     <MESSAGE value="remove background game catch the word" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove background game catch the word" />
+    <MESSAGE value="ui update" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui update" />
   </component>
 </project>
