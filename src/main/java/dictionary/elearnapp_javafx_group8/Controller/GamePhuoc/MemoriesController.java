@@ -172,6 +172,7 @@ public class MemoriesController implements Initializable {
     }
 
     public void GameWin() {
+        countDownTimeLine.pause();
         alert.setTitle("Win!");
         alert.setHeaderText("Congratulation,you won! Do you want to play agian?");
         alert.getButtonTypes().clear();
@@ -299,13 +300,6 @@ public class MemoriesController implements Initializable {
         topic.setText(setTopic);
     }
 
-    public boolean flip(StackPane pane, boolean isFrontShowing) {
-        RotateTransition rotator = createRotator(pane, isFrontShowing);
-        PauseTransition ptChangeCardFace = changeCardFace(pane, isFrontShowing);
-        ParallelTransition parallelTransition = new ParallelTransition(rotator, ptChangeCardFace);
-        parallelTransition.play();
-        return !isFrontShowing;
-    }
 
     public boolean flipIndex(int i) {
         StackPane tmp = new StackPane();
@@ -438,8 +432,8 @@ public class MemoriesController implements Initializable {
         tmp.setVisible(false);
         if (cardRemoved == 15) {
             cardRemoved = 0;
+            countDownTimeLine.stop();
             GameWin();
-            countDownTimeLine.playFromStart();
         }
     }
 
