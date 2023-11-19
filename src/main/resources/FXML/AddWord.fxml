@@ -23,7 +23,7 @@
         </ImageView>
     </Pane>
     <Pane layoutX="300.0" prefHeight="580.0" prefWidth="660.0">
-        <Label fx:id="notiLabel" layoutX="41.0" layoutY="535.0" text="Error: Word is already exists">
+        <Label fx:id="notiLabel" layoutX="38.0" layoutY="529.0" prefHeight="30.0" prefWidth="183.0" text="Error: Word is already exists">
          <font>
             <Font size="15.0" />
          </font></Label>

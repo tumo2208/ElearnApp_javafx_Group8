@@ -4,7 +4,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="game menu update" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="remove background game catch the word">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/ButtonCellController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/AnswerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/LoseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/WinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Career.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Clothing.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Food.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Furniture.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Human Body.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/IT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Plants.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Public Area.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Sport.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Transport.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Database/GameTu/question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/bell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row1_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row2_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row4_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row1_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row2_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row3_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBao/row4_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row1_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row2_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row3_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packNhatThuc/row4_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row1_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row2_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row3_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTayBac/row4_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row1_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row2_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row3_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packTiaUV/row4_answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/webview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/congratulations.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/oops.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/ringTheBell.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AppUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/CatchTheWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/CatchTheWordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/ChooseLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/ChooseLevelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SaveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/VoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/VoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Dictionary/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QuestionCatchWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Question/QuestionCatchWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Animal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/GamePhuoc/Animal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Save.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Save.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Search.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/ThumbnailCatchTheWord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/all.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/allLV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packDefault/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Learning.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Learning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/saveButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/saveButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/saveLightButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/saveLightButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/CatchTheWord.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Save.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Save.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +137,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,22 +169,23 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Phong&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADMIN/IdeaProjects/ElearnApp_javafx_Group8/src/main/java/dictionary/elearnapp_javafx_group8/Controller&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Download/ElearnApp_javafx_Group8-master/ElearnApp_javafx_Group8-master&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ADMIN\IdeaProjects\ElearnApp_javafx_Group8\.idea" />
+      <recent name="C:\Users\ADMIN\Desktop\ElearnApp_javafx_Group8\src\main\resources\Images\GamePhuoc" />
       <recent name="C:\Users\ADMIN\Desktop\ElearnApp_javafx_Group8\src\main\resources\FXML\GameTu" />
     </key>
   </component>
@@ -68,6 +193,26 @@
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.App" />
       <module name="ElearnApp_javafx_Group8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.App" />
+      <module name="ElearnApp_javafx_Group8" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dictionary.elearnapp_javafx_group8.Dictionary.Dictionary" />
+      <module name="ElearnApp_javafx_Group8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dictionary.elearnapp_javafx_group8.Dictionary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,16 +293,36 @@
       <workItem from="1699723210425" duration="191000" />
       <workItem from="1699760066617" duration="6789000" />
       <workItem from="1699779601094" duration="4428000" />
-      <workItem from="1699791058614" duration="6314000" />
-      <workItem from="1699895359156" duration="875000" />
-      <workItem from="1699929411056" duration="1211000" />
-      <workItem from="1699943248346" duration="3914000" />
-      <workItem from="1699966588920" duration="4073000" />
-      <workItem from="1700016164155" duration="4909000" />
-      <workItem from="1700029017427" duration="1943000" />
-      <workItem from="1700039372458" duration="315000" />
-      <workItem from="1700041033697" duration="1199000" />
-      <workItem from="1700052580329" duration="2896000" />
+      <workItem from="1699791058614" duration="6904000" />
+      <workItem from="1699799824761" duration="433000" />
+      <workItem from="1699800311535" duration="13000" />
+      <workItem from="1699855394359" duration="9020000" />
+      <workItem from="1699883380063" duration="7351000" />
+      <workItem from="1699924396495" duration="4856000" />
+      <workItem from="1699942929075" duration="5275000" />
+      <workItem from="1700016667384" duration="5422000" />
+      <workItem from="1700028208190" duration="2584000" />
+      <workItem from="1700051213066" duration="7942000" />
+      <workItem from="1700059663975" duration="4115000" />
+      <workItem from="1700100159867" duration="5652000" />
+      <workItem from="1700124913053" duration="2850000" />
+      <workItem from="1700131100260" duration="863000" />
+      <workItem from="1700132455366" duration="232000" />
+      <workItem from="1700132785380" duration="74000" />
+      <workItem from="1700140155512" duration="1416000" />
+      <workItem from="1700141897808" duration="3758000" />
+      <workItem from="1700146561670" duration="126000" />
+      <workItem from="1700146721368" duration="330000" />
+      <workItem from="1700148059090" duration="545000" />
+      <workItem from="1700149986571" duration="93000" />
+      <workItem from="1700150144782" duration="247000" />
+      <workItem from="1700193420184" duration="504000" />
+      <workItem from="1700223087896" duration="23000" />
+      <workItem from="1700230708066" duration="2735000" />
+      <workItem from="1700271759274" duration="2900000" />
+      <workItem from="1700315557240" duration="11059000" />
+      <workItem from="1700364643595" duration="5976000" />
+      <workItem from="1700383429924" duration="8196000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -351,63 +516,119 @@
       <option name="project" value="LOCAL" />
       <updated>1699798521698</updated>
     </task>
-    <task id="LOCAL-00025" summary="ui update">
+    <task id="LOCAL-00025" summary="fix API">
       <option name="closed" value="true" />
-      <created>1699896376887</created>
+      <created>1699799229218</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1699896376888</updated>
+      <updated>1699799229218</updated>
     </task>
-    <task id="LOCAL-00026" summary="ui update">
+    <task id="LOCAL-00026" summary="add effect of button">
       <option name="closed" value="true" />
-      <created>1699896390956</created>
+      <created>1699887020703</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1699896390956</updated>
+      <updated>1699887020704</updated>
     </task>
-    <task id="LOCAL-00027" summary="ui update">
+    <task id="LOCAL-00027" summary="add question for game catching the word">
       <option name="closed" value="true" />
-      <created>1699896406637</created>
+      <created>1699887087313</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1699896406637</updated>
+      <updated>1699887087313</updated>
     </task>
-    <task id="LOCAL-00028" summary="game images update">
+    <task id="LOCAL-00028" summary="complete logic game">
       <option name="closed" value="true" />
-      <created>1699932394349</created>
+      <created>1700036733803</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1699932394350</updated>
+      <updated>1700036733803</updated>
     </task>
-    <task id="LOCAL-00029" summary="game images update">
+    <task id="LOCAL-00029" summary="complete logic game">
       <option name="closed" value="true" />
-      <created>1699932527561</created>
+      <created>1700056455807</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1699932527561</updated>
+      <updated>1700056455807</updated>
     </task>
-    <task id="LOCAL-00030" summary="game menu update">
+    <task id="LOCAL-00030" summary="complete logic game">
       <option name="closed" value="true" />
-      <created>1700056056311</created>
+      <created>1700056480116</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1700056056311</updated>
+      <updated>1700056480116</updated>
     </task>
-    <task id="LOCAL-00031" summary="game menu update">
+    <task id="LOCAL-00031" summary="uodate all app">
       <option name="closed" value="true" />
-      <created>1700056072828</created>
+      <created>1700059480390</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1700056072828</updated>
+      <updated>1700059480390</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add button delete in listview and add webview">
+      <option name="closed" value="true" />
+      <created>1700105754145</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1700105754145</updated>
+    </task>
+    <task id="LOCAL-00033" summary="reformat">
+      <option name="closed" value="true" />
+      <created>1700125469649</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1700125469649</updated>
+    </task>
+    <task id="LOCAL-00034" summary="reformat">
+      <option name="closed" value="true" />
+      <created>1700126271079</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1700126271079</updated>
+    </task>
+    <task id="LOCAL-00035" summary="reformat">
+      <option name="closed" value="true" />
+      <created>1700127750597</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1700127750597</updated>
+    </task>
+    <task id="LOCAL-00036" summary="remove duplicate and setFill for icon int buttonCell">
+      <option name="closed" value="true" />
+      <created>1700131897953</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1700131897953</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix Game catch the word">
+      <option name="closed" value="true" />
+      <created>1700145931760</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1700145931760</updated>
+    </task>
+    <task id="LOCAL-00038" summary="remove background game catch the word">
+      <option name="closed" value="true" />
+      <created>1700146151756</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1700146151756</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="create new javafx application" />
     <MESSAGE value="AddWord new" />
     <MESSAGE value="rework" />
     <MESSAGE value="Change from Search to AddWord" />
@@ -431,19 +651,16 @@
     <MESSAGE value="add game layout" />
     <MESSAGE value="add flashcard" />
     <MESSAGE value="update ui, add game" />
-    <MESSAGE value="ui update" />
-    <MESSAGE value="game images update" />
-    <MESSAGE value="game menu update" />
-    <option name="LAST_COMMIT_MESSAGE" value="game menu update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.io.FileNotFoundException" package="java.io" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix API" />
+    <MESSAGE value="add effect of button" />
+    <MESSAGE value="add question for game catching the word" />
+    <MESSAGE value="complete logic game" />
+    <MESSAGE value="uodate all app" />
+    <MESSAGE value="add button delete in listview and add webview" />
+    <MESSAGE value="reformat" />
+    <MESSAGE value="remove duplicate and setFill for icon int buttonCell" />
+    <MESSAGE value="fix Game catch the word" />
+    <MESSAGE value="remove background game catch the word" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove background game catch the word" />
   </component>
 </project>

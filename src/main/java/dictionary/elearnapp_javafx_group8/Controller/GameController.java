@@ -2,7 +2,6 @@ package dictionary.elearnapp_javafx_group8.Controller;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.animation.ScaleTransition;
-import javafx.animation.Transition;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;

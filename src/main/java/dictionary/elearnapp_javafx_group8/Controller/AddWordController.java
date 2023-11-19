@@ -21,8 +21,7 @@ public class AddWordController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
-        notiLabel.setVisible(false);
+        resetAllAdd();
 
         newWordField.setOnKeyTyped(keyEvent -> {
             addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
@@ -34,33 +33,40 @@ public class AddWordController implements Initializable {
         });
 
         addNewWordButton.setOnAction(event -> addWord());
+
     }
 
     private void addWord() {
-        Word newWord = new Word(newWordField.getText().trim(),  newDefinitionArea.getText().trim());
+        Word newWord = new Word(newWordField.getText().trim(), newDefinitionArea.getText().trim());
         if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
             Model.getInstance().getDictionary().addWord(newWord, dbPath);
             Model.getInstance().getWordList().add(newWord);
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
             Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
             notiLabel.setText("Add word Successfully");
-            notiLabel.setStyle("-fx-background-color: #D9F6B1;" +
+            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
                     "-fx-text-fill: #098000;" +
                     "-fx-font-family: \"Calibri Light\";" +
-                    "-fx-font-size: 15px;" +
-                    "-fx-font-weight: bold");
+                    "-fx-font-size: 15px;");
         } else {
             notiLabel.setText("Error: word is already exists");
-            notiLabel.setStyle("-fx-background-color: #D9F6B1;" +
+            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
                     "-fx-text-fill: #ff0000;" +
                     "-fx-font-family: \"Calibri Light\";" +
-                    "-fx-font-size: 15px;" +
-                    "-fx-font-weight: bold");
+                    "-fx-font-size: 15px;");
         }
         notiLabel.setVisible(true);
         newWordField.clear();
         newDefinitionArea.clear();
     }
 
-    private final String dbPath = "src/main/resources/Database/data.txt";
+    private void resetAllAdd() {
+        newWordField.clear();
+        newDefinitionArea.clear();
+        addNewWordButton.setDisable(true);
+        notiLabel.setText("");
+        notiLabel.setVisible(false);
+    }
+
+    final String dbPath = "src/main/resources/Database/data.txt";
 }

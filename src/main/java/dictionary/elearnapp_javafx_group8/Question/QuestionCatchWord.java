@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuestionCatchWord {
-    private String answer;
-    private List<QandA> qanda = new ArrayList<>();
+    private final String answer;
+    private final List<QandA> qanda;
 
     public QuestionCatchWord(String answer, List<QandA> qanda) {
         this.answer = answer;

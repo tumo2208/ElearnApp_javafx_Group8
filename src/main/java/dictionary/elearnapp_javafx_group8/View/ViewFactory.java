@@ -20,6 +20,10 @@ public class ViewFactory {
     private AnchorPane memoryPlayView;
     private AnchorPane catchTheWordView;
     private AnchorPane playGameTuView;
+    private AnchorPane questionTuView;
+    private AnchorPane answerTuView;
+    private AnchorPane loseTuView;
+    private AnchorPane winTuView;
 
     public ViewFactory() {
         selectedMenu = new SimpleStringProperty("");
@@ -30,57 +34,47 @@ public class ViewFactory {
     }
 
     public AnchorPane getSearchView() {
-        //if (searchView == null) {
         try {
             searchView = new FXMLLoader(getClass().getResource("/FXML/Search.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //}
         return searchView;
     }
 
     public AnchorPane getAddWordView() {
-        //if (addWordView == null) {
         try {
             addWordView = new FXMLLoader(getClass().getResource("/FXML/AddWord.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //}
         return addWordView;
     }
 
     public AnchorPane getAPIView() {
-        //if (APIView == null) {
         try {
             APIView = new FXMLLoader(getClass().getResource("/FXML/API.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //}
         return APIView;
     }
 
     public AnchorPane getGameView() {
-        //if (gameView == null) {
         try {
             gameView = new FXMLLoader(getClass().getResource("/FXML/Game.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //}
         return gameView;
     }
 
     public AnchorPane getSaveView() {
-        //if (saveView == null) {
         try {
             saveView = new FXMLLoader(getClass().getResource("/FXML/Save.fxml")).load();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //}
         return saveView;
     }
 
@@ -92,10 +86,11 @@ public class ViewFactory {
         }
         return memoriesMenuView;
     }
-    public AnchorPane getMemoryPlayView(){
+
+    public AnchorPane getMemoryPlayView() {
         try {
             memoryPlayView = new FXMLLoader(getClass().getResource("/FXML/GamePhuoc/Memories.fxml")).load();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return memoryPlayView;
@@ -118,6 +113,42 @@ public class ViewFactory {
         }
 
         return playGameTuView;
+    }
+
+    public AnchorPane getQuestionTuView() {
+        try {
+            questionTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Question.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return questionTuView;
+    }
+
+    public AnchorPane getAnswerTuView() {
+        try {
+            answerTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Answer.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return answerTuView;
+    }
+
+    public AnchorPane getLoseTuView() {
+        try {
+            loseTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Lose.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return loseTuView;
+    }
+
+    public AnchorPane getWinTuView() {
+        try {
+            winTuView = new FXMLLoader(getClass().getResource("/FXML/GameTu/Win.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return winTuView;
     }
 
     public void showAppWindow() {

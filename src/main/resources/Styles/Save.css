@@ -1,23 +1,23 @@
 .save_background {
-    -fx-background-color: #EEEEEE;
+    -fx-background-color: #ededed;
 }
 
 .flash_card {
-    -fx-background-color: #00FF00;
+    -fx-background-color: #d0ffc5;
     -fx-alignment: center;
     -fx-background-radius: 20;
     -fx-border-radius: 20;
-    /*-fx-border-color: linear-gradient(to top right, #DC143C, #FFFFFF, #0000FF);*/
-    -fx-effect: dropshadow(three-pass-box, #0000FF, 15, 0, 0, 5);
+    -fx-effect: dropshadow(three-pass-box, #c8c8, 15, 0, 15, 15);
 }
 
 .flash_card Label {
+    -fx-alignment: center;
     -fx-background-color: transparent;
     -fx-wrap-text: true;
     -fx-text-fill: #FFFFFF;
-    -fx-font-family: "Comic Sans MS";
+    -fx-font-family: "Arial";
     -fx-font-weight: bold;
-    -fx-font-size: 3em;
+    -fx-font-size: 28px;
 }
 
 .left_right_bar {

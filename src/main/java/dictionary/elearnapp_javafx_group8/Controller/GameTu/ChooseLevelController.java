@@ -22,7 +22,7 @@ public class ChooseLevelController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        chooseLevelBG.setBackground(CatchTheWordController.background);
+
         try {
             lockLv = new Image(getClass().getResource("/Images/GameTu/locklv.png").toString());
             level2 = new Image(getClass().getResource("/Images/GameTu/lv2.png").toString());
@@ -31,49 +31,82 @@ public class ChooseLevelController implements Initializable {
             level5 = new Image(getClass().getResource("/Images/GameTu/lv5.png").toString());
             backIce = new Image(getClass().getResource("/Images/GameTu/Back_Button.png").toString());
             backFire = new Image(getClass().getResource("/Images/GameTu/Back_Button_Click.png").toString());
-            FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/level.txt.txt");
+            FileReader fileReader = new FileReader("src/main/resources/Database/GameTu/level.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line = bufferedReader.readLine();
-            level = Integer.parseInt(line);
+            numOfLevel = Integer.parseInt(line);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        if (level == 2) {
+        if (numOfLevel == 2) {
             lv2.setImage(level2);
             lv3.setImage(lockLv);
             lv4.setImage(lockLv);
             lv5.setImage(lockLv);
-        } else if (level == 3) {
+        } else if (numOfLevel == 3) {
             lv2.setImage(level2);
             lv3.setImage(level3);
             lv4.setImage(lockLv);
             lv5.setImage(lockLv);
-        } else if (level == 4) {
+        } else if (numOfLevel == 4) {
             lv2.setImage(level2);
             lv3.setImage(level3);
             lv4.setImage(level4);
             lv5.setImage(lockLv);
-        } else if (level == 5) {
+        } else if (numOfLevel == 5) {
             lv2.setImage(level2);
             lv3.setImage(level3);
             lv4.setImage(level4);
             lv5.setImage(level5);
         }
 
-        backButton.setOnMouseEntered(mouseEvent -> {
-            backButton.setImage(backFire);
+        lv1.setOnMouseClicked(mouseEvent -> {
+            onQuestion();
+            currentLevel = 0;
         });
 
-        backButton.setOnMouseExited(mouseEvent -> {
-            backButton.setImage(backIce);
+        lv2.setOnMouseClicked(mouseEvent -> {
+            if (numOfLevel >= 2) {
+                onQuestion();
+                currentLevel = 1;
+            }
         });
+
+        lv3.setOnMouseClicked(mouseEvent -> {
+            if (numOfLevel >= 3) {
+                onQuestion();
+                currentLevel = 2;
+            }
+        });
+
+        lv4.setOnMouseClicked(mouseEvent -> {
+            if (numOfLevel >= 4) {
+                onQuestion();
+                currentLevel = 3;
+            }
+        });
+
+        lv5.setOnMouseClicked(mouseEvent -> {
+            if (numOfLevel >= 5) {
+                onQuestion();
+                currentLevel = 4;
+            }
+        });
+
+        backButton.setOnMouseEntered(mouseEvent -> backButton.setImage(backFire));
+
+        backButton.setOnMouseExited(mouseEvent -> backButton.setImage(backIce));
 
         backButton.setOnMouseClicked(mouseEvent -> onCatchTheWord());
     }
 
     private void onCatchTheWord() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("CatchTheWord");
+    }
+
+    private void onQuestion() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("QuestionTu");
     }
 
     private Image backIce;
@@ -83,5 +116,6 @@ public class ChooseLevelController implements Initializable {
     private Image level3;
     private Image level4;
     private Image level5;
-    private int level;
+    private int numOfLevel;
+    public static int currentLevel = 0;
 }

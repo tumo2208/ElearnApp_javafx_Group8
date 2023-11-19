@@ -29,6 +29,9 @@
             <graphic>
                <FontAwesomeIconView glyphName="TIMES" size="15.0" text="" />
             </graphic>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
          </Button>
       </Pane>
       <ListView fx:id="listView" layoutX="20.0" layoutY="63.0" prefHeight="352.0" prefWidth="210.0" stylesheets="@../Styles/Search.css" />
@@ -68,6 +71,26 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Button fx:id="saveButton" layoutX="456.0" layoutY="8.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0">
+         <graphic>
+            <ImageView fx:id="saveIcon" fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../Images/saveButton.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="webview" layoutX="395.0" layoutY="1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="54.0">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../Images/webview.png" />
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
       <effect>
          <InnerShadow height="11.64" radius="5.32" width="11.64">
             <color>
@@ -75,13 +98,6 @@
             </color>
          </InnerShadow>
       </effect>
-      <Button fx:id="saveButton" layoutX="456.0" layoutY="8.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0">
-         <graphic>
-            <ImageView fx:id="saveIcon" fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../Images/saveButton.png" />
-            </ImageView>
-         </graphic>
-      </Button>
    </Pane>
    <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area" stylesheets="@../Styles/Search.css">
       <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />

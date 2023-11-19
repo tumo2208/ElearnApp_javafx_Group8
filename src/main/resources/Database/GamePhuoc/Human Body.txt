@@ -1,0 +1,23 @@
+Head.Đầu
+Face.Khuôn mặt
+Hair.Tóc
+Ear.Tai
+Eye.Mắt
+Nose.Mũi
+Mouth.Miệng
+Neck.Cổ
+Shoulder.Vai
+Arm.Cánh tay
+Hand.Tay
+Finger.Ngón tay
+Thumb.Ngón cái
+Back.Lưng
+Chest.Ngực
+Belly.Bụng
+Waist.Eo
+Hip.Mông
+Leg.Chân
+Knee.Đầu gối
+Ankle.Mắt cá chân
+Foot.Chân
+Toe.Ngón chân
