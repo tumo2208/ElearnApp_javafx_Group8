@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="search" stylesheets="@../Styles/Search.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SearchController">
     <Pane layoutY="127.0" prefHeight="580.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="710.0" AnchorPane.topAnchor="0.0">
         <Pane layoutX="11.0" layoutY="14.0" prefHeight="47.0" prefWidth="227.0" styleClass="search-box" stylesheets="@../Styles/Search.css">
-            <TextField fx:id="searchField" layoutX="33.0" layoutY="3.0" prefHeight="39.0" prefWidth="159.0" promptText="Enter your word here..." stylesheets="@../Styles/Search.css" />
+            <TextField fx:id="searchField" layoutX="33.0" layoutY="4.0" prefHeight="39.0" prefWidth="159.0" promptText="Enter your word here ..." stylesheets="@../Styles/Search.css" />
             <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="27.0" />
             <Button fx:id="deleteSearchButton" alignment="CENTER" layoutX="192.0" layoutY="3.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="36.0" stylesheets="@../Styles/Search.css">
                 <graphic>
                     <FontAwesomeIconView glyphName="TIMES" size="15.0" text="" />
                 </graphic>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
             </Button>
         </Pane>
         <ListView fx:id="listView" layoutX="20.0" layoutY="63.0" prefHeight="352.0" prefWidth="210.0" stylesheets="@../Styles/Search.css" />
@@ -35,6 +41,9 @@
                     <Image url="@../Images/wordPronunciation.png" />
                 </ImageView>
             </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </Button>
         <Button fx:id="editWordButton" layoutX="570.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" stylesheets="@../Styles/Search.css">
             <graphic>
@@ -42,6 +51,9 @@
                     <Image url="@../Images/edit.png" />
                 </ImageView>
             </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </Button>
         <Button fx:id="deleteWordButton" layoutX="628.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" styleClass="searched-word-box" stylesheets="@../Styles/Search.css">
             <graphic>
@@ -49,23 +61,47 @@
                     <Image url="@../Images/deleteWord.png" />
                 </ImageView>
             </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </Button>
-      <Button fx:id="saveButton" layoutX="456.0" layoutY="8.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0">
-         <graphic>
-             <ImageView fx:id="saveIcon" fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                 <Image url="@../Images/saveButton.png" />
-             </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="webview" layoutX="395.0" layoutY="1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="54.0">
-         <graphic>
-             <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
-                 <Image url="@../Images/webview.png" />
-             </ImageView>
-         </graphic>
-      </Button>
+        <Button fx:id="saveButton" layoutX="456.0" layoutY="8.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="36.0">
+            <graphic>
+                <ImageView fx:id="saveIcon" fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Images/saveButton.png" />
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="webview" layoutX="395.0" layoutY="1.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="54.0">
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Images/webview.png" />
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <effect>
+            <InnerShadow height="11.64" radius="5.32" width="11.64">
+                <color>
+                    <Color red="0.5490196347236633" green="0.5490196347236633" blue="0.5490196347236633" />
+                </color>
+            </InnerShadow>
+        </effect>
     </Pane>
     <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area" stylesheets="@../Styles/Search.css">
         <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="245.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
+        <effect>
+            <InnerShadow height="16.32" radius="7.66" width="16.32">
+                <color>
+                    <Color red="0.5473684072494507" green="0.5473684072494507" blue="0.5473684072494507" />
+                </color>
+            </InnerShadow>
+        </effect>
     </Pane>
 </AnchorPane>

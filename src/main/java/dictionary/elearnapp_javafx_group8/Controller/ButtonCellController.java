@@ -3,10 +3,9 @@ package dictionary.elearnapp_javafx_group8.Controller;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import dictionary.elearnapp_javafx_group8.Models.Model;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.Priority;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 
 public class ButtonCellController extends ListCell<String> {
@@ -24,8 +23,10 @@ public class ButtonCellController extends ListCell<String> {
         iconDelete.setIcon(FontAwesomeIcon.TIMES);
         iconDelete.setFill(Color.GRAY);
         button.setGraphic(iconDelete);
+        button.setStyle("-fx-background-color: transparent");
         button.disableProperty().bind(searchField.textProperty().isEmpty().not());
         button.visibleProperty().bind(searchField.textProperty().isEmpty());
+        hbox.setAlignment(Pos.CENTER);
         button.setOnAction(event -> {
             ListView<String> listView = this.getListView();
             int indexOfWordHistory = Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(), this.getItem());

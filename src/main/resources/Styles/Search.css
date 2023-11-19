@@ -39,10 +39,11 @@
 }
 
 .list-view {
-    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-color: #fff;
     -fx-background-radius: 5;
     -fx-text-fill: #000000;
-    -fx-font-family: "Calibri Light";
+    -fx-font-family: "Arial";
+    -fx-font-weight: 600;
     -fx-font-size: 1.2em;
     -fx-padding: 5;
     overflow: scroll;
@@ -50,7 +51,7 @@
 }
 
 .list-view .scroll-bar {
-    -fx-background-color: transparent;
+    -fx-background-color: #ffffde;
 }
 
 /*.list-view .scroll-bar:vertical .decrement-button, .list-view .scroll-bar:vertical .decrement-arrow,
@@ -65,7 +66,7 @@
 }
 
 .list-view .scroll-bar:vertical .track {
-    -fx-background-color: transparent;
+    -fx-background-color: #ffffde;
     -fx-background-insets: 5, 5, 5;
     -fx-background-radius: 5;
 }
@@ -78,18 +79,10 @@
     -fx-background-color: #ffecd5;
 }
 
-.list-view .list-cell:filled:hover {
+.list-view .list-cell:filled:hover,
+.list-view .list-cell:filled:selected {
     -fx-background-color: #ebecae;
     -fx-text-fill: #000000;
-    -fx-font-weight: bold;
-}
-
-.list-view Button {
-    -fx-background-color: transparent;
-}
-
-.list-view Button:hover {
-    -fx-cursor: hand;
 }
 
 .searched-word-box {
@@ -99,12 +92,6 @@
 
 .searched-word-box Button {
     -fx-background-color: transparent;
-}
-
-.searched-word-box Button:hover {
-    -fx-cursor: hand;
-    -fx-scale-x: 1.2;
-    -fx-scale-y: 1.2;
 }
 
 .searched-word-box Label {
@@ -132,4 +119,20 @@
 
 .definition-area TextArea:focused .content {
     -fx-background-color: #fff;
+}
+
+.definition-area TextArea .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.definition-area TextArea .scroll-bar:vertical .thumb {
+    -fx-background-color: #c8c8c8;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
+}
+
+.definition-area TextArea .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
 }

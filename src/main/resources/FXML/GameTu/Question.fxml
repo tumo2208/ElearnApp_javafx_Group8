@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -9,43 +10,52 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.QuestionController">
-    <ImageView fx:id="angle1" fitHeight="97.0" fitWidth="120.0" layoutX="44.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="44.0">
-        <Image url="@../../Images/GameTu/packDefault/1.png" />
-    </ImageView>
-    <ImageView fx:id="angle4" fitHeight="103.0" fitWidth="120.0" layoutX="44.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/3.png" />
-    </ImageView>
-    <ImageView fx:id="angle2" fitHeight="99.0" fitWidth="120.0" layoutX="153.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/2.png" />
-    </ImageView>
-    <ImageView fx:id="angle3" fitHeight="95.0" fitWidth="120.0" layoutX="153.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/4.png" />
-    </ImageView>
-    <ImageView fitHeight="104.0" fitWidth="110.0" layoutX="103.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/center.png" />
-    </ImageView>
-    <Pane layoutX="325.0" layoutY="56.0" prefHeight="284.0" prefWidth="582.0">
-        <Label fx:id="question" alignment="CENTER" layoutX="65.0" layoutY="50.0" prefHeight="17.0" prefWidth="453.0" />
-        <TextField fx:id="answerField" layoutX="172.0" layoutY="117.0" prefHeight="25.0" prefWidth="238.0" />
-      <Button fx:id="submitButton" layoutX="264.0" layoutY="192.0" mnemonicParsing="false" text="Submit" />
+<AnchorPane prefHeight="580.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.QuestionController">
+    <Pane layoutX="553.0" layoutY="324.0" prefHeight="222.0" prefWidth="344.0">
+        <Label fx:id="question" alignment="CENTER" layoutX="36.0" layoutY="34.0" prefHeight="77.0" prefWidth="272.0" />
+        <TextField fx:id="answerField" layoutX="72.0" layoutY="130.0" prefHeight="25.0" prefWidth="200.0" />
+        <Button fx:id="submitButton" layoutX="145.0" layoutY="170.0" mnemonicParsing="false" text="Submit">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Button>
     </Pane>
-    <ImageView fx:id="bellButton" fitHeight="104.0" fitWidth="122.0" layoutX="564.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="bellButton" fitHeight="104.0" fitWidth="122.0" layoutX="208.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../../Images/GameTu/bell.png" />
     </ImageView>
-   <Label fx:id="numLetterLabel" layoutX="79.0" layoutY="68.0" prefHeight="18.0" prefWidth="148.0" text="This obstacle has 10 letters" AnchorPane.topAnchor="60.0" />
-    <VBox layoutX="46.0" layoutY="345.0" prefHeight="200.0" prefWidth="274.0" AnchorPane.leftAnchor="44.0">
-        <ImageView fx:id="row1" fitHeight="45.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
+    <Label fx:id="numLetterLabel" layoutX="186.0" layoutY="417.0" prefHeight="18.0" prefWidth="148.0" text="This obstacle has 10 letters" AnchorPane.topAnchor="417.0" />
+    <VBox layoutX="562.0" layoutY="70.0" prefHeight="163.0" prefWidth="325.0" AnchorPane.leftAnchor="562.0">
+        <ImageView fx:id="row1" fitHeight="40.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Images/GameTu/packBangCuuChuong/row1.png" />
         </ImageView>
-        <ImageView fx:id="row2" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="row2" fitHeight="40.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Images/GameTu/packBangCuuChuong/row2.png" />
         </ImageView>
-        <ImageView fx:id="row3" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="row3" fitHeight="40.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Images/GameTu/packBangCuuChuong/row3.png" />
         </ImageView>
-        <ImageView fx:id="row4" fitHeight="45.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="row4" fitHeight="40.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../../Images/GameTu/packBangCuuChuong/row4.png" />
         </ImageView>
     </VBox>
+    <Pane layoutX="55.0" layoutY="70.0" prefHeight="300.0" prefWidth="400.0">
+        <ImageView fx:id="angle1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../Images/GameTu/packDefault/1.png"/>
+        </ImageView>
+        <ImageView fx:id="angle2" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../Images/GameTu/packDefault/2.png"/>
+        </ImageView>
+        <ImageView fx:id="angle3" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="150.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../Images/GameTu/packDefault/4.png"/>
+        </ImageView>
+        <ImageView fx:id="angle4" fitHeight="150.0" fitWidth="200.0" layoutY="150.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../Images/GameTu/packDefault/3.png"/>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="75.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../Images/GameTu/packDefault/center.png"/>
+        </ImageView>
+    </Pane>
 </AnchorPane>

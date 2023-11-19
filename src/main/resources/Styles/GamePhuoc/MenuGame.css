@@ -1,0 +1,13 @@
+.menu-background {
+    -fx-background-color: #FFE2E2;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 18px;
+}
+
+.back-button:hover {
+    -fx-text-fill: #91DCAD;
+    -fx-font-size: 18px;
+}

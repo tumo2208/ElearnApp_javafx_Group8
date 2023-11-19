@@ -53,6 +53,7 @@ public class QuestionController implements Initializable {
             e.printStackTrace();
         }
 
+        question.setWrapText(true);
         row1.setImage(row[ChooseLevelController.currentLevel * 4]);
         row2.setImage(row[ChooseLevelController.currentLevel * 4 + 1]);
         row3.setImage(row[ChooseLevelController.currentLevel * 4 + 2]);

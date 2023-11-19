@@ -44,12 +44,14 @@ public class AddWordController implements Initializable {
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
             Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
             notiLabel.setText("Add word Successfully");
-            notiLabel.setStyle("-fx-text-fill: #098000;" +
+            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
+                    "-fx-text-fill: #098000;" +
                     "-fx-font-family: \"Calibri Light\";" +
                     "-fx-font-size: 15px;");
         } else {
             notiLabel.setText("Error: word is already exists");
-            notiLabel.setStyle("-fx-text-fill: #ff0000;" +
+            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
+                    "-fx-text-fill: #ff0000;" +
                     "-fx-font-family: \"Calibri Light\";" +
                     "-fx-font-size: 15px;");
         }

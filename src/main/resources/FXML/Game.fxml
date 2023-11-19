@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,16 +10,19 @@
       <image>
          <Image url="@../Images/GameTu/CatchTheWordInner.png" />
       </image></ImageView>
-   <ImageView fx:id="GamePhuocInner" fitHeight="375.0" fitWidth="375.0" layoutX="75.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../Images/GamePhuoc/MemoryGameInner.jpg" />
-      </image>
+   <ImageView fx:id="GamePhuocInner" fitHeight="375.0" fitWidth="375.0" layoutX="75.0" layoutY="162.0"
+              pickOnBounds="true" preserveRatio="true">
+      <Image url="@../Images/GamePhuoc/MemoryGameInner.jpg"/>
    </ImageView>
    <ImageView fitHeight="580.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../Images/GamePanel.png" />
-      </image>
+      <Image url="@../Images/GamePanel.png"/>
    </ImageView>
-   <ImageView fx:id="GameTu" fitHeight="375.0" fitWidth="375.0" layoutX="515.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
-   <ImageView fx:id="GamePhuoc" fitHeight="375.0" fitWidth="375.0" layoutX="75.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="GameTu" fitHeight="375.0" fitWidth="375.0" layoutX="515.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></ImageView>
+   <ImageView fx:id="GamePhuoc" fitHeight="375.0" fitWidth="375.0" layoutX="75.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></ImageView>
 </AnchorPane>

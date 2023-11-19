@@ -1,0 +1,13 @@
+.background-menu-game-tu {
+    -fx-background-color: #FFE2E2;
+}
+
+.background-menu-game-tu Label {
+    -fx-padding: 10;
+    -fx-background-color: #fff;
+    -fx-background-radius: 15;
+    -fx-border-width: 2px;
+    -fx-border-color: #000;
+    -fx-border-radius: 15;
+    -fx-font-size: 19px;
+}

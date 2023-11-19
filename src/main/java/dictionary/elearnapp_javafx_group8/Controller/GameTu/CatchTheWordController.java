@@ -2,6 +2,8 @@ package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -10,6 +12,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class CatchTheWordController implements Initializable {
+    public Label instruction;
     public AnchorPane catchTheWordBG;
     public ImageView exitButton;
     public ImageView playButton;
@@ -25,6 +28,17 @@ public class CatchTheWordController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        instruction.setText("There are total 5 levels in this game. " +
+                "Players will have to guess the word the picture describes. " +
+                "There are 4 suggested questions equivalent to the 4 corners of the photo. " +
+                "Every time a player answers a question correctly, a corner of the photo will be displayed. " +
+                "The questions are directly related to the obstacle. " +
+                "Players can press the bell to predict obstacles. \n" +
+                "Good luck!");
+        instruction.setWrapText(true);
+        instruction.setAlignment(Pos.TOP_CENTER);
+        instruction.setVisible(true);
 
         playButton.setOnMouseEntered(mouseEvent -> playButton.setImage(playFire));
 

@@ -2,6 +2,7 @@ package dictionary.elearnapp_javafx_group8.Controller;
 
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
+import javafx.animation.Interpolator;
 import javafx.animation.RotateTransition;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -11,7 +12,9 @@ import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.stream.Stream;
 
 public class SaveController implements Initializable {
 
@@ -33,6 +36,12 @@ public class SaveController implements Initializable {
             cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
             numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
             isFrontCard = true;
+            flashCard.setStyle("\n" +
+                    "    -fx-background-color: #d0ffc5;\n" +
+                    "    -fx-alignment: center;\n" +
+                    "    -fx-background-radius: 20;\n" +
+                    "    -fx-border-radius: 20;\n" +
+                    "    -fx-effect: dropshadow(three-pass-box, #c8c8, 15, 0, 15, 15);");
         });
 
         rightButton.setOnMouseClicked(mouseEvent -> {
@@ -41,39 +50,47 @@ public class SaveController implements Initializable {
             cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
             numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
             isFrontCard = true;
+            flashCard.setStyle("\n" +
+                    "    -fx-background-color: #d0ffc5;\n" +
+                    "    -fx-alignment: center;\n" +
+                    "    -fx-background-radius: 20;\n" +
+                    "    -fx-border-radius: 20;\n" +
+                    "    -fx-effect: dropshadow(three-pass-box, #c8c8, 15, 0, 15, 15);");
         });
     }
 
     private void rotate() {
-        cardLabel.setVisible(false);
-        RotateTransition cardRotate = new RotateTransition(Duration.millis(700), flashCard);
-        cardRotate.setAxis(Rotate.Y_AXIS);
-        if (isFrontCard) {
-            cardRotate.setFromAngle(0);
-            cardRotate.setToAngle(180);
-        } else {
-            cardRotate.setFromAngle(180);
-            cardRotate.setToAngle(360);
-        }
-        cardRotate.play();
-        RotateTransition labelRotate = new RotateTransition(Duration.millis(700), cardLabel);
-        labelRotate.setAxis(Rotate.Y_AXIS);
-        if (isFrontCard) {
-            labelRotate.setFromAngle(0);
-            labelRotate.setToAngle(180);
-        } else {
-            labelRotate.setFromAngle(180);
-            labelRotate.setToAngle(360);
-        }
-        labelRotate.play();
-        labelRotate.setOnFinished(event -> {
+        RotateTransition cardRotate1 = new RotateTransition(Duration.millis(300), flashCard);
+        cardRotate1.setAxis(Rotate.Y_AXIS);
+        cardRotate1.setFromAngle(0);
+        cardRotate1.setToAngle(90);
+        cardRotate1.setInterpolator(Interpolator.EASE_OUT);
+        cardRotate1.play();
+        isFrontCard = !isFrontCard;
+        cardRotate1.setOnFinished(actionEvent -> {
             if (isFrontCard) {
-                cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordExplain());
-            } else {
                 cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
+                flashCard.setStyle("\n" +
+                        "    -fx-background-color: #d0ffc5;\n" +
+                        "    -fx-alignment: center;\n" +
+                        "    -fx-background-radius: 20;\n" +
+                        "    -fx-border-radius: 20;\n" +
+                        "    -fx-effect: dropshadow(three-pass-box, #c8c8, 15, 0, 15, 15);");
+            } else {
+                cardLabel.setText(trimMeaning());
+                flashCard.setStyle("\n" +
+                        "    -fx-background-color: #dacfff;\n" +
+                        "    -fx-alignment: center;\n" +
+                        "    -fx-background-radius: 20;\n" +
+                        "    -fx-border-radius: 20;\n" +
+                        "    -fx-effect: dropshadow(three-pass-box, rgba(159,204,136,0.53), 15, 0, 15, 15);");
             }
-            cardLabel.setVisible(true);
-            isFrontCard = !isFrontCard;
+            RotateTransition cardRotate2 = new RotateTransition(Duration.millis(300), flashCard);
+            cardRotate2.setAxis(Rotate.Y_AXIS);
+            cardRotate2.setFromAngle(270);
+            cardRotate2.setToAngle(360);
+            cardRotate2.setInterpolator(Interpolator.EASE_IN);
+            cardRotate2.play();
         });
 
     }
@@ -83,6 +100,24 @@ public class SaveController implements Initializable {
         isFrontCard = true;
         numberLabel.setText(indexOfWordSave + 1 + "/" + Model.getInstance().getSaveList().size());
         cardLabel.setText(Model.getInstance().getSaveList().get(indexOfWordSave).getWordTarget());
+    }
+
+    private String trimMeaning() {
+        String res = "";
+        String tmp = Model.getInstance().getSaveList().get(indexOfWordSave).getWordExplain();
+        Stream<String> tmpLines = tmp.lines();
+        ArrayList<String> lines = new ArrayList<>();
+        tmpLines.forEach(lines::add);
+        for (String line : lines) {
+            res += (line + "\n");
+            for (int i = 0; i < line.length(); ++i) {
+                if ((line.charAt(0) == '-' && line.charAt(i) == ')' && i + 2 <line.length()) ||
+                        (line.charAt(0) == '-' && line.charAt(i) != '(')) {
+                    return res;
+                }
+            }
+        }
+        return res;
     }
 
     private boolean isFrontCard = true;

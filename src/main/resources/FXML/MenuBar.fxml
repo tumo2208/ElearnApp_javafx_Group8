@@ -7,51 +7,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="140.0" prefWidth="960.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuBarController">
+<AnchorPane prefHeight="140.0" prefWidth="960.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.MenuBarController">
 
     <ImageView fitHeight="140.0" fitWidth="150.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0">
         <Image url="@../Images/logo.png" />
     </ImageView>
     <Text layoutX="60.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP 8 DICTIONARY" textAlignment="CENTER" />
-    <Button fx:id="addWordButton" layoutX="353.4" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="347.0">
+    <Button fx:id="addWordButton" layoutX="428.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="428.0">
         <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../Images/addWord.png" />
             </ImageView>
         </graphic>
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
     </Button>
-    <Button fx:id="gameButton" layoutX="464.6" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="444.0">
+    <Button fx:id="gameButton" layoutX="550.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="550.0">
         <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../Images/game.png" />
             </ImageView>
         </graphic>
     </Button>
-    <Button fx:id="googleTranslateButton" layoutX="575.4" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="541.0">
+    <Button fx:id="googleTranslateButton" layoutX="674.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="674.0">
         <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../Images/googleTranslateAPI.png" />
             </ImageView>
         </graphic>
     </Button>
-    <ImageView fitHeight="105.0" fitWidth="150.0" layoutX="803.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="50.0">
-        <Image url="@../Images/book.png" />
-    </ImageView>
-    <Button fx:id="searchWordButton" layoutX="242.2" layoutY="42.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="250.0">
+    <ImageView fitHeight="105.0" fitWidth="150.0" layoutX="652.0" layoutY="-179.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="158.0" />
+    <Button fx:id="searchWordButton" layoutX="318.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" styleClass="menu_bar" stylesheets="@../Styles/MenuBar.css" AnchorPane.leftAnchor="318.0">
         <graphic>
             <ImageView fitHeight="83.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                 <Image url="@../Images/search.png" />
             </ImageView>
         </graphic>
     </Button>
-   <Button fx:id="saveChangeButton" layoutX="686.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" AnchorPane.leftAnchor="638.0">
-      <graphic>
-          <ImageView fitHeight="60.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
-              <Image url="@../Images/Learning.png" />
-          </ImageView>
-      </graphic>
-   </Button>
+    <Button fx:id="saveChangeButton" layoutX="790.0" layoutY="37.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" AnchorPane.leftAnchor="790.0">
+        <graphic>
+            <ImageView fitHeight="60.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../Images/Learning.png" />
+            </ImageView>
+        </graphic>
+    </Button>
 </AnchorPane>

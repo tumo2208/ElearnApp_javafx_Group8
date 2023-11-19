@@ -8,11 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuGamePhuocController implements Initializable {
-
     public Button topic1;
-    public Button topic10;
-    public Button topic11;
-    public Button topic12;
     public Button topic2;
     public Button topic3;
     public Button topic4;
@@ -21,6 +17,9 @@ public class MenuGamePhuocController implements Initializable {
     public Button topic7;
     public Button topic8;
     public Button topic9;
+    public Button topic10;
+    public Button topic11;
+    public Button topic12;
     public Button back;
 
     @Override

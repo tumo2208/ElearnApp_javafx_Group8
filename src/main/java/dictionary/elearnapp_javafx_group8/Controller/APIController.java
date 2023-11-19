@@ -34,6 +34,8 @@ public class APIController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        firstLanguageArea.setWrapText(true);
+        secondLanguageArea.setWrapText(true);
 
         secondLanguageArea.setEditable(false);
         resetAllAPI();
@@ -49,15 +51,15 @@ public class APIController implements Initializable {
             if (sourceLanguage.equals("en")) {
                 sourceLanguage = "vi";
                 toLanguage = "en";
-                firstLanguage.setText("Vietnamese");
-                secondLanguage.setText("English");
+                firstLanguage.setText("VIETNAMESE");
+                secondLanguage.setText("ENGLISH");
                 flag1.setImage(vietnamFlag);
                 flag2.setImage(englandFlag);
             } else {
                 sourceLanguage = "en";
                 toLanguage = "vi";
-                firstLanguage.setText("English");
-                secondLanguage.setText("Vietnamese");
+                firstLanguage.setText("ENGLISH");
+                secondLanguage.setText("VIETNAMESE");
                 flag1.setImage(englandFlag);
                 flag2.setImage(vietnamFlag);
             }
@@ -114,8 +116,8 @@ public class APIController implements Initializable {
 
     private void resetAllAPI() {
         translateButton.setDisable(true);
-        firstLanguage.setText("English");
-        secondLanguage.setText("Vietnamese");
+        firstLanguage.setText("ENGLISH");
+        secondLanguage.setText("VIETNAMESE");
         flag1.setImage(englandFlag);
         flag2.setImage(vietnamFlag);
         firstLanguageArea.clear();
