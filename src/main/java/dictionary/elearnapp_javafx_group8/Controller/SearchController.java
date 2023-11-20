@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
@@ -30,11 +31,10 @@ public class SearchController implements Initializable {
     public Button editWordButton;
     public Button deleteWordButton;
     public TextArea definitionArea;
-    public Dialog<ButtonType> editDialog;
     public Button saveButton;
     public ImageView saveIcon;
     public Button webview;
-
+    private Dialog<ButtonType> cfDialog;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -128,68 +128,126 @@ public class SearchController implements Initializable {
         });
 
         deleteWordButton.setOnAction(event -> {
-            indexOfWordSave = Model.getInstance().getSave().Searcher(Model.getInstance().getSaveList(),
-                    Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
-            indexOfWordHistory = Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(),
-                    Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
-            if (indexOfWordSave != -1) {
-                Model.getInstance().getSave().deleteWord(Model.getInstance().getSaveList(),
-                        indexOfWordSave, savePath);
-            }
-            if (indexOfWordHistory != -1) {
-                Model.getInstance().getHistory().deleteWord(Model.getInstance().getHistoryList(),
-                        indexOfWordHistory, historyPath);
-            }
-            Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(), indexOfWordSelected, dbPath);
-            listViewDefault();
-            listView.setItems(observableList);
-            searchField.clear();
-            definitionArea.clear();
-            wordLabel.setText("");
-            indexOfWordSelected = -1;
-            if (definitionArea.getText().isEmpty()) {
-                setVisAndDis(false);
-                deleteSearchButton.setVisible(false);
-                deleteSearchButton.setDisable(true);
-            } else {
-                setVisAndDis(true);
-                deleteSearchButton.setVisible(true);
-                deleteSearchButton.setDisable(false);
-            }
-        });
-
-        editWordButton.setOnAction(event -> {
-            editDialog = new Dialog<>();
-            editDialog.setTitle("Edit Word");
-            TextArea editArea = new TextArea();
-            editArea.setText(definitionArea.getText());
-            editArea.setPrefWidth(500);
-            editArea.setPrefHeight(500);
-            editDialog.getDialogPane().setContent(new VBox(editArea));
-            editDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
-            editDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
-            Optional<ButtonType> option = editDialog.showAndWait();
-            if (option.get() == ButtonType.OK) {
-                Model.getInstance().getDictionary().updateWord(Model.getInstance().getWordList(),
-                        indexOfWordSelected, editArea.getText().trim(), dbPath);
+            cfDialog = new Dialog<>();
+            Label lb = new Label("Are you sure to delete this word?");
+            cfDialog.getDialogPane().setContent(new VBox(lb));
+            cfDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
+            cfDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+            Optional<ButtonType> option = cfDialog.showAndWait();
+            if (option.get() == ButtonType.CANCEL || option.get() == ButtonType.CLOSE) {
+                cfDialog.close();
+            } else if (option.get() == ButtonType.OK) {
                 indexOfWordSave = Model.getInstance().getSave().Searcher(Model.getInstance().getSaveList(),
                         Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
                 indexOfWordHistory = Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(),
                         Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
                 if (indexOfWordSave != -1) {
-                    Model.getInstance().getSave().updateWord(Model.getInstance().getSaveList(),
-                            indexOfWordSave, editArea.getText().trim(), savePath);
+                    Model.getInstance().getSave().deleteWord(Model.getInstance().getSaveList(),
+                            indexOfWordSave, savePath);
                 }
                 if (indexOfWordHistory != -1) {
-                    Model.getInstance().getHistory().updateWord(Model.getInstance().getHistoryList(),
-                            indexOfWordHistory, editArea.getText().trim(), historyPath);
+                    Model.getInstance().getHistory().deleteWord(Model.getInstance().getHistoryList(),
+                            indexOfWordHistory, historyPath);
                 }
-                editDialog.close();
-            } else if (option.get() == ButtonType.CANCEL) {
-                editDialog.close();
-            } else if (option.get() == ButtonType.CLOSE) {
-                editDialog.close();
+                Model.getInstance().getDictionary().deleteWord(Model.getInstance().getWordList(), indexOfWordSelected, dbPath);
+                listViewDefault();
+                listView.setItems(observableList);
+                searchField.clear();
+                definitionArea.clear();
+                wordLabel.setText("");
+                indexOfWordSelected = -1;
+                if (definitionArea.getText().isEmpty()) {
+                    setVisAndDis(false);
+                    deleteSearchButton.setVisible(false);
+                    deleteSearchButton.setDisable(true);
+                } else {
+                    setVisAndDis(true);
+                    deleteSearchButton.setVisible(true);
+                    deleteSearchButton.setDisable(false);
+                }
+                cfDialog.close();
             }
+        });
+
+        editWordButton.setOnAction(event -> {
+            Stage stage = new Stage();
+            AnchorPane anchorPane = new AnchorPane();
+            Scene scene = new Scene(anchorPane, 600, 400);
+
+            TextArea editDefinitionArea = new TextArea();
+            editDefinitionArea.setText(definitionArea.getText());
+            editDefinitionArea.setPrefHeight(280);
+            editDefinitionArea.setPrefWidth(540);
+            editDefinitionArea.setLayoutX(10);
+            editDefinitionArea.setLayoutY(10);
+            Pane pane1 = new Pane(editDefinitionArea);
+            pane1.setLayoutX(20);
+            pane1.setLayoutY(30);
+            pane1.setPrefWidth(560);
+            pane1.setPrefHeight(300);
+            pane1.getStylesheets().add(getClass().getResource("/Styles/Search.css").toString());
+            pane1.getStyleClass().add("definition-area");
+            editDefinitionArea.setStyle("-fx-font-size: 14px;");
+
+            Button okButton = new Button("OK");
+            Button cancelButton = new Button("Cancel");
+            okButton.setPrefWidth(60);
+            okButton.setPrefHeight(26);
+            cancelButton.setPrefWidth(60);
+            cancelButton.setPrefHeight(26);
+            okButton.setLayoutX(200);
+            okButton.setLayoutY(0);
+            cancelButton.setLayoutX(325);
+            cancelButton.setLayoutY(0);
+            Pane pane2 = new Pane(okButton, cancelButton);
+            pane2.setPrefWidth(570);
+            pane2.setPrefHeight(100);
+            pane2.setLayoutX(15);
+            pane2.setLayoutY(350);
+            pane2.setStyle("-fx-background-color: transparent");
+            okButton.setStyle("-fx-background-color: #FFFFE2;"
+                    + "-fx-background-radius: 20;"
+                    + "-fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 2);");
+            cancelButton.setStyle("-fx-background-color: #FFFFE2;"
+                    + "-fx-background-radius: 20;"
+                    + "-fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 2);");
+
+            anchorPane.getChildren().setAll(pane1, pane2);
+            anchorPane.setStyle("-fx-background-color: #E0FFFF");
+            stage.setTitle("Edit Word");
+            stage.setScene(scene);
+            stage.show();
+
+            okButton.setOnAction(event1 -> {
+                cfDialog = new Dialog<>();
+                Label lb = new Label("Are you sure to edit this word?");
+                cfDialog.getDialogPane().setContent(new VBox(lb));
+                cfDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
+                cfDialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
+                Optional<ButtonType> option = cfDialog.showAndWait();
+                if (option.get() == ButtonType.CLOSE || option.get() == ButtonType.CANCEL) {
+                    cfDialog.close();
+                } else if (option.get() == ButtonType.OK) {
+                    Model.getInstance().getDictionary().updateWord(Model.getInstance().getWordList(),
+                            indexOfWordSelected, editDefinitionArea.getText().trim(), dbPath);
+                    indexOfWordSave = Model.getInstance().getSave().Searcher(Model.getInstance().getSaveList(),
+                            Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
+                    indexOfWordHistory = Model.getInstance().getHistory().Searcher(Model.getInstance().getHistoryList(),
+                            Model.getInstance().getWordList().get(indexOfWordSelected).getWordTarget());
+                    if (indexOfWordSave != -1) {
+                        Model.getInstance().getSave().updateWord(Model.getInstance().getSaveList(),
+                                indexOfWordSave, editDefinitionArea.getText().trim(), savePath);
+                    }
+                    if (indexOfWordHistory != -1) {
+                        Model.getInstance().getHistory().updateWord(Model.getInstance().getHistoryList(),
+                                indexOfWordHistory, editDefinitionArea.getText().trim(), historyPath);
+                    }
+                    cfDialog.close();
+                    stage.close();
+                }
+            });
+
+            cancelButton.setOnAction(event1 -> stage.close());
         });
 
         listenButton.setOnAction(event -> {
