@@ -151,21 +151,20 @@ public class ViewFactory {
         return winTuView;
     }
 
-    public void showAppWindow() {
+    public void showAppWindow(Stage stage) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/Fxml/AppUI.fxml"));
         AppUIController appUIController = new AppUIController();
         fxmlLoader.setController(appUIController);
-        createStage(fxmlLoader);
+        createStage(fxmlLoader, stage);
     }
 
-    private void createStage(FXMLLoader fxmlLoader) {
+    private void createStage(FXMLLoader fxmlLoader, Stage stage) {
         Scene scene = null;
         try {
             scene = new Scene(fxmlLoader.load());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("English Learning Application");
         stage.show();

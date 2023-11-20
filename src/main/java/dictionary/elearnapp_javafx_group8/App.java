@@ -8,7 +8,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Model.getInstance().getViewFactory().showAppWindow();
+        Model.getInstance().getViewFactory().showAppWindow(stage);
     }
 
     public static void main(String[] args) {
