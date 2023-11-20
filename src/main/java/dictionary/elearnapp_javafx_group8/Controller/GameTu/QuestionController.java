@@ -5,7 +5,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.*;
+import javafx.stage.StageStyle;
 
 import java.net.URL;
 import java.util.Optional;
@@ -133,6 +135,7 @@ public class QuestionController implements Initializable {
             } else {
                 wrongAnswer();
             }
+            question.setText("");
             answerField.clear();
             answerField.setEditable(false);
             submitButton.setDisable(true);
@@ -153,26 +156,36 @@ public class QuestionController implements Initializable {
     }
 
     private void wrongAnswer() {
-        noti.setAlertType(Alert.AlertType.ERROR);
-        noti.setHeaderText("Oops, the answer was wrong");
-        noti.getButtonTypes().clear();
-        noti.getButtonTypes().add(ButtonType.OK);
+        noti = new Dialog<>();
+        Label lb = new Label("Oops, the answer was wrong");
+        VBox vbox = new VBox(lb);
+        noti.getDialogPane().setContent(vbox);
+        noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
+        noti.initStyle(StageStyle.UNDECORATED);
+        vbox.setStyle("-fx-background-color: #FF0000");
+        lb.setStyle("-fx-font-weight: bold;" +
+                "-fx-text-fill: #EEEEEE;" +
+                "-fx-font-size: 15px");
         Optional<ButtonType> option = noti.showAndWait();
-        noti.show();
-        if (option.get() == ButtonType.OK || option.get() == ButtonType.CLOSE) {
+        if (option.get() == ButtonType.OK) {
             noti.close();
         }
     }
 
     private void trueAnswer() {
-        noti.setAlertType(Alert.AlertType.CONFIRMATION);
-        noti.setHeaderText("Congratulation, Your answer is true!\nThe angle "
+        noti = new Dialog<>();
+        Label lb = new Label("Congratulation, Your answer is true!\nThe angle "
                 + (currentQuestion + 1) + " will be flipped");
-        noti.getButtonTypes().clear();
-        noti.getButtonTypes().add(ButtonType.OK);
+        VBox vbox = new VBox(lb);
+        noti.getDialogPane().setContent(vbox);
+        noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
+        noti.initStyle(StageStyle.UNDECORATED);
+        vbox.setStyle("-fx-background-color: #00FF00");
+        lb.setStyle("-fx-font-weight: bold;" +
+                "-fx-text-fill: #EEEEEE;" +
+                "-fx-font-size: 15px");
         Optional<ButtonType> option = noti.showAndWait();
-        noti.show();
-        if (option.get() == ButtonType.OK || option.get() == ButtonType.CLOSE) {
+        if (option.get() == ButtonType.OK) {
             noti.close();
         }
     }
@@ -186,7 +199,7 @@ public class QuestionController implements Initializable {
     private final Image[] imgList = new Image[20];
     private final Image[] row = new Image[20];
     private final Image[] rowAnswer = new Image[20];
-    private final Alert noti = new Alert(Alert.AlertType.CONFIRMATION);
+    private Dialog<ButtonType> noti;
     private Media ringTheBellSound;
     private MediaPlayer ringBell;
 }

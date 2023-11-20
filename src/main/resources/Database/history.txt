@@ -162,14 +162,6 @@ delete
 
 animation
 - (Tech) hoạt động tính
-|fuck
-*danh từ
-- sự giao cấu
-- bạn tình
-- interj
-- mẹ kiếp!
-*động từ
-- giao cấu
 |edit
 /'edit/
 * ngoại động từ
@@ -183,13 +175,16 @@ edit
 
 edit
 - biên soạn, biên tập, xuất bản
-|penis
-/'pi:nis/
-* danh từ,  số nhiều penes  /'pi:ni:z/
-- (giải phẫu) dương vật
 |fucker
 - interj
 - đồ ngốc! đồ ngu!
+|penis
+/'pi:nis/
+* danh từ,  số nhiều penes  /'pi:ni:z/
+- (giải phẫu) dương vật|penitence
+/'penitəns/
+* danh từ
+- sự ăn năn, sự hối lỗi; sự sám hối
 |add
 /æd/
 * động từ
@@ -210,5 +205,12 @@ add
 
 add
 - cộng vào, thêm vào, bổ sung
-- a. together, a. up cộng lại lấy tổng|add carry
-- (Tech) số nhớ khi cộng
+- a. together, a. up cộng lại lấy tổng
+|fuck
+*danh từ
+- sự giao cấu
+- bạn tình
+- interj
+- mẹ kiếp!
+*động từ
+- giao cấu
