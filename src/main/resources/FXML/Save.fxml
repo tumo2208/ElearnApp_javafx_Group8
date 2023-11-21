@@ -9,12 +9,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="save_background" stylesheets="@../Styles/Save.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SaveController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="save_background" stylesheets="@../Styles/Save.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.SaveController">
    <ImageView fitHeight="580.0" fitWidth="960.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/addWordBackground.png" />
+      </image>
       <effect>
-         <BoxBlur/>
+         <BoxBlur />
       </effect>
-      <Image url="@../Images/addWordBackground.png"/>
    </ImageView>
    <VBox fx:id="flashCard" layoutX="180.0" layoutY="118.0" prefHeight="270.0" prefWidth="600.0" styleClass="flash_card">
       <Label fx:id="cardLabel" maxHeight="190.0" maxWidth="500.0" prefHeight="190.0" prefWidth="500.0" />
@@ -36,4 +38,14 @@
       </Button>
       <Label fx:id="numberLabel" layoutX="100.0" layoutY="9.0" prefHeight="61.0" prefWidth="200.0" />
    </Pane>
+   <VBox fx:id="flashCard1" layoutX="-448.0" layoutY="118.0" opacity="0.0" prefHeight="270.0" prefWidth="600.0" styleClass="flash_card">
+      <children>
+         <Label fx:id="cardLabel1" maxHeight="190.0" maxWidth="500.0" prefHeight="190.0" prefWidth="500.0" />
+      </children>
+   </VBox>
+   <VBox fx:id="flashCard2" layoutX="810.0" layoutY="118.0" opacity="0.0" prefHeight="270.0" prefWidth="600.0" styleClass="flash_card">
+      <children>
+         <Label fx:id="cardLabel2" maxHeight="190.0" maxWidth="500.0" prefHeight="190.0" prefWidth="500.0" />
+      </children>
+   </VBox>
 </AnchorPane>

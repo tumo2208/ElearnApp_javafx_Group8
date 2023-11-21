@@ -3,6 +3,7 @@ package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
 import java.io.BufferedReader;
@@ -16,9 +17,27 @@ import java.util.ResourceBundle;
 public class AnswerController implements Initializable {
     public TextField answerObstacleLabel;
     public Button cfObstacleButton;
+    public ImageView angle1Img;
+    public ImageView angle2Img;
+    public ImageView angle3Img;
+    public ImageView angle4Img;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        if (QuestionController.isTrue1) {
+            angle1Img.setImage(QuestionController.imgList[4 * ChooseLevelController.currentLevel]);
+        }
+        if (QuestionController.isTrue2) {
+            angle2Img.setImage(QuestionController.imgList[4 * ChooseLevelController.currentLevel + 1]);
+        }
+        if (QuestionController.isTrue3) {
+            angle3Img.setImage(QuestionController.imgList[4 * ChooseLevelController.currentLevel + 2]);
+        }
+        if (QuestionController.isTrue4) {
+            angle4Img.setImage(QuestionController.imgList[4 * ChooseLevelController.currentLevel + 3]);
+        }
+
         cfObstacleButton.setDisable(true);
 
         answerObstacleLabel.setOnKeyTyped(keyEvent -> cfObstacleButton.setDisable(answerObstacleLabel.getText().isEmpty()));

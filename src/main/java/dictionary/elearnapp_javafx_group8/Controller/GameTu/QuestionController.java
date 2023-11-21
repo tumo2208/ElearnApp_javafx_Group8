@@ -6,7 +6,6 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
-import javafx.scene.media.*;
 import javafx.stage.StageStyle;
 
 import java.net.URL;
@@ -50,7 +49,9 @@ public class QuestionController implements Initializable {
                 row[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + ".png").toString());
                 rowAnswer[i] = new Image(getClass().getResource("/Images/GameTu/" + t + "/row" + s + "_answer.png").toString());
             }
-            ringTheBellSound = new Media(getClass().getResource("/Sound/GameTu/ringTheBell.wav").toString());
+            for (int i = 0; i < 4; ++i) {
+                imgFalse[i] = new Image(getClass().getResource("/Images/GameTu/packDefaultFalse/" + (i + 1) + ".png").toString());
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -69,7 +70,7 @@ public class QuestionController implements Initializable {
         answerField.setOnKeyTyped(keyEvent -> submitButton.setDisable(answerField.getText().isEmpty()));
 
         angle1.setOnMouseClicked(mouseEvent -> {
-            if (!isAnswer1) {
+            if (!isAnswer1 && question.getText().isEmpty()) {
                 currentQuestion = 0;
                 answerField.setEditable(true);
                 submitButton.setDisable(false);
@@ -79,7 +80,7 @@ public class QuestionController implements Initializable {
         });
 
         angle2.setOnMouseClicked(mouseEvent -> {
-            if (!isAnswer2) {
+            if (!isAnswer2 && question.getText().isEmpty()) {
                 currentQuestion = 1;
                 answerField.setEditable(true);
                 submitButton.setDisable(false);
@@ -89,7 +90,7 @@ public class QuestionController implements Initializable {
         });
 
         angle3.setOnMouseClicked(mouseEvent -> {
-            if (!isAnswer3) {
+            if (!isAnswer3 && question.getText().isEmpty()) {
                 currentQuestion = 2;
                 answerField.setEditable(true);
                 submitButton.setDisable(false);
@@ -99,7 +100,7 @@ public class QuestionController implements Initializable {
         });
 
         angle4.setOnMouseClicked(mouseEvent -> {
-            if (!isAnswer4) {
+            if (!isAnswer4 && question.getText().isEmpty()) {
                 currentQuestion = 3;
                 answerField.setEditable(true);
                 submitButton.setDisable(false);
@@ -114,24 +115,6 @@ public class QuestionController implements Initializable {
             answer = answer.toLowerCase();
             if (answer.equals(Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getQanda().get(currentQuestion).getAnswer())) {
                 trueAnswer();
-                switch (currentQuestion) {
-                    case 0:
-                        angle1.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        row1.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        break;
-                    case 1:
-                        angle2.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        row2.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        break;
-                    case 2:
-                        angle3.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        row3.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        break;
-                    case 3:
-                        angle4.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        row4.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
-                        break;
-                }
             } else {
                 wrongAnswer();
             }
@@ -142,13 +125,6 @@ public class QuestionController implements Initializable {
         });
 
         bellButton.setOnMouseClicked(mouseEvent -> onAnswer());
-
-        bellButton.setOnMouseEntered(mouseEvent -> {
-            ringBell = new MediaPlayer(ringTheBellSound);
-            ringBell.play();
-        });
-
-        bellButton.setOnMouseExited(mouseEvent -> ringBell.pause());
     }
 
     private void onAnswer() {
@@ -169,6 +145,27 @@ public class QuestionController implements Initializable {
         Optional<ButtonType> option = noti.showAndWait();
         if (option.get() == ButtonType.OK) {
             noti.close();
+            switch (currentQuestion) {
+                case 0:
+                    angle1.setImage(imgFalse[currentQuestion]);
+                    isTrue1 = false;
+                    break;
+                case 1:
+                    angle2.setImage(imgFalse[currentQuestion]);
+                    isTrue2 = false;
+                    break;
+                case 2:
+                    angle3.setImage(imgFalse[currentQuestion]);
+                    isTrue3 = false;
+                    break;
+                case 3:
+                    angle4.setImage(imgFalse[currentQuestion]);
+                    isTrue4 = false;
+                    break;
+            }
+            if (isAnswer1 && isAnswer2 && isAnswer3 && isAnswer4) {
+                onAnswer();
+            }
         }
     }
 
@@ -187,6 +184,31 @@ public class QuestionController implements Initializable {
         Optional<ButtonType> option = noti.showAndWait();
         if (option.get() == ButtonType.OK) {
             noti.close();
+            switch (currentQuestion) {
+                case 0:
+                    angle1.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    row1.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    isTrue1 = true;
+                    break;
+                case 1:
+                    angle2.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    row2.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    isTrue2 = true;
+                    break;
+                case 2:
+                    angle3.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    row3.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    isTrue3 = true;
+                    break;
+                case 3:
+                    angle4.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    row4.setImage(rowAnswer[4 * ChooseLevelController.currentLevel + currentQuestion]);
+                    isTrue4 = true;
+                    break;
+            }
+            if (isAnswer1 && isAnswer2 && isAnswer3 && isAnswer4) {
+                onAnswer();
+            }
         }
     }
 
@@ -196,10 +218,13 @@ public class QuestionController implements Initializable {
     private boolean isAnswer2 = false;
     private boolean isAnswer3 = false;
     private boolean isAnswer4 = false;
-    private final Image[] imgList = new Image[20];
+    public static boolean isTrue1 = false;
+    public static boolean isTrue2 = false;
+    public static boolean isTrue3 = false;
+    public static boolean isTrue4 = false;
+    public static final Image[] imgList = new Image[20];
     private final Image[] row = new Image[20];
     private final Image[] rowAnswer = new Image[20];
+    private final Image[] imgFalse = new Image[4];
     private Dialog<ButtonType> noti;
-    private Media ringTheBellSound;
-    private MediaPlayer ringBell;
 }
