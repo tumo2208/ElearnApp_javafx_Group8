@@ -128,5 +128,5 @@ public class MenuGamePhuocController implements Initializable {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
     }
 
-    private String path = "src/main/resources/Database/GamePhuoc/";
+    private String path = "src/main/resources/Database/GamePhuoc/Text/";
 }
