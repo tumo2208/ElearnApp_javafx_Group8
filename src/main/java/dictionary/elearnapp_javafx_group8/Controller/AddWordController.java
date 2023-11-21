@@ -7,6 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.net.URL;
 import java.util.Comparator;
@@ -18,10 +20,20 @@ public class AddWordController implements Initializable {
     public TextArea newDefinitionArea;
     public TextField newWordField;
     public Label notiLabel;
+    public ImageView notiImg;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        try {
+            success = new Image(getClass().getResource("/Images/successNoti.png").toString());
+            error = new Image(getClass().getResource("/Images/errorNoti.png").toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         resetAllAdd();
+        notiLabel.getStylesheets().add(getClass().getResource("/Styles/AddWord.css").toString());
 
         newWordField.setOnKeyTyped(keyEvent -> {
             addNewWordButton.setDisable(newWordField.getText().isEmpty() || newDefinitionArea.getText().isEmpty());
@@ -44,16 +56,14 @@ public class AddWordController implements Initializable {
             Model.getInstance().getDictionary().setTrie(Model.getInstance().getWordList());
             Model.getInstance().getWordList().sort(Comparator.comparing(Word::getWordTarget));
             notiLabel.setText("Add word Successfully");
-            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
-                    "-fx-text-fill: #098000;" +
-                    "-fx-font-family: \"Calibri Light\";" +
-                    "-fx-font-size: 15px;");
+            notiLabel.getStyleClass().removeAll();
+            notiLabel.getStyleClass().setAll("success_notification");
+            notiImg.setImage(success);
         } else {
             notiLabel.setText("Error: word is already exists");
-            notiLabel.setStyle("-fx-background-color: #FFE2E2;" +
-                    "-fx-text-fill: #ff0000;" +
-                    "-fx-font-family: \"Calibri Light\";" +
-                    "-fx-font-size: 15px;");
+            notiLabel.getStyleClass().removeAll();
+            notiLabel.getStyleClass().setAll("error_notification");
+            notiImg.setImage(error);
         }
         notiLabel.setVisible(true);
         newWordField.clear();
@@ -69,4 +79,6 @@ public class AddWordController implements Initializable {
     }
 
     final String dbPath = "src/main/resources/Database/data.txt";
+    private Image success;
+    private Image error;
 }

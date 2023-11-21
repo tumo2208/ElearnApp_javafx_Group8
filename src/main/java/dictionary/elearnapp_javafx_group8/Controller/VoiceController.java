@@ -11,18 +11,31 @@ public class VoiceController {
     private final int rate;
     private final int volume;
 
+    /**
+     * khởi tạo voice với các thông số đã cho.
+     * @param itemVoice giọng nam/nữ
+     * @param rate tốc độ đọc
+     * @param volume âm lượng
+     */
     public VoiceController(int itemVoice, int rate, int volume) {
         this.itemVoice = itemVoice;
         this.rate = rate;
         this.volume = volume;
     }
 
+    /**
+     * khởi tạo mặc định với giọng nữ, tốc độc đọc 1, volume 70%.
+     */
     public VoiceController() {
         this.itemVoice = 1;
         this.rate = 1;
         this.volume = 70;
     }
 
+    /**
+     * phát âm từ/đoạn văn bản được đưa vào.
+     * @param word từ/đoạn văn bản.
+     */
     public void makeSound(String word) {
         File file = new File(path);
         String setupVoice = "Dim Speaker\n" +

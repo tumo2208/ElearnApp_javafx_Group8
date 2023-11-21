@@ -25,7 +25,6 @@ public class MemoriesController implements Initializable {
     public Label time;
     public static String setTopic;
 
-
     public Label topic;
 
     public ImageView card0;

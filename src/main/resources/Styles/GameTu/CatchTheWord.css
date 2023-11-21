@@ -1,13 +1,19 @@
 .background-menu-game-tu {
-    -fx-background-color: #FFE2E2;
+    -fx-background-color: #E2E2FF;
 }
 
 .background-menu-game-tu Label {
-    -fx-padding: 10;
+    -fx-padding: 60 20 20 20;
     -fx-background-color: #fff;
-    -fx-background-radius: 15;
-    -fx-border-width: 2px;
-    -fx-border-color: #000;
-    -fx-border-radius: 15;
+    -fx-background-radius: 20;
     -fx-font-size: 19px;
+}
+
+.Instruction {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-font-size: 24px;
+    -fx-alignment: center;
+    -fx-font-weight: 700;
+    -fx-text-fill: #9090a5;
 }

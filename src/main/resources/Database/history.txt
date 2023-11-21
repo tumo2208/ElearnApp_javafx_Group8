@@ -1,9 +1,24 @@
-|absquatulate
-*nội động từ
-- trốn chạy
 |abarticular
 *tính từ
 - (giải phẫu) học ngoài khớp; trật khớp
+|a priori
+/'eiprai'ɔ:rai/
+* danh từ &amp;amp; phó từ
+- theo cách suy diễn, theo cách diễn dịch
+- tiên nghiệm
+= probability a_priori+ (toán học) xác xuất tiên nghiệm
+
+a priori
+- tiên nghiệm
+|a la carte
+/'ɑ:lɑ:'kɑ:t/
+* phó từ
+- theo món, gọi theo món, đặt theo món
+= to dine a_la_carte+ ăn cơm gọi theo món
+|a la mode
+/,ɑ:lə'moud/
+* phó từ
+- hợp thời trang, đúng mốt
 |dsc
 *(viết tắt)
 - Tiến sự khoa học (Doctor of Science)
@@ -31,20 +46,6 @@
 * tính từ
 - (từ lóng) tài, giỏi, khéo, cừ; thạo
 = he is a dab hand at painting+ hắn ta vẽ rất cừ
-|a la carte
-/'ɑ:lɑ:'kɑ:t/
-* phó từ
-- theo món, gọi theo món, đặt theo món
-= to dine a_la_carte+ ăn cơm gọi theo món
-|a priori
-/'eiprai'ɔ:rai/
-* danh từ &amp;amp; phó từ
-- theo cách suy diễn, theo cách diễn dịch
-- tiên nghiệm
-= probability a_priori+ (toán học) xác xuất tiên nghiệm
-
-a priori
-- tiên nghiệm
 |a
 /ei, ə/
 * danh từ,  số nhiều as,  a's
@@ -76,35 +77,23 @@ a priori
 a/c
 - (vt của account current) tài khoản vãng lai (tức là bằng séc)
 - có nghĩa giống như nghĩa của account
-|a la mode
-/,ɑ:lə'moud/
-* phó từ
-- hợp thời trang, đúng mốt
 |dady-long-legs
 /'dædi'lɔɳlegz/
 * danh từ
 - (động vật học) con chôm chôm ((cũng) harvestman)
-|a b c - book
-/'eibi:'si:buk/
+|hello
+/hə'lou/
+* thán từ
+- chào anh!, chào chị!
+- này, này
+- ô này! (tỏ ý ngạc nhiên)
 * danh từ
-- sách vỡ lòng, sách học vần
-|a posteriori
-/'eipɔs,teri'ɔ:rai/
-* phó từ &amp;amp; tính từ
-- theo phép quy nạp
-= method a_posteriori+ phương pháp quy nạp
-- hậu nghiệm
-= probability a_posteriori+ (toán học) xác suất hậu nghiệm
-
-a posteriori
-- hậu nghiệm
-|abalienation
-*danh từ
-- sự nhường lại tài sản
-|a b c
-/'eibi:'si:/
-* danh từ
-- bảng chữ cái
-- khái niệm cơ sở, cơ sở
-= a_b_c of chemistry+ khái niệm cơ sở về hoá học, cơ sở hoá học
-- (ngành đường sắt) bảng chỉ đường theo abc
+- tiếng chào
+- tiếng gọi &quot;này, này&quot; !
+- tiếng kêu ô này &quot;! (tỏ ý ngạc nhiên)
+* nội động từ
+- chào
+- gọi &quot;này, này&quot; 
+- kêu &quot;ô này&quot; (tỏ ý ngạc nhiên)
+|abscissa, abscissae
+- hoành độ

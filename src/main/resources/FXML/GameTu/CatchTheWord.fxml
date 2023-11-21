@@ -2,25 +2,30 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="catchTheWordBG" prefHeight="580.0" prefWidth="960.0" styleClass="background-menu-game-tu" stylesheets="@../../Styles/GameTu/CatchTheWord.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GameTu.CatchTheWordController">
-    <ImageView fitHeight="214.0" fitWidth="430.0" layoutX="265.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+    <ImageView fitHeight="163.0" fitWidth="334.0" layoutX="35.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="76.0">
         <Image url="@../../Images/GameTu/logoGameTu.png" />
     </ImageView>
-    <ImageView fx:id="playButton" fitHeight="60.0" fitWidth="301.0" layoutX="730.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0">
+    <ImageView fx:id="playButton" fitHeight="60.0" fitWidth="301.0" layoutX="137.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="267.0">
         <Image url="@../../Images/GameTu/Play_Button.png" />
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
     </ImageView>
-    <ImageView fx:id="exitButton" fitHeight="60.0" fitWidth="500.0" layoutX="96.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="29.0">
+    <ImageView fx:id="exitButton" fitHeight="60.0" fitWidth="500.0" layoutX="140.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="140.0">
         <Image url="@../../Images/GameTu/Exit_Button.png" />
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
     </ImageView>
-   <Label fx:id="instruction" alignment="TOP_CENTER" layoutX="153.0" layoutY="209.0" prefHeight="242.0" prefWidth="653.0" text="Instruction" />
+   <Label fx:id="instruction" alignment="TOP_CENTER" layoutX="441.0" layoutY="115.0" prefHeight="350.0" prefWidth="454.0">
+      <effect>
+         <InnerShadow height="16.0" radius="7.5" width="16.0" />
+      </effect></Label>
+   <Label fx:id="instructionName" layoutX="596.0" layoutY="106.0" prefHeight="66.0" prefWidth="163.0" styleClass="Instruction" stylesheets="@../../Styles/GameTu/CatchTheWord.css" text="INSTRUCTION" />
 </AnchorPane>

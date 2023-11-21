@@ -2,11 +2,13 @@ package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.*;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.StageStyle;
 
 import java.net.URL;
@@ -65,6 +67,9 @@ public class QuestionController implements Initializable {
         numLetterLabel.setText("This obstacle has "
                 + Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length()
                 + " letters");
+        numLetterLabel.setStyle("-fx-font-size: 18px");
+        numLetterLabel.setTextAlignment(TextAlignment.CENTER);
+        numLetterLabel.setAlignment(Pos.CENTER);
 
         answerField.setOnKeyTyped(keyEvent -> submitButton.setDisable(answerField.getText().isEmpty()));
 
@@ -162,9 +167,9 @@ public class QuestionController implements Initializable {
         noti.getDialogPane().setContent(vbox);
         noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
         noti.initStyle(StageStyle.UNDECORATED);
-        vbox.setStyle("-fx-background-color: #FF0000");
+        vbox.setStyle("-fx-background-color: #F6B6B6");
         lb.setStyle("-fx-font-weight: bold;" +
-                "-fx-text-fill: #EEEEEE;" +
+                "-fx-text-fill: #ff0000;" +
                 "-fx-font-size: 15px");
         Optional<ButtonType> option = noti.showAndWait();
         if (option.get() == ButtonType.OK) {
@@ -180,9 +185,9 @@ public class QuestionController implements Initializable {
         noti.getDialogPane().setContent(vbox);
         noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
         noti.initStyle(StageStyle.UNDECORATED);
-        vbox.setStyle("-fx-background-color: #00FF00");
+        vbox.setStyle("-fx-background-color: #CAF7D8");
         lb.setStyle("-fx-font-weight: bold;" +
-                "-fx-text-fill: #EEEEEE;" +
+                "-fx-text-fill: #098000;" +
                 "-fx-font-size: 15px");
         Optional<ButtonType> option = noti.showAndWait();
         if (option.get() == ButtonType.OK) {

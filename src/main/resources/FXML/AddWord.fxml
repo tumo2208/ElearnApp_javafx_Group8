@@ -12,40 +12,43 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxWidth="960" prefHeight="580.0" prefWidth="960.0" styleClass="add_word_container" stylesheets="@../Styles/AddWord.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.AddWordController">
-   <ImageView fitHeight="580.0" fitWidth="960.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../Images/addWordBackground.png" />
-      </image>
-   </ImageView>
+    <ImageView fitHeight="580.0" fitWidth="960.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/addWordBackground.png" />
+    </ImageView>
     <Pane layoutX="33.0" layoutY="79.0" prefHeight="200.0" prefWidth="300.0" styleClass="logo_add_word_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <ImageView fitHeight="526.0" fitWidth="276.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../Images/newWordSide.png" />
         </ImageView>
     </Pane>
     <Pane layoutX="300.0" prefHeight="580.0" prefWidth="660.0">
-        <Label fx:id="notiLabel" layoutX="38.0" layoutY="529.0" prefHeight="30.0" prefWidth="183.0" text="Error: Word is already exists">
-         <font>
-            <Font size="15.0" />
-         </font></Label>
-      <Pane layoutX="15.0" layoutY="40.0" prefHeight="40.0" prefWidth="610.0" styleClass="new_word_field" stylesheets="@../Styles/AddWord.css">
-              <TextField fx:id="newWordField" layoutX="110.0" layoutY="5.0" prefHeight="30.0" prefWidth="480.0" />
-              <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" styleClass="label_pane" text="New word">
-               <font>
-                  <Font size="16.0" />
-               </font>
+        <Label fx:id="notiLabel" alignment="CENTER" layoutX="36.0" layoutY="529.0" prefHeight="30.0" prefWidth="230.0" text="Error: Word is already exists!">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <graphic>
+                <ImageView fx:id="notiImg" fitHeight="26.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../Images/errorNoti.png" />
+                </ImageView>
+            </graphic></Label>
+        <Pane layoutX="15.0" layoutY="40.0" prefHeight="40.0" prefWidth="610.0" styleClass="new_word_field" stylesheets="@../Styles/AddWord.css">
+            <TextField fx:id="newWordField" layoutX="110.0" layoutY="5.0" prefHeight="30.0" prefWidth="480.0" />
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="100.0" styleClass="label_pane" text="New word">
+                <font>
+                    <Font size="16.0" />
+                </font>
             </Label>
-      </Pane>
-      <Pane layoutX="15.0" layoutY="95.0" prefHeight="420.0" prefWidth="610.0" styleClass="definition_field" stylesheets="@../Styles/AddWord.css">
-              <TextArea fx:id="newDefinitionArea" layoutX="10.0" layoutY="40.0" prefHeight="370.0" prefWidth="590.0">
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor></TextArea>
-              <Label prefHeight="40.0" prefWidth="610.0" stylesheets="@../Styles/AddWord.css" text="   Definition">
-               <font>
-                  <Font size="16.0" />
-               </font>
+        </Pane>
+        <Pane layoutX="15.0" layoutY="95.0" prefHeight="420.0" prefWidth="610.0" styleClass="definition_field" stylesheets="@../Styles/AddWord.css">
+            <TextArea fx:id="newDefinitionArea" layoutX="10.0" layoutY="40.0" prefHeight="370.0" prefWidth="590.0">
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor></TextArea>
+            <Label prefHeight="40.0" prefWidth="610.0" stylesheets="@../Styles/AddWord.css" text="   Definition">
+                <font>
+                    <Font size="16.0" />
+                </font>
             </Label>
-      </Pane>
+        </Pane>
         <Button fx:id="addNewWordButton" layoutX="548.0" layoutY="529.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" styleClass="confirm_button" stylesheets="@../Styles/AddWord.css" text="Confirm" />
     </Pane>
 </AnchorPane>

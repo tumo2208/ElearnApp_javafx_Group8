@@ -13,6 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class CatchTheWordController implements Initializable {
+    public Label instructionName;
     public Label instruction;
     public AnchorPane catchTheWordBG;
     public ImageView exitButton;
@@ -37,6 +38,7 @@ public class CatchTheWordController implements Initializable {
             instruction.setWrapText(true);
             instruction.setAlignment(Pos.TOP_CENTER);
             instruction.setVisible(true);
+            instructionName.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();
         }

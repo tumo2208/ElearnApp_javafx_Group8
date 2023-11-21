@@ -69,17 +69,23 @@
 }
 
 .error_notification {
-    -fx-background-color: #FFE2E2;
+    -fx-background-color: #F6B6B6;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
     -fx-text-fill: #ff0000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 15px;
+    -fx-text-alignment: center;
 }
 
 .success_notification {
-    -fx-background-color: #FFE2E2;
+    -fx-background-color: #CAF7D8;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
     -fx-text-fill: #098000;
     -fx-font-family: "Calibri Light";
     -fx-font-size: 15px;
+    -fx-text-alignment: center;
 }
 
 .confirm_button {
