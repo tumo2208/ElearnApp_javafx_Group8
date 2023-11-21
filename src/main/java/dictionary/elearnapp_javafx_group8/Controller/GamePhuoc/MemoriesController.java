@@ -80,10 +80,10 @@ public class MemoriesController implements Initializable {
 
     public static String pathToGamePhuocData;
     public static final String trap = "x2 Time Speed";
-    private List<String> pairs = new ArrayList<>();
-    private List<String> list = new ArrayList<>();
-    private List<Integer> check = new ArrayList<>();
-    private List<Integer> showingCard = new ArrayList<>();
+    private final List<String> pairs = new ArrayList<>();
+    private final List<String> list = new ArrayList<>();
+    private final List<Integer> check = new ArrayList<>();
+    private final List<Integer> showingCard = new ArrayList<>();
     boolean[] isFrontShowing = new boolean[15];
     /**
      * cài đặt thời gian đếm ngược
@@ -93,10 +93,10 @@ public class MemoriesController implements Initializable {
     /**
      * cài đặt dòng thời gian.
      */
-    private Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
+    private final Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
             remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
     private int cardRemoved = 0;
-    private Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    private final Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 
     /**
      * ánh xạ giữa số chỉ từ trong list và số chỉ của card.
