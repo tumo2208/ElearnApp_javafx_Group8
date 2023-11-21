@@ -95,7 +95,6 @@
     </Pane>
     <Pane layoutX="250.0" layoutY="66.0" prefHeight="490.0" prefWidth="690.0" styleClass="definition-area" stylesheets="@../Styles/Search.css">
         <TextArea fx:id="definitionArea" layoutX="10.0" layoutY="10.0" prefHeight="470.0" prefWidth="670.0" styleClass="definition-area" stylesheets="@../Styles/Search.css" />
-        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="245.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
         <effect>
             <InnerShadow height="16.32" radius="7.66" width="16.32">
                 <color>

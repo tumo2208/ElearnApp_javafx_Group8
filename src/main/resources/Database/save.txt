@@ -1,37 +1,93 @@
-|dick
-/dik/
-* danh từ,  (từ lóng)
-- to take one's dick that thề rằng, quả quyết rằng
-- up to dick xuất sắc, phi thường, cừ khôi
+|save
+/seiv/
 * danh từ
-- (từ Mỹ,nghĩa Mỹ),  (từ lóng) mật thám, thám tử
-|fuck
-*danh từ
-- sự giao cấu
-- bạn tình
-- interj
-- mẹ kiếp!
-*động từ
-- giao cấu
-|fucker
-- interj
-- đồ ngốc! đồ ngu!
-|mother
-/'mʌðə/
-* danh từ
-- mẹ, mẹ đẻ
-- nguồn gốc, nguyên nhân; mẹ ((nghĩa bóng))
-= necessity is the mother of invention+ có khó mới sinh khôn
-- (tôn giáo) mẹ
-!Mother Superior
-- mẹ trưởng viện, mẹ bề trên
-- máy ấp trứng ((cũng) mother artificial mother)
-!every mother's son
-- tất cả mọi người không trừ một ai
+- (thể dục,thể thao) sự phá bóng cứu nguy (chặn không cho đối phương ghi bàn) (bóng đá)
 * ngoại động từ
-- chăm sóc, nuôi nấng
-- sinh ra, đẻ ra ((nghĩa đen) &amp;amp; (nghĩa bóng))
-|penis
-/'pi:nis/
-* danh từ,  số nhiều penes  /'pi:ni:z/
-- (giải phẫu) dương vật
+- cứu nguy
+= to save somebody from drowning+ cứu ai khỏi chết đuối
+= to save the situation+ cứu vãn tình thế
+- (thể dục,thể thao) phá bóng cứu nguy
+- cứu vớt
+= to save someone's soul+ cứu vớt linh hồn ai
+- để dành, tiết kiệm
+= to save one's strength+ giữ sức
+- tránh (cho ai) đỡ (cho ai) khỏi phải (tiêu tiền, mất sức...); tránh khỏi phải, đỡ khỏi phải
+= his secretary saved him much time+ người thư ký đỡ cho ông ta được nhiều thời gian
+= soap saves rubbing+ có xà phòng thì đỡ phải vò
+- kịp, đuổi kịp
+= he wrote hurriedly to save the post+ anh ấy viết vội để kịp gởi bưu điện
+* nội động từ
+- tằn tiện, tiết kiệm
+= a saving housekeeper+ một người nội trợ tằn tiện
+= he has never saved+ hắn chả bao giờ tiết kiệm
+- bảo lưu
+= saving clause+ điều khoản bảo lưu, điều khoản trong có nói đến sự miễn giảm
+!to save one's bacon
+- cứu lấy cái thần xác mình
+!to save one's breath
+- làm thinh
+!to save one's face
+- (xem) face
+!saving your respect
+- xin mạn phép ông
+!you may save your pains (trouble)
+- anh chẳng cần phải bận bịu vào việc ấy; anh có chịu khó thì cũng chẳng ăn thua gì
+!a stitch in time saves nine
+- (xem) stitch
+* giới từ &amp;amp; liên từ
+- trừ ra, ngoài ra
+= all save the reactionary, are for social progress+ trừ bọn phản động ra, ai cũng ủng hộ mọi tiến bộ xã hội
+
+save
+- tiết kiệm
+|listen
+/'lisn/
+* nội động từ
+- nghe, lắng nghe
+= listen to me!+ hãy nghe tôi
+- nghe theo, tuân theo, vâng lời
+= to listen to reason+ nghe theo lẽ phải
+!to listen in
+- nghe đài
+- nghe trộm điện thoại
+|delete
+/di'li:t/
+* ngoại động từ
+- gạch đi, xoá đi, bỏ đi
+
+delete
+- gạch, bỏ đi
+|edit
+/'edit/
+* ngoại động từ
+- thu nhập và diễn giải
+- chọn lọc, cắt xén, thêm bớt (tin của phóng viên báo gửi về)
+* nội động từ
+- làm chủ bút (ở một tờ báo...)
+
+edit
+- (Tech) lắp ráp (d); dựng hình (d); biên soạn, biên tập, soạn thảo (d)
+
+edit
+- biên soạn, biên tập, xuất bản
+|add
+/æd/
+* động từ
+- ((thường) + up,  together) cộng
+- thêm vào, làm tăng thêm
+= add some more hot water to your tea+ cho thêm ít nước nóng nữa vào tách trà của anh
+= music added to our joy+ âm nhạc làm tăng thêm niềm vui của chúng ta
+- nói thêm
+= he added that+ anh ta nói thêm rằng
+- (+ in) kế vào, tính vào, gộp vào
+!to add fuel to the fire
+- (xem) fire
+!to add insult to injury
+- miệng chửi tay đấm
+
+add
+- (Tech) cộng; thêm vào, cộng thêm, tăng cường, bổ sung
+
+add
+- cộng vào, thêm vào, bổ sung
+- a. together, a. up cộng lại lấy tổng

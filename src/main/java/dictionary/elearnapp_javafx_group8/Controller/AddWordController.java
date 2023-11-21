@@ -49,7 +49,17 @@ public class AddWordController implements Initializable {
     }
 
     private void addWord() {
-        Word newWord = new Word(newWordField.getText().trim(), newDefinitionArea.getText().trim());
+        String word = newWordField.getText().trim();
+        for (int i = 0; i < word.length(); ++i) {
+            if (!Character.isAlphabetic(word.charAt(i)) && word.charAt(i) != ' ' &&  word.charAt(i) != (char) 39) {
+                if (word.charAt(i) < '0' && word.charAt(i) > '9') {
+                    word = word.replace(Character.toString(word.charAt(i)), "");
+                    --i;
+                }
+            }
+        }
+        System.out.println(word);
+        Word newWord = new Word(word, newDefinitionArea.getText().trim());
         if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
             Model.getInstance().getDictionary().addWord(newWord, dbPath);
             Model.getInstance().getWordList().add(newWord);
