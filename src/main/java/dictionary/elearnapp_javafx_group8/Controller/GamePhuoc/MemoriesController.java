@@ -77,21 +77,30 @@ public class MemoriesController implements Initializable {
     public Label word14;
     public Button Back;
 
-    boolean[] isFrontShowing = new boolean[15];
 
-    private final ObjectProperty<java.time.Duration> remainingDuration
-            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
     public static String pathToGamePhuocData;
     public static final String trap = "x2 Time Speed";
     private List<String> pairs = new ArrayList<>();
     private List<String> list = new ArrayList<>();
     private List<Integer> check = new ArrayList<>();
     private List<Integer> showingCard = new ArrayList<>();
+    boolean[] isFrontShowing = new boolean[15];
+    /**
+     * cài đặt thời gian đếm ngược
+     */
+    private final ObjectProperty<java.time.Duration> remainingDuration
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
+    /**
+     * cài đặt dòng thời gian.
+     */
     private Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
             remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
     private int cardRemoved = 0;
     private Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 
+    /**
+     * ánh xạ giữa số chỉ từ trong list và số chỉ của card.
+     */
     public void addWord() {
         for (int i = 0; i < 14; i++) {
             int tmp = check.get(i);
@@ -100,6 +109,11 @@ public class MemoriesController implements Initializable {
         add(check.get(14), trap);
     }
 
+    /**
+     * chuyển từ vào các card sau khi đã ánh xạ.
+     * @param x số chỉ của card
+     * @param word từ được chuyển vào
+     */
     public void add(int x, String word) {
         switch (x) {
             case 0:
@@ -152,6 +166,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * thông báo thua.
+     */
     public void gameOver() {
         alert.setTitle("GameOver");
         alert.setHeaderText("Do you want to play again?");
@@ -163,6 +180,9 @@ public class MemoriesController implements Initializable {
         alert.setOnHidden(e -> choiceOver());
     }
 
+    /**
+     * lựa chọn khi thua.
+     */
     public void choiceOver() {
         if (alert.getResult() == alert.getButtonTypes().get(0)) {
             resetNew();
@@ -171,6 +191,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * thông báo thắng.
+     */
     public void GameWin() {
         countDownTimeLine.pause();
         alert.setTitle("Win!");
@@ -183,6 +206,9 @@ public class MemoriesController implements Initializable {
         alert.setOnHidden(e -> ChoiceWin());
     }
 
+    /**
+     * lựa chọn khi thắng.
+     */
     public void ChoiceWin() {
         if (alert.getResult() == alert.getButtonTypes().get(0)) {
             resetNew();
@@ -191,20 +217,23 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * thoát ra menu game.
+     */
     private void onGameMenu() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
         countDownTimeLine.stop();
     }
 
+    /**
+     * reset game mới.
+     */
     public void resetNew() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
         Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
         countDownTimeLine.stop();
     }
 
-    private void onGamePlay() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
-    }
 
 
     @Override
@@ -223,7 +252,7 @@ public class MemoriesController implements Initializable {
                         String.format("%02d:%02d",
                                 remainingDuration.get().toMinutesPart(),
                                 remainingDuration.get().toSecondsPart()),
-                remainingDuration));
+                                remainingDuration));
 
         countDownTimeLine.setCycleCount((int) remainingDuration.get().getSeconds());
         countDownTimeLine.setOnFinished(event ->
@@ -281,6 +310,9 @@ public class MemoriesController implements Initializable {
 
     }
 
+    /**
+     * bắt đầu game bằng animation úp hết tất cả lá bài.
+     */
     public void getStart() {
         this.isFrontShowing[0] = flipIndex(0);
         this.isFrontShowing[1] = flipIndex(1);
@@ -300,7 +332,11 @@ public class MemoriesController implements Initializable {
         topic.setText(setTopic);
     }
 
-
+    /**
+     * animation lật một card có chỉ số là i.
+     * @param i số chỉ của card
+     * @return trả về trạng thái sau khi lật
+     */
     public boolean flipIndex(int i) {
         StackPane tmp = new StackPane();
 
@@ -374,6 +410,10 @@ public class MemoriesController implements Initializable {
         return isFrontShowing[i];
     }
 
+    /**
+     * xóa bỏ một card có số chỉ là a.
+     * @param a số chỉ
+     */
     public void removeCard(int a) {
 
         cardRemoved++;
@@ -437,6 +477,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * khởi tạo animation lật
+     */
     private RotateTransition createRotator(StackPane pane, boolean isFrontShowing) {
         RotateTransition rotator = new RotateTransition(Duration.millis(500), pane);
         rotator.setAxis(Rotate.Y_AXIS);
@@ -454,6 +497,9 @@ public class MemoriesController implements Initializable {
         return rotator;
     }
 
+    /**
+     * chuyển mặt lá bài khi lật
+     */
     private PauseTransition changeCardFace(StackPane pane, boolean isFrontShowing) {
         PauseTransition pause = new PauseTransition(Duration.millis(250));
 
@@ -474,6 +520,9 @@ public class MemoriesController implements Initializable {
         return pause;
     }
 
+    /**
+     * trộn ngẫu nhiên list từ.
+     */
     public void makeList() {
         check.clear();
         for (int i = 0; i < 15; i++) {
@@ -482,6 +531,12 @@ public class MemoriesController implements Initializable {
         Collections.shuffle(this.check);
     }
 
+    /**
+     * tìm chỉ số liên hệ giữa lá bài và từ.
+     * @param x
+     * @param list
+     * @return
+     */
     public int findIndex(int x, List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == x) {
@@ -491,6 +546,9 @@ public class MemoriesController implements Initializable {
         return -1;
     }
 
+    /**
+     * kiểm soát số bài đang lật
+     */
     public void checkNumberShowing() {
         if (showingCard.size() > 1) {
             int tmp = showingCard.get(0);
@@ -499,6 +557,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * kiểm tra xem trong số bài đang lật có lá nào khớp nhau không.
+     */
     public void checkShowingCards() {
 
         for (int i = 0; i < showingCard.size(); i++) {
@@ -518,6 +579,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * kiểm tra xem lá bài vừa lật có phải là ô bẫy.
+     */
     public void checkTrap() {
         int tmp = showingCard.get(showingCard.size() - 1);
         if (tmp == check.get(14)) {
@@ -527,7 +591,9 @@ public class MemoriesController implements Initializable {
 
     }
 
-
+    /**
+     * đọc vào từ file text.
+     */
     public void readData() {
         pairs.clear();
         try {
@@ -544,6 +610,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * chia đôi từ thành tiếng anh và tiếng việt.
+     */
     public void splitPairs() {
         Collections.shuffle(pairs);
         list.clear();

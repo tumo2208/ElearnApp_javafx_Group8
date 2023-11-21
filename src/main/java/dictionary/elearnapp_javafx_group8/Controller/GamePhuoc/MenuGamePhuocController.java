@@ -41,6 +41,10 @@ public class MenuGamePhuocController implements Initializable {
 
     }
 
+    /**
+     * lấy yêu cầu chọn topic.
+     * @param i số thứ tự của nút vừa được chọn
+     */
     private void getPath(int i) {
         String tmp = ".txt";
         String name;
@@ -110,10 +114,16 @@ public class MenuGamePhuocController implements Initializable {
         OnPlay();
     }
 
+    /**
+     * chuyển sang màn hình vào game.
+     */
     private void OnPlay() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
     }
 
+    /**
+     * chuyển sang menu chọn game.
+     */
     private void onGame() {
         Model.getInstance().getViewFactory().selectedMenuProperty().set("Game");
     }
