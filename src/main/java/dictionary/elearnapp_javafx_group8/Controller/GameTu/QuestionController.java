@@ -2,14 +2,17 @@ package dictionary.elearnapp_javafx_group8.Controller.GameTu;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
+import javafx.scene.Cursor;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.net.URL;
-import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class QuestionController implements Initializable {
@@ -52,6 +55,8 @@ public class QuestionController implements Initializable {
             for (int i = 0; i < 4; ++i) {
                 imgFalse[i] = new Image(getClass().getResource("/Images/GameTu/packDefaultFalse/" + (i + 1) + ".png").toString());
             }
+            trueIcon = new Image(getClass().getResource("/Images/GameTu/trueAnswer.png").toString());
+            wrongIcon = new Image(getClass().getResource("/Images/GameTu/wrongAnswer.png").toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -132,19 +137,47 @@ public class QuestionController implements Initializable {
     }
 
     private void wrongAnswer() {
-        noti = new Dialog<>();
-        Label lb = new Label("Oops, the answer was wrong");
-        VBox vbox = new VBox(lb);
-        noti.getDialogPane().setContent(vbox);
-        noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
-        noti.initStyle(StageStyle.UNDECORATED);
-        vbox.setStyle("-fx-background-color: #FF0000");
-        lb.setStyle("-fx-font-weight: bold;" +
-                "-fx-text-fill: #EEEEEE;" +
-                "-fx-font-size: 15px");
-        Optional<ButtonType> option = noti.showAndWait();
-        if (option.get() == ButtonType.OK) {
-            noti.close();
+        Stage stage = new Stage();
+        AnchorPane anchorPane = new AnchorPane();
+        Scene scene = new Scene(anchorPane, 450, 350);
+
+        ImageView wrongImg = new ImageView(wrongIcon);
+        wrongImg.setFitWidth(100);
+        wrongImg.setFitHeight(100);
+        wrongImg.setLayoutX(175);
+        wrongImg.setLayoutY(15);
+
+        Label lb1 = new Label("Oops!");
+        Label lb2 = new Label("Your answer is wrong\n      Try your best");
+        lb1.setPrefWidth(450);
+        lb1.setPrefHeight(30);
+        lb1.setLayoutX(0);
+        lb1.setLayoutY(130);
+        lb2.setPrefWidth(450);
+        lb2.setPrefHeight(60);
+        lb2.setLayoutX(0);
+        lb2.setLayoutY(200);
+        lb1.setStyle("-fx-alignment: center;" +
+                "-fx-text-fill: #000000;" +
+                "-fx-font-size: 3.5em;" +
+                "-fx-font-weight: bold");
+        lb2.setStyle("-fx-alignment: center;" +
+                "-fx-text-fill: #000000;" +
+                "-fx-font-size: 1.5em;" +
+                "-fx-wrap-text: true");
+
+        Button okBtn = new Button("OK");
+        okBtn.setPrefWidth(100);
+        okBtn.setPrefHeight(30);
+        okBtn.setLayoutX(175);
+        okBtn.setLayoutY(290);
+        okBtn.setCursor(Cursor.HAND);
+        okBtn.setStyle("-fx-text-fill: #FFFFFF;" +
+                "-fx-font-weight: bold;" +
+                "-fx-background-radius: 5;" +
+                "-fx-background-color: #87CEEB");
+
+        okBtn.setOnAction(event -> {
             switch (currentQuestion) {
                 case 0:
                     angle1.setImage(imgFalse[currentQuestion]);
@@ -166,24 +199,62 @@ public class QuestionController implements Initializable {
             if (isAnswer1 && isAnswer2 && isAnswer3 && isAnswer4) {
                 onAnswer();
             }
-        }
+            stage.close();
+        });
+
+        anchorPane.getChildren().setAll(wrongImg, lb1, lb2, okBtn);
+        anchorPane.setStyle("-fx-background-color: #FFFFFF;" +
+                "-fx-background-radius: 5");
+        scene.setFill(Color.TRANSPARENT);
+        stage.setTitle("Fuck");
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.show();
     }
 
     private void trueAnswer() {
-        noti = new Dialog<>();
-        Label lb = new Label("Congratulation, Your answer is true!\nThe angle "
+        Stage stage = new Stage();
+        AnchorPane anchorPane = new AnchorPane();
+        Scene scene = new Scene(anchorPane, 450, 350);
+
+        ImageView trueImg = new ImageView(trueIcon);
+        trueImg.setFitWidth(100);
+        trueImg.setFitHeight(100);
+        trueImg.setLayoutX(175);
+        trueImg.setLayoutY(15);
+
+        Label lb1 = new Label("Congrats!");
+        Label lb2 = new Label("      Your answer is true\nThe angle "
                 + (currentQuestion + 1) + " will be flipped");
-        VBox vbox = new VBox(lb);
-        noti.getDialogPane().setContent(vbox);
-        noti.getDialogPane().getButtonTypes().add(ButtonType.OK);
-        noti.initStyle(StageStyle.UNDECORATED);
-        vbox.setStyle("-fx-background-color: #00FF00");
-        lb.setStyle("-fx-font-weight: bold;" +
-                "-fx-text-fill: #EEEEEE;" +
-                "-fx-font-size: 15px");
-        Optional<ButtonType> option = noti.showAndWait();
-        if (option.get() == ButtonType.OK) {
-            noti.close();
+        lb1.setPrefWidth(450);
+        lb1.setPrefHeight(30);
+        lb1.setLayoutX(0);
+        lb1.setLayoutY(130);
+        lb2.setPrefWidth(450);
+        lb2.setPrefHeight(60);
+        lb2.setLayoutX(0);
+        lb2.setLayoutY(200);
+        lb1.setStyle("-fx-alignment: center;" +
+                "-fx-text-fill: #000000;" +
+                "-fx-font-size: 3.5em;" +
+                "-fx-font-weight: bold");
+        lb2.setStyle("-fx-alignment: center;" +
+                "-fx-text-fill: #000000;" +
+                "-fx-font-size: 1.5em;" +
+                "-fx-wrap-text: true");
+
+        Button okBtn = new Button("OK");
+        okBtn.setPrefWidth(100);
+        okBtn.setPrefHeight(30);
+        okBtn.setLayoutX(175);
+        okBtn.setLayoutY(290);
+        okBtn.setCursor(Cursor.HAND);
+        okBtn.setStyle("-fx-text-fill: #FFFFFF;" +
+                "-fx-font-weight: bold;" +
+                "-fx-background-radius: 5;" +
+                "-fx-background-color: #87CEEB");
+
+        okBtn.setOnAction(event -> {
             switch (currentQuestion) {
                 case 0:
                     angle1.setImage(imgList[4 * ChooseLevelController.currentLevel + currentQuestion]);
@@ -209,7 +280,17 @@ public class QuestionController implements Initializable {
             if (isAnswer1 && isAnswer2 && isAnswer3 && isAnswer4) {
                 onAnswer();
             }
-        }
+            stage.close();
+        });
+
+        anchorPane.getChildren().setAll(trueImg, lb1, lb2, okBtn);
+        anchorPane.setStyle("-fx-background-color: #FFFFFF;" +
+                "-fx-background-radius: 5");
+        scene.setFill(Color.TRANSPARENT);
+        stage.setTitle("Fuck");
+        stage.setScene(scene);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.show();
     }
 
     private String answer = "";
@@ -226,5 +307,6 @@ public class QuestionController implements Initializable {
     private final Image[] row = new Image[20];
     private final Image[] rowAnswer = new Image[20];
     private final Image[] imgFalse = new Image[4];
-    private Dialog<ButtonType> noti;
+    private Image trueIcon;
+    private Image wrongIcon;
 }

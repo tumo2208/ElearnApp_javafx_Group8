@@ -167,6 +167,7 @@ public class ViewFactory {
         }
         stage.setScene(scene);
         stage.setTitle("English Learning Application");
+        stage.setResizable(false);
         stage.show();
     }
 }

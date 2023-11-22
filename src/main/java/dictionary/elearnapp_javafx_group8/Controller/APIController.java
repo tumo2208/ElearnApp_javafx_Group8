@@ -14,6 +14,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.net.URLEncoder;
 
 public class APIController implements Initializable {
 
@@ -34,8 +35,6 @@ public class APIController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        firstLanguageArea.setWrapText(true);
-        secondLanguageArea.setWrapText(true);
 
         secondLanguageArea.setEditable(false);
         resetAllAPI();
@@ -69,6 +68,7 @@ public class APIController implements Initializable {
             try {
                 googleTranslate();
             } catch (Exception e) {
+                secondLanguageArea.setText("ĐỤ MÁ MÀY NHẬP CÁI CHÓ GÌ VẬY???");
                 e.printStackTrace();
             }
             translateButton.setDisable(true);
@@ -82,9 +82,9 @@ public class APIController implements Initializable {
                 + "&tl=" + toLanguage
                 + "&dt=t&q=";
         String textToTranslate = firstLanguageArea.getText();
-        String URLString = rootAPI + textToTranslate;
+        String URLString = rootAPI + URLEncoder.encode(textToTranslate,"UTF-8");
         URLString = URLString.replace(" ", "%20");
-
+//        URLString = URLString.replace("\n", "%0A");
         URL url = new URL(URLString);
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
         InputStream stream;
@@ -97,20 +97,19 @@ public class APIController implements Initializable {
         String line;
         String translateText = "";
         int cnt = 0;
-        while ((line = in.readLine()) != null && cnt < 2) {
-            for (char c : line.toCharArray()) {
-                if (cnt == 1) {
-                    translateText += c;
-                }
-                if (c == '"') {
-                    cnt++;
-                }
+        line = in.readLine();
+        line = line.replace("824257d7a249c58caeea06a2e64a25bd", "");
+        line = line.replace("07cf6d00dc83dfc068bf115b58e01f7f", "");
+        for (String str : line.split("\\],\\[")) {
+            if (str.contains("\"")) {
+                String[] outs = str.split("\"");
+                translateText += outs[1];
             }
         }
         in.close();
         httpURLConnection.disconnect();
 
-        translateText = translateText.substring(0, translateText.length() - 1);
+        translateText = translateText.translateEscapes();
         secondLanguageArea.setText(translateText);
     }
 
