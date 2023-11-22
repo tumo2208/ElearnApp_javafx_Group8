@@ -52,15 +52,54 @@ public class SearchController implements Initializable {
         listView.setCellFactory(param -> new ButtonCellController(searchField));
 
         searchField.setOnKeyTyped(keyEvent -> {
-            if (searchField.getText().isEmpty()) {
-                deleteSearchButton.setVisible(false);
-                deleteSearchButton.setDisable(true);
+            String searchWord = searchField.getText().trim();
+            int index = 0;
+            for (int i = 0; i < searchWord.length(); ++i) {
+                if (Character.isAlphabetic(searchWord.charAt(i)) || searchWord.charAt(i) == (char) 39
+                        || (searchWord.charAt(i) >= '0' && searchWord.charAt(i) <= '9')) {
+                    index = i;
+                    break;
+                }
+            }
+            searchWord = searchWord.substring(index);
+            boolean isEmpty = true;
+            for (int i = 0; i < searchWord.length(); ++i) {
+                if (searchWord.contains("'")) {
+                    isEmpty = false;
+                } else {
+                    for (int j = 65; j < 91; ++j) {
+                        if (searchWord.contains(Character.toString((char) j))) {
+                            isEmpty = false;
+                            break;
+                        }
+                    }
+                    for (int j = 97; j < 123; ++j) {
+                        if (searchWord.contains(Character.toString((char) j))) {
+                            isEmpty = false;
+                            break;
+                        }
+                    }
+                    for (int j = 48; j < 57; ++j) {
+                        if (searchWord.contains(Character.toString((char) j))) {
+                            isEmpty = false;
+                            break;
+                        }
+                    }
+                }
+            }
+            if (isEmpty) {
+                if (searchWord.isEmpty()) {
+                    deleteSearchButton.setVisible(false);
+                    deleteSearchButton.setDisable(true);
+                } else {
+                    deleteSearchButton.setVisible(true);
+                    deleteSearchButton.setDisable(false);
+                }
                 listViewDefault();
             } else {
                 deleteSearchButton.setVisible(true);
                 deleteSearchButton.setDisable(false);
                 observableList.clear();
-                String searchWord = searchField.getText().trim();
                 observableList = Model.getInstance().getDictionary().Lookup(searchWord);
                 listView.setItems(observableList);
             }

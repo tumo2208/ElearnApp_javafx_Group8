@@ -7,41 +7,144 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="menu-background" stylesheets="@../../Styles/GamePhuoc/MenuGame.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.GamePhuoc.MenuGamePhuocController">
    <children>
-      <Label alignment="CENTER" layoutX="120.0" layoutY="509.0" prefHeight="30.0" prefWidth="706.0" text="Flip 2 cards with the same meaning to remove them out of the screen, you have to remove all the cards before the time is up!" />
-      <Label alignment="CENTER" layoutX="269.0" layoutY="535.0" prefHeight="30.0" prefWidth="421.0" text="Attention: There's a trap card, if you click into it, the time speed will increase!" />
-      <HBox layoutX="60.0" layoutY="137.0" prefHeight="348.0" prefWidth="840.0">
+      <Label alignment="CENTER" layoutX="47.0" layoutY="500.0" prefHeight="42.0" prefWidth="865.0" text="Flip 2 cards with the same meaning to remove them out of the screen, you have to remove all the cards before the time is up!">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="534.0" prefHeight="30.0" prefWidth="566.0" text="Attention: There's a trap card, if you click into it, the time speed will increase!">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <HBox layoutX="60.0" layoutY="126.0" prefHeight="348.0" prefWidth="840.0" styleClass="Hbox" stylesheets="@../../Styles/GamePhuoc/MenuGame.css">
          <children>
             <VBox prefHeight="347.0" prefWidth="210.0">
                <children>
-                  <Button fx:id="topic1" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Animal" />
-                  <Button fx:id="topic5" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Plants" />
-                  <Button fx:id="topic9" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Human Body" />
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic1" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true" styleClass="topic">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/animal.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic5" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/plants.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic9" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/humanBody.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="210.0">
                <children>
-                  <Button fx:id="topic2" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Sport" />
-                  <Button fx:id="topic6" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Clothing" />
-                  <Button fx:id="topic10" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Transport" />
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic2" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/sport.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic6" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/clothing.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic10" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/transport.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="210.0">
                <children>
-                  <Button fx:id="topic3" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Food" />
-                  <Button fx:id="topic7" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Environment" />
-                  <Button fx:id="topic11" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Public Area" />
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic3" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/food.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic7" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/environment.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic11" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/publicArea.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </VBox>
             <VBox prefHeight="347.0" prefWidth="210.0">
                <children>
-                  <Button fx:id="topic4" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Career" />
-                  <Button fx:id="topic8" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="Furniture" />
-                  <Button fx:id="topic12" mnemonicParsing="false" prefHeight="116.0" prefWidth="210.0" text="IT" />
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic4" fitHeight="104.4" fitWidth="189.0" layoutX="10.8" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/career.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic8" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/furniture.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="116.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fx:id="topic12" fitHeight="104.4" fitWidth="189.0" layoutX="10.5" layoutY="5.8" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/GamePhuoc/menuImage/IT.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
                </children>
             </VBox>
          </children>

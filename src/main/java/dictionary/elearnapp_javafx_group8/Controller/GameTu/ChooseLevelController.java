@@ -62,35 +62,35 @@ public class ChooseLevelController implements Initializable {
         }
 
         lv1.setOnMouseClicked(mouseEvent -> {
-            onQuestion();
             currentLevel = 0;
+            onQuestion();
         });
 
         lv2.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 2) {
-                onQuestion();
                 currentLevel = 1;
+                onQuestion();
             }
         });
 
         lv3.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 3) {
-                onQuestion();
                 currentLevel = 2;
+                onQuestion();
             }
         });
 
         lv4.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 4) {
-                onQuestion();
                 currentLevel = 3;
+                onQuestion();
             }
         });
 
         lv5.setOnMouseClicked(mouseEvent -> {
             if (numOfLevel >= 5) {
-                onQuestion();
                 currentLevel = 4;
+                onQuestion();
             }
         });
 

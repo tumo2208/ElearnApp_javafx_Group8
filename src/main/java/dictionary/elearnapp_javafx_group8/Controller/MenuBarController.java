@@ -1,6 +1,7 @@
 package dictionary.elearnapp_javafx_group8.Controller;
 
 import dictionary.elearnapp_javafx_group8.Models.Model;
+import javafx.animation.Timeline;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 

@@ -46,6 +46,22 @@ a priori
 * tính từ
 - (từ lóng) tài, giỏi, khéo, cừ; thạo
 = he is a dab hand at painting+ hắn ta vẽ rất cừ
+|hello
+/hə'lou/
+* thán từ
+- chào anh!, chào chị!
+- này, này
+- ô này! (tỏ ý ngạc nhiên)
+* danh từ
+- tiếng chào
+- tiếng gọi &quot;này, này&quot; !
+- tiếng kêu ô này &quot;! (tỏ ý ngạc nhiên)
+* nội động từ
+- chào
+- gọi &quot;này, này&quot; 
+- kêu &quot;ô này&quot; (tỏ ý ngạc nhiên)
+|abscissa, abscissae
+- hoành độ
 |a
 /ei, ə/
 * danh từ,  số nhiều as,  a's
@@ -81,19 +97,3 @@ a/c
 /'dædi'lɔɳlegz/
 * danh từ
 - (động vật học) con chôm chôm ((cũng) harvestman)
-|hello
-/hə'lou/
-* thán từ
-- chào anh!, chào chị!
-- này, này
-- ô này! (tỏ ý ngạc nhiên)
-* danh từ
-- tiếng chào
-- tiếng gọi &quot;này, này&quot; !
-- tiếng kêu ô này &quot;! (tỏ ý ngạc nhiên)
-* nội động từ
-- chào
-- gọi &quot;này, này&quot; 
-- kêu &quot;ô này&quot; (tỏ ý ngạc nhiên)
-|abscissa, abscissae
-- hoành độ
