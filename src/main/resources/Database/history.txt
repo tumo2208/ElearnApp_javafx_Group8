@@ -35,9 +35,9 @@ button
 
 button
 - nút bấm, cái khuy
-- push b. nút bấm đẩy 
+- push b. nút bấm đẩy
 - reset b. nút bật lại
-- start b. (máy tính) nút bấm khởi động 
+- start b. (máy tính) nút bấm khởi động
 - stop b. (máy tính) nút dừng
 |search
 /sə:tʃ/

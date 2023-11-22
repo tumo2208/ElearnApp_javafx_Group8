@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="fix search and add">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/trueAnswer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/wrongAnswer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="improve ui alerts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/View/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3_answer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/packBangCuuChuong/row3_answer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Sound/GameTu/ringTheBell.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MenuGamePhuocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/voice.vbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/MenuGame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/ThumbnailMemories.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/backSide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/ThumbnailCatchTheWord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +225,8 @@
       <workItem from="1700622768175" duration="2008000" />
       <workItem from="1700625334372" duration="1361000" />
       <workItem from="1700632613648" duration="5136000" />
-      <workItem from="1700665563038" duration="4452000" />
+      <workItem from="1700665563038" duration="6342000" />
+      <workItem from="1700672017270" duration="1318000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -579,7 +580,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700589565861</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="improve ui alerts">
+      <option name="closed" value="true" />
+      <created>1700670245457</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1700670245457</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test git" />
     <MESSAGE value="Add Edit Word function" />
     <MESSAGE value="Add Voice Function" />
     <MESSAGE value="Add API" />
@@ -623,6 +631,7 @@
     <MESSAGE value="update noti of add word" />
     <MESSAGE value="fix game" />
     <MESSAGE value="fix search and add" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix search and add" />
+    <MESSAGE value="improve ui alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve ui alerts" />
   </component>
 </project>

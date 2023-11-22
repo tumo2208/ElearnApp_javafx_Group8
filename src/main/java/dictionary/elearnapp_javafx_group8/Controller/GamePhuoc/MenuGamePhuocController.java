@@ -3,23 +3,24 @@ package dictionary.elearnapp_javafx_group8.Controller.GamePhuoc;
 import dictionary.elearnapp_javafx_group8.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class MenuGamePhuocController implements Initializable {
-    public Button topic1;
-    public Button topic2;
-    public Button topic3;
-    public Button topic4;
-    public Button topic5;
-    public Button topic6;
-    public Button topic7;
-    public Button topic8;
-    public Button topic9;
-    public Button topic10;
-    public Button topic11;
-    public Button topic12;
+    public ImageView topic1;
+    public ImageView topic2;
+    public ImageView topic3;
+    public ImageView topic4;
+    public ImageView topic5;
+    public ImageView topic6;
+    public ImageView topic7;
+    public ImageView topic8;
+    public ImageView topic9;
+    public ImageView topic10;
+    public ImageView topic11;
+    public ImageView topic12;
     public Button back;
 
     @Override

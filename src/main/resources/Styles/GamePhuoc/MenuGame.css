@@ -1,5 +1,15 @@
 .menu-background {
-    -fx-background-color: #FFE2E2;
+    -fx-background-color: #c3afaf;
+}
+
+.Hbox ImageView {
+    -fx-effect: dropshadow(three-pass-box, #383838, 10, 0, 5, 5);
+}
+
+.Hbox ImageView:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(three-pass-box, #383838, 25, 0, 5, 5);
 }
 
 .back-button {
