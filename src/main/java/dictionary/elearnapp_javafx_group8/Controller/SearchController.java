@@ -202,7 +202,8 @@ public class SearchController implements Initializable {
             pane1.setPrefHeight(300);
             pane1.getStylesheets().add(getClass().getResource("/Styles/Search.css").toString());
             pane1.getStyleClass().add("definition-area");
-            editDefinitionArea.setStyle("-fx-font-size: 14px;");
+            editDefinitionArea.setStyle("-fx-font-size: 14px;" +
+                    "-fx-wrap-text: true");
 
             Button okButton = new Button("OK");
             Button cancelButton = new Button("Cancel");

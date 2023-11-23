@@ -21,6 +21,7 @@ public class AnswerController implements Initializable {
     public ImageView angle2Img;
     public ImageView angle3Img;
     public ImageView angle4Img;
+    public Label numLetters;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -38,6 +39,9 @@ public class AnswerController implements Initializable {
             angle4Img.setImage(QuestionController.imgList[4 * ChooseLevelController.currentLevel + 3]);
         }
 
+        numLetters.setText("This obstacle has "
+                + Model.getInstance().getQuestionCatchWordList().get(ChooseLevelController.currentLevel).getAnswer().length()
+                + " letters");
         cfObstacleButton.setDisable(true);
 
         answerObstacleLabel.setOnKeyTyped(keyEvent -> cfObstacleButton.setDisable(answerObstacleLabel.getText().isEmpty()));

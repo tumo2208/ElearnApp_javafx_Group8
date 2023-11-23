@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="api-background" stylesheets="@../Styles/API.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
+<AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="api-background" stylesheets="@../Styles/API.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
     <Pane layoutX="310.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
         <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
             <font>
@@ -38,6 +38,10 @@
                 </font>
             </Label>
         </Pane>
+        <ImageView fx:id="loadingImg" fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="44.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/loading.png"/>
+        </ImageView>
     </Pane>
     <Button fx:id="switchButton" layoutX="787.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0">
         <graphic>
@@ -45,8 +49,8 @@
         </graphic>
     </Button>
     <Button fx:id="translateButton" layoutX="843.0" layoutY="525.0" mnemonicParsing="false" styleClass="translate-button" stylesheets="@../Styles/API.css" text="Translate" />
-    <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../Images/APISide.png"/>
+    <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/APISide.png" />
     </ImageView>
+   <Label fx:id="limitLetters" layoutX="334.0" layoutY="529.0" prefHeight="26.0" prefWidth="118.0" styleClass="limit_letter" />
 </AnchorPane>
