@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="game tu question update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="game tu questions and answer ui update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +208,7 @@
       <workItem from="1700636450390" duration="9467000" />
       <workItem from="1700729862820" duration="5063000" />
       <workItem from="1700741488080" duration="41000" />
-      <workItem from="1700741540347" duration="13088000" />
+      <workItem from="1700741540347" duration="13617000" />
     </task>
     <task id="LOCAL-00001" summary="create new javafx application">
       <option name="closed" value="true" />
@@ -565,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700758265543</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="game tu questions and answer ui update">
+      <option name="closed" value="true" />
+      <created>1700759343424</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1700759343425</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +578,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add Search function" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix AddWord layout" />
     <MESSAGE value="test git" />
@@ -598,6 +602,7 @@
     <MESSAGE value="ui update" />
     <MESSAGE value="game phuoc update" />
     <MESSAGE value="game tu question update" />
-    <option name="LAST_COMMIT_MESSAGE" value="game tu question update" />
+    <MESSAGE value="game tu questions and answer ui update" />
+    <option name="LAST_COMMIT_MESSAGE" value="game tu questions and answer ui update" />
   </component>
 </project>
