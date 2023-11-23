@@ -12,9 +12,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.net.URL;
 import java.util.Comparator;
@@ -53,7 +55,7 @@ public class SearchController implements Initializable {
 
         searchField.setOnKeyTyped(keyEvent -> {
             String searchWord = searchField.getText().trim();
-            int index = 0;
+            int index = -1;
             for (int i = 0; i < searchWord.length(); ++i) {
                 if (Character.isAlphabetic(searchWord.charAt(i)) || searchWord.charAt(i) == (char) 39
                         || (searchWord.charAt(i) >= '0' && searchWord.charAt(i) <= '9')) {
@@ -61,40 +63,14 @@ public class SearchController implements Initializable {
                     break;
                 }
             }
-            searchWord = searchWord.substring(index);
-            boolean isEmpty = true;
-            for (int i = 0; i < searchWord.length(); ++i) {
-                if (searchWord.contains("'")) {
-                    isEmpty = false;
-                } else {
-                    for (int j = 65; j < 91; ++j) {
-                        if (searchWord.contains(Character.toString((char) j))) {
-                            isEmpty = false;
-                            break;
-                        }
-                    }
-                    for (int j = 97; j < 123; ++j) {
-                        if (searchWord.contains(Character.toString((char) j))) {
-                            isEmpty = false;
-                            break;
-                        }
-                    }
-                    for (int j = 48; j < 57; ++j) {
-                        if (searchWord.contains(Character.toString((char) j))) {
-                            isEmpty = false;
-                            break;
-                        }
-                    }
-                }
+            if (index != -1) {
+                searchWord = searchWord.substring(index);
+            } else {
+                searchWord = "";
             }
-            if (isEmpty) {
-                if (searchWord.isEmpty()) {
-                    deleteSearchButton.setVisible(false);
-                    deleteSearchButton.setDisable(true);
-                } else {
-                    deleteSearchButton.setVisible(true);
-                    deleteSearchButton.setDisable(false);
-                }
+            if (searchField.getText().isEmpty()) {
+                deleteSearchButton.setVisible(false);
+                deleteSearchButton.setDisable(true);
                 listViewDefault();
             } else {
                 deleteSearchButton.setVisible(true);
@@ -226,7 +202,8 @@ public class SearchController implements Initializable {
             pane1.setPrefHeight(300);
             pane1.getStylesheets().add(getClass().getResource("/Styles/Search.css").toString());
             pane1.getStyleClass().add("definition-area");
-            editDefinitionArea.setStyle("-fx-font-size: 14px;");
+            editDefinitionArea.setStyle("-fx-font-size: 14px;" +
+                    "-fx-wrap-text: true");
 
             Button okButton = new Button("OK");
             Button cancelButton = new Button("Cancel");
@@ -252,9 +229,13 @@ public class SearchController implements Initializable {
                     + "-fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 2);");
 
             anchorPane.getChildren().setAll(pane1, pane2);
-            anchorPane.setStyle("-fx-background-color: #E0FFFF");
+            anchorPane.setStyle("-fx-background-color: derive(cadetblue, -20%);" +
+                    "-fx-background-insets: 12;" +
+                    "-fx-background-radius: 20;");
+            scene.setFill(Color.TRANSPARENT);
             stage.setTitle("Edit Word");
             stage.setScene(scene);
+            stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
 
             okButton.setOnAction(event1 -> {

@@ -13,31 +13,34 @@
 <AnchorPane prefHeight="580.0" prefWidth="960.0" styleClass="api-background" stylesheets="@../Styles/API.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionary.elearnapp_javafx_group8.Controller.APIController">
     <Pane layoutX="310.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
         <TextArea fx:id="firstLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
-         <font>
-            <Font size="16.0" />
-         </font></TextArea>
-       <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="first-language" stylesheets="@../Styles/API.css">
-           <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
-           <Label fx:id="firstLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="ENGLISH">
             <font>
-               <Font name="System Bold" size="12.0" />
-            </font>
-         </Label>
-       </Pane>
+                <Font size="16.0" />
+            </font></TextArea>
+        <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="first-language" stylesheets="@../Styles/API.css">
+            <ImageView fx:id="flag1" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="firstLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="ENGLISH">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+        </Pane>
     </Pane>
     <Pane layoutX="630.0" layoutY="50.0" prefHeight="450.0" prefWidth="290.0" styleClass="language-area" stylesheets="@../Styles/API.css">
         <TextArea fx:id="secondLanguageArea" layoutX="10.0" layoutY="30.0" prefHeight="410.0" prefWidth="270.0">
-         <font>
-            <Font size="16.0" />
-         </font></TextArea>
-       <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="second-language" stylesheets="@../Styles/API.css">
-           <ImageView fx:id="flag2" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
-           <Label fx:id="secondLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="VIETNAMESE">
             <font>
-               <Font name="System Bold" size="12.0" />
-            </font>
-         </Label>
-       </Pane>
+                <Font size="16.0" />
+            </font></TextArea>
+        <Pane layoutX="20.0" layoutY="-20.0" prefHeight="50.0" prefWidth="200.0" styleClass="second-language" stylesheets="@../Styles/API.css">
+            <ImageView fx:id="flag2" fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="secondLanguage" layoutX="106.0" layoutY="17.0" prefHeight="17.0" prefWidth="80.0" text="VIETNAMESE">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+        </Pane>
+        <ImageView fx:id="loadingImg" fitHeight="34.0" fitWidth="194.0" layoutX="20.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/loading.png" />
+        </ImageView>
     </Pane>
     <Button fx:id="switchButton" layoutX="787.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0">
         <graphic>
@@ -45,9 +48,8 @@
         </graphic>
     </Button>
     <Button fx:id="translateButton" layoutX="843.0" layoutY="525.0" mnemonicParsing="false" styleClass="translate-button" stylesheets="@../Styles/API.css" text="Translate" />
-   <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../Images/APISide.png" />
-      </image>
-   </ImageView>
+    <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../Images/APISide.png" />
+    </ImageView>
+    <Label fx:id="limitLetters" alignment="CENTER_RIGHT" layoutX="413.0" layoutY="511.0" prefHeight="26.0" prefWidth="185.0" styleClass="limit_letter" />
 </AnchorPane>

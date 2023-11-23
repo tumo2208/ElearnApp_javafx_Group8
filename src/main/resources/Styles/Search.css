@@ -54,11 +54,6 @@
     -fx-background-color: #ffffde;
 }
 
-/*.list-view .scroll-bar:vertical .decrement-button, .list-view .scroll-bar:vertical .decrement-arrow,
-.list-view .scroll-bar:vertical .increment-button, .list-view .scroll-bar:vertical .increment-arrow {
-    -fx-opacity: 0;
-}*/
-
 .list-view .scroll-bar:vertical .thumb,
 .definition-area TextArea .scroll-bar:vertical .thumb,
 .definition-area TextArea .scroll-bar:horizontal .thumb {
