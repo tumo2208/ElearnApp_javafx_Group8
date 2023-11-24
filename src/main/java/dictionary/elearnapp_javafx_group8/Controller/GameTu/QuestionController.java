@@ -209,6 +209,8 @@ public class QuestionController implements Initializable {
         stage.setTitle("Fuck");
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
+        stage.setX(545);
+        stage.setY(260);
         stage.show();
     }
 
@@ -290,6 +292,8 @@ public class QuestionController implements Initializable {
         stage.setTitle("Fuck");
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
+        stage.setX(545);
+        stage.setY(260);
         stage.show();
     }
 
