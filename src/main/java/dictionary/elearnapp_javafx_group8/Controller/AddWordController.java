@@ -51,7 +51,7 @@ public class AddWordController implements Initializable {
     private void addWord() {
         String word = newWordField.getText().trim();
         for (int i = 0; i < word.length(); ++i) {
-            if (!Character.isAlphabetic(word.charAt(i)) && word.charAt(i) != ' ' &&  word.charAt(i) != (char) 39) {
+            if (!Character.isAlphabetic(word.charAt(i)) && word.charAt(i) != '-' && word.charAt(i) != ' ' &&  word.charAt(i) != (char) 39) {
                 if (word.charAt(i) < '0' && word.charAt(i) > '9') {
                     word = word.replace(Character.toString(word.charAt(i)), "");
                     --i;

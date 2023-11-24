@@ -1,73 +1,3 @@
-|text
-/tekst/
-* danh từ
-- nguyên văn, nguyên bản
-- bản văn, bài đọc, bài khoá
-- đề, đề mục, chủ đề
-= to stick to one's text+ nắm vững chủ đề, không đi ra ngoài đề
-- đoạn trích (trong kinh thánh)
-- (như) textbook
-- (như) text-hand
-|button
-/'bʌtn/
-* danh từ
-- cái khuy, cái cúc (áo)
-- cái nút, cái núm, cái bấm (chuông điện...)
-- nụ hoa; búp mầm (chưa nở)
-- (số nhiều) (thông tục) chú bé phục vụ ở khách sạn ((cũng) boy in buttons)
-!not to care a [brass] button
-- (thông tục) cóc cần
-* động từ
-- cái khuy, cái cúc; cài
-= to button up one's coat+ cài khuy áo lại
-= this dress buttons down the back+ cái áo này cài ở phía sau
-- đơm khuy, đôm cúc (áo)
-- ((thường) + up) phủ kín áo lên (người hay súc vật mang trong người)
-!buttoned up
-- (quân sự),  (từ lóng) tất cả đều đã sẵn sàng đâu vào đấy
-!to button up one's mouth
-- (thông tục) im thin thít
-!to button up one's purse
-- (thông tục) keo kiệt, bủn xỉn
-
-button
-- (Tech) nút; núm
-
-button
-- nút bấm, cái khuy
-- push b. nút bấm đẩy
-- reset b. nút bật lại
-- start b. (máy tính) nút bấm khởi động
-- stop b. (máy tính) nút dừng
-|search
-/sə:tʃ/
-* danh từ
-- sự nhìn để tìm, sự sờ để tìm; sự khám xét, sự lục soát
-= right of search+ (pháp lý) quyền khám tàu
-= search of a house+ sự khám nhà
-- sự điều tra, sự nghiên cứu
-!to be in search of something
-- đang đi tìm cái gì
-!to make a search for someone
-- đi tìm ai
-* động từ
-- nhìn để tìm, sờ để tìm; khám xét, lục soát
-= to search the house for weapons+ khám nhà tìm vũ khí
-- dò, tham dò
-= to search men's hearts+ thăm dò lòng người
-= to search a wound+ dò một vết thương
-- điều tra
-- bắn xuyên vào tận ngách (hầm...)
-- (từ cổ,nghĩa cổ) tìm tòi, tìm cho ra
-!to search out
-- tìm tòi
-- tìm thấy
-!search me!
-- (từ Mỹ,nghĩa Mỹ),  (thông tục) nào tôi có biết!, làm sao mà tôi biết được!
-
-search
-- tìm tòi, nghiên cứu
-- s. out tìm thấy
 |word
 /wə:d/
 * danh từ
@@ -668,6 +598,114 @@ book
 
 book
 - sách
+|web
+/web/
+* danh từ
+- vi dệt; tấm vi
+- súc giấy, cuộn giấy lớn
+= web paper+ giấy súc (chưa cắt ra từng tờ)
+- (động vật học) mạng
+= spider's web+ mạng nhện
+- (động vật học) t (lông chim)
+- (động vật học) màng da (ở chân vịt...)
+- (kiến trúc) thân (thanh rầm)
+- (kỹ thuật) đĩa (bánh xe), mỏ (chìa khoá); lưỡi (cưa); thân (của thanh ray)
+!a web of lies
+- một mớ chuyện dối trá
+!the web of life
+- cuộc đời; số phận con người
+
+web
+- lưới
+- w. of curver lưới các đường cong
+|card
+/kɑ:d/
+* danh từ
+- các, thiếp, thẻ
+= calling card+ danh thiếp
+= card of admission+ thẻ ra vào, thẻ vào cửa
+= invitation card+ thiếp mời
+- quân bài, bài ((cũng) playing card)
+- (số nhiều) sự chơi bài
+= a pack of cards+ một cỗ bài
+= trump card+ quân bài chủ
+- chương trình (cuộc đua...)
+- bản yết thị
+- (từ Mỹ,nghĩa Mỹ) quảng cáo (trên báo)
+- (từ cổ,nghĩa cổ), hải la bàn ((cũng) mariner's card)
+- (thông tục) người kỳ quặc; thằng cha, gã
+= a knowing card+ một thằng cha láu
+= a queer card+ một thằng cha kỳ quặc
+!to have a card up one's sleeve
+- còn nắm bài chủ trong tay; có kế dự phòng
+!to have (hold) the cards in one's hands
+- có tất cả bài chủ trong tay; (nghĩa bóng) có tất cả yếu tố thắng lợi trong tay
+!house of cards
+- (xem) house
+!on (in) the cards
+- có thể, có lẽ
+!one's best (trump) cards
+- lý lẽ vững nhất; lá bài chủ (nghĩa bóng)
+!to play one's card well
+- chơi nước bài hay ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play a sure card
+- chơi nước chắc ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play a wrong card
+- chơi nước bài bớ, chơi nước bài sai lầm ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play (lay, place) one's card on the table
+- nói rõ hết ý định, nói rõ hết kế hoạch không cần úp mở giấu giếm
+!to show one's card
+- để lộ kế hoạch
+!to speak by the card
+- nói rành rọt, nói chính xác
+!that's the card
+- (thông tục) đúng thế, thế là đúng, thế là phải
+!to throw (fling) up one's card
+- bỏ cuộc, chịu thua không chơi nữa
+* danh từ
+- bàn chải len, bàn cúi
+* ngoại động từ
+- chải (len...)
+
+card
+- (Tech) thẻ, phiếu, bìa
+
+card
+- (máy tính) tấm bìa, phiếu tính có lỗ; bảng; (lý thuyết trò chơi) quân bài
+- correetion c. bảng sửa chữa
+- plain c. (lý thuyết trò chơi) quân bài công khai
+- punched c. bìa đục lỗ
+- test c. phiếu kiểm tra
+- trump c. quana bài thắng
+|search
+/sə:tʃ/
+* danh từ
+- sự nhìn để tìm, sự sờ để tìm; sự khám xét, sự lục soát
+= right of search+ (pháp lý) quyền khám tàu
+= search of a house+ sự khám nhà
+- sự điều tra, sự nghiên cứu
+!to be in search of something
+- đang đi tìm cái gì
+!to make a search for someone
+- đi tìm ai
+* động từ
+- nhìn để tìm, sờ để tìm; khám xét, lục soát
+= to search the house for weapons+ khám nhà tìm vũ khí
+- dò, tham dò
+= to search men's hearts+ thăm dò lòng người
+= to search a wound+ dò một vết thương
+- điều tra
+- bắn xuyên vào tận ngách (hầm...)
+- (từ cổ,nghĩa cổ) tìm tòi, tìm cho ra
+!to search out
+- tìm tòi
+- tìm thấy
+!search me!
+- (từ Mỹ,nghĩa Mỹ),  (thông tục) nào tôi có biết!, làm sao mà tôi biết được!
+
+search
+- tìm tòi, nghiên cứu
+- s. out tìm thấy
 |save
 /seiv/
 * danh từ
