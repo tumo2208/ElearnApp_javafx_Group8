@@ -236,10 +236,14 @@ public class SearchController implements Initializable {
             stage.setTitle("Edit Word");
             stage.setScene(scene);
             stage.initStyle(StageStyle.TRANSPARENT);
+            stage.setY(260);
+            stage.setX(470);
             stage.show();
 
             okButton.setOnAction(event1 -> {
                 cfDialog = new Dialog<>();
+                cfDialog.setX(670);
+                cfDialog.setY(350);
                 Label lb = new Label("Are you sure to edit this word?");
                 cfDialog.getDialogPane().setContent(new VBox(lb));
                 cfDialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
