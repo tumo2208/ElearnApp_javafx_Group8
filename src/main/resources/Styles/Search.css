@@ -54,18 +54,17 @@
     -fx-background-color: #ffffde;
 }
 
-/*.list-view .scroll-bar:vertical .decrement-button, .list-view .scroll-bar:vertical .decrement-arrow,
-.list-view .scroll-bar:vertical .increment-button, .list-view .scroll-bar:vertical .increment-arrow {
-    -fx-opacity: 0;
-}*/
-
-.list-view .scroll-bar:vertical .thumb {
+.list-view .scroll-bar:vertical .thumb,
+.definition-area TextArea .scroll-bar:vertical .thumb,
+.definition-area TextArea .scroll-bar:horizontal .thumb {
     -fx-background-color: #c8c8c8;
     -fx-background-insets: 5, 5, 5;
     -fx-background-radius: 5;
 }
 
-.list-view .scroll-bar:vertical .track {
+.list-view .scroll-bar:vertical .track,
+.definition-area TextArea .scroll-bar:vertical .track,
+.definition-area TextArea .scroll-bar:horizontal .track {
     -fx-background-color: #ffffde;
     -fx-background-insets: 5, 5, 5;
     -fx-background-radius: 5;
@@ -123,16 +122,4 @@
 
 .definition-area TextArea .scroll-bar {
     -fx-background-color: transparent;
-}
-
-.definition-area TextArea .scroll-bar:vertical .thumb {
-    -fx-background-color: #c8c8c8;
-    -fx-background-insets: 5, 5, 5;
-    -fx-background-radius: 5;
-}
-
-.definition-area TextArea .scroll-bar:vertical .track {
-    -fx-background-color: transparent;
-    -fx-background-insets: 5, 5, 5;
-    -fx-background-radius: 5;
 }

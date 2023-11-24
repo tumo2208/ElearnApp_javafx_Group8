@@ -38,9 +38,14 @@
                 </font>
             </Label>
         </Pane>
-        <ImageView fx:id="loadingImg" fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="44.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <Image url="@../Images/loading.png"/>
+        <ImageView fx:id="loadingImg" fitHeight="34.0" fitWidth="194.0" layoutX="20.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/loading.png" />
+        </ImageView>
+        <ImageView fx:id="errorTranslate" fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/errorTranslate.png" />
+        </ImageView>
+        <ImageView fx:id="noConnection" fitHeight="50.0" fitWidth="224.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/noConnection.png" />
         </ImageView>
     </Pane>
     <Button fx:id="switchButton" layoutX="787.0" layoutY="525.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0">
@@ -52,5 +57,5 @@
     <ImageView fitHeight="378.0" fitWidth="276.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../Images/APISide.png" />
     </ImageView>
-   <Label fx:id="limitLetters" layoutX="334.0" layoutY="529.0" prefHeight="26.0" prefWidth="118.0" styleClass="limit_letter" />
+    <Label fx:id="limitLetters" alignment="CENTER_RIGHT" layoutX="413.0" layoutY="511.0" prefHeight="26.0" prefWidth="185.0" styleClass="limit_letter" />
 </AnchorPane>
