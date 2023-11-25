@@ -176,8 +176,11 @@ public class MemoriesController implements Initializable {
         ButtonType again = new ButtonType("Play Again");
         ButtonType quit = new ButtonType("Quit Game");
         alert.getButtonTypes().addAll(again, quit);
-        alert.show();
         alert.setOnHidden(e -> choiceOver());
+        if(Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay"))
+        {
+            alert.show();
+        }
     }
 
     /**
@@ -551,8 +554,11 @@ public class MemoriesController implements Initializable {
      */
     public void checkNumberShowing() {
         if (showingCard.size() > 1) {
-            int tmp = showingCard.get(0);
-            isFrontShowing[tmp] = flipIndex(tmp);
+            int tmp1 = showingCard.get(0);
+            int tmp2 = showingCard.get(1);
+            isFrontShowing[tmp1] = flipIndex(tmp1);
+            isFrontShowing[tmp2] = flipIndex(tmp2);
+            showingCard.remove(0);
             showingCard.remove(0);
         }
     }
