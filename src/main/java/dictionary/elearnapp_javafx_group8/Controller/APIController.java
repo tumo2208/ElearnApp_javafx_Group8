@@ -49,7 +49,7 @@ public class APIController implements Initializable {
 
         firstLanguageArea.setWrapText(true);
         secondLanguageArea.setWrapText(true);
-        limitLetters.setText("0 / 1000");
+        limitLetters.setText("0 / 2000");
         secondLanguageArea.setEditable(false);
         loadingImg.setVisible(false);
         errorTranslate.setVisible(false);
