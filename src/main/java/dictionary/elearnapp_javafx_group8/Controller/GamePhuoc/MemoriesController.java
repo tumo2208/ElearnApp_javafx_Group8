@@ -85,157 +85,7 @@ public class MemoriesController implements Initializable {
     private final List<Integer> check = new ArrayList<>();
     private final List<Integer> showingCard = new ArrayList<>();
     boolean[] isFrontShowing = new boolean[15];
-    /**
-     * cài đặt thời gian đếm ngược
-     */
-    private final ObjectProperty<java.time.Duration> remainingDuration
-            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
-    /**
-     * cài đặt dòng thời gian.
-     */
-    private final Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
-            remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
-    private int cardRemoved = 0;
-    private final Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 
-    /**
-     * ánh xạ giữa số chỉ từ trong list và số chỉ của card.
-     */
-    public void addWord() {
-        for (int i = 0; i < 14; i++) {
-            int tmp = check.get(i);
-            add(tmp, list.get(i));
-        }
-        add(check.get(14), trap);
-    }
-
-    /**
-     * chuyển từ vào các card sau khi đã ánh xạ.
-     * @param x số chỉ của card
-     * @param word từ được chuyển vào
-     */
-    public void add(int x, String word) {
-        switch (x) {
-            case 0:
-                word0.setText(word);
-                break;
-            case 1:
-                word1.setText(word);
-                break;
-            case 2:
-                word2.setText(word);
-                break;
-            case 3:
-                word3.setText(word);
-                break;
-            case 4:
-                word4.setText(word);
-                break;
-            case 5:
-                word5.setText(word);
-                break;
-            case 6:
-                word6.setText(word);
-                break;
-            case 7:
-                word7.setText(word);
-                break;
-            case 8:
-                word8.setText(word);
-                break;
-            case 9:
-                word9.setText(word);
-                break;
-            case 10:
-                word10.setText(word);
-                break;
-            case 11:
-                word11.setText(word);
-                break;
-            case 12:
-                word12.setText(word);
-                break;
-            case 13:
-                word13.setText(word);
-                break;
-            case 14:
-                word14.setText(word);
-                break;
-
-
-        }
-    }
-
-    /**
-     * thông báo thua.
-     */
-    public void gameOver() {
-        alert.setTitle("GameOver");
-        alert.setHeaderText("Do you want to play again?");
-        alert.getButtonTypes().clear();
-        ButtonType again = new ButtonType("Play Again");
-        ButtonType quit = new ButtonType("Quit Game");
-        alert.getButtonTypes().addAll(again, quit);
-        alert.setOnHidden(e -> choiceOver());
-        if(Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay"))
-        {
-            alert.show();
-        }
-    }
-
-    /**
-     * lựa chọn khi thua.
-     */
-    public void choiceOver() {
-        if (alert.getResult() == alert.getButtonTypes().get(0)) {
-            resetNew();
-        } else {
-            onGameMenu();
-        }
-    }
-
-    /**
-     * thông báo thắng.
-     */
-    public void GameWin() {
-        countDownTimeLine.pause();
-        alert.setTitle("Win!");
-        alert.setHeaderText("Congratulation,you won! Do you want to play agian?");
-        alert.getButtonTypes().clear();
-        ButtonType again = new ButtonType("Play Again");
-        ButtonType quit = new ButtonType("Quit Game");
-        alert.getButtonTypes().addAll(again, quit);
-        alert.show();
-        alert.setOnHidden(e -> ChoiceWin());
-    }
-
-    /**
-     * lựa chọn khi thắng.
-     */
-    public void ChoiceWin() {
-        if (alert.getResult() == alert.getButtonTypes().get(0)) {
-            resetNew();
-        } else {
-            onGameMenu();
-        }
-    }
-
-    /**
-     * thoát ra menu game.
-     */
-    private void onGameMenu() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
-        countDownTimeLine.stop();
-    }
-
-    /**
-     * reset game mới.
-     */
-    public void resetNew() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
-        countDownTimeLine.stop();
-    }
 
 
 
@@ -596,5 +446,156 @@ public class MemoriesController implements Initializable {
             list.add(tmp[0]);
             list.add(tmp[1]);
         }
+    }
+    /**
+     * cài đặt thời gian đếm ngược
+     */
+    private final ObjectProperty<java.time.Duration> remainingDuration
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
+    /**
+     * cài đặt dòng thời gian.
+     */
+    private final Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
+            remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
+    private int cardRemoved = 0;
+    private final Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+
+    /**
+     * ánh xạ giữa số chỉ từ trong list và số chỉ của card.
+     */
+    public void addWord() {
+        for (int i = 0; i < 14; i++) {
+            int tmp = check.get(i);
+            add(tmp, list.get(i));
+        }
+        add(check.get(14), trap);
+    }
+
+    /**
+     * chuyển từ vào các card sau khi đã ánh xạ.
+     * @param x số chỉ của card
+     * @param word từ được chuyển vào
+     */
+    public void add(int x, String word) {
+        switch (x) {
+            case 0:
+                word0.setText(word);
+                break;
+            case 1:
+                word1.setText(word);
+                break;
+            case 2:
+                word2.setText(word);
+                break;
+            case 3:
+                word3.setText(word);
+                break;
+            case 4:
+                word4.setText(word);
+                break;
+            case 5:
+                word5.setText(word);
+                break;
+            case 6:
+                word6.setText(word);
+                break;
+            case 7:
+                word7.setText(word);
+                break;
+            case 8:
+                word8.setText(word);
+                break;
+            case 9:
+                word9.setText(word);
+                break;
+            case 10:
+                word10.setText(word);
+                break;
+            case 11:
+                word11.setText(word);
+                break;
+            case 12:
+                word12.setText(word);
+                break;
+            case 13:
+                word13.setText(word);
+                break;
+            case 14:
+                word14.setText(word);
+                break;
+
+
+        }
+    }
+
+    /**
+     * thông báo thua.
+     */
+    public void gameOver() {
+        alert.setTitle("GameOver");
+        alert.setHeaderText("Do you want to play again?");
+        alert.getButtonTypes().clear();
+        ButtonType again = new ButtonType("Play Again");
+        ButtonType quit = new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again, quit);
+        alert.setOnHidden(e -> choiceOver());
+        if(Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay"))
+        {
+            alert.show();
+        }
+    }
+
+    /**
+     * lựa chọn khi thua.
+     */
+    public void choiceOver() {
+        if (alert.getResult() == alert.getButtonTypes().get(0)) {
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+
+    /**
+     * thông báo thắng.
+     */
+    public void GameWin() {
+        countDownTimeLine.pause();
+        alert.setTitle("Win!");
+        alert.setHeaderText("Congratulation,you won! Do you want to play agian?");
+        alert.getButtonTypes().clear();
+        ButtonType again = new ButtonType("Play Again");
+        ButtonType quit = new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again, quit);
+        alert.show();
+        alert.setOnHidden(e -> ChoiceWin());
+    }
+
+    /**
+     * lựa chọn khi thắng.
+     */
+    public void ChoiceWin() {
+        if (alert.getResult() == alert.getButtonTypes().get(0)) {
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+
+    /**
+     * thoát ra menu game.
+     */
+    private void onGameMenu() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        countDownTimeLine.stop();
+    }
+
+    /**
+     * reset game mới.
+     */
+    public void resetNew() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
+        countDownTimeLine.stop();
     }
 }
