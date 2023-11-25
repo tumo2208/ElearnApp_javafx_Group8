@@ -7,13 +7,17 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.transform.Rotate;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.File;
@@ -24,6 +28,7 @@ import java.util.*;
 public class MemoriesController implements Initializable {
     public Label time;
     public static String setTopic;
+
 
     public Label topic;
 
@@ -76,133 +81,16 @@ public class MemoriesController implements Initializable {
     public Label word14;
     public Button Back;
 
-    boolean[] isFrontShowing = new boolean[15];
 
-    private final ObjectProperty<java.time.Duration> remainingDuration
-            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
     public static String pathToGamePhuocData;
     public static final String trap = "x2 Time Speed";
-    private List<String> pairs = new ArrayList<>();
-    private List<String> list = new ArrayList<>();
-    private List<Integer> check = new ArrayList<>();
-    private List<Integer> showingCard = new ArrayList<>();
-    private Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
-            remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
-    private int cardRemoved = 0;
-    private Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-
-    public void addWord() {
-        for (int i = 0; i < 14; i++) {
-            int tmp = check.get(i);
-            add(tmp, list.get(i));
-        }
-        add(check.get(14), trap);
-    }
-
-    public void add(int x, String word) {
-        switch (x) {
-            case 0:
-                word0.setText(word);
-                break;
-            case 1:
-                word1.setText(word);
-                break;
-            case 2:
-                word2.setText(word);
-                break;
-            case 3:
-                word3.setText(word);
-                break;
-            case 4:
-                word4.setText(word);
-                break;
-            case 5:
-                word5.setText(word);
-                break;
-            case 6:
-                word6.setText(word);
-                break;
-            case 7:
-                word7.setText(word);
-                break;
-            case 8:
-                word8.setText(word);
-                break;
-            case 9:
-                word9.setText(word);
-                break;
-            case 10:
-                word10.setText(word);
-                break;
-            case 11:
-                word11.setText(word);
-                break;
-            case 12:
-                word12.setText(word);
-                break;
-            case 13:
-                word13.setText(word);
-                break;
-            case 14:
-                word14.setText(word);
-                break;
+    private final List<String> pairs = new ArrayList<>();
+    private final List<String> list = new ArrayList<>();
+    private final List<Integer> check = new ArrayList<>();
+    private final List<Integer> showingCard = new ArrayList<>();
+    boolean[] isFrontShowing = new boolean[15];
 
 
-        }
-    }
-
-    public void gameOver() {
-        alert.setTitle("GameOver");
-        alert.setHeaderText("Do you want to play again?");
-        alert.getButtonTypes().clear();
-        ButtonType again = new ButtonType("Play Again");
-        ButtonType quit = new ButtonType("Quit Game");
-        alert.getButtonTypes().addAll(again, quit);
-        alert.show();
-        alert.setOnHidden(e -> choiceOver());
-    }
-
-    public void choiceOver() {
-        if (alert.getResult() == alert.getButtonTypes().get(0)) {
-            resetNew();
-        } else {
-            onGameMenu();
-        }
-    }
-
-    public void GameWin() {
-        alert.setTitle("Win!");
-        alert.setHeaderText("Congratulation,you won! Do you want to play agian?");
-        alert.getButtonTypes().clear();
-        ButtonType again = new ButtonType("Play Again");
-        ButtonType quit = new ButtonType("Quit Game");
-        alert.getButtonTypes().addAll(again, quit);
-        alert.show();
-        alert.setOnHidden(e -> ChoiceWin());
-    }
-
-    public void ChoiceWin() {
-        if (alert.getResult() == alert.getButtonTypes().get(0)) {
-            resetNew();
-        } else {
-            onGameMenu();
-        }
-    }
-
-    private void onGameMenu() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
-        countDownTimeLine.stop();
-    }
-
-    public void resetNew() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
-        countDownTimeLine.stop();
-    }
-
-    private void onGamePlay() {
-        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
-    }
 
 
     @Override
@@ -229,56 +117,28 @@ public class MemoriesController implements Initializable {
         );
         countDownTimeLine.play();
 
-        pane0.setOnMouseClicked((t) -> {
-            this.isFrontShowing[0] = flipIndex(0);
-        });
-        pane1.setOnMouseClicked((t) -> {
-            this.isFrontShowing[1] = flipIndex(1);
-
-        });
-        pane2.setOnMouseClicked((t) -> {
-            this.isFrontShowing[2] = flipIndex(2);
-        });
-        pane3.setOnMouseClicked((t) -> {
-            this.isFrontShowing[3] = flipIndex(3);
-        });
-        pane4.setOnMouseClicked((t) -> {
-            this.isFrontShowing[4] = flipIndex(4);
-        });
-        pane5.setOnMouseClicked((t) -> {
-            this.isFrontShowing[5] = flipIndex(5);
-        });
-        pane6.setOnMouseClicked((t) -> {
-            this.isFrontShowing[6] = flipIndex(6);
-        });
-        pane7.setOnMouseClicked((t) -> {
-            this.isFrontShowing[7] = flipIndex(7);
-        });
-        pane8.setOnMouseClicked((t) -> {
-            this.isFrontShowing[8] = flipIndex(8);
-        });
-        pane9.setOnMouseClicked((t) -> {
-            this.isFrontShowing[9] = flipIndex(9);
-        });
-        pane10.setOnMouseClicked((t) -> {
-            this.isFrontShowing[10] = flipIndex(10);
-        });
-        pane11.setOnMouseClicked((t) -> {
-            this.isFrontShowing[11] = flipIndex(11);
-        });
-        pane12.setOnMouseClicked((t) -> {
-            this.isFrontShowing[12] = flipIndex(12);
-        });
-        pane13.setOnMouseClicked((t) -> {
-            this.isFrontShowing[13] = flipIndex(13);
-        });
-        pane14.setOnMouseClicked((t) -> {
-            this.isFrontShowing[14] = flipIndex(14);
-        });
+        pane0.setOnMouseClicked((t) -> this.isFrontShowing[0] = flipIndex(0));
+        pane1.setOnMouseClicked((t) -> this.isFrontShowing[1] = flipIndex(1));
+        pane2.setOnMouseClicked((t) -> this.isFrontShowing[2] = flipIndex(2));
+        pane3.setOnMouseClicked((t) -> this.isFrontShowing[3] = flipIndex(3));
+        pane4.setOnMouseClicked((t) -> this.isFrontShowing[4] = flipIndex(4));
+        pane5.setOnMouseClicked((t) -> this.isFrontShowing[5] = flipIndex(5));
+        pane6.setOnMouseClicked((t) -> this.isFrontShowing[6] = flipIndex(6));
+        pane7.setOnMouseClicked((t) -> this.isFrontShowing[7] = flipIndex(7));
+        pane8.setOnMouseClicked((t) -> this.isFrontShowing[8] = flipIndex(8));
+        pane9.setOnMouseClicked((t) -> this.isFrontShowing[9] = flipIndex(9));
+        pane10.setOnMouseClicked((t) -> this.isFrontShowing[10] = flipIndex(10));
+        pane11.setOnMouseClicked((t) -> this.isFrontShowing[11] = flipIndex(11));
+        pane12.setOnMouseClicked((t) -> this.isFrontShowing[12] = flipIndex(12));
+        pane13.setOnMouseClicked((t) -> this.isFrontShowing[13] = flipIndex(13));
+        pane14.setOnMouseClicked((t) -> this.isFrontShowing[14] = flipIndex(14));
         Back.setOnMouseClicked(e -> onGameMenu());
 
     }
 
+    /**
+     * bắt đầu game bằng animation úp hết tất cả lá bài.
+     */
     public void getStart() {
         this.isFrontShowing[0] = flipIndex(0);
         this.isFrontShowing[1] = flipIndex(1);
@@ -298,14 +158,11 @@ public class MemoriesController implements Initializable {
         topic.setText(setTopic);
     }
 
-    public boolean flip(StackPane pane, boolean isFrontShowing) {
-        RotateTransition rotator = createRotator(pane, isFrontShowing);
-        PauseTransition ptChangeCardFace = changeCardFace(pane, isFrontShowing);
-        ParallelTransition parallelTransition = new ParallelTransition(rotator, ptChangeCardFace);
-        parallelTransition.play();
-        return !isFrontShowing;
-    }
-
+    /**
+     * animation lật một card có chỉ số là i.
+     * @param i số chỉ của card
+     * @return trả về trạng thái sau khi lật
+     */
     public boolean flipIndex(int i) {
         StackPane tmp = new StackPane();
 
@@ -379,6 +236,10 @@ public class MemoriesController implements Initializable {
         return isFrontShowing[i];
     }
 
+    /**
+     * xóa bỏ một card có số chỉ là a.
+     * @param a số chỉ
+     */
     public void removeCard(int a) {
 
         cardRemoved++;
@@ -437,11 +298,14 @@ public class MemoriesController implements Initializable {
         tmp.setVisible(false);
         if (cardRemoved == 15) {
             cardRemoved = 0;
+            countDownTimeLine.stop();
             GameWin();
-            countDownTimeLine.playFromStart();
         }
     }
 
+    /**
+     * khởi tạo animation lật
+     */
     private RotateTransition createRotator(StackPane pane, boolean isFrontShowing) {
         RotateTransition rotator = new RotateTransition(Duration.millis(500), pane);
         rotator.setAxis(Rotate.Y_AXIS);
@@ -459,6 +323,9 @@ public class MemoriesController implements Initializable {
         return rotator;
     }
 
+    /**
+     * chuyển mặt lá bài khi lật
+     */
     private PauseTransition changeCardFace(StackPane pane, boolean isFrontShowing) {
         PauseTransition pause = new PauseTransition(Duration.millis(250));
 
@@ -479,6 +346,9 @@ public class MemoriesController implements Initializable {
         return pause;
     }
 
+    /**
+     * trộn ngẫu nhiên list từ.
+     */
     public void makeList() {
         check.clear();
         for (int i = 0; i < 15; i++) {
@@ -487,6 +357,12 @@ public class MemoriesController implements Initializable {
         Collections.shuffle(this.check);
     }
 
+    /**
+     * tìm chỉ số liên hệ giữa lá bài và từ.
+     * @param x số của lá bài
+     * @param list list ánh xạ
+     * @return index của lá bài trong list
+     */
     public int findIndex(int x, List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) == x) {
@@ -496,14 +372,23 @@ public class MemoriesController implements Initializable {
         return -1;
     }
 
+    /**
+     * kiểm soát số bài đang lật
+     */
     public void checkNumberShowing() {
         if (showingCard.size() > 1) {
-            int tmp = showingCard.get(0);
-            isFrontShowing[tmp] = flipIndex(tmp);
+            int tmp1 = showingCard.get(0);
+            int tmp2 = showingCard.get(1);
+            isFrontShowing[tmp1] = flipIndex(tmp1);
+            isFrontShowing[tmp2] = flipIndex(tmp2);
+            showingCard.remove(0);
             showingCard.remove(0);
         }
     }
 
+    /**
+     * kiểm tra xem trong số bài đang lật có lá nào khớp nhau không.
+     */
     public void checkShowingCards() {
 
         for (int i = 0; i < showingCard.size(); i++) {
@@ -523,6 +408,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * kiểm tra xem lá bài vừa lật có phải là ô bẫy.
+     */
     public void checkTrap() {
         int tmp = showingCard.get(showingCard.size() - 1);
         if (tmp == check.get(14)) {
@@ -532,7 +420,9 @@ public class MemoriesController implements Initializable {
 
     }
 
-
+    /**
+     * đọc vào từ file text.
+     */
     public void readData() {
         pairs.clear();
         try {
@@ -549,6 +439,9 @@ public class MemoriesController implements Initializable {
         }
     }
 
+    /**
+     * chia đôi từ thành tiếng anh và tiếng việt.
+     */
     public void splitPairs() {
         Collections.shuffle(pairs);
         list.clear();
@@ -557,5 +450,179 @@ public class MemoriesController implements Initializable {
             list.add(tmp[0]);
             list.add(tmp[1]);
         }
+    }
+    /**
+     * cài đặt thời gian đếm ngược
+     */
+    private final ObjectProperty<java.time.Duration> remainingDuration
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(90));
+    /**
+     * cài đặt dòng thời gian.
+     */
+    private final Timeline countDownTimeLine = new Timeline(new KeyFrame(Duration.seconds(1), (ActionEvent event) ->
+            remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
+    private int cardRemoved = 0;
+    private final Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+
+    /**
+     * ánh xạ giữa số chỉ từ trong list và số chỉ của card.
+     */
+    public void addWord() {
+        for (int i = 0; i < 14; i++) {
+            int tmp = check.get(i);
+            add(tmp, list.get(i));
+        }
+        add(check.get(14), trap);
+    }
+
+    /**
+     * chuyển từ vào các card sau khi đã ánh xạ.
+     * @param x số chỉ của card
+     * @param word từ được chuyển vào
+     */
+    public void add(int x, String word) {
+        switch (x) {
+            case 0:
+                word0.setText(word);
+                break;
+            case 1:
+                word1.setText(word);
+                break;
+            case 2:
+                word2.setText(word);
+                break;
+            case 3:
+                word3.setText(word);
+                break;
+            case 4:
+                word4.setText(word);
+                break;
+            case 5:
+                word5.setText(word);
+                break;
+            case 6:
+                word6.setText(word);
+                break;
+            case 7:
+                word7.setText(word);
+                break;
+            case 8:
+                word8.setText(word);
+                break;
+            case 9:
+                word9.setText(word);
+                break;
+            case 10:
+                word10.setText(word);
+                break;
+            case 11:
+                word11.setText(word);
+                break;
+            case 12:
+                word12.setText(word);
+                break;
+            case 13:
+                word13.setText(word);
+                break;
+            case 14:
+                word14.setText(word);
+                break;
+
+
+        }
+    }
+
+    /**
+     * thông báo thua.
+     */
+    public void gameOver() {
+        alert.setTitle("GameOver");
+        alert.setHeaderText("Do you want to play again?");
+        alert.getButtonTypes().clear();
+        ButtonType again = new ButtonType("Play Again");
+        ButtonType quit = new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again, quit);
+        alert.setOnHidden(e -> choiceOver());
+        if(Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay"))
+        {
+            alert.show();
+        }
+        /*Stage stage = new Stage();
+        AnchorPane anchorPane = new AnchorPane();
+        Scene scene = new Scene(anchorPane, 600, 400);
+
+        Image defeatImg = new Image(getClass().getResource("/Images/GamePhuoc/defeat.png").toString());
+        ImageView defeat = new ImageView(defeatImg);
+        defeat.setLayoutX(120);
+        defeat.setLayoutY(50);
+        defeat.setFitWidth(360);
+        defeat.setFitHeight(120);
+        Image image = new Image(getClass().getResource("/Images/GamePhuoc/cry.gif").toString());
+        ImageView imageView = new ImageView(image);
+        imageView.setLayoutX(20);
+        imageView.setLayoutY(300);
+        imageView.setFitWidth(100);
+        imageView.setFitHeight(80);
+
+        anchorPane.getChildren().addAll(imageView, defeat);
+        anchorPane.setStyle("-fx-background-color: #FFFFFF");
+
+        stage.setScene(scene);
+        stage.setTitle("fuck");
+        stage.show();*/
+    }
+
+    /**
+     * lựa chọn khi thua.
+     */
+    public void choiceOver() {
+        if (alert.getResult() == alert.getButtonTypes().get(0)) {
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+
+    /**
+     * thông báo thắng.
+     */
+    public void GameWin() {
+        countDownTimeLine.pause();
+        alert.setTitle("Win!");
+        alert.setHeaderText("Congratulation,you won! Do you want to play again?");
+        alert.getButtonTypes().clear();
+        ButtonType again = new ButtonType("Play Again");
+        ButtonType quit = new ButtonType("Quit Game");
+        alert.getButtonTypes().addAll(again, quit);
+        alert.show();
+        alert.setOnHidden(e -> ChoiceWin());
+    }
+
+    /**
+     * lựa chọn khi thắng.
+     */
+    public void ChoiceWin() {
+        if (alert.getResult() == alert.getButtonTypes().get(0)) {
+            resetNew();
+        } else {
+            onGameMenu();
+        }
+    }
+
+    /**
+     * thoát ra menu game.
+     */
+    private void onGameMenu() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        countDownTimeLine.stop();
+    }
+
+    /**
+     * reset game mới.
+     */
+    public void resetNew() {
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesMenu");
+        Model.getInstance().getViewFactory().selectedMenuProperty().set("MemoriesPlay");
+        countDownTimeLine.stop();
     }
 }

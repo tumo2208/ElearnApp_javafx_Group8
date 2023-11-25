@@ -18,10 +18,10 @@
         <Image url="@../../Images/GameTu/packDefault/2.png" />
     </ImageView>
     <ImageView fx:id="angle4Img" fitHeight="171.0" fitWidth="228.0" layoutX="252.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/3.png" />
+        <Image url="@../../Images/GameTu/packDefault/4.png" />
     </ImageView>
     <ImageView fx:id="angle3Img" fitHeight="171.0" fitWidth="228.0" layoutX="480.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../Images/GameTu/packDefault/4.png" />
+        <Image url="@../../Images/GameTu/packDefault/3.png" />
     </ImageView>
     <ImageView fitHeight="171.0" fitWidth="228.0" layoutX="366.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../../Images/GameTu/packDefault/center.png" />

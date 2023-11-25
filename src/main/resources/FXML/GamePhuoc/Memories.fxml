@@ -103,22 +103,22 @@
             <Label fx:id="word14" alignment="CENTER" prefHeight="196.0" prefWidth="128.0" text="Label" />
         </StackPane>
     </Pane>
-    <VBox layoutX="20.0" layoutY="86.0" prefHeight="162.0" prefWidth="180.0">
-        <Pane prefHeight="55.0" prefWidth="200.0" styleClass="pane-table" stylesheets="@../../Styles/GamePhuoc/Memories.css">
+    <VBox layoutX="20.0" layoutY="112.0" prefHeight="165.0" prefWidth="180.0">
+        <Pane prefHeight="55.0" prefWidth="200.0" styleClass="top-cell-of-table" stylesheets="@../../Styles/GamePhuoc/Memories.css">
          <children>
                <Label alignment="CENTER" layoutY="8.0" prefHeight="36.0" prefWidth="180.0" text="Memories game" textAlignment="CENTER" />
          </children>
         </Pane>
-        <Pane prefHeight="50.0" prefWidth="200.0">
+        <Pane prefHeight="55.0" prefWidth="200.0">
          <children>
-               <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="-1.0" prefHeight="55.0" prefWidth="95.0" styleClass="pane-table" text="time" textAlignment="CENTER" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-1.0" prefHeight="55.0" prefWidth="85.0" styleClass="pane-table" stylesheets="@../../Styles/GamePhuoc/Memories.css" text="TIME" />
+               <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" prefHeight="55.0" prefWidth="90.0" styleClass="pane-table" text="time" textAlignment="CENTER" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="90.0" styleClass="cell-of-table" stylesheets="@../../Styles/GamePhuoc/Memories.css" text="TIME" />
          </children>
         </Pane>
-        <Pane prefHeight="50.0" prefWidth="180.0">
+        <Pane prefHeight="55.0" prefWidth="180.0">
          <children>
-               <Label fx:id="topic" alignment="CENTER" layoutX="85.0" prefHeight="55.0" prefWidth="95.0" styleClass="pane-table" text="Topic" />
-            <Label alignment="CENTER" prefHeight="55.0" prefWidth="85.0" styleClass="pane-table" text="TOPIC" />
+               <Label fx:id="topic" alignment="CENTER" layoutX="90.0" prefHeight="55.0" prefWidth="90.0" styleClass="pane-table" text="Topic" />
+            <Label alignment="CENTER" prefHeight="55.0" prefWidth="90.0" styleClass="cell-of-table" text="TOPIC" />
          </children>
         </Pane>
     </VBox>
@@ -127,4 +127,9 @@
          <Font size="14.0" />
       </font>
    </Button>
+   <ImageView fitHeight="166.0" fitWidth="174.0" layoutX="26.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true" rotate="-11.3">
+      <image>
+         <Image url="@../../Images/GamePhuoc/illuastration.png" />
+      </image>
+   </ImageView>
 </AnchorPane>

@@ -10,10 +10,6 @@
 
 a priori
 - tiên nghiệm
-|a la mode
-/,ɑ:lə'moud/
-* phó từ
-- hợp thời trang, đúng mốt
 |dab
 /dæb/
 * ngoại động từ
@@ -85,14 +81,14 @@ a priori
 a/c
 - (vt của account current) tài khoản vãng lai (tức là bằng séc)
 - có nghĩa giống như nghĩa của account
-|dsc
-*(viết tắt)
-- Tiến sự khoa học (Doctor of Science)
 |a la carte
 /'ɑ:lɑ:'kɑ:t/
 * phó từ
 - theo món, gọi theo món, đặt theo món
 = to dine a_la_carte+ ăn cơm gọi theo món
+|dsc
+*(viết tắt)
+- Tiến sự khoa học (Doctor of Science)
 |dady-long-legs
 /'dædi'lɔɳlegz/
 * danh từ

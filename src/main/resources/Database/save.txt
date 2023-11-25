@@ -20,6 +20,12 @@ add
 - cộng vào, thêm vào, bổ sung
 - a. together, a. up cộng lại lấy tổng|add carry
 - (Tech) số nhớ khi cộng
+|dady-long-legs
+/'dædi'lɔɳlegz/
+* danh từ
+- (động vật học) con chôm chôm ((cũng) harvestman)|dsc
+*(viết tắt)
+- Tiến sự khoa học (Doctor of Science)
 |ha
 /hɑ:/
 * thán từ
@@ -125,6 +131,3 @@ on
 - trục cán láng (làm giấy); trục cán bóng
 *ngoại động từ
 - cán (giấy) bằng trục cán
-|dsc
-*(viết tắt)
-- Tiến sự khoa học (Doctor of Science)

@@ -59,13 +59,13 @@
             </cursor>
           </ImageView>
           <ImageView fx:id="angle3" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
-              <Image url="@../../Images/GameTu/packDefault/4.png" />
+              <Image url="@../../Images/GameTu/packDefault/3.png" />
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
           </ImageView>
           <ImageView fx:id="angle4" fitHeight="150.0" fitWidth="200.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
-              <Image url="@../../Images/GameTu/packDefault/3.png" />
+              <Image url="@../../Images/GameTu/packDefault/4.png" />
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
