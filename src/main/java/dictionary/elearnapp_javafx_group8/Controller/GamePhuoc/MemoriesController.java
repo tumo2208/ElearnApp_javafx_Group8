@@ -263,52 +263,21 @@ public class MemoriesController implements Initializable {
         );
         countDownTimeLine.play();
 
-        pane0.setOnMouseClicked((t) -> {
-            this.isFrontShowing[0] = flipIndex(0);
-        });
-        pane1.setOnMouseClicked((t) -> {
-            this.isFrontShowing[1] = flipIndex(1);
-
-        });
-        pane2.setOnMouseClicked((t) -> {
-            this.isFrontShowing[2] = flipIndex(2);
-        });
-        pane3.setOnMouseClicked((t) -> {
-            this.isFrontShowing[3] = flipIndex(3);
-        });
-        pane4.setOnMouseClicked((t) -> {
-            this.isFrontShowing[4] = flipIndex(4);
-        });
-        pane5.setOnMouseClicked((t) -> {
-            this.isFrontShowing[5] = flipIndex(5);
-        });
-        pane6.setOnMouseClicked((t) -> {
-            this.isFrontShowing[6] = flipIndex(6);
-        });
-        pane7.setOnMouseClicked((t) -> {
-            this.isFrontShowing[7] = flipIndex(7);
-        });
-        pane8.setOnMouseClicked((t) -> {
-            this.isFrontShowing[8] = flipIndex(8);
-        });
-        pane9.setOnMouseClicked((t) -> {
-            this.isFrontShowing[9] = flipIndex(9);
-        });
-        pane10.setOnMouseClicked((t) -> {
-            this.isFrontShowing[10] = flipIndex(10);
-        });
-        pane11.setOnMouseClicked((t) -> {
-            this.isFrontShowing[11] = flipIndex(11);
-        });
-        pane12.setOnMouseClicked((t) -> {
-            this.isFrontShowing[12] = flipIndex(12);
-        });
-        pane13.setOnMouseClicked((t) -> {
-            this.isFrontShowing[13] = flipIndex(13);
-        });
-        pane14.setOnMouseClicked((t) -> {
-            this.isFrontShowing[14] = flipIndex(14);
-        });
+        pane0.setOnMouseClicked((t) -> this.isFrontShowing[0] = flipIndex(0));
+        pane1.setOnMouseClicked((t) -> this.isFrontShowing[1] = flipIndex(1));
+        pane2.setOnMouseClicked((t) -> this.isFrontShowing[2] = flipIndex(2));
+        pane3.setOnMouseClicked((t) -> this.isFrontShowing[3] = flipIndex(3));
+        pane4.setOnMouseClicked((t) -> this.isFrontShowing[4] = flipIndex(4));
+        pane5.setOnMouseClicked((t) -> this.isFrontShowing[5] = flipIndex(5));
+        pane6.setOnMouseClicked((t) -> this.isFrontShowing[6] = flipIndex(6));
+        pane7.setOnMouseClicked((t) -> this.isFrontShowing[7] = flipIndex(7));
+        pane8.setOnMouseClicked((t) -> this.isFrontShowing[8] = flipIndex(8));
+        pane9.setOnMouseClicked((t) -> this.isFrontShowing[9] = flipIndex(9));
+        pane10.setOnMouseClicked((t) -> this.isFrontShowing[10] = flipIndex(10));
+        pane11.setOnMouseClicked((t) -> this.isFrontShowing[11] = flipIndex(11));
+        pane12.setOnMouseClicked((t) -> this.isFrontShowing[12] = flipIndex(12));
+        pane13.setOnMouseClicked((t) -> this.isFrontShowing[13] = flipIndex(13));
+        pane14.setOnMouseClicked((t) -> this.isFrontShowing[14] = flipIndex(14));
         Back.setOnMouseClicked(e -> onGameMenu());
 
     }
@@ -536,9 +505,9 @@ public class MemoriesController implements Initializable {
 
     /**
      * tìm chỉ số liên hệ giữa lá bài và từ.
-     * @param x
-     * @param list
-     * @return
+     * @param x số của lá bài
+     * @param list list ánh xạ
+     * @return index của lá bài trong list
      */
     public int findIndex(int x, List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
