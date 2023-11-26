@@ -18,9 +18,8 @@
 
 .new_word_field {
     -fx-background-color: #f3f3f3;
-    box-shadow: inset 2px 2px 3px 0 #555;
     -fx-background-radius: 20;
-
+    -fx-effect: dropshadow(three-pass-box, #000, 15, 0, 0, 0);
 }
 
 .new_word_field Label {
@@ -38,6 +37,7 @@
 .definition_field {
     -fx-background-color: #f3f3f3;
     -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, #000, 15, 0, 0, 0);
 }
 
 .definition_field TextArea {
@@ -91,4 +91,5 @@
 .confirm_button {
     -fx-background-radius: 20;
     -fx-background-color: #B1D9F6;
+    -fx-effect: dropshadow(three-pass-box, #4c4c4c, 10, 0, 0, 0);
 }

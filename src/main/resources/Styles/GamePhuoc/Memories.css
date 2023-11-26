@@ -14,7 +14,7 @@
 }
 
 .back-button:hover {
-    -fx-text-fill: #91DCAD;
+    -fx-text-fill: #a5a5a5;
     -fx-font-size: 18px;
 }
 
@@ -22,4 +22,16 @@
     -fx-background-color: #fff;
     -fx-border-width: 1px;
     -fx-border-color: #000;
+}
+
+.cell-of-table {
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+    -fx-background-color: #E2FFFF;
+}
+
+.top-cell-of-table {
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+    -fx-background-color: #FFF1E2;
 }

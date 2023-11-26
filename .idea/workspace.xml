@@ -4,10 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="update position of alerts">
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="fix memories game">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/illuastration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/catchTheWord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/Result.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/ChooseLevel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/ChooseLevel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button_Click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button_Click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button_Click.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/newWordSide.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/newWordSide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,15 +252,8 @@
       <workItem from="1700718366433" duration="45000" />
       <workItem from="1700744305787" duration="2226000" />
       <workItem from="1700795408096" duration="4941000" />
-      <workItem from="1700920871010" duration="4970000" />
-    </task>
-    <task id="LOCAL-00001" summary="create new javafx application">
-      <option name="closed" value="true" />
-      <created>1697953877829</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697953877829</updated>
+      <workItem from="1700920871010" duration="5140000" />
+      <workItem from="1700986138111" duration="1459000" />
     </task>
     <task id="LOCAL-00002" summary="AddWord new">
       <option name="closed" value="true" />
@@ -619,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700800512185</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fix memories game">
+      <option name="closed" value="true" />
+      <created>1700927947909</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1700927947909</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix history and fix flag in API" />
     <MESSAGE value="add game layout" />
     <MESSAGE value="add flashcard" />
     <MESSAGE value="update ui, add game" />
@@ -663,6 +690,7 @@
     <MESSAGE value="improve api" />
     <MESSAGE value="improve ui game and fix api" />
     <MESSAGE value="update position of alerts" />
-    <option name="LAST_COMMIT_MESSAGE" value="update position of alerts" />
+    <MESSAGE value="fix memories game" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix memories game" />
   </component>
 </project>
