@@ -87,8 +87,6 @@ public class MemoriesController implements Initializable {
     boolean[] isFrontShowing = new boolean[15];
 
 
-
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         for (int i = 0; i < 15; i++) {
@@ -105,7 +103,7 @@ public class MemoriesController implements Initializable {
                         String.format("%02d:%02d",
                                 remainingDuration.get().toMinutesPart(),
                                 remainingDuration.get().toSecondsPart()),
-                                remainingDuration));
+                remainingDuration));
 
         countDownTimeLine.setCycleCount((int) remainingDuration.get().getSeconds());
         countDownTimeLine.setOnFinished(event ->
@@ -156,6 +154,7 @@ public class MemoriesController implements Initializable {
 
     /**
      * animation lật một card có chỉ số là i.
+     *
      * @param i số chỉ của card
      * @return trả về trạng thái sau khi lật
      */
@@ -251,6 +250,7 @@ public class MemoriesController implements Initializable {
 
     /**
      * xóa bỏ một card có số chỉ là a.
+     *
      * @param a số chỉ
      */
     public void removeCard(int a) {
@@ -316,48 +316,6 @@ public class MemoriesController implements Initializable {
         }
     }
 
-    /**
-     * khởi tạo animation lật
-     */
-    private RotateTransition createRotator(StackPane pane, boolean isFrontShowing) {
-        RotateTransition rotator = new RotateTransition(Duration.millis(500), pane);
-        rotator.setAxis(Rotate.Y_AXIS);
-
-        if (isFrontShowing) {
-            rotator.setFromAngle(0);
-            rotator.setToAngle(180);
-        } else {
-            rotator.setFromAngle(180);
-            rotator.setToAngle(360);
-        }
-        rotator.setInterpolator(Interpolator.LINEAR);
-        rotator.setCycleCount(1);
-
-        return rotator;
-    }
-
-    /**
-     * chuyển mặt lá bài khi lật
-     */
-    private PauseTransition changeCardFace(StackPane pane, boolean isFrontShowing) {
-        PauseTransition pause = new PauseTransition(Duration.millis(250));
-
-        if (isFrontShowing) {
-            pause.setOnFinished(
-                    e -> {
-                        pane.getChildren().get(1).setVisible(false);
-                        pane.getChildren().get(0).setVisible(true);
-                    });
-        } else {
-            pause.setOnFinished(
-                    e -> {
-                        pane.getChildren().get(1).setVisible(true);
-                        pane.getChildren().get(0).setVisible(false);
-                    });
-        }
-
-        return pause;
-    }
 
     /**
      * trộn ngẫu nhiên list từ.
@@ -372,7 +330,8 @@ public class MemoriesController implements Initializable {
 
     /**
      * tìm chỉ số liên hệ giữa lá bài và từ.
-     * @param x số của lá bài
+     *
+     * @param x    số của lá bài
      * @param list list ánh xạ
      * @return index của lá bài trong list
      */
@@ -464,6 +423,7 @@ public class MemoriesController implements Initializable {
             list.add(tmp[1]);
         }
     }
+
     /**
      * cài đặt thời gian đếm ngược
      */
@@ -490,7 +450,8 @@ public class MemoriesController implements Initializable {
 
     /**
      * chuyển từ vào các card sau khi đã ánh xạ.
-     * @param x số chỉ của card
+     *
+     * @param x    số chỉ của card
      * @param word từ được chuyển vào
      */
     public void add(int x, String word) {
@@ -556,8 +517,7 @@ public class MemoriesController implements Initializable {
         ButtonType quit = new ButtonType("Quit Game");
         alert.getButtonTypes().addAll(again, quit);
         alert.setOnHidden(e -> choiceOver());
-        if(Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay"))
-        {
+        if (Model.getInstance().getViewFactory().selectedMenuProperty().get().equals("MemoriesPlay")) {
             alert.show();
         }
     }
