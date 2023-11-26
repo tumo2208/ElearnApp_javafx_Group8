@@ -7,17 +7,13 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.transform.Rotate;
-import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.File;
@@ -213,26 +209,43 @@ public class MemoriesController implements Initializable {
                 tmp = pane14;
                 break;
         }
-        RotateTransition rotator = createRotator(tmp, isFrontShowing[i]);
-        PauseTransition ptChangeCardFace = changeCardFace(tmp, isFrontShowing[i]);
-        isFrontShowing[i] = !isFrontShowing[i];
-        ParallelTransition parallelTransition = new ParallelTransition(rotator, ptChangeCardFace);
-        parallelTransition.play();
-        parallelTransition.setOnFinished(
-                e -> {
-                    if (isFrontShowing[i]) {
-                        this.showingCard.add(i);
-                        checkTrap();
-                        checkShowingCards();
-                        checkNumberShowing();
-                    } else {
-                        if (showingCard.contains(i)) {
-                            showingCard.remove(findIndex(i, showingCard));
-                        }
 
+        RotateTransition cardRotate1 = new RotateTransition(Duration.millis(400), tmp);
+        cardRotate1.setAxis(Rotate.Y_AXIS);
+        cardRotate1.setFromAngle(0);
+        cardRotate1.setToAngle(90);
+        cardRotate1.setInterpolator(Interpolator.EASE_OUT);
+        cardRotate1.play();
+        StackPane finalTmp = tmp;
+        cardRotate1.setOnFinished(actionEvent -> {
+            if (isFrontShowing[i]) {
+                finalTmp.getChildren().get(1).setVisible(true);
+                finalTmp.getChildren().get(0).setVisible(false);
+            } else {
+                finalTmp.getChildren().get(1).setVisible(false);
+                finalTmp.getChildren().get(0).setVisible(true);
+            }
+            RotateTransition cardRotate2 = new RotateTransition(Duration.millis(400), finalTmp);
+            cardRotate2.setAxis(Rotate.Y_AXIS);
+            cardRotate2.setFromAngle(270);
+            cardRotate2.setToAngle(360);
+            cardRotate2.setInterpolator(Interpolator.EASE_IN);
+            cardRotate2.setOnFinished(actionEvent1 -> {
+                if (isFrontShowing[i]) {
+                    this.showingCard.add(i);
+                    checkTrap();
+                    checkShowingCards();
+                    checkNumberShowing();
+                } else {
+                    if (showingCard.contains(i)) {
+                        showingCard.remove(findIndex(i, showingCard));
                     }
+
                 }
-        );
+            });
+            cardRotate2.play();
+        });
+        isFrontShowing[i] = !isFrontShowing[i];
         return isFrontShowing[i];
     }
 
@@ -547,29 +560,6 @@ public class MemoriesController implements Initializable {
         {
             alert.show();
         }
-        /*Stage stage = new Stage();
-        AnchorPane anchorPane = new AnchorPane();
-        Scene scene = new Scene(anchorPane, 600, 400);
-
-        Image defeatImg = new Image(getClass().getResource("/Images/GamePhuoc/defeat.png").toString());
-        ImageView defeat = new ImageView(defeatImg);
-        defeat.setLayoutX(120);
-        defeat.setLayoutY(50);
-        defeat.setFitWidth(360);
-        defeat.setFitHeight(120);
-        Image image = new Image(getClass().getResource("/Images/GamePhuoc/cry.gif").toString());
-        ImageView imageView = new ImageView(image);
-        imageView.setLayoutX(20);
-        imageView.setLayoutY(300);
-        imageView.setFitWidth(100);
-        imageView.setFitHeight(80);
-
-        anchorPane.getChildren().addAll(imageView, defeat);
-        anchorPane.setStyle("-fx-background-color: #FFFFFF");
-
-        stage.setScene(scene);
-        stage.setTitle("fuck");
-        stage.show();*/
     }
 
     /**

@@ -61,6 +61,10 @@ public class QuestionController implements Initializable {
             e.printStackTrace();
         }
 
+        isTrue1 = false;
+        isTrue2 = false;
+        isTrue3 = false;
+        isTrue4 = false;
         question.setWrapText(true);
         row1.setImage(row[ChooseLevelController.currentLevel * 4]);
         row2.setImage(row[ChooseLevelController.currentLevel * 4 + 1]);

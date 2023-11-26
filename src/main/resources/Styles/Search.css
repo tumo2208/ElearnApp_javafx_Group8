@@ -62,9 +62,7 @@
     -fx-background-radius: 5;
 }
 
-.list-view .scroll-bar:vertical .track,
-.definition-area TextArea .scroll-bar:vertical .track,
-.definition-area TextArea .scroll-bar:horizontal .track {
+.list-view .scroll-bar:vertical .track {
     -fx-background-color: #ffffde;
     -fx-background-insets: 5, 5, 5;
     -fx-background-radius: 5;
@@ -122,4 +120,10 @@
 
 .definition-area TextArea .scroll-bar {
     -fx-background-color: transparent;
+}
+
+.definition-area TextArea .scroll-bar:vertical .track {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
 }

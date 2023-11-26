@@ -4,37 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="fix memories game">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GamePhuoc/illuastration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/catchTheWord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/Result.css" afterDir="false" />
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="update ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GamePhuoc/Memories.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Answer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/CatchTheWord.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/ChooseLevel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/ChooseLevel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Lose.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Question.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/GameTu/Win.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Back_Button_Click.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Exit_Button_Click.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button_Click.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/Play_Button_Click.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/TayBac.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/bangCuuChuong.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/nhatThuc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/storm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/full/tiaUV.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/logoGameTu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/lose.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/GameTu/victory.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/newWordSide.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/newWordSide.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/AddWord.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/Memories.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GamePhuoc/MenuGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/GameTu/CatchTheWord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,15 +230,7 @@
       <workItem from="1700744305787" duration="2226000" />
       <workItem from="1700795408096" duration="4941000" />
       <workItem from="1700920871010" duration="5140000" />
-      <workItem from="1700986138111" duration="1459000" />
-    </task>
-    <task id="LOCAL-00002" summary="AddWord new">
-      <option name="closed" value="true" />
-      <created>1698132113698</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698132113698</updated>
+      <workItem from="1700986138111" duration="3543000" />
     </task>
     <task id="LOCAL-00003" summary="rework">
       <option name="closed" value="true" />
@@ -647,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700927947909</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="update ui">
+      <option name="closed" value="true" />
+      <created>1700987674447</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1700987674448</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +643,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add game layout" />
     <MESSAGE value="add flashcard" />
     <MESSAGE value="update ui, add game" />
     <MESSAGE value="fix API" />
@@ -691,6 +667,7 @@
     <MESSAGE value="improve ui game and fix api" />
     <MESSAGE value="update position of alerts" />
     <MESSAGE value="fix memories game" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix memories game" />
+    <MESSAGE value="update ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui" />
   </component>
 </project>

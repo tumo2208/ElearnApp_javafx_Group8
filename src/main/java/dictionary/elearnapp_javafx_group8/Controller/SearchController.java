@@ -49,6 +49,7 @@ public class SearchController implements Initializable {
         }
 
         definitionArea.setEditable(false);
+        definitionArea.setWrapText(true);
         resetAllSearch();
 
         listView.setCellFactory(param -> new ButtonCellController(searchField));

@@ -1,75 +1,3 @@
-|save
-/seiv/
-* danh từ
-- (thể dục,thể thao) sự phá bóng cứu nguy (chặn không cho đối phương ghi bàn) (bóng đá)
-* ngoại động từ
-- cứu nguy
-= to save somebody from drowning+ cứu ai khỏi chết đuối
-= to save the situation+ cứu vãn tình thế
-- (thể dục,thể thao) phá bóng cứu nguy
-- cứu vớt
-= to save someone's soul+ cứu vớt linh hồn ai
-- để dành, tiết kiệm
-= to save one's strength+ giữ sức
-- tránh (cho ai) đỡ (cho ai) khỏi phải (tiêu tiền, mất sức...); tránh khỏi phải, đỡ khỏi phải
-= his secretary saved him much time+ người thư ký đỡ cho ông ta được nhiều thời gian
-= soap saves rubbing+ có xà phòng thì đỡ phải vò
-- kịp, đuổi kịp
-= he wrote hurriedly to save the post+ anh ấy viết vội để kịp gởi bưu điện
-* nội động từ
-- tằn tiện, tiết kiệm
-= a saving housekeeper+ một người nội trợ tằn tiện
-= he has never saved+ hắn chả bao giờ tiết kiệm
-- bảo lưu
-= saving clause+ điều khoản bảo lưu, điều khoản trong có nói đến sự miễn giảm
-!to save one's bacon
-- cứu lấy cái thần xác mình
-!to save one's breath
-- làm thinh
-!to save one's face
-- (xem) face
-!saving your respect
-- xin mạn phép ông
-!you may save your pains (trouble)
-- anh chẳng cần phải bận bịu vào việc ấy; anh có chịu khó thì cũng chẳng ăn thua gì
-!a stitch in time saves nine
-- (xem) stitch
-* giới từ &amp;amp; liên từ
-- trừ ra, ngoài ra
-= all save the reactionary, are for social progress+ trừ bọn phản động ra, ai cũng ủng hộ mọi tiến bộ xã hội
-
-save
-- tiết kiệm
-|listen
-/'lisn/
-* nội động từ
-- nghe, lắng nghe
-= listen to me!+ hãy nghe tôi
-- nghe theo, tuân theo, vâng lời
-= to listen to reason+ nghe theo lẽ phải
-!to listen in
-- nghe đài
-- nghe trộm điện thoại
-|delete
-/di'li:t/
-* ngoại động từ
-- gạch đi, xoá đi, bỏ đi
-
-delete
-- gạch, bỏ đi
-|edit
-/'edit/
-* ngoại động từ
-- thu nhập và diễn giải
-- chọn lọc, cắt xén, thêm bớt (tin của phóng viên báo gửi về)
-* nội động từ
-- làm chủ bút (ở một tờ báo...)
-
-edit
-- (Tech) lắp ráp (d); dựng hình (d); biên soạn, biên tập, soạn thảo (d)
-
-edit
-- biên soạn, biên tập, xuất bản
 |add
 /æd/
 * động từ
@@ -91,3 +19,696 @@ add
 add
 - cộng vào, thêm vào, bổ sung
 - a. together, a. up cộng lại lấy tổng
+|delete
+/di'li:t/
+* ngoại động từ
+- gạch đi, xoá đi, bỏ đi
+
+delete
+- gạch, bỏ đi
+|game
+/geim/
+* danh từ
+- trò chơi (như bóng đá, quần vợt, bài lá...)
+- (thương nghiệp) dụng cụ để chơi (các trò chơi)
+- (số nhiều) cuộc thi điền kinh, cuộc thi đấu
+- ván (bài, cờ...)
+= to win four games in the first set+ thắng bốn ván trong trận đầu
+- trò cười; chuyện nực cười, trò đùa; sự trêu chọc, sự chế nhạo; trò láu cá, mánh khoé
+= to have a game with somebody+ trêu chọc, chế nhạo ai
+= to make game of somebody+ đùa cợt ai, chế nhạo ai, giễu ai
+= none of your games!+ đừng có giở trò láu cá của anh ra!
+- ý đồ, mưu đồ
+= to play someone's game+ vô tình giúp ai thực hiện được ý đồ của người ta
+= to spoil someone's game+ làm hỏng mưu đồ của ai
+- thú săn; thịt thú săn
+= big game+ thú săn lớn (như hổ, sư tử, voi)
+- (từ Mỹ,nghĩa Mỹ),  (từ lóng) mục tiêu theo đuổi khó khăn, mục tiêu nguy hiểm
+- con vật bị săn, con vật bị dồn; người bị theo đuổi, vật bị theo đuổi
+= fair game+ vật (người) có thể bị theo đuổi tấn công một cách chính đáng
+= forbidden game+ vật (người) mà ta không có quyền theo đuổi tấn công
+- bầy (thiên nga)
+!to be off one's game
+- (thể dục,thể thao) không sung sức
+!to be ob one's game
+- (thể dục,thể thao) sung sức
+!to fly at higher games
+- có những tham vọng cao hơn
+!to have the game in one's hand
+- nắm chắc thắng lợi trong tay; làm chủ được cuộc đấu
+!to play the game
+- (xem) play
+!the game is yours
+- anh thắng cuộc
+!the game is not worth the candle
+- việc làm lợi chẳng bõ công; thu không bù chi
+!the game is up
+- việc làm đã thất bại
+* động từ
+- đánh bạc
+!to game away one's fortune
+- thua bạc khánh kiệt
+* tính từ
+- như gà chọi; dũng cảm, anh dũng, gan dạ
+= a game little fellow+ một anh chàng bé nhưng dũng cảm gan dạ
+= to die game+ chết anh dũng
+- có nghị lực
+= to be game for anything+ có nghị lực làm bất cứ cái gì
+- bị bại liệt (chân, tay); què, thọt
+
+game
+- trò chơi
+|listen
+/'lisn/
+* nội động từ
+- nghe, lắng nghe
+= listen to me!+ hãy nghe tôi
+- nghe theo, tuân theo, vâng lời
+= to listen to reason+ nghe theo lẽ phải
+!to listen in
+- nghe đài
+- nghe trộm điện thoại
+|translate
+/træns'leit/
+* ngoại động từ
+- dịch, phiên dịch
+= to translate an English book into Vietnamese+ dịch một quyển sách tiếng Anh sang tiếng Việt
+- chuyển sang, biến thành
+= to translate emotion into action+ biến tình cảm thành hành động
+= to translate dream into reality+ biến ước mơ thành hiện thực
+= to translate opetry into music+ chuyển thơ thành nhạc, phổ nhạc thành thơ
+= to translate Lenin's teachings into reality+ thực hiện lời dạy của Lê-nin
+- giải thích, coi là
+= kindly translate+ xin ông vui lòng giải thích rõ cho ý ông muốn nói
+= do not translate my hesitation as ill-will+ xin anh đừng coi sự do dự của tôi là thiếu thiện chí
+- thuyên chuyển (một vị giám mục) sang địa phận khác
+- truyền lại, truyền đạt lại (bức điện)
+- (toán học); (kỹ thuật) cho tịnh tiến
+
+translate
+- tịnh tiến, dịch
+|card
+/kɑ:d/
+* danh từ
+- các, thiếp, thẻ
+= calling card+ danh thiếp
+= card of admission+ thẻ ra vào, thẻ vào cửa
+= invitation card+ thiếp mời
+- quân bài, bài ((cũng) playing card)
+- (số nhiều) sự chơi bài
+= a pack of cards+ một cỗ bài
+= trump card+ quân bài chủ
+- chương trình (cuộc đua...)
+- bản yết thị
+- (từ Mỹ,nghĩa Mỹ) quảng cáo (trên báo)
+- (từ cổ,nghĩa cổ), hải la bàn ((cũng) mariner's card)
+- (thông tục) người kỳ quặc; thằng cha, gã
+= a knowing card+ một thằng cha láu
+= a queer card+ một thằng cha kỳ quặc
+!to have a card up one's sleeve
+- còn nắm bài chủ trong tay; có kế dự phòng
+!to have (hold) the cards in one's hands
+- có tất cả bài chủ trong tay; (nghĩa bóng) có tất cả yếu tố thắng lợi trong tay
+!house of cards
+- (xem) house
+!on (in) the cards
+- có thể, có lẽ
+!one's best (trump) cards
+- lý lẽ vững nhất; lá bài chủ (nghĩa bóng)
+!to play one's card well
+- chơi nước bài hay ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play a sure card
+- chơi nước chắc ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play a wrong card
+- chơi nước bài bớ, chơi nước bài sai lầm ((nghĩa đen) &amp;amp; (nghĩa bóng))
+!to play (lay, place) one's card on the table
+- nói rõ hết ý định, nói rõ hết kế hoạch không cần úp mở giấu giếm
+!to show one's card
+- để lộ kế hoạch
+!to speak by the card
+- nói rành rọt, nói chính xác
+!that's the card
+- (thông tục) đúng thế, thế là đúng, thế là phải
+!to throw (fling) up one's card
+- bỏ cuộc, chịu thua không chơi nữa
+* danh từ
+- bàn chải len, bàn cúi
+* ngoại động từ
+- chải (len...)
+
+card
+- (Tech) thẻ, phiếu, bìa
+
+card
+- (máy tính) tấm bìa, phiếu tính có lỗ; bảng; (lý thuyết trò chơi) quân bài
+- correetion c. bảng sửa chữa
+- plain c. (lý thuyết trò chơi) quân bài công khai
+- punched c. bìa đục lỗ
+- test c. phiếu kiểm tra
+- trump c. quana bài thắng
+|image
+/'imidʤ/
+* danh từ
+- hình, hình ảnh, ảnh (trong gương...)
+= read image+ ảnh thực
+= virtual image+ ảo ảnh
+- vật giống hệt (vật khác); người giống hệt (người khác)
+= he is the very image of his father+ anh ta giống bố như hệt
+- hình tượng
+= to speak in images+ nói bằng nhiều hình tượng
+- tượng, thần tượng, thánh tượng
+- ý niệm, ý tưởng, quan niệm
+- tượng trưng, điển hình, hiện thân (của cái gì)
+= he is the image of industriousness+ anh ta hiện thân của sự cần cù
+* ngoại động từ
+- vẽ hình
+- phản ánh (như ở trong gương)
+- hình dung, tưởng tượng ra
+= to image something to oneself+ hình dung cái gì trong óc mình
+- mô tả sinh động, mô tả bằng hình tượng
+- là tượng trưng của, là điển hình của, là hiện thân của, tượng trưng cho (cái gì)
+
+image
+- ảnh; sự phản ánh; sự tạo ảnh
+- complete inverse i. (đại số) ; (tô pô) nghịch ảnh đầy đủ
+- inverse i. nghịch ảnh 
+- mirror i. (hình học) phép ánh xạ gương
+- reflected i. ảnh phản xạ 
+- spherical i. (hình học) ảnh cầu
+|group
+/gru:p/
+* danh từ
+- nhóm
+= to lean in groups+ học nhóm
+= to from a group+ họp lại thành nhóm
+= atomic group+ (vật lý) nhóm nguyên tử
+= group of algebras+ (toán học) nhóm các đại số
+= blood group+ (y học) nhóm máu
+- (hoá học) nhóm, gốc
+* động từ
+- hợp thành nhóm; tập hợp lại
+= people grouped [themselves] round the speaker+ mọi người tập họp lại xung quanh diễn giả
+- phân loại, phân loại, phân hạng, phân phối theo nhóm
+- (nghệ thuật) tạo nên sự hoà hợp màu sắc
+
+group
+- nhóm // nhóm lại
+- g. of algebras nhóm các đại số 
+- g. of classes nhóm các lớp
+- g. of collineations nhóm các phép cộng tuyến
+- g. of exténion nhóm các phép mở rộng
+- g. of isotropy (hình học) nhóm đẳng hướng
+- g. of motión nhóm các chuyển động
+- g. of transformations nhóm các phép biến đổi
+- Abelian g. nhóm Aben, nhóm giao hoán
+- additive g. nhóm afin
+- affine g. nhóm cộng tính
+- algebraically Abelian g. nhóm Aben đại số
+- algebraically closed Abelian g. nhóm Aben đóng đại số
+- alternating g. nhóm thay phiên
+- Archimedian g. nhóm Acsimet
+- aperiodic g. nhóm không tuần hoàn
+- automorphism g. nhóm các tự đẳng cấu, nhóm các phép nguyên hình
+- binary projective g. nhóm xạ ảnh nhị nguyên
+- buonded g. (đại số) nhóm bị chặn
+- characterr g. nhóm đặc trưng
+- circle g. nhóm quay tròn
+- class g. nhóm lớp
+- cobordism g. nhóm đồng điều trong
+- coherent topological g. nhóm tôpô dính
+- cohomology g. nhóm đối đồng đều
+- collineation g. nhóm cộng tuyến
+- commutator g. nhóm hoán tử
+- compact g. (đại số) nhóm compac
+- complete g. nhóm đầy đủ 
+- completely reducible g. nhóm hoàn toàn khả quy
+- composite g. (đại số) nhóm đa hợp
+- congruence g. (đại số) nhóm đồng dư
+- continuous g. nhóm liên tục, nhóm tôpô 
+- continuous linear g. nhóm tuyến tính liên tục
+- convering g. nhóm phủ
+- crystallographic g. (đại số) nhóm tinh thể
+- cyclic g. nhóm xilic
+- decompostition g. (đại số) nhóm phân tích
+- defect g. (đại số) nhóm khuyết
+- derived g. nhóm dẫn xuất
+- differential g. nhóm vi phân
+- dihedral g. (tô pô) nhóm nhị diện
+- dihomology g. nhóm lưỡng đồng điều
+- direct g. nhóm có hướng
+- discontinuous g. nhóm rời rạc
+- discontinuous infinite g. nhóm vô hạn rời rạc
+- discrete g. nhóm rời rạc
+- dispersible g. (đại số) nhóm phân tán được
+- divisible g. nhóm đường gấp khúc
+- edge path g. nhóm đường gấp khúc
+- einstufig g. nhóm một bậc
+- equianharmonic g. nhóm đẳng phi điều
+- equiform g. (đại số) nhóm đẳng dạng
+- exceotinal g. nhóm ngoại lệ
+- exponential g. (đại số) nhóm mũ
+- extended orthonal g. nhóm trực giao mở rộng
+- factor g. (đại số) nhóm thương
+- finite g. (đại số) nhóm hữu hạn
+- formal Lie g. nhóm Li hình thức
+- fractional linear g. nhóm tuyến tính đầy đủ
+- full unimodular g. nhóm đơn môđula đầy đủ
+- general linear g. nhóm đơn tuyến tính tổng quát
+- generalized quaternion g. nhóm quatênion suy rộng
+- graded g. nhóm phân bậc
+- Hamiltonian g. (đại số) nhóm Hamintôn
+- harmonic g. nhóm điều hoà
+- homonomy g. nhóm hôlônôm
+- homology g. nhóm đồng điều
+- homotopy g. nhóm đồng luân
+- hyperabelian g. nhóm siêu Aben
+- hyperexponential g. nhóm siêu mũ
+- hyperfuchsian g. nhóm siêu Fuc
+- hypermetric topological g. nhóm tôpô siêu metric
+- hyperorthogonal g. nhóm siêu trực giao
+- icosaheral g. nhóm hai mươi mặt 
+- identity g. nhóm đơn vị
+- imprimitive. nhóm phi nguyên thuỷ
+- infinite g. nhóm vô hạn
+- infinitesimal g. nhóm vi phân
+- integrable g. (đại số) nhóm giải được
+- intransitive g. nhóm không bắc cầu
+- irreducible g. nhóm không khả qui
+- k- step metabelian g. (đại số) nhóm mêta Aben bước K
+- lattice ordered g.,I- group. nhóm sắp theo đàn 
+- linear g. nhóm tuyến tính
+- linear fractinal g. (đại số) nhóm phân tuyến tính
+- local g. nhóm địa phương
+- local Lie g. nhóm Li địa phương
+- locally compact g. (đại số) nhóm compact địa phương
+- locally solvable g. (đại số) nhóm giải được địa phương
+- loose g. nhóm không trù mật
+- lower basic g. (đại số) nhóm cơ bản dưới
+- loxodrome cyclic g. nhóm tà hành xilic
+- metabelian g. nhóm mêtan Aben
+- metacyclic g. nhóm nêta xiclic
+- mixed g. (đại số) nhóm hỗn tạp
+- modular g. nhóm môđunla
+- monodromic g. nhóm đơn đạo
+- nilpotent g. nhóm luỹ linh
+- non-commutative g. (đại số) nhóm không giao hoán 
+- non-special g. nhóm không đặc biệt
+- nuclear g. nhóm hạch
+- octahedral g. nhóm tám mặt
+- one-headed g. nhóm một đầu, nhóm có ước cực đại
+- one-parameter g. (đại số) nhóm một tham số
+- ordered g. nhóm được sắp
+- orthogonal g. nhóm trực giao
+- pairwise transitive g.(hình học) nhóm bắc cấu từng cặp điểm
+- parabolic metric g. nhóm mêtric parabolic
+- paraconvex g. nhóm para lồi
+- perfect g.s nhóm hoàn toàn
+- periodic g. (đại số) nhóm tuần hoàn
+- permutation g. (đại số) nhóm hoán vị
+- polycyclic g. nhóm đa xilic
+- polyhedron g. nhóm đa diện
+- primary g. nhóm nguyên sơ
+- primary cyclic g. nhóm xilic nguyên xơ 
+- primitive g. nhóm nguyên thuỷ
+- product g. of modules tích nhóm các môđun
+- quasi-cyclic g. nhóm tựa xilic
+- quotient g. nhóm thương
+- radical g. nhóm căn
+- real orthogonal g. nhóm trực giao thực
+- reflection g. (đại số) nhóm phản xạ
+- relative cohomology g. (đại số) nhóm đối đồng đều tương đối
+- ralative homology g. nhóm đồng đều tương đối
+- rotation g. (đại số) nhóm quay
+- semi-metacyclic g. nhóm nửa mêta xilic
+- semi-simple g. (đại số) nhóm nửa đơn giản
+- separable g. (đại số) nhóm tách được
+- similarity g. nhóm đồng dạng
+- simple g. (đại số) nhóm đơn giản
+- simply transitive g. nhóm bắc cầu đơn
+- slender g. (đại số) nhóm hẹp
+- solennoidal g. (đại số) nhóm sôlenoit
+- solvable g.(đại số) nhóm giải được
+- special g. nhóm đặc biệt
+- special projective g. nhóm xạ ảnh đặc biệt
+- spinor g. nhóm spinơ
+- substitution g. nhóm các phép thế
+- symmetric g. từng đôi ngẫu đối
+- tetrahedral g. đs nhóm tứ diện
+- topological g. nhóm tôpô
+- topologically solvable g. (đại số) nhóm giải được tôpô
+- toroid g. nhóm phỏng tuyến
+- torsion g. đs nhóm xoắn, nhóm tuần hoàn
+- torsion free g. (đại số) nhóm không xoắn
+- track g. (tô pô) nhóm đường
+- transforrmation g. (đại số) nhóm các phép biến đổi
+- translation g.(hình học) nhóm các phép tịnh tiến
+- unicoherent topological g. (đại số) nhóm tôpô đính đều
+- unimodular g. nhóm đơn môđula
+- unitary g. nhóm đơn nguyên
+- wave g. nhóm sóng
+|book
+/buk/
+* danh từ
+- sách
+= old book+ sách cũ
+= to writer a book+ viết một cuốn sách
+= book of stamps+ một tập tem
+= book I+ tập 1
+- (số nhiều) sổ sách kế toán
+- (the book) kinh thánh
+!to be someone's bad books
+- không được ai ưa
+!to be someone's good book
+- được ai yêu mến
+!to bring someone to book
+- hỏi tội và trừng phạt ai
+!to know something like a book
+- (xem) know
+!to speak by the book
+- nói có sách, mách có chứng
+!to suit one's book
+- hợp với ý nguyện của mình
+!to speak (talk) like a book
+- nói như sách
+!to take a leat out of someone's book
+- (xem) leaf
+* ngoại động từ
+- viết vào vở; ghi vào vở
+- ghi tên (người mua về trước)
+- ghi địa chỉ (để chuyển hàng)
+- giữ (chỗ) trước, mua về trước)
+= to book searts for the threatre+ mua vé trước để đi xem hát
+- lấy vé (xe lửa...)
+!I am booked
+- tôi bị tóm rồi, tôi bị giữ rồi
+
+book
+- (Tech) sách; tâp; đơn vị luận lý
+
+book
+- sách
+|memory
+/'meməri/
+* danh từ
+- sự nhớ, trí nhớ, ký ức
+= to have a good memory+ có trí nhớ tốt, nhớ lâu
+= to commit to memory+ nhớ, ghi nhớ
+= within the memory of man; within living memory+ trong khoảng thời gian mà loài người còn nhớ lại được
+- kỷ niệm, sự tưởng nhớ
+= to keep the memory of+ giữ kỷ niệm của
+= in memory of+ để kỷ niệm, để tưởng nhớ tới
+
+memory
+- sự nhớ; bộ nhớ; bộ tích tin
+- acoustic m. bộ nhớ âm
+- computer m. bộ nhớ của máy tính
+- drum m. bộ nhớ trên trống từ tính
+- dynamic(al) m. bộ nhớ động
+- electrostatic m. bộ nhớ tĩnh điện
+- external m. bộ nhớ ngoài
+- ferrite m. bộ nhớ ferit
+- high speed m. bộ nhớ tác dụng nhanh
+- honeycomb m. bộ nhớ hình tổ ong
+- intermediate m. bộ nhớ trung gian 
+- internal m. bộ nhớ trong
+- long-time m. bộ nhớ lâu
+- magnetic m. bộ nhớ (có các yếu tố) từ 
+- magnetic core m. bộ nhớ lõi từ
+- permanent m. bộ nhớ thường xuyên
+- random access m. bộ nhớ có thứ tự tuỳ ý của mẫu
+- rapid access m. bộ nhớ có thời gian chọn ngắn, bộ nhớ có tác dụng
+|catch
+/kætʃ/
+* danh từ
+- sự bắt, sự nắm lấy; cái bắt, cái vồ, cái chộp
+= a good catch+ một quả bắt đẹp mắt (bóng đá)
+- sự đánh cá; mẻ cá
+= a fine catch of fish+ một mẻ cá nhiều
+- nhiều người bị bắt, vật bị túm được; mồi ngon đáng để bẫy; món bở
+= it is no catch+ món này chẳng bở gì
+- cái gài, cái móc, cái then cửa, cái chốt cửa
+- cái bẫy, mưu kế lừa người; câu hỏi mẹo (để cho ai vào bẫy)
+- đoạn (bài nói, câu chuyện...) chợt nghe thấy
+- (kỹ thuật) cái hãm, máy hãm, khoá dừng
+* ngoại động từ (caught)
+- bắt lấy, nắm lấy, tóm lấy, chộp lấy
+= to catch a ball+ bắt quả bóng
+= to catch somebody by the arm+ nắm lấy cánh tay ai
+- đánh được, câu được (cá)
+- bắt kịp, theo kịp, đuổi kịp
+= to catch a train+ bắt kịp xe lửa
+- mắc, bị nhiễm
+= to catch [a] cold+ nhiễm lạnh, cảm lạnh
+= to catch measles+ mắc bệnh đậu mùa
+= to catch a habit+ nhiễm một thói quen
+= to catch fire+ bắt lửa, cháy
+- hiểu được, nắm được (ý nghĩa); nhận ra
+= to catch someone's meaning+ hiểu được ý ai muốn nói gì
+= to catch a tune+ thuộc và hát lại được ngay một điệu hát
+= to catch a likeness+ nhận ra sự giống nhau và vẽ lại được
+- bắt gặp, bắt được quả tang; chợt gặp, chợt thấy
+= to be caught in the act+ bị bắt quả tang
+= let me catch you at it agains!+ cứ để tôi bắt gặp anh làm cái đó một lần nữa mà xem!
+- mắc vào, vướng, móc, kẹp
+= nail catches dress+ đính móc vào
+= to catch one's finger in a door+ kẹp ngón tay vào cửa
+= boat is caught in the reeds+ thuyền bị vướng trong đám lau sậy
+- chặn đứng, nén, giữ
+= to catch one's breath+ nín hơi, nín thở
+- thu hút, lôi cuốn
+= to catch the attention+ thu hút được sự chú ý
+= this will catch the public+ cái này có thể lôi cuốn được công chúng
+- đánh, giáng
+= to catch someone a blow+ giáng cho ai một cú
+= to catch somebody one on the jaw+ đánh cho ai một cú quai hàm
+* nội động từ
+- bắt lửa (cái gì...)
+= wet wood does not catch+ gỗ ẩm không bắt lửa
+- đóng băng
+= river catches+ con sông bắt đầu đóng băng
+- mắc, vướng, móc, kẹp
+= dress catches on a nail+ áo móc phải đinh
+- ăn khớp, vừa
+= the key does not catch+ khoá này không vừa
+- bấu, víu lấy, níu lấy, chộp lấy
+= to catch at an apportunity+ chộp lấy cơ hội
+= a drawning man will catch at an apportunity+ chộp lấy cơ hội
+= a drawning man will catch at a straw+ sắp chết đuối thì vớ được cọng rơm cũng cố víu lấy
+!to catch on
+- nổi tiếng; trở thành cái mốt; được mọi người ưa chuộng
+- (thông tục) hiểu được, nắm được
+!to catch out
+- (nghĩa bóng) bất chợt bắt được (ai) đang làm gì
+!to catch up
+- đuổi kịp, theo kịp, bắt kịp
+= go on in from, I'll soon catch you up+ cứ đi trước đi, tôi sẽ đuổi kịp anh ngay
+- ngắt lời
+= to catch up a speaker+ ngắt lời người phát biểu
+- nhiễm (thói quen)
+= to catch up a habit+ nhiễm một thói quen
+!to catch a glimpse of something
+- nắm lấy cái gì, tóm được cái gì
+!to catch it
+- (thông tục) bị la mắng, quở phạt, bị đánh đập
+!catch me!; catch me at it!; catch me doing that!
+- tớ mà lại làm cái đó à, không đời nào!
+!to catch the speaker's eye
+- (xem) eye
+|learn
+/lə:n/
+* ngoại động từ learnt  /lə:nt/
+- học, học tập, nghiên cứu
+- nghe thất, được nghe, được biết
+= to learn a piece of news from someone+ biết tin qua ai
+- (từ cổ,nghĩa cổ);(đùa cợt), guộc duỵu âm phâng nội động từ
+- học, học tập
+!to learn by heart
+- học thuộc lòng
+!to learn by rate
+- học vẹt
+!I am (have) yet to learn
+- tôi chưa biết như thế nào, để còn xem đã
+
+learn
+- học (thuộc)
+|circle
+/'sə:kl/
+* danh từ
+- đường tròn, hình tròn
+= polar circle+ vòng cực
+= vicious circle+ vòng luẩn quẩn
+- sự tuần hoàn
+= the circle of the seasons+ sự tuần hoàn của các mùa
+- nhóm, giới
+= well informed circle+ giới thạo tin
+- sự chạy quanh (ngựa)
+- quỹ đạo (hành tinh)
+- phạm vi
+= the circle of someone's activities+ phạm vi hoạt động của ai
+- hàng ghế sắp tròn (trong rạp hát)
+!to have circles round the eyes
+- mắt thâm quầng
+!to run round in circles
+- (thông tục) chạy nhông, chạy nhắng lên (mà không được việc gì)
+!to square the circle
+- (xem) square
+* ngoại động từ
+- đi chung quanh, xoay quanh
+= the moon circles the earth+ mặt trăng xoay quanh quả đất
+- vây quanh
+- (thể dục,thể thao) quay lộn
+= to circle the bar+ quay lộn trên xà đơn
+* nội động từ
+- xoay quanh; lượn tròn, lượn quanh (máy bay)
+- được chuyền quanh (rượu...)
+!news circles round
+- tin truyền đi, tin lan đi
+
+circle
+- (Tech) vòng tròn; hình tròn
+|diagram
+/'daiəgræm/
+* danh từ
+- biểu đồ
+
+diagram
+- (Tech) sơ đồ
+
+diagram
+- (máy tính) biểu đồ, sơ đồ
+- arithlog d. biểu đồ lôga số
+- assumption d. biểu đồ lý thuết, biểu đồ giả định
+- base d. sơ đồ cơ sở
+- bending moment d. biểu đồ mômen uốn
+- block d. sơ đồ khối
+- circuit d. sơ đồ mạch
+- cording d. sơ đồ mắc, cách mắc 
+- correlation d. biểu đồ tương quan
+- discharge d. đồ thị phóng điện
+- elementary d. sơ đồ vẽ nguyên tắc
+- energy discharge d. biểu đồ tán năng
+- flow out d. biểu đồ lưu xuất
+- functional d. sơ đồ hàm
+- influence d. đường ảnh hưởng
+- inspection d. biểu đồ quá trình kiểm tra, biểu đồ phân tích liên tiếp
+- installation d. sơ đồ bố trí
+- interconnecting wiring d. sơ đồ nối, sơ đồ lắp ráp
+- key d. sơ đồ hàm
+- line d. sơ đồ tuyến tính
+- load d. biểu đồ tải trọng 
+- memoric d. sơ đồ để nhớ
+- natural alignment d. sơ đồ thẳng hàng tự nhiên
+- non-alignment d. sơ đồ không thẳng hàng
+- percentage d. (toán kinh tế) sơ đồ phần trăm
+- phase d. sơ đồ pha
+- schematic d. (máy tính) biểu đồ khái lược
+- skeleton d. (máy tính) sơ đồ khung
+- vector d. biểu đồ vectơ
+- velocity time d. biểu đồ vận tốc thời gian
+- wireless d. sơ đồ nối, sơ đồ lắp ghép
+|triangle
+/'traiæɳgl/
+* danh từ
+- hình tam giác
+= equilateral triangle+ tam giác đều
+= isosceles triangle+ tam giá cân
+= right-angled triangle+ tam giác vuông
+- ê ke, thước nách
+- (âm nhạc) kẻng ba góc
+- bộ ba
+= the eternal triangle+ bộ ba cặp kè (tình trạng hai người yêu một)
+|maximum
+/'mæksiməm/
+* danh từ số nhiều
+- điểm cao nhất, cực điểm, cực độ, tối đa
+* tính từ
+- cực độ, tối đa
+
+maximum
+- cực đại, giá trị lớn nhất
+- absolute m. cực đại tuyệt đối, cực đại hoàn toàn
+- improper m. cực đại không chân chính 
+- relative m. cực đại tương đối
+- strong m. cực đại mạnh
+- true m. cực đại chân thực, cực đại cốt yếu
+- vrai m., v. max cực đại thực
+|english
+/'iɳgliʃ/
+* tính từ
+- (thuộc) Anh
+* danh từ
+- người Anh
+- tiếng Anh ((cũng) the king's,  the queen's English)
+= Old English+ tiếng Anh cổ
+= Middle English+ tiếng Anh Trung cổ
+= Modern English+ tiếng Anh hiện đại
+- (ngành in) cỡ 14
+!in plain English
+- nói rõ ràng dễ hiểu; nói thẳng ra (không quanh co)
+* ngoại động từ
+- (từ cổ,nghĩa cổ) dịch ra tiếng Anh
+- (từ Mỹ,nghĩa Mỹ) Anh hoá
+|request
+/ri'kwest/
+* danh từ
+- lời thỉnh cầu, lời yêu cầu, lời đề nghị
+= to do something at (by) someone's request+ làm việc gì theo lời thỉnh cầu của ai
+- (thương nghiệp) nhu cầu, sự hỏi mua
+= to be in great request; to come into request+ được hỏi mua rất nhiều
+* ngoại động từ
+- thỉnh cầu, yêu cầu, đề nghị
+= visitors are requested not to touch the exhibits+ yêu cầu khách đến tham quan không sờ vào hiện vật trưng bày
+= to request sosmething of someone+ thỉnh cầu việc gì với người nào
+= to request somebody's presence+ kính mời ai đến dự (buổi lễ)
+= to request somebody's company+ kính mời ai đến dự (tiệc...)
+|participate
+/pɑ:'tisipeit/
+* động từ
+- tham gia, tham dự; cùng góp phần
+= to participate in something+ cùng góp phần vào cái gì
+= to participate insomething+ cùng góp phần vào cái gì
+= to participate with somebody+ cùng tham gia với ai
+- (+ of) có phần nào, phần nào mang tính chất
+= his poems participate of the nature of satire+ thơ của anh ta phần nào mang tính chất châm biếm
+|action
+/'ækʃn/
+* danh từ
+- hành động, hành vi; hoạt động; công việc, việc làm
+= a man of action+ con người hành động
+= to take prompt action+ hành động tức khắc, hành động kịp thời
+- tác động, tác dụng, ảnh hưởng
+= the sunlight has action on certain materials+ ánh nắng có tác động đến một số chất
+= action of acid+ tác dụng của axit
+- sự chiến đấu, trận đánh
+= to go into action+ bắt đầu đánh nhau, bắt đầu chiến đấu
+= to break off an action+ ngừng chiến đấu, ngừng bắn
+= to be killed in action+ bị hy sinh trong chiến đấu
+= to be put out of action+ bị loại khỏi vòng chiến đấu
+- việc kiện, sự tố tụng
+= to take (bring) an action against+ kiện (ai...)
+- sự diễn biến, quá trình diễn biến (của vở kịch)
+- động tác, dáng điệu, bộ điệu, bộ tịch
+= action of a player+ bộ điệu của một diễn viên
+= action of a horse+ dáng đi của một con ngựa
+- bộ máy, cơ cấu (đàn pianô, máy...); sự hoạt động của bộ máy
+!action committee
+- uỷ ban hành động
+!action position
+- (quân sự) vị trí của quân đội trước khi bước vào chiến đấu
+!action speak louder than words
+- (xem) speak
+* ngoại động từ
+- kiện, thưa kiện
+
+action
+- (Tech) tác động, động tác, hành động; tác dụng
+
+action
+- tác dụng, tác động
+- brake a. tác dụng hãm
+- control a. tác động điều chỉnh, tác động điều khiển 
+- delayed a. tác dụng làm chậm
+- edge a. tác dụng biên
+- instantaneous a. tác dụng tức thời
+- integral a. tác dụng tích phân
+- on-off a. mt tác dụng loại “đóng - mở”
