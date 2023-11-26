@@ -209,26 +209,43 @@ public class MemoriesController implements Initializable {
                 tmp = pane14;
                 break;
         }
-        RotateTransition rotator = createRotator(tmp, isFrontShowing[i]);
-        PauseTransition ptChangeCardFace = changeCardFace(tmp, isFrontShowing[i]);
-        isFrontShowing[i] = !isFrontShowing[i];
-        ParallelTransition parallelTransition = new ParallelTransition(rotator, ptChangeCardFace);
-        parallelTransition.play();
-        parallelTransition.setOnFinished(
-                e -> {
-                    if (isFrontShowing[i]) {
-                        this.showingCard.add(i);
-                        checkTrap();
-                        checkShowingCards();
-                        checkNumberShowing();
-                    } else {
-                        if (showingCard.contains(i)) {
-                            showingCard.remove(findIndex(i, showingCard));
-                        }
 
+        RotateTransition cardRotate1 = new RotateTransition(Duration.millis(500), tmp);
+        cardRotate1.setAxis(Rotate.Y_AXIS);
+        cardRotate1.setFromAngle(0);
+        cardRotate1.setToAngle(90);
+        cardRotate1.setInterpolator(Interpolator.EASE_OUT);
+        cardRotate1.play();
+        StackPane finalTmp = tmp;
+        cardRotate1.setOnFinished(actionEvent -> {
+            if (isFrontShowing[i]) {
+                finalTmp.getChildren().get(1).setVisible(true);
+                finalTmp.getChildren().get(0).setVisible(false);
+            } else {
+                finalTmp.getChildren().get(1).setVisible(false);
+                finalTmp.getChildren().get(0).setVisible(true);
+            }
+            RotateTransition cardRotate2 = new RotateTransition(Duration.millis(500), finalTmp);
+            cardRotate2.setAxis(Rotate.Y_AXIS);
+            cardRotate2.setFromAngle(270);
+            cardRotate2.setToAngle(360);
+            cardRotate2.setInterpolator(Interpolator.EASE_IN);
+            cardRotate2.setOnFinished(actionEvent1 -> {
+                if (isFrontShowing[i]) {
+                    this.showingCard.add(i);
+                    checkTrap();
+                    checkShowingCards();
+                    checkNumberShowing();
+                } else {
+                    if (showingCard.contains(i)) {
+                        showingCard.remove(findIndex(i, showingCard));
                     }
+
                 }
-        );
+            });
+            cardRotate2.play();
+        });
+        isFrontShowing[i] = !isFrontShowing[i];
         return isFrontShowing[i];
     }
 

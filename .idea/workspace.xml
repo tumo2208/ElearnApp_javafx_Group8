@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="improve ui game and fix api">
+    <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/APIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,23 +225,8 @@
       <workItem from="1700718366433" duration="45000" />
       <workItem from="1700744305787" duration="2226000" />
       <workItem from="1700795408096" duration="4686000" />
-      <workItem from="1700917572076" duration="956000" />
-    </task>
-    <task id="LOCAL-00001" summary="create new javafx application">
-      <option name="closed" value="true" />
-      <created>1697953877829</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697953877829</updated>
-    </task>
-    <task id="LOCAL-00002" summary="AddWord new">
-      <option name="closed" value="true" />
-      <created>1698132113698</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698132113698</updated>
+      <workItem from="1700917572076" duration="2340000" />
+      <workItem from="1700986442341" duration="1205000" />
     </task>
     <task id="LOCAL-00003" summary="rework">
       <option name="closed" value="true" />
@@ -612,7 +596,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700799504903</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix MemoriesController and APIController">
+      <option name="closed" value="true" />
+      <created>1700918565294</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1700918565294</updated>
+    </task>
+    <task id="LOCAL-00050" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1700918780352</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1700918780353</updated>
+    </task>
+    <task id="LOCAL-00051" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1700918821393</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1700918821393</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,8 +639,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add History" />
-    <MESSAGE value="fix history and fix flag in API" />
     <MESSAGE value="add game layout" />
     <MESSAGE value="add flashcard" />
     <MESSAGE value="update ui, add game" />
@@ -656,6 +662,8 @@
     <MESSAGE value="improve ui game memory" />
     <MESSAGE value="improve api" />
     <MESSAGE value="improve ui game and fix api" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve ui game and fix api" />
+    <MESSAGE value="fix MemoriesController and APIController" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>
