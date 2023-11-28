@@ -2,6 +2,11 @@ package dictionary.elearnapp_javafx_group8.Controller;
 
 import dictionary.elearnapp_javafx_group8.Dictionary.Word;
 import dictionary.elearnapp_javafx_group8.Models.Model;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -11,6 +16,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.net.URL;
+import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 import java.util.Comparator;
 import java.util.ResourceBundle;
 
@@ -58,7 +65,6 @@ public class AddWordController implements Initializable {
                 }
             }
         }
-        System.out.println(word);
         Word newWord = new Word(word, newDefinitionArea.getText().trim());
         if (Model.getInstance().getDictionary().Searcher(Model.getInstance().getWordList(), newWord.getWordTarget()) == -1) {
             Model.getInstance().getDictionary().addWord(newWord, dbPath);
@@ -76,6 +82,10 @@ public class AddWordController implements Initializable {
             notiImg.setImage(error);
         }
         notiLabel.setVisible(true);
+        countDownTimeLine.setOnFinished(event -> {
+            notiLabel.setVisible(false);
+        });
+        countDownTimeLine.play();
         newWordField.clear();
         newDefinitionArea.clear();
     }
@@ -91,4 +101,8 @@ public class AddWordController implements Initializable {
     final String dbPath = "src/main/resources/Database/data.txt";
     private Image success;
     private Image error;
+    private final ObjectProperty<Duration> remainingDuration
+            = new SimpleObjectProperty<>(java.time.Duration.ofSeconds(3));
+    private final Timeline countDownTimeLine = new Timeline(new KeyFrame(javafx.util.Duration.seconds(3),
+            (ActionEvent event) -> remainingDuration.setValue(remainingDuration.get().minus(1, ChronoUnit.SECONDS))));
 }

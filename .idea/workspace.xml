@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85459c06-7b35-41e1-8c51-c499cc9cecf7" name="Changes" comment="update ui">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GamePhuoc/MemoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/GameTu/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/AddWordController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dictionary/elearnapp_javafx_group8/Controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/history.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Database/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Database/save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Search.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,15 +226,8 @@
       <workItem from="1700744305787" duration="2226000" />
       <workItem from="1700795408096" duration="4941000" />
       <workItem from="1700920871010" duration="5140000" />
-      <workItem from="1700986138111" duration="3543000" />
-    </task>
-    <task id="LOCAL-00003" summary="rework">
-      <option name="closed" value="true" />
-      <created>1698214527576</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698214527576</updated>
+      <workItem from="1700986138111" duration="3929000" />
+      <workItem from="1701138456946" duration="319000" />
     </task>
     <task id="LOCAL-00004" summary="rework">
       <option name="closed" value="true" />
@@ -624,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700987674448</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="update ui">
+      <option name="closed" value="true" />
+      <created>1700989711460</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1700989711460</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

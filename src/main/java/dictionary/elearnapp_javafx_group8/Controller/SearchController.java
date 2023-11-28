@@ -267,6 +267,21 @@ public class SearchController implements Initializable {
                         Model.getInstance().getHistory().updateWord(Model.getInstance().getHistoryList(),
                                 indexOfWordHistory, editDefinitionArea.getText().trim(), historyPath);
                     }
+                    listViewDefault();
+                    listView.setItems(observableList);
+                    searchField.clear();
+                    definitionArea.clear();
+                    wordLabel.setText("");
+                    indexOfWordSelected = -1;
+                    if (definitionArea.getText().isEmpty()) {
+                        setVisAndDis(false);
+                        deleteSearchButton.setVisible(false);
+                        deleteSearchButton.setDisable(true);
+                    } else {
+                        setVisAndDis(true);
+                        deleteSearchButton.setVisible(true);
+                        deleteSearchButton.setDisable(false);
+                    }
                     cfDialog.close();
                     stage.close();
                 }
