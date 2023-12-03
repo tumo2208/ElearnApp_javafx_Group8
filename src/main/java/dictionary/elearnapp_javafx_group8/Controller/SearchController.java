@@ -69,6 +69,7 @@ public class SearchController implements Initializable {
             } else {
                 searchWord = "";
             }
+            searchWord = searchWord.toLowerCase();
             if (searchField.getText().isEmpty()) {
                 deleteSearchButton.setVisible(false);
                 deleteSearchButton.setDisable(true);
@@ -184,6 +185,7 @@ public class SearchController implements Initializable {
                 cfDialog.close();
             }
         });
+        System.out.println(Model.getInstance().getWordList().size());
 
         editWordButton.setOnAction(event -> {
             Stage stage = new Stage();
