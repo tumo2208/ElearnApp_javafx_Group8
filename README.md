@@ -36,7 +36,7 @@ My application have 5 main features:
 
 ### 3. Translation:
    + To translate a paragraph
-   + Use Google Transate API
+   + Use Google Translate API
    + Can translate from English to Vienamese and vice versa
 
 ### 4. Flashcard:
